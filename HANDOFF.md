@@ -428,3 +428,4 @@ Date: 2026-02-01
 - Do you want a Pierce–Schott "family_id" mapping added alongside HS2012?
 - Do you want a storage forecast using USA 1990 as a high-volume benchmark?
 - Should we add NPT/BWC from non-UN Treaty Collection sources (IAEA/BWC ISU)?
+- Large file cleanup: remove `data/processed/ieadb/db_members.csv` (~51.8 MB) from GitHub history or migrate it to Git LFS.
