@@ -429,3 +429,16 @@ Date: 2026-02-01
 - Do you want a storage forecast using USA 1990 as a high-volume benchmark?
 - Should we add NPT/BWC from non-UN Treaty Collection sources (IAEA/BWC ISU)?
 - Large file cleanup: remove `data/processed/ieadb/db_members.csv` (~51.8 MB) from GitHub history or migrate it to Git LFS.
+
+## Operational Note — WITS Tariff Acquisition at Scale
+- **Difficulty observed**: Repeated WITS API pulls for a single country across many years can be slow and error-prone (DNS failures in sandbox; HTTP 502 for partner `000` in 2021). Each year triggers multiple partner-specific downloads, so runtime grows quickly with years/partners. Scaling to ~190 countries sequentially will be very time-consuming.
+- **How it was handled** (BRA 1993–2021):
+  - Split acquisition into year chunks to avoid long single runs.
+  - Used escalated network permissions after DNS failure.
+  - Retried transient HTTP 502 after 30s and reran only the missing partner (`--partner-list 000`).
+  - Resumed safely by skipping years with existing `tariffs_partner_*.json`.
+- **Alternatives to explore**:
+  - Add a dedicated batch driver with resumable checkpoints and structured retries/backoff.
+  - Cache country metadata once (avoid re-downloading for every year).
+  - Parallelize by year or country with low concurrency + rate limiting to reduce total wall time.
+  - Consider negotiating bulk access or alternative endpoints if WITS supports them.
