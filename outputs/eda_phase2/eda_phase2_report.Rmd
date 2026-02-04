@@ -1,0 +1,37 @@
+---
+title: "EDA Phase 2 Report"
+output:
+  pdf_document:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+# Summary
+
+This report compiles exploratory diagnostics for the baseline EIF-only data:
+
+- Flow matrix summaries by issue area
+- PCA scree plots and loadings
+- Participation time series for selected countries
+
+# Figures
+
+```{r figures, results='asis'}
+figs <- list.files("figures", pattern = "\\.png$", full.names = TRUE)
+figs <- sort(figs)
+for (i in seq_along(figs)) {
+  cat(sprintf("\n\n**Figure %d.** %s\n\n", i, basename(figs[i])))
+  cat(sprintf("![](%s)\n", figs[i]))
+}
+```
+
+# Tables
+
+```{r tables, results='asis'}
+flow <- readr::read_csv("flow_summary.csv", show_col_types = FALSE)
+cat("\n\n**Table 1.** Flow matrix summary by issue area.\n\n")
+knitr::kable(flow)
+```

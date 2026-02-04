@@ -1,0 +1,3090 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Improved cache headers: allow revalidation but force checks -->
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+
+  <!-- Security and referrer policy for cross-domain navigation -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <meta name="description" content="WIPO Lex provides free of charge access to legal information on intellectual property (IP) from around the world.
+    The WIPO Lex Database is organized into three collections, consisting of IP laws and regulations, WIPO-administered treaties and IP‑related treaties, and IP judgments.">
+
+  <title>WIPO Lex</title>
+
+  <!-- DNS Prefetch and Preconnect for external resources -->
+  <link rel="dns-prefetch" href="https://webcomponents.wipo.int">
+  <link rel="dns-prefetch" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1">
+  <link rel="dns-prefetch" href="https://webcomponents.wipo.int">
+  <link rel="preconnect" href="https://webcomponents.wipo.int" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1" crossorigin>
+  <link rel="preconnect" href="https://webcomponents.wipo.int" crossorigin>
+
+  <!-- SOCIAL META -->
+  <meta property="og:title" content="WIPO Lex" />
+  <meta property="og:description" content="" />
+  <meta property="og:image"
+    content="https://www.wipo.int/export/system/modules/org.wipo.internet.rwd.templates/resources/images/logo-wipo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.wipo.int/wipolex/en/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@WIPO">
+  <meta name="twitter:creator" content="@WIPO">
+  <meta name="twitter:title" content="WIPO Lex" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image"
+    content="https://www.wipo.int/export/system/modules/org.wipo.internet.rwd.templates/resources/images/logo-wipo.png" />
+  <meta name="twitter:image:alt" content="WIPO Lex" />
+
+  <link rel="canonical" href="https://www.wipo.int/wipolex/en/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1" /> 
+
+  <!-- Resource loading error detection (load early) -->
+  <script type="application/javascript" src="/wipolex/nestjs-public/js/resource-loader.js"></script>
+
+  <script type="application/javascript" src="https://webcomponents.wipo.int/wipo-init/wipo-init.js" defer></script>
+  <script type="application/javascript" src="https://webcomponents.wipo.int/wipo-navbar/wipo-navbar.js" defer></script>
+
+  <!-- Modulepreload hints for web components (improves loading performance) -->
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wipo-footer.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-block-ui.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-bubble.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-button.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-datepicker.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-edit-panel.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-field.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-filter.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-landing.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-machine-translation-widget.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-multi-search.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-page-header.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-page-section.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-section.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-select-one.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-sidebar-section.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-sidebar.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-slot.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-step.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-sticky-bar.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-view-panel.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-input-text.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-pay-box.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-view.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-table-command.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-dropdown.js">
+  <link rel="modulepreload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-checkbox-many.js">
+
+  <!-- WIPO cdnjs webcomponents common-lf -->
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wipo-footer.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-block-ui.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-bubble.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-button.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-datepicker.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-edit-panel.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-field.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-filter.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-landing.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-machine-translation-widget.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-multi-search.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-page-header.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-page-section.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-section.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-select-one.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-sidebar-section.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-sidebar.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-slot.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-step.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-sticky-bar.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-view-panel.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-input-text.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-pay-box.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-view.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-table-command.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-dropdown.js"></script>
+  <script type="module" src="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/components/wu-checkbox-many.js"></script>
+
+  <link rel="preload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/style/wu-machine-translation-widget.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/style/wu-machine-translation-widget.css">
+  </noscript>
+  <link rel="preload" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/style/global-v2.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.wipo.int/universal-lf-webcomponents/2.1.1/style/global-v2.css">
+  </noscript>
+  <!-- Axios -->
+  <!-- Main JS -->
+  <script type="application/javascript" src="/wipolex/nestjs-public/js/main.js" defer></script>
+
+  <script src="/wipolex/nestjs-public/dependencies/code.jquery.com/jquery-3.7.0.min.js" defer></script>
+  <link rel="preload" href="/wipolex/nestjs-public/dependencies/cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <script type="application/javascript"
+    src="/wipolex/nestjs-public/dependencies/cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" defer></script>
+  <script type="application/javascript"
+    src="/wipolex/nestjs-public/dependencies/cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"
+    defer></script>
+  <link rel="preload"
+    href="/wipolex/nestjs-public/dependencies/cdn.datatables.net/fixedheader/3.4.0/css/fixedHeader.dataTables.min.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <script type="application/javascript"
+    src="/wipolex/nestjs-public/dependencies/cdn.datatables.net/fixedheader/3.4.0/js/dataTables.fixedHeader.min.js"
+    defer></script>
+
+  <!-- Global WIPO Lex custom css -->
+  <link rel="preload" href="/wipolex/nestjs-public/css/wipolex-custom.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+
+</head>
+
+<body>
+  <!-- Loading indicator -->
+  <div id="page-loader"
+    style="position:fixed;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,#0093d0,#00c896);z-index:99999;">
+    <div style="width:30%;height:100%;background:rgba(255,255,255,0.3);animation:loading 1.5s ease-in-out infinite;">
+    </div>
+  </div>
+  <style>
+    @keyframes loading {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(333%);
+      }
+    }
+  </style>
+  <script>
+    // Remove loader when page is fully loaded
+    (function () {
+      function hideLoader() {
+        var loader = document.getElementById('page-loader');
+        if (loader) {
+          loader.style.display = 'none';
+        }
+      }
+
+      // Hide on load
+      window.addEventListener('load', hideLoader);
+
+      // Also hide if already loaded
+      if (document.readyState === 'complete') {
+        hideLoader();
+      }
+    })();
+  </script>
+  <div style="display: none">	
+	<a href="https://www.wipo.int/en/web/about-ip">About Intellectual Property</a>
+	<a href="https://www.wipo.int/en/web/about-ip#training">IP Training</a>
+	<a href="https://www.wipo.int/en/web/respect-for-ip">Respect for IP</a>
+	<a href="https://www.wipo.int/en/web/ip-outreach">IP Outreach</a>
+	<a href="https://www.wipo.int/en/web/about-ip#for">IP for…</a>
+	<a href="https://www.wipo.int/en/web/about-ip#and">IP and...</a>
+	<a href="https://www.wipo.int/en/web/about-ip#in">IP in...</a>
+	<a href="https://www.wipo.int/en/web/patents/patent-information">Patent & Technology Information</a>
+	<a href="https://www.wipo.int/en/web/ip-resources#trademarks">Trademark Information</a>
+	<a href="https://www.wipo.int/en/web/ip-resources#designs">Design Information</a>
+	<a href="https://www.wipo.int/en/web/ip-resources#geographical-indications">Geographical Indication Information</a>
+	<a href="https://www.upov.int/">Plant Variety Information (UPOV)</a>
+	<a href="https://www.wipo.int/en/web/ip-resources#legal">IP Laws, Treaties & Judgments</a>
+	<a href="https://www.wipo.int/en/web/ip-resources#analysis">IP Resources</a>
+	<a href="https://www.wipo.int/en/web/ip-resources#reports">IP Reports</a>
+	<a href="https://www.wipo.int/en/web/patents/protection">Patent Protection</a>
+	<a href="https://www.wipo.int/en/web/trademarks/protection">Trademark Protection</a>
+	<a href="https://www.wipo.int/en/web/designs/protection">Design Protection</a>
+	<a href="https://www.wipo.int/en/web/geographical-indications/protection">Geographical Indication Protection</a>
+	<a href="https://www.upov.int/portal/index.html.en">Plant Variety Protection (UPOV)</a>
+	<a href="https://www.wipo.int/amc/en/">IP Dispute Resolution</a>
+	<a href="https://www.wipo.int/en/web/ip-office-business-solutions">IP Office Business Solutions</a>
+	<a href="https://www.wipo.int/en/web/paying-for-ip-services">Paying for IP Services</a>
+	<a href="https://www.wipo.int/en/web/decision-making-and-negotiating-bodies">Negotiation & Decision-Making</a>
+	<a href="https://www.wipo.int/cooperation/en/">Development Cooperation</a>
+	<a href="https://www.wipo.int/en/web/patents#technology">Innovation Support</a>
+	<a href="https://www.wipo.int/cooperation/en/#ppp">Public-Private Partnerships</a>
+	<a href="https://www.wipo.int/en/web/ai-tools-services">AI Tools & Services</a>
+	<a href="https://www.wipo.int/about-wipo/en/">The Organization</a>
+	<a href="https://www.wipo.int/en/web/working-at-wipo">Working at WIPO</a>
+	<a href="https://www.wipo.int/about-wipo/en/#accountability">Accountability</a>
+	<a href="https://www.wipo.int/en/web/patents">Patents</a>
+	<a href="https://www.wipo.int/en/web/trademarks">Trademarks</a>
+	<a href="https://www.wipo.int/en/web/designs">Designs</a>
+	<a href="https://www.wipo.int/en/web/geographical-indications">Geographical Indications</a>
+	<a href="https://www.wipo.int/en/web/copyright">Copyright</a>
+	<a href="https://www.wipo.int/en/web/trade-secrets">Trade Secrets</a>
+	<a href="https://www.wipo.int/en/web/future-of-ip">Future of IP</a>
+	<a href="https://www.wipo.int/en/web/wipo-academy">WIPO Academy</a>
+	<a href="https://www.wipo.int/meetings/en/topic_type.jsp?group_id=242">Workshops & Seminars</a>
+	<a href="https://www.wipo.int/en/web/ip-enforcement">IP Enforcement</a>
+	<a href="https://www.wipo.int/en/web/wipo-alert">WIPO ALERT</a>
+	<a href="https://www.wipo.int/en/web/respect-for-ip/awareness-raising">Raising Awareness</a>
+	<a href="https://www.wipo.int/en/web/ipday">World IP Day</a>
+	<a href="https://www.wipo.int/en/web/wipo-magazine">WIPO Magazine</a>
+	<a href="https://www.wipo.int/en/web/ip-advantage">Case Studies & Success Stories</a>
+	<a href="https://www.wipo.int/en/web/news/explore">IP News</a>
+	<a href="https://www.wipo.int/en/web/awards">WIPO Awards</a>
+	<a href="https://www.wipo.int/en/web/business">Business</a>
+	<a href="https://www.wipo.int/en/web/universities">Universities</a>
+	<a href="https://www.wipo.int/en/web/traditional-knowledge/engagement">Indigenous Peoples</a>
+	<a href="https://www.wipo.int/en/web/judiciaries">Judiciaries</a>
+	<a href="https://www.wipo.int/en/web/youth-engagement">Youth</a>
+	<a href="https://www.wipo.int/en/web/examiners">Examiners</a>
+	<a href="https://www.wipo.int/en/web/innovation-ecosystems">Innovation Ecosystems</a>
+	<a href="https://www.wipo.int/en/web/economics">Economics</a>
+	<a href="https://www.wipo.int/en/web/ip-financing">Finance</a>
+	<a href="https://www.wipo.int/en/web/intangible-assets">Intangible Assets</a>
+	<a href="https://www.wipo.int/en/web/women">Gender Equality</a>
+	<a href="https://www.wipo.int/en/web/global-health">Global Health</a>
+	<a href="https://www.wipo.int/en/web/climate-change">Climate Change</a>
+	<a href="https://www.wipo.int/en/web/competition-policy">Competition Policy</a>
+	<a href="https://www.wipo.int/en/web/sdgs">Sustainable Development Goals</a>
+	<a href="https://www.wipo.int/en/web/traditional-knowledge">Genetic Resources, Traditional Knowledge and Traditional Cultural Expressions</a>
+	<a href="https://www.wipo.int/en/web/frontier-technologies">Frontier Technologies</a>
+	<a href="https://www.wipo.int/en/web/mobile-apps">Mobile Applications</a>
+	<a href="https://www.wipo.int/en/web/sports">Sports</a>
+	<a href="https://www.wipo.int/en/web/tourism">Tourism</a>
+	<a href="https://www.wipo.int/en/web/music">Music</a>
+	<a href="https://www.wipo.int/en/web/fashion">Fashion</a>
+	<a href="https://www.wipo.int/en/web/patentscope">PATENTSCOPE</a>
+	<a href="https://www.wipo.int/en/web/patent-analytics">Patent Analytics</a>
+	<a href="https://www.wipo.int/en/web/classification-ipc">International Patent Classification</a>
+	<a href="https://www.wipo.int/en/web/ardi">ARDI – Research for Innovation</a>
+	<a href="https://www.wipo.int/en/web/aspi">ASPI – Specialized Patent Information</a>
+	<a href="https://www.wipo.int/en/web/global-brand-database">Global Brand Database</a>
+	<a href="https://www3.wipo.int/madrid/monitor/en/">Madrid Monitor</a>
+	<a href="https://6ter.wipo.int/struct-search">Article 6ter Express Database</a>
+	<a href="https://www.wipo.int/en/web/classification-nice">Nice Classification</a>
+	<a href="https://www.wipo.int/en/web/classification-vienna">Vienna Classification</a>
+	<a href="https://www.wipo.int/en/web/global-design-database">Global Design Database</a>
+	<a href="https://www.wipo.int/haguebulletin/">International Designs Bulletin</a>
+	<a href="https://www3.wipo.int/designdb/hague/en/index.jsp">Hague Express Database</a>
+	<a href="https://www.wipo.int/en/web/classification-locarno">Locarno Classification</a>
+	<a href="https://lisbon-express.wipo.int/">Lisbon Express Database</a>
+	<a href="https://branddb.wipo.int/en/IPO-LISBON/quicksearch?by=brandName&v=&start=0&_=1676544734688">Global Brand Database for GIs</a>
+	<a href="https://pluto.upov.int/">PLUTO Plant Variety Database</a>
+	<a href="https://www.upov.int/genie/">GENIE Database</a>
+	<a href="https://www.wipo.int/en/web/treaties">WIPO-Administered Treaties</a>
+	<a href="https://www.wipo.int/en/web/wipolex">WIPO Lex - IP Laws, Treaties & Judgments</a>
+	<a href="https://www.wipo.int/en/web/standards">WIPO Standards</a>
+	<a href="https://www.wipo.int/en/web/ip-statistics">IP Statistics</a>
+	<a href="https://www.wipo.int/en/web/wipo-pearl">WIPO Pearl (Terminology)</a>
+	<a href="https://www.wipo.int/publications/en/">WIPO Publications</a>
+	<a href="https://www.wipo.int/directory/en/">Country IP Profiles</a>
+	<a href="https://www.wipo.int/en/web/wipo-knowledge-center">WIPO Knowledge Center</a>
+	<a href="https://www.wipo.int/en/web/intangible-assets/measuring-investments#highlights">World Intangible Investment Highlights</a>
+	<a href="https://www.wipo.int/en/web/technology-trends">WIPO Technology Trends</a>
+	<a href="https://www.wipo.int/en/web/global-innovation-index">Global Innovation Index</a>
+	<a href="https://www.wipo.int/en/web/world-ip-report">World Intellectual Property Report</a>
+	<a href="https://www.wipo.int/en/web/pct-system">PCT – The International Patent System</a>
+	<a href="https://pct.wipo.int/ePCT/">ePCT</a>
+	<a href="https://www.wipo.int/en/web/budapest-system">Budapest – The International Microorganism Deposit System</a>
+	<a href="https://www.wipo.int/en/web/madrid-system">Madrid – The International Trademark System</a>
+	<a href="https://madrid.wipo.int/">eMadrid</a>
+	<a href="https://www.wipo.int/en/web/article-6ter">Article 6ter (armorial bearings, flags, state emblems)</a>
+	<a href="https://www.wipo.int/en/web/hague-system">Hague – The International Design System</a>
+	<a href="https://hague.wipo.int/">eHague</a>
+	<a href="https://www.wipo.int/en/web/lisbon-system">Lisbon – The International System of Appellations of Origin and Geographical Indications</a>
+	<a href="https://lisbon-system.wipo.int/">eLisbon</a>
+	<a href="https://www3.wipo.int/upovprisma">UPOV PRISMA</a>
+	<a href="https://www.wipo.int/amc/en/#mediation">Mediation</a>
+	<a href="https://www.wipo.int/amc/en/#arbitration">Arbitration</a>
+	<a href="https://www.wipo.int/amc/en/#expert-determination">Expert Determination</a>
+	<a href="https://www.wipo.int/amc/en/domains/">Domain Name Disputes</a>
+	<a href="https://www.wipo.int/en/web/case">Centralized Access to Search and Examination (CASE)</a>
+	<a href="https://www.wipo.int/en/web/das">Digital Access Service (DAS)</a>
+	<a href="https://www.wipo.int/en/web/wipo-pay">WIPO Pay</a>
+	<a href="https://www.wipo.int/en/web/current-account-at-wipo">Current Account at WIPO</a>
+	<a href="https://www.wipo.int/en/web/assemblies">WIPO Assemblies</a>
+	<a href="https://www.wipo.int/en/web/decision-making-and-negotiating-bodies#bodies">Standing Committees</a>
+	<a href="https://www.wipo.int/meetings/en/">Calendar of Meetings</a>
+	<a href="https://webcast.wipo.int/">WIPO Webcast</a>
+	<a href="https://www.wipo.int/meetings/en/archive.jsp">WIPO Official Documents</a>
+	<a href="https://www.wipo.int/ip-development/en/agenda/">Development Agenda</a>
+	<a href="https://www.wipo.int/cooperation/en/technical_assistance/">Technical Assistance</a>
+	<a href="https://www.wipo.int/en/web/wipo-academy/programs/ip-training-institutions">IP Training Institutions</a>
+	<a href="https://www.wipo.int/en/web/ip-acceleration">Build Back Fund</a>
+	<a href="https://www.wipo.int/en/web/national-ip-strategies">National IP Strategies</a>
+	<a href="https://www.wipo.int/ip-development/en/policy_legislative_assistance/">Policy & Legislative Advice</a>
+	<a href="https://www.wipo.int/cooperation/en/south_south/">Cooperation Hub</a>
+	<a href="https://www.wipo.int/en/web/tisc">Technology and Innovation Support Centers (TISC)</a>
+	<a href="https://www.wipo.int/en/web/technology-transfer">Technology Transfer</a>
+	<a href="https://www.wipo.int/en/web/inventor-assistance-program">Inventor Assistance Program</a>
+	<a href="https://www3.wipo.int/wipogreen/en/">WIPO GREEN</a>
+	<a href="https://www.wipo.int/pat-informed/en/">WIPO's Pat-INFORMED</a>
+	<a href="https://www.accessiblebooksconsortium.org/en/web/abc/portal/index">Accessible Books Consortium</a>
+	<a href="https://www.wipo.int/en/web/wipo-for-creators">WIPO for Creators</a>
+	<a href="https://www.wipo.int/en/web/ai-tools-services/wipo-translate">WIPO Translate</a>
+	<a href="https://www.wipo.int/en/web/ai-tools-services/speech-to-text">Speech-to-Text</a>
+	<a href="https://www.wipo.int/en/web/ai-tools-services/classification-assistant">Classification Assistant</a>
+	<a href="https://www.wipo.int/members/en/">Member States</a>
+	<a href="https://www.wipo.int/about-wipo/en/observers/">Observers</a>
+	<a href="https://www.wipo.int/about-wipo/en/dg_tang/">Director General</a>
+	<a href="https://www.wipo.int/about-wipo/en/activities_by_unit/">Activities by Unit</a>
+	<a href="https://www.wipo.int/about-wipo/en/offices/">External Offices</a>
+	<a href="https://www.wipo.int/en/web/working-at-wipo#staff">Staff Positions</a>
+	<a href="https://www.wipo.int/en/web/working-at-wipo#affiliated">Affiliated Personnel Positions</a>
+	<a href="https://www.wipo.int/en/web/procurement">Procurement</a>
+	<a href="https://www.wipo.int/about-wipo/en/budget/">Results & Budget</a>
+	<a href="https://www.wipo.int/about-wipo/en/budget/financial/">Financial Reporting</a>
+	<a href="https://www.wipo.int/about-wipo/en/oversight/">Oversight</a>
+</div>
+
+  <wipo-navbar class="notranslate" appId="app-0148" pageKey="WIPO Lex"
+    applicationname="WIPO Lex" language="en"  languageOptions='[
+        {"code":"ar", "link": "/wipolex/ar/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1"},
+        {"code":"en", "link": "/wipolex/en/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1"},
+        {"code":"es", "link": "/wipolex/es/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1"},
+        {"code":"fr", "link": "/wipolex/fr/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1"},
+        {"code":"ru", "link": "/wipolex/ru/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1"},
+        {"code":"zh", "link": "/wipolex/zh/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1"}]' 
+    helpOptions='[
+        {"code":"contact", "link":"https://www3.wipo.int/contact/en/area.jsp?area=wipolex", "sameTab":false},
+        {"code":"termsOfUse", "link":"https://www.wipo.int/en/web/wipolex/terms-of-use", "sameTab":false},
+        {"code":"privacyPolicy", "link":"https://www.wipo.int/tools/en/privacy_policy-ipportal.html", "sameTab":false}]' style="background: black; height: 48px; width: 100%;">
+    <div style="background: black; height: 48px; width: 100%;"></div>
+    <div style="display:none;">
+      <a class="notranslate" href="/wipolex/ar/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1">Arabic</a>
+      <a class="notranslate" href="/wipolex/en/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1">English</a>
+      <a class="notranslate" href="/wipolex/es/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1">Spanish</a>
+      <a class="notranslate" href="/wipolex/fr/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1">French</a>
+      <a class="notranslate" href="/wipolex/ru/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1">Russian</a>
+      <a class="notranslate" href="/wipolex/zh/treaties/ShowResults?search_what&#x3D;C&amp;treaty_id&#x3D;1">Chinese</a>
+    </div>
+  </wipo-navbar>
+
+  <wu-sticky-bar id="sticky-bar"> <!-- sticky="true" -->
+    <a href="/wipolex/en/main/legislation" slot="links" class="notranslate" >Laws</a>
+    <a href="/wipolex/en/main/treaties" slot="links" class="notranslate" >Treaties</a>
+    <a href="/wipolex/en/main/judgments" slot="links" class="notranslate" >Judgments</a>
+    <a href="/wipolex/en/members" slot="links" class="notranslate" >Browse By Jurisdiction</a>
+    
+    
+  </wu-sticky-bar>
+
+  <wu-page-header no-margin>
+  <h1 slot="title">WIPO-Administered Treaties</h1>
+  <wu-button slot="actions" id="export-btn" onclick="exportShowResults()">Export to Excel</wu-button>
+</wu-page-header>
+
+<a id="exportResults" style="display: none;" href="/wipolex/en/treaties/export/show-results"></a>
+
+<wu-view-panel disabled style="margin: 13px 0 16px 0;display:block">
+  <wu-slot slot="section-folded" >
+    <wu-field multiline-display>
+      <span slot="value">
+          <span>Contracting Parties/Signatories</span>
+
+
+
+          <span class="facet-separator">
+              <strong> WIPO Convention</strong>
+                (Total Members: 194)
+          </span>
+
+
+
+
+      </span>
+    </wu-field>
+  </wu-slot>
+</wu-view-panel>
+
+  <wu-step>
+    <div slot="content-top">
+      <table class="datatable datatable-striped datatable-wipolex order-column" id="wipoTreatiesTable">
+        <thead>
+          <tr>
+                <th class="sortable-column">
+                  Member
+                </th>
+                <th class="sortable-column">
+                  Signature
+                </th>
+                <th class="sortable-column">
+                  Instrument
+                </th>
+                <th class="sortable-column">
+                  In Force
+                </th>
+                <th class="sortable-column">
+                  Details
+                </th>
+          </tr>
+        </thead>
+        <tbody>
+              <tr>
+                <td><div>Afghanistan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1126569600000">
+                    <div>Accession: September 13, 2005</div>
+                </td>
+                <td data-sort="1134432000000">
+                    <div>December 13, 2005</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Albania</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="702000000000">
+                    <div>Accession: March 31, 1992</div>
+                </td>
+                <td data-sort="709862400000">
+                    <div>June 30, 1992</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Algeria</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="159062400000">
+                    <div>Ratification: January 16, 1975</div>
+                </td>
+                <td data-sort="166838400000">
+                    <div>April 16, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/DZ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Andorra</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="775353600000">
+                    <div>Accession: July 28, 1994</div>
+                </td>
+                <td data-sort="783302400000">
+                    <div>October 28, 1994</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Angola</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="474595200000">
+                    <div>Accession: January 15, 1985</div>
+                </td>
+                <td data-sort="482371200000">
+                    <div>April 15, 1985</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Antigua and Barbuda</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="945388800000">
+                    <div>Accession: December 17, 1999</div>
+                </td>
+                <td data-sort="953251200000">
+                    <div>March 17, 2000</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Argentina</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="331862400000">
+                    <div>Accession: July 8, 1980</div>
+                </td>
+                <td data-sort="339811200000">
+                    <div>October 8, 1980</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/AR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Armenia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="727660800000">
+                    <div>Accession: January 22, 1993</div>
+                </td>
+                <td data-sort="735436800000">
+                    <div>April 22, 1993</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Australia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="74304000000">
+                    <div>Accession: May 10, 1972</div>
+                </td>
+                <td data-sort="82252800000">
+                    <div>August 10, 1972</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/AU/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Austria</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="105926400000">
+                    <div>Ratification: May 11, 1973</div>
+                </td>
+                <td data-sort="113875200000">
+                    <div>August 11, 1973</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Azerbaijan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="811987200000">
+                    <div>Accession: September 25, 1995</div>
+                </td>
+                <td data-sort="819849600000">
+                    <div>December 25, 1995</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Bahamas</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="213235200000">
+                    <div>Accession: October 4, 1976</div>
+                </td>
+                <td data-sort="221184000000">
+                    <div>January 4, 1977</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Bahrain</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="795830400000">
+                    <div>Accession: March 22, 1995</div>
+                </td>
+                <td data-sort="803779200000">
+                    <div>June 22, 1995</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Bangladesh</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="476928000000">
+                    <div>Accession: February 11, 1985</div>
+                </td>
+                <td data-sort="484617600000">
+                    <div>May 11, 1985</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Barbados</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="299980800000">
+                    <div>Accession: July 5, 1979</div>
+                </td>
+                <td data-sort="307929600000">
+                    <div>October 5, 1979</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Belarus</div></td>
+                 <td data-sort="-67132800000">
+                    <div>November 16, 1967</div>
+                </td>
+                 <td data-sort="-24883200000">
+                    <div>Ratification: March 19, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/BY/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Belgium</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="152409600000">
+                    <div>Ratification: October 31, 1974</div>
+                </td>
+                <td data-sort="160358400000">
+                    <div>January 31, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/BE/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Belize</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="953251200000">
+                    <div>Accession: March 17, 2000</div>
+                </td>
+                <td data-sort="961200000000">
+                    <div>June 17, 2000</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Benin</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="155779200000">
+                    <div>Accession: December 9, 1974</div>
+                </td>
+                <td data-sort="163555200000">
+                    <div>March 9, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/BJ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Bhutan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="756000000000">
+                    <div>Accession: December 16, 1993</div>
+                </td>
+                <td data-sort="763776000000">
+                    <div>March 16, 1994</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Bolivia (Plurinational State of)</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="734054400000">
+                    <div>Accession: April 6, 1993</div>
+                </td>
+                <td data-sort="741916800000">
+                    <div>July 6, 1993</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Bosnia and Herzegovina</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="738979200000">
+                    <div>Declaration of Continued Application: June 2, 1993</div>
+                </td>
+                <td data-sort="699408000000">
+                    <div>March 1, 1992</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/BA/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Botswana</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="884822400000">
+                    <div>Accession: January 15, 1998</div>
+                </td>
+                <td data-sort="892598400000">
+                    <div>April 15, 1998</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Brazil</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="156729600000">
+                    <div>Accession: December 20, 1974</div>
+                </td>
+                <td data-sort="164505600000">
+                    <div>March 20, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/BR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Brunei Darussalam</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="759110400000">
+                    <div>Accession: January 21, 1994</div>
+                </td>
+                <td data-sort="766886400000">
+                    <div>April 21, 1994</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Bulgaria</div></td>
+                 <td data-sort="-62294400000">
+                    <div>January 11, 1968</div>
+                </td>
+                 <td data-sort="4233600000">
+                    <div>Ratification: February 19, 1970</div>
+                </td>
+                <td data-sort="11923200000">
+                    <div>May 19, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/BG/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Burkina Faso</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="170035200000">
+                    <div>Accession: May 23, 1975</div>
+                </td>
+                <td data-sort="177984000000">
+                    <div>August 23, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/BF/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Burundi</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="220752000000">
+                    <div>Accession: December 30, 1976</div>
+                </td>
+                <td data-sort="228528000000">
+                    <div>March 30, 1977</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Cabo Verde</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="860371200000">
+                    <div>Accession: April 7, 1997</div>
+                </td>
+                <td data-sort="868233600000">
+                    <div>July 7, 1997</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Cambodia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="798768000000">
+                    <div>Accession: April 25, 1995</div>
+                </td>
+                <td data-sort="806630400000">
+                    <div>July 25, 1995</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Cameroon</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="113184000000">
+                    <div>Ratification: August 3, 1973</div>
+                </td>
+                <td data-sort="121132800000">
+                    <div>November 3, 1973</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CM/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Canada</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="7257600000">
+                    <div>Accession: March 26, 1970</div>
+                </td>
+                <td data-sort="15206400000">
+                    <div>June 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Central African Republic</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="264729600000">
+                    <div>Ratification: May 23, 1978</div>
+                </td>
+                <td data-sort="272678400000">
+                    <div>August 23, 1978</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CF/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Chad</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="15206400000">
+                    <div>Accession: June 26, 1970</div>
+                </td>
+                <td data-sort="23155200000">
+                    <div>September 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Chile</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="164937600000">
+                    <div>Accession: March 25, 1975</div>
+                </td>
+                <td data-sort="172886400000">
+                    <div>June 25, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CL/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>China</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="320889600000">
+                    <div>Accession: March 3, 1980</div>
+                </td>
+                <td data-sort="328838400000">
+                    <div>June 3, 1980</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Colombia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="318470400000">
+                    <div>Accession: February 4, 1980</div>
+                </td>
+                <td data-sort="326246400000">
+                    <div>May 4, 1980</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Comoros</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1104710400000">
+                    <div>Accession: January 3, 2005</div>
+                </td>
+                <td data-sort="1112486400000">
+                    <div>April 3, 2005</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Congo</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="178848000000">
+                    <div>Accession: September 2, 1975</div>
+                </td>
+                <td data-sort="186710400000">
+                    <div>December 2, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CG/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Cook Islands</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1469577600000">
+                    <div>Accession: July 27, 2016</div>
+                </td>
+                <td data-sort="1477526400000">
+                    <div>October 27, 2016</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Costa Rica</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="353030400000">
+                    <div>Accession: March 10, 1981</div>
+                </td>
+                <td data-sort="360979200000">
+                    <div>June 10, 1981</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Côte d&#x27;Ivoire</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="128908800000">
+                    <div>Ratification: February 1, 1974</div>
+                </td>
+                <td data-sort="136598400000">
+                    <div>May 1, 1974</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CI/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Croatia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="712281600000">
+                    <div>Declaration/Notification of Succession: July 28, 1992</div>
+                </td>
+                <td data-sort="686880000000">
+                    <div>October 8, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/HR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Cuba</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="157334400000">
+                    <div>Accession: December 27, 1974</div>
+                </td>
+                <td data-sort="165110400000">
+                    <div>March 27, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CU/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Cyprus</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="459648000000">
+                    <div>Accession: July 26, 1984</div>
+                </td>
+                <td data-sort="467596800000">
+                    <div>October 26, 1984</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CY/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Czech Republic</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="724636800000">
+                    <div>Declaration of Continued Application: December 18, 1992</div>
+                </td>
+                <td data-sort="725846400000">
+                    <div>January 1, 1993</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CZ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Democratic People&#x27;s Republic of Korea</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="137980800000">
+                    <div>Accession: May 17, 1974</div>
+                </td>
+                <td data-sort="145929600000">
+                    <div>August 17, 1974</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Democratic Republic of the Congo</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="152150400000">
+                    <div>Ratification: October 28, 1974</div>
+                </td>
+                <td data-sort="160099200000">
+                    <div>January 28, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/CD/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Denmark</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="2160000000">
+                    <div>Ratification: January 26, 1970</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Djibouti</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1013558400000">
+                    <div>Accession: February 13, 2002</div>
+                </td>
+                <td data-sort="1021248000000">
+                    <div>May 13, 2002</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Dominica</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="898819200000">
+                    <div>Accession: June 26, 1998</div>
+                </td>
+                <td data-sort="906768000000">
+                    <div>September 26, 1998</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Dominican Republic</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="954115200000">
+                    <div>Accession: March 27, 2000</div>
+                </td>
+                <td data-sort="962064000000">
+                    <div>June 27, 2000</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Ecuador</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="572486400000">
+                    <div>Ratification: February 22, 1988</div>
+                </td>
+                <td data-sort="580262400000">
+                    <div>May 22, 1988</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Egypt</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="159494400000">
+                    <div>Accession: January 21, 1975</div>
+                </td>
+                <td data-sort="167270400000">
+                    <div>April 21, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/EG/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>El Salvador</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="298512000000">
+                    <div>Accession: June 18, 1979</div>
+                </td>
+                <td data-sort="306460800000">
+                    <div>September 18, 1979</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Equatorial Guinea</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="859334400000">
+                    <div>Accession: March 26, 1997</div>
+                </td>
+                <td data-sort="867283200000">
+                    <div>June 26, 1997</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Eritrea</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="848448000000">
+                    <div>Accession: November 20, 1996</div>
+                </td>
+                <td data-sort="856396800000">
+                    <div>February 20, 1997</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Estonia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="752457600000">
+                    <div>Accession: November 5, 1993</div>
+                </td>
+                <td data-sort="760406400000">
+                    <div>February 5, 1994</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Eswatini</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="579916800000">
+                    <div>Accession: May 18, 1988</div>
+                </td>
+                <td data-sort="587865600000">
+                    <div>August 18, 1988</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/SZ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Ethiopia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="879897600000">
+                    <div>Accession: November 19, 1997</div>
+                </td>
+                <td data-sort="887846400000">
+                    <div>February 19, 1998</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Fiji</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="61257600000">
+                    <div>Accession: December 11, 1971</div>
+                </td>
+                <td data-sort="69120000000">
+                    <div>March 11, 1972</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Finland</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="13651200000">
+                    <div>Ratification: June 8, 1970</div>
+                </td>
+                <td data-sort="21600000000">
+                    <div>September 8, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>France</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="143337600000">
+                    <div>Ratification: July 18, 1974</div>
+                </td>
+                <td data-sort="151286400000">
+                    <div>October 18, 1974</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/FR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Gabon</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="163296000000">
+                    <div>Ratification: March 6, 1975</div>
+                </td>
+                <td data-sort="171244800000">
+                    <div>June 6, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/GA/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Gambia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="337392000000">
+                    <div>Accession: September 10, 1980</div>
+                </td>
+                <td data-sort="345254400000">
+                    <div>December 10, 1980</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Georgia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="758851200000">
+                    <div>Declaration of Continued Application: January 18, 1994</div>
+                </td>
+                <td data-sort="693619200000">
+                    <div>December 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/GE/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Germany</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="14601600000">
+                    <div>Ratification: June 19, 1970</div>
+                </td>
+                <td data-sort="22550400000">
+                    <div>September 19, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/DE/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Ghana</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="195436800000">
+                    <div>Accession: March 12, 1976</div>
+                </td>
+                <td data-sort="203385600000">
+                    <div>June 12, 1976</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Greece</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="186883200000">
+                    <div>Ratification: December 4, 1975</div>
+                </td>
+                <td data-sort="194745600000">
+                    <div>March 4, 1976</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/GR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Grenada</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="898473600000">
+                    <div>Accession: June 22, 1998</div>
+                </td>
+                <td data-sort="906422400000">
+                    <div>September 22, 1998</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Guatemala</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="412819200000">
+                    <div>Accession: January 31, 1983</div>
+                </td>
+                <td data-sort="420508800000">
+                    <div>April 30, 1983</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Guinea</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="334972800000">
+                    <div>Accession: August 13, 1980</div>
+                </td>
+                <td data-sort="342921600000">
+                    <div>November 13, 1980</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Guinea-Bissau</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="575510400000">
+                    <div>Accession: March 28, 1988</div>
+                </td>
+                <td data-sort="583459200000">
+                    <div>June 28, 1988</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Guyana</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="775094400000">
+                    <div>Accession: July 25, 1994</div>
+                </td>
+                <td data-sort="783043200000">
+                    <div>October 25, 1994</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Haiti</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="428630400000">
+                    <div>Accession: August 2, 1983</div>
+                </td>
+                <td data-sort="436579200000">
+                    <div>November 2, 1983</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Holy See</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="159408000000">
+                    <div>Ratification: January 20, 1975</div>
+                </td>
+                <td data-sort="167184000000">
+                    <div>April 20, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/VA/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Honduras</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="429753600000">
+                    <div>Accession: August 15, 1983</div>
+                </td>
+                <td data-sort="437702400000">
+                    <div>November 15, 1983</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Hungary</div></td>
+                 <td data-sort="-62208000000">
+                    <div>January 12, 1968</div>
+                </td>
+                 <td data-sort="-1209600000">
+                    <div>Ratification: December 18, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/HU/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Iceland</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="519004800000">
+                    <div>Ratification: June 13, 1986</div>
+                </td>
+                <td data-sort="526953600000">
+                    <div>September 13, 1986</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>India</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="160358400000">
+                    <div>Accession: January 31, 1975</div>
+                </td>
+                <td data-sort="168134400000">
+                    <div>May 1, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/IN/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Indonesia</div></td>
+                 <td data-sort="-62208000000">
+                    <div>January 12, 1968</div>
+                </td>
+                 <td data-sort="306460800000">
+                    <div>Ratification: September 18, 1979</div>
+                </td>
+                <td data-sort="314323200000">
+                    <div>December 18, 1979</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/ID/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Iran (Islamic Republic of)</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="1008288000000">
+                    <div>Ratification: December 14, 2001</div>
+                </td>
+                <td data-sort="1016064000000">
+                    <div>March 14, 2002</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Iraq</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="183081600000">
+                    <div>Accession: October 21, 1975</div>
+                </td>
+                <td data-sort="191030400000">
+                    <div>January 21, 1976</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Ireland</div></td>
+                 <td data-sort="-62208000000">
+                    <div>January 12, 1968</div>
+                </td>
+                 <td data-sort="">
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/IE/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Israel</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="-13392000000">
+                    <div>Ratification: July 30, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Italy</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="222566400000">
+                    <div>Ratification: January 20, 1977</div>
+                </td>
+                <td data-sort="230342400000">
+                    <div>April 20, 1977</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/IT/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Jamaica</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="275529600000">
+                    <div>Accession: September 25, 1978</div>
+                </td>
+                <td data-sort="283392000000">
+                    <div>December 25, 1978</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Japan</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="159408000000">
+                    <div>Ratification: January 20, 1975</div>
+                </td>
+                <td data-sort="167184000000">
+                    <div>April 20, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/JP/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Jordan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="71884800000">
+                    <div>Accession: April 12, 1972</div>
+                </td>
+                <td data-sort="79747200000">
+                    <div>July 12, 1972</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Kazakhstan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="729820800000">
+                    <div>Declaration of Continued Application: February 16, 1993</div>
+                </td>
+                <td data-sort="693619200000">
+                    <div>December 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/KZ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Kenya</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="47520000000">
+                    <div>Ratification: July 5, 1971</div>
+                </td>
+                <td data-sort="55468800000">
+                    <div>October 5, 1971</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Kiribati</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1366329600000">
+                    <div>Accession: April 19, 2013</div>
+                </td>
+                <td data-sort="1374192000000">
+                    <div>July 19, 2013</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Kuwait</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="892512000000">
+                    <div>Accession: April 14, 1998</div>
+                </td>
+                <td data-sort="900374400000">
+                    <div>July 14, 1998</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Kyrgyzstan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="761184000000">
+                    <div>Declaration of Continued Application: February 14, 1994</div>
+                </td>
+                <td data-sort="693619200000">
+                    <div>December 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/KG/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Lao People&#x27;s Democratic Republic</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="782352000000">
+                    <div>Accession: October 17, 1994</div>
+                </td>
+                <td data-sort="790300800000">
+                    <div>January 17, 1995</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Latvia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="719625600000">
+                    <div>Accession: October 21, 1992</div>
+                </td>
+                <td data-sort="727574400000">
+                    <div>January 21, 1993</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Lebanon</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="528422400000">
+                    <div>Accession: September 30, 1986</div>
+                </td>
+                <td data-sort="536284800000">
+                    <div>December 30, 1986</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Lesotho</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="524707200000">
+                    <div>Accession: August 18, 1986</div>
+                </td>
+                <td data-sort="532656000000">
+                    <div>November 18, 1986</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Liberia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="597542400000">
+                    <div>Accession: December 8, 1988</div>
+                </td>
+                <td data-sort="605318400000">
+                    <div>March 8, 1989</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Libya</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="204768000000">
+                    <div>Accession: June 28, 1976</div>
+                </td>
+                <td data-sort="212716800000">
+                    <div>September 28, 1976</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/LY/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Liechtenstein</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="67478400000">
+                    <div>Ratification: February 21, 1972</div>
+                </td>
+                <td data-sort="75254400000">
+                    <div>May 21, 1972</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Lithuania</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="696729600000">
+                    <div>Accession: January 30, 1992</div>
+                </td>
+                <td data-sort="704592000000">
+                    <div>April 30, 1992</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Luxembourg</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="156643200000">
+                    <div>Ratification: December 19, 1974</div>
+                </td>
+                <td data-sort="164419200000">
+                    <div>March 19, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/LU/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Madagascar</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="622425600000">
+                    <div>Ratification: September 22, 1989</div>
+                </td>
+                <td data-sort="630288000000">
+                    <div>December 22, 1989</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MG/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Malawi</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="5961600000">
+                    <div>Accession: March 11, 1970</div>
+                </td>
+                <td data-sort="13910400000">
+                    <div>June 11, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Malaysia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="591667200000">
+                    <div>Accession: October 1, 1988</div>
+                </td>
+                <td data-sort="599616000000">
+                    <div>January 1, 1989</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Maldives</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1076544000000">
+                    <div>Accession: February 12, 2004</div>
+                </td>
+                <td data-sort="1084320000000">
+                    <div>May 12, 2004</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Mali</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="390182400000">
+                    <div>Accession: May 14, 1982</div>
+                </td>
+                <td data-sort="398131200000">
+                    <div>August 14, 1982</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Malta</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="242438400000">
+                    <div>Accession: September 7, 1977</div>
+                </td>
+                <td data-sort="250300800000">
+                    <div>December 7, 1977</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MT/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Marshall Islands</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1505088000000">
+                    <div>Accession: September 11, 2017</div>
+                </td>
+                <td data-sort="1512950400000">
+                    <div>December 11, 2017</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Mauritania</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="203817600000">
+                    <div>Accession: June 17, 1976</div>
+                </td>
+                <td data-sort="211766400000">
+                    <div>September 17, 1976</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Mauritius</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="204163200000">
+                    <div>Accession: June 21, 1976</div>
+                </td>
+                <td data-sort="212112000000">
+                    <div>September 21, 1976</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Mexico</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="163987200000">
+                    <div>Ratification: March 14, 1975</div>
+                </td>
+                <td data-sort="171936000000">
+                    <div>June 14, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MX/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Micronesia (Federated States of)</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1750291200000">
+                    <div>Accession: June 19, 2025</div>
+                </td>
+                <td data-sort="1758240000000">
+                    <div>September 19, 2025</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Monaco</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="155260800000">
+                    <div>Ratification: December 3, 1974</div>
+                </td>
+                <td data-sort="163036800000">
+                    <div>March 3, 1975</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Mongolia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="281059200000">
+                    <div>Accession: November 28, 1978</div>
+                </td>
+                <td data-sort="289008000000">
+                    <div>February 28, 1979</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MN/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Montenegro</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1165190400000">
+                    <div>Declaration of Continued Application: December 4, 2006</div>
+                </td>
+                <td data-sort="1149292800000">
+                    <div>June 3, 2006</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/ME/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Morocco</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="41558400000">
+                    <div>Ratification: April 27, 1971</div>
+                </td>
+                <td data-sort="49420800000">
+                    <div>July 27, 1971</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MA/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Mozambique</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="843436800000">
+                    <div>Accession: September 23, 1996</div>
+                </td>
+                <td data-sort="851299200000">
+                    <div>December 23, 1996</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Myanmar</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="982195200000">
+                    <div>Accession: February 15, 2001</div>
+                </td>
+                <td data-sort="989884800000">
+                    <div>May 15, 2001</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Namibia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="685584000000">
+                    <div>Accession: September 23, 1991</div>
+                </td>
+                <td data-sort="693446400000">
+                    <div>December 23, 1991</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Nauru</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1581379200000">
+                    <div>Accession: February 11, 2020</div>
+                </td>
+                <td data-sort="1589155200000">
+                    <div>May 11, 2020</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Nepal</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="847065600000">
+                    <div>Accession: November 4, 1996</div>
+                </td>
+                <td data-sort="855014400000">
+                    <div>February 4, 1997</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Netherlands (Kingdom of the)</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="150508800000">
+                    <div>Ratification: October 9, 1974</div>
+                </td>
+                <td data-sort="158457600000">
+                    <div>January 9, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/NL/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>New Zealand</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="448070400000">
+                    <div>Accession: March 14, 1984</div>
+                </td>
+                <td data-sort="456537600000">
+                    <div>June 20, 1984</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/NZ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Nicaragua</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="476409600000">
+                    <div>Accession: February 5, 1985</div>
+                </td>
+                <td data-sort="484099200000">
+                    <div>May 5, 1985</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Niger</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="161913600000">
+                    <div>Ratification: February 18, 1975</div>
+                </td>
+                <td data-sort="169603200000">
+                    <div>May 18, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/NE/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Nigeria</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="789609600000">
+                    <div>Accession: January 9, 1995</div>
+                </td>
+                <td data-sort="797385600000">
+                    <div>April 9, 1995</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Niue</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1412726400000">
+                    <div>Accession: October 8, 2014</div>
+                </td>
+                <td data-sort="1420675200000">
+                    <div>January 8, 2015</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>North Macedonia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="743385600000">
+                    <div>Declaration/Notification of Succession: July 23, 1993</div>
+                </td>
+                <td data-sort="684288000000">
+                    <div>September 8, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MK/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Norway</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="131932800000">
+                    <div>Ratification: March 8, 1974</div>
+                </td>
+                <td data-sort="139881600000">
+                    <div>June 8, 1974</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/NO/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Oman</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="848361600000">
+                    <div>Accession: November 19, 1996</div>
+                </td>
+                <td data-sort="856310400000">
+                    <div>February 19, 1997</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Pakistan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="213408000000">
+                    <div>Accession: October 6, 1976</div>
+                </td>
+                <td data-sort="221356800000">
+                    <div>January 6, 1977</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Panama</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="424656000000">
+                    <div>Accession: June 17, 1983</div>
+                </td>
+                <td data-sort="432604800000">
+                    <div>September 17, 1983</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Papua New Guinea</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="860630400000">
+                    <div>Accession: April 10, 1997</div>
+                </td>
+                <td data-sort="868492800000">
+                    <div>July 10, 1997</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Paraguay</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="543196800000">
+                    <div>Accession: March 20, 1987</div>
+                </td>
+                <td data-sort="551145600000">
+                    <div>June 20, 1987</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Peru</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="328924800000">
+                    <div>Ratification: June 4, 1980</div>
+                </td>
+                <td data-sort="336873600000">
+                    <div>September 4, 1980</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Philippines</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="324518400000">
+                    <div>Ratification: April 14, 1980</div>
+                </td>
+                <td data-sort="332380800000">
+                    <div>July 14, 1980</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Poland</div></td>
+                 <td data-sort="-62380800000">
+                    <div>January 10, 1968</div>
+                </td>
+                 <td data-sort="156988800000">
+                    <div>Ratification: December 23, 1974</div>
+                </td>
+                <td data-sort="164764800000">
+                    <div>March 23, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/PL/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Portugal</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="160012800000">
+                    <div>Ratification: January 27, 1975</div>
+                </td>
+                <td data-sort="167788800000">
+                    <div>April 27, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/PT/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Qatar</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="202608000000">
+                    <div>Accession: June 3, 1976</div>
+                </td>
+                <td data-sort="210556800000">
+                    <div>September 3, 1976</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Republic of Korea</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="281318400000">
+                    <div>Accession: December 1, 1978</div>
+                </td>
+                <td data-sort="289094400000">
+                    <div>March 1, 1979</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Republic of Moldova</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="739065600000">
+                    <div>Declaration of Continued Application: June 3, 1993</div>
+                </td>
+                <td data-sort="693619200000">
+                    <div>December 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/MD/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Romania</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="-26524800000">
+                    <div>Ratification: February 28, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/RO/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Russian Federation</div></td>
+                 <td data-sort="-70156800000">
+                    <div>October 12, 1967</div>
+                </td>
+                 <td data-sort="-33955200000">
+                    <div>Ratification: December 4, 1968</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/RU/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Rwanda</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="436665600000">
+                    <div>Accession: November 3, 1983</div>
+                </td>
+                <td data-sort="444614400000">
+                    <div>February 3, 1984</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Saint Kitts and Nevis</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="808531200000">
+                    <div>Accession: August 16, 1995</div>
+                </td>
+                <td data-sort="816480000000">
+                    <div>November 16, 1995</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Saint Lucia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="737942400000">
+                    <div>Accession: May 21, 1993</div>
+                </td>
+                <td data-sort="745891200000">
+                    <div>August 21, 1993</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Saint Vincent and the Grenadines</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="801705600000">
+                    <div>Accession: May 29, 1995</div>
+                </td>
+                <td data-sort="809654400000">
+                    <div>August 29, 1995</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Samoa</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="868579200000">
+                    <div>Accession: July 11, 1997</div>
+                </td>
+                <td data-sort="876528000000">
+                    <div>October 11, 1997</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/WS/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>San Marino</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="669945600000">
+                    <div>Accession: March 26, 1991</div>
+                </td>
+                <td data-sort="677894400000">
+                    <div>June 26, 1991</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Sao Tome and Principe</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="887241600000">
+                    <div>Accession: February 12, 1998</div>
+                </td>
+                <td data-sort="894931200000">
+                    <div>May 12, 1998</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Saudi Arabia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="383184000000">
+                    <div>Accession: February 22, 1982</div>
+                </td>
+                <td data-sort="390873600000">
+                    <div>May 22, 1982</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Senegal</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="-40521600000">
+                    <div>Ratification: September 19, 1968</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Serbia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1158624000000">
+                    <div>Declaration of Continued Application: September 19, 2006</div>
+                </td>
+                <td data-sort="704332800000">
+                    <div>April 27, 1992</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/RS/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Seychelles</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="945302400000">
+                    <div>Accession: December 16, 1999</div>
+                </td>
+                <td data-sort="953164800000">
+                    <div>March 16, 2000</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Sierra Leone</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="509068800000">
+                    <div>Accession: February 18, 1986</div>
+                </td>
+                <td data-sort="516758400000">
+                    <div>May 18, 1986</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Singapore</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="652924800000">
+                    <div>Accession: September 10, 1990</div>
+                </td>
+                <td data-sort="660787200000">
+                    <div>December 10, 1990</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Slovakia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="725673600000">
+                    <div>Declaration of Continued Application: December 30, 1992</div>
+                </td>
+                <td data-sort="725846400000">
+                    <div>January 1, 1993</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/SK/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Slovenia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="708307200000">
+                    <div>Declaration of Continued Application: June 12, 1992</div>
+                </td>
+                <td data-sort="677808000000">
+                    <div>June 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/SI/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Solomon Islands</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1554336000000">
+                    <div>Accession: April 4, 2019</div>
+                </td>
+                <td data-sort="1562198400000">
+                    <div>July 4, 2019</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Somalia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="398476800000">
+                    <div>Accession: August 18, 1982</div>
+                </td>
+                <td data-sort="406425600000">
+                    <div>November 18, 1982</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/SO/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>South Africa</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="156988800000">
+                    <div>Ratification: December 23, 1974</div>
+                </td>
+                <td data-sort="164764800000">
+                    <div>March 23, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/ZA/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Spain</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="-18057600000">
+                    <div>Ratification: June 6, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Sri Lanka</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="267148800000">
+                    <div>Accession: June 20, 1978</div>
+                </td>
+                <td data-sort="275097600000">
+                    <div>September 20, 1978</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Sudan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="122169600000">
+                    <div>Accession: November 15, 1973</div>
+                </td>
+                <td data-sort="130118400000">
+                    <div>February 15, 1974</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Suriname</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="216950400000">
+                    <div>Declaration of Continued Application: November 16, 1976</div>
+                </td>
+                <td data-sort="186105600000">
+                    <div>November 25, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/SR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Sweden</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="-12268800000">
+                    <div>Ratification: August 12, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Switzerland</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="2160000000">
+                    <div>Ratification: January 26, 1970</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Syrian Arab Republic</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1092787200000">
+                    <div>Accession: August 18, 2004</div>
+                </td>
+                <td data-sort="1100736000000">
+                    <div>November 18, 2004</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/SY/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Tajikistan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="761184000000">
+                    <div>Declaration of Continued Application: February 14, 1994</div>
+                </td>
+                <td data-sort="693619200000">
+                    <div>December 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/TJ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Thailand</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="622684800000">
+                    <div>Accession: September 25, 1989</div>
+                </td>
+                <td data-sort="630547200000">
+                    <div>December 25, 1989</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/TH/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Timor-Leste</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1505174400000">
+                    <div>Accession: September 12, 2017</div>
+                </td>
+                <td data-sort="1513036800000">
+                    <div>December 12, 2017</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Togo</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="160099200000">
+                    <div>Accession: January 28, 1975</div>
+                </td>
+                <td data-sort="167875200000">
+                    <div>April 28, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/TG/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Tonga</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="984528000000">
+                    <div>Accession: March 14, 2001</div>
+                </td>
+                <td data-sort="992476800000">
+                    <div>June 14, 2001</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Trinidad and Tobago</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="579744000000">
+                    <div>Accession: May 16, 1988</div>
+                </td>
+                <td data-sort="587692800000">
+                    <div>August 16, 1988</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Tunisia</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="178416000000">
+                    <div>Ratification: August 28, 1975</div>
+                </td>
+                <td data-sort="186364800000">
+                    <div>November 28, 1975</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/TN/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Türkiye</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="192931200000">
+                    <div>Accession: February 12, 1976</div>
+                </td>
+                <td data-sort="200707200000">
+                    <div>May 12, 1976</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/TR/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Turkmenistan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="794016000000">
+                    <div>Declaration of Continued Application: March 1, 1995</div>
+                </td>
+                <td data-sort="693619200000">
+                    <div>December 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/TM/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Tuvalu</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1393891200000">
+                    <div>Accession: March 4, 2014</div>
+                </td>
+                <td data-sort="1401840000000">
+                    <div>June 4, 2014</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Uganda</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="111801600000">
+                    <div>Accession: July 18, 1973</div>
+                </td>
+                <td data-sort="119750400000">
+                    <div>October 18, 1973</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Ukraine</div></td>
+                 <td data-sort="-67132800000">
+                    <div>November 16, 1967</div>
+                </td>
+                 <td data-sort="-27907200000">
+                    <div>Ratification: February 12, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/UA/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>United Arab Emirates</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="141264000000">
+                    <div>Accession: June 24, 1974</div>
+                </td>
+                <td data-sort="149212800000">
+                    <div>September 24, 1974</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>United Kingdom</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="-26697600000">
+                    <div>Ratification: February 26, 1969</div>
+                </td>
+                <td data-sort="9936000000">
+                    <div>April 26, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>United Republic of Tanzania</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="433728000000">
+                    <div>Accession: September 30, 1983</div>
+                </td>
+                <td data-sort="441590400000">
+                    <div>December 30, 1983</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>United States of America</div></td>
+                 <td data-sort="-77932800000">
+                    <div>July 14, 1967</div>
+                </td>
+                 <td data-sort="12441600000">
+                    <div>Ratification: May 25, 1970</div>
+                </td>
+                <td data-sort="20390400000">
+                    <div>August 25, 1970</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Uruguay</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="306720000000">
+                    <div>Accession: September 21, 1979</div>
+                </td>
+                <td data-sort="314582400000">
+                    <div>December 21, 1979</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Uzbekistan</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="736560000000">
+                    <div>Declaration of Continued Application: May 5, 1993</div>
+                </td>
+                <td data-sort="693619200000">
+                    <div>December 25, 1991</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/UZ/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Vanuatu</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="1322784000000">
+                    <div>Accession: December 2, 2011</div>
+                </td>
+                <td data-sort="1330646400000">
+                    <div>March 2, 2012</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Venezuela (Bolivarian Republic of)</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="462067200000">
+                    <div>Accession: August 23, 1984</div>
+                </td>
+                <td data-sort="470016000000">
+                    <div>November 23, 1984</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/VE/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Viet Nam</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="355449600000">
+                    <div>Declaration of Continued Application: April 7, 1981</div>
+                </td>
+                <td data-sort="205113600000">
+                    <div>July 2, 1976</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/VN/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Yemen</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="283737600000">
+                    <div>Accession: December 29, 1978</div>
+                </td>
+                <td data-sort="291513600000">
+                    <div>March 29, 1979</div>
+                </td>
+                <td>
+                    <a href="/wipolex/en/treaties/parties/remarks/YE/1">Details</a>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Zambia</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="224726400000">
+                    <div>Accession: February 14, 1977</div>
+                </td>
+                <td data-sort="232416000000">
+                    <div>May 14, 1977</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td><div>Zimbabwe</div></td>
+                 <td data-sort="">
+                </td>
+                 <td data-sort="370569600000">
+                    <div>Accession: September 29, 1981</div>
+                </td>
+                <td data-sort="378432000000">
+                    <div>December 29, 1981</div>
+                </td>
+                <td>
+                </td>
+              </tr>
+        </tbody>
+      </table>
+    </div>
+  </wu-step>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        const table = new DataTable("#wipoTreatiesTable", {
+            autoWidth: false,
+            info: false,
+            orderClasses: false,
+            paging: false,
+            fixedHeader: false,
+            responsive: true,
+            searching: false,
+            columns: [{orderable: true},{orderable: true},{orderable: true},{orderable: true},{orderable: true},],
+            order: []
+        });
+    });
+    </script><br/>
+
+  <footer>
+  </footer>
+</body>
+
+</html>

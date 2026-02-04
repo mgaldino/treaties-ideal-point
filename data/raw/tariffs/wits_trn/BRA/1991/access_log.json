@@ -1,0 +1,28 @@
+{
+  "access_date": "2026-02-02",
+  "base_url": "https://wits.worldbank.org/API/V1",
+  "countries_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/country/all",
+  "data_availability_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/dataavailability/country/076/year/1991",
+  "datatype": "reported",
+  "errors": [],
+  "partner_count": 2,
+  "product": "ALL",
+  "reporter_code": "076",
+  "reporter_iso3": "BRA",
+  "requests": [
+    {
+      "bytes": 845954,
+      "partner": "000",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/000/product/ALL/year/1991/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 10779,
+      "partner": "N82",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/N82/product/ALL/year/1991/datatype/reported?format=JSON"
+    }
+  ],
+  "source": "WITS/TRAINS API",
+  "year": 1991
+}

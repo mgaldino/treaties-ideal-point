@@ -1,0 +1,14 @@
+{
+  "access_date": "2026-02-02",
+  "base_url": "https://wits.worldbank.org/API/V1",
+  "countries_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/country/all",
+  "data_availability_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/dataavailability/country/682/year/1990",
+  "errors": [
+    "No partner codes found."
+  ],
+  "reporter_code": "682",
+  "reporter_iso3": "SAU",
+  "requests": [],
+  "source": "WITS/TRAINS API",
+  "year": 1990
+}

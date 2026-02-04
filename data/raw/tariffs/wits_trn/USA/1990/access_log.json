@@ -1,0 +1,21 @@
+{
+  "access_date": "2026-02-02",
+  "base_url": "https://wits.worldbank.org/API/V1",
+  "countries_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/country/all",
+  "datatype": "reported",
+  "errors": [],
+  "partner_count": 1,
+  "product": "ALL",
+  "reporter_code": "840",
+  "reporter_iso3": "USA",
+  "requests": [
+    {
+      "bytes": 613559,
+      "partner": "N97",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/840/partner/N97/product/ALL/year/1990/datatype/reported?format=JSON"
+    }
+  ],
+  "source": "WITS/TRAINS API",
+  "year": 1990
+}

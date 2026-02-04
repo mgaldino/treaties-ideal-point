@@ -1,0 +1,3 @@
+/Users/manoelgaldino/Documents/DCP/Papers/Ideal point/scripts/python/acquire_unga_ideal_points.py:25: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+Downloaded: data/raw/unga_ideal_points/IdealpointsJuly2025.tab

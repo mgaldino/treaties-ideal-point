@@ -1,0 +1,100 @@
+{
+  "access_date": "2026-02-03",
+  "base_url": "https://wits.worldbank.org/API/V1",
+  "countries_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/country/all",
+  "data_availability_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/dataavailability/country/076/year/2004",
+  "datatype": "reported",
+  "errors": [],
+  "partner_count": 14,
+  "product": "ALL",
+  "reporter_code": "076",
+  "reporter_iso3": "BRA",
+  "requests": [
+    {
+      "bytes": 895408,
+      "partner": "000",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/000/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 12206,
+      "partner": "032",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/032/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 879696,
+      "partner": "068",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/068/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 883642,
+      "partner": "152",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/152/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 914960,
+      "partner": "170",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/170/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 891591,
+      "partner": "192",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/192/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 913755,
+      "partner": "218",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/218/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 23723,
+      "partner": "328",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/328/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 906488,
+      "partner": "484",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/484/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 6645,
+      "partner": "600",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/600/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 304672,
+      "partner": "604",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/604/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 12700,
+      "partner": "858",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/858/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 919948,
+      "partner": "862",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/862/product/ALL/year/2004/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 853718,
+      "partner": "N37",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/N37/product/ALL/year/2004/datatype/reported?format=JSON"
+    }
+  ],
+  "source": "WITS/TRAINS API",
+  "year": 2004
+}

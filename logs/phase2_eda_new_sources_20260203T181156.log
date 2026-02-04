@@ -1,0 +1,79 @@
+Phase 2 — Exploratory Data Analysis for 3 New Issue Areas
+============================================================
+Date: 2026-02-03
+Status: SUCCESS
+Plan: docs/new_sources_plan.md (Phase 2)
+
+Script: scripts/R/02_eda.R
+Changes:
+  - Updated issue_areas vector: 4 -> 7
+  - Added anchor candidates to selected_countries:
+    New Zealand, North Korea, Saudi Arabia, Somalia
+  - Fixed escaped quote in final message() call
+
+Outputs:
+  outputs/eda_phase2/flow_summary.csv (updated with 7 areas)
+  outputs/eda_phase2/pca_country_loadings_human_rights.csv
+  outputs/eda_phase2/pca_country_loadings_arms_control.csv
+  outputs/eda_phase2/pca_country_loadings_intellectual_property.csv
+  outputs/eda_phase2/pca_item_loadings_human_rights.csv
+  outputs/eda_phase2/pca_item_loadings_arms_control.csv
+  outputs/eda_phase2/pca_item_loadings_intellectual_property.csv
+  outputs/eda_phase2/figures/fig_scree_human_rights.png
+  outputs/eda_phase2/figures/fig_scree_arms_control.png
+  outputs/eda_phase2/figures/fig_scree_intellectual_property.png
+  outputs/eda_phase2/figures/fig_timeseries_*.png (7 areas)
+
+PCA Variance Explained (first 3 components):
+  human_rights:          PC1=11.6%, PC2=6.2%, PC3=5.7%
+  arms_control:          PC1=10.2%, PC2=7.9%, PC3=7.0%
+  intellectual_property: PC1=12.2%, PC2=9.2%, PC3=8.1%
+
+  Note: PC1 dominance is moderate (10-12%). This is expected with a small
+  number of items (18-26). The 1D model should still capture the main
+  dimension of variation.
+
+PCA Country Loadings (PC1) — Anchor Candidates:
+
+HUMAN RIGHTS
+  Top PC1 (negative = fewest ratifications):
+    STP (+3.34), NIU (+3.16), TON (+3.16), SOM (+3.16), FJI (+3.12)
+  Bottom PC1 (negative = most ratifications):
+    BOL (-5.06), ECU (-4.95), URY (-4.60), ESP (-4.49), ARG (-4.43)
+  Key countries:
+    DNK: -2.02 (toward high-ratification end)
+    PRK: +2.75 (toward low-ratification end)
+    SAU: +0.80 (moderately toward low end)
+    IRN: +1.81 (toward low end)
+  Proposed anchors: BOL or URY (pos) vs STP or PRK (neg)
+    OR: DNK (pos, moderate) vs PRK (neg)
+    Note: Scale flipping possible — PCA sign is arbitrary
+
+ARMS CONTROL
+  Top PC1 (positive = fewest treaties):
+    ISR (+6.62), AGO (+3.10), IRN (+2.93), NPL (+2.93), PAK (+2.93), SAU (+2.93)
+  Bottom PC1 (negative = most treaties):
+    AUT (-3.12), MEX (-3.09), FRA (-2.89), JPN (-2.89), BEL (-2.89)
+  Key countries:
+    DNK: -2.52 (toward high-treaty end)
+    NZL: -2.71 (toward high-treaty end)
+    ISR: +6.62 (extreme outlier — resists most disarmament treaties)
+    PRK: DROPPED (only 1 treaty; excluded from flow matrix for lack of variation)
+    SAU: +2.93 (toward low-treaty end)
+    IRN: +2.93 (toward low-treaty end)
+  Proposed anchors: AUT or NZL (pos) vs ISR (neg)
+    OR: DNK (pos) vs ISR or SAU (neg)
+
+INTELLECTUAL PROPERTY
+  Top PC1 (positive = most treaties):
+    RUS (+3.83), EST (+3.73), AUS (+3.65), DNK (+3.55), MDA (+3.53)
+  Bottom PC1 (negative = fewest treaties):
+    Many countries tied at -1.94 (AGO, AND, ATG, BGD, BOL, etc.)
+  Key countries:
+    DNK: +3.55 (near top — high WIPO engagement)
+    FRA: +3.39 (near top)
+    PRK: -0.77 (slightly below center)
+    SOM: DROPPED (only 1 treaty; excluded for lack of variation)
+  Proposed anchors: DNK or RUS (pos) vs one of the tied low-engagement countries (neg)
+
+>>> STOP HERE — Awaiting user review of PCA results and anchor choices <<<

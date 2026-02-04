@@ -1,0 +1,7 @@
+ping: cannot resolve dyna.wikimedia.org: Unknown host
+ping: sendto: Operation not permitted
+ping: sendto: Operation not permitted
+PING 195.200.68.224 (195.200.68.224): 56 data bytes
+Request timeout for icmp_seq 0
+ping: sendto: Operation not permitted
+Request timeout for icmp_seq 1

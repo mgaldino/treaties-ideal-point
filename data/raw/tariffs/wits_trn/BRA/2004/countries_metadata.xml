@@ -1,0 +1,2414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wits:datasource datasourcecode="TRN" datasourcename="WITS - UNTCTAD TRAINS" language="en" total="481" xmlns:wits="http://wits.worldbank.org">
+  <wits:countries>
+    <wits:country countrycode="A01" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A01</wits:iso3Code>
+      <wits:name>Selected Developing Countries for Switzerland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A02</wits:iso3Code>
+      <wits:name>Caribbean Economic Recovery Act: USA 2007</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A03" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A03</wits:iso3Code>
+      <wits:name>Caribbean Economic Recovery Act: USA 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A04" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A04</wits:iso3Code>
+      <wits:name>Preferential tariff for selected african countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A05" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A05</wits:iso3Code>
+      <wits:name>Norway tariff for lower income GSP countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A07" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A07</wits:iso3Code>
+      <wits:name>Preferential tariff for COMESA FTA</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A08" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A08</wits:iso3Code>
+      <wits:name>Preferential tariff for COMESA Non-FTA</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A09" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A09</wits:iso3Code>
+      <wits:name>(SAARC) Preferential for Sri Lanka and Pakistan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A10" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A10</wits:iso3Code>
+      <wits:name>CAFTA-DR-USA:CRI, DOM, SLV, GTM, HND, USA</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A11" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A11</wits:iso3Code>
+      <wits:name>Preferential tariff for EU + EFTA</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A12" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A12</wits:iso3Code>
+      <wits:name>(SAARC) Preferential for Sri Lanka and India</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A13" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A13</wits:iso3Code>
+      <wits:name>(AANZFTA) Preferential for AUS and NZL</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A14" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A14</wits:iso3Code>
+      <wits:name>(COMESA) Preferential for Uganda and Eritrea</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A15" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A15</wits:iso3Code>
+      <wits:name>Egypt (GSTP) Countries </wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A16" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A16</wits:iso3Code>
+      <wits:name>Egypt (GSTP) Selected LDCs Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A17" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A17</wits:iso3Code>
+      <wits:name>LDC Beneficiaries in 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A18" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A18</wits:iso3Code>
+      <wits:name>LDC Beneficiaries in 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A19" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A19</wits:iso3Code>
+      <wits:name>Switzerland &amp; Liechtenstein LDC beneficiary 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A20" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A20</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Japan 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A21" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A21</wits:iso3Code>
+      <wits:name>LDC Beneficiaries: Tajikistan 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A22" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A22</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A23" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A23</wits:iso3Code>
+      <wits:name>LDC Beneficiaries: China 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A24" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A24</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Norway 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A25" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A25</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Morocco 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A26" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A26</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A27" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A27</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A28" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A28</wits:iso3Code>
+      <wits:name>GSP Beneficiaries:Liechtenstein &amp; Switzerland 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A29" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A29</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A30" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A30</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Belarus &amp; Kazakhstan 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A31" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A31</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Russia 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A32" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A32</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: New Zealand 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A33" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A33</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Norway 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A34" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A34</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A35" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A35</wits:iso3Code>
+      <wits:name>COMESA Free Trade Area in 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A36" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A36</wits:iso3Code>
+      <wits:name>EU 28 members 2013</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A37" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A37</wits:iso3Code>
+      <wits:name>EU 28 + GUF,SMR</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A38" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A38</wits:iso3Code>
+      <wits:name>Pacific Islands Forum</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A39" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A39</wits:iso3Code>
+      <wits:name>The European Free Trade Association (EFTA)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A40" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A40</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A41" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A41</wits:iso3Code>
+      <wits:name>Caribbean Basin Economic Recovery Act: USA 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A42" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A42</wits:iso3Code>
+      <wits:name>Caribbean Basin Trade Partnership Act: USA 2014</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A43" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A43</wits:iso3Code>
+      <wits:name>Switzerland and Liechtenstein</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A44" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A44</wits:iso3Code>
+      <wits:name>Costa Rica and Panama</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A45" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A45</wits:iso3Code>
+      <wits:name>Commonwealth of Independent States (CIS)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A46" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A46</wits:iso3Code>
+      <wits:name>Bangladesh and  of Laos</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A47" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A47</wits:iso3Code>
+      <wits:name>Global System of Trade Preferences (GSTP)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A48" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A48</wits:iso3Code>
+      <wits:name>Global System of Trade Preferences (GSTP) LDCs</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="A49" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>A49</wits:iso3Code>
+      <wits:name>Preferential tariff for 4 selected LDCs</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="533" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ABW</wits:iso3Code>
+      <wits:name>Aruba</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="004" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>AFG</wits:iso3Code>
+      <wits:name>Afghanistan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="024" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>AGO</wits:iso3Code>
+      <wits:name>Angola</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="660" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>AIA</wits:iso3Code>
+      <wits:name>Anguila</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="008" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ALB</wits:iso3Code>
+      <wits:name>Albania</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="020" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>AND</wits:iso3Code>
+      <wits:name>Andorra</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="530" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ANT</wits:iso3Code>
+      <wits:name>Netherlands Antilles</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="784" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ARE</wits:iso3Code>
+      <wits:name>United Arab Emirates</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="032" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ARG</wits:iso3Code>
+      <wits:name>Argentina</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="051" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ARM</wits:iso3Code>
+      <wits:name>Armenia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="028" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ATG</wits:iso3Code>
+      <wits:name>Antigua and Barbuda</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="036" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>AUS</wits:iso3Code>
+      <wits:name>Australia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="040" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>AUT</wits:iso3Code>
+      <wits:name>Austria</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="031" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>AZE</wits:iso3Code>
+      <wits:name>Azerbaijan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="B01" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>B01</wits:iso3Code>
+      <wits:name>Caribbean Basin Trade Partnership Act : 2007</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="B02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>B02</wits:iso3Code>
+      <wits:name>Caribbean Basin Trade Partnership Act: 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="B03" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>B03</wits:iso3Code>
+      <wits:name>China 2 Selected African LDCs (NER,SOM)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="B04" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>B04</wits:iso3Code>
+      <wits:name>China Selected LDCs countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="108" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BDI</wits:iso3Code>
+      <wits:name>Burundi</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="204" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BEN</wits:iso3Code>
+      <wits:name>Benin</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="854" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BFA</wits:iso3Code>
+      <wits:name>Burkina Faso</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="050" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BGD</wits:iso3Code>
+      <wits:name>Bangladesh</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="100" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BGR</wits:iso3Code>
+      <wits:name>Bulgaria</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="048" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BHR</wits:iso3Code>
+      <wits:name>Bahrain</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="044" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BHS</wits:iso3Code>
+      <wits:name>Bahamas, The</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="070" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BIH</wits:iso3Code>
+      <wits:name>Bosnia and Herzegovina</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="112" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BLR</wits:iso3Code>
+      <wits:name>Belarus</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="084" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BLZ</wits:iso3Code>
+      <wits:name>Belize</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="060" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BMU</wits:iso3Code>
+      <wits:name>Bermuda</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="068" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BOL</wits:iso3Code>
+      <wits:name>Bolivia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="076" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BRA</wits:iso3Code>
+      <wits:name>Brazil</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="052" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BRB</wits:iso3Code>
+      <wits:name>Barbados</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="096" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BRN</wits:iso3Code>
+      <wits:name>Brunei</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="064" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BTN</wits:iso3Code>
+      <wits:name>Bhutan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="072" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>BWA</wits:iso3Code>
+      <wits:name>Botswana</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="C01" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>C01</wits:iso3Code>
+      <wits:name>Andean Trade Preference Act 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="C02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>C02</wits:iso3Code>
+      <wits:name>ASEAN-Australia-New Zealand Free Trade Area</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="C03" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>C03</wits:iso3Code>
+      <wits:name>Hong Kong, Korea Rep., Taiwan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="C04" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>C04</wits:iso3Code>
+      <wits:name>Andean Trade Preference Act 2010</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="140" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CAF</wits:iso3Code>
+      <wits:name>Central African Republic</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="124" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CAN</wits:iso3Code>
+      <wits:name>Canada</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="756" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CHE</wits:iso3Code>
+      <wits:name>Switzerland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="152" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CHL</wits:iso3Code>
+      <wits:name>Chile</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="156" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CHN</wits:iso3Code>
+      <wits:name>China</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="384" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CIV</wits:iso3Code>
+      <wits:name>Cote d'Ivoire</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="120" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CMR</wits:iso3Code>
+      <wits:name>Cameroon</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="178" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>COG</wits:iso3Code>
+      <wits:name>Congo, Rep.</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="184" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>COK</wits:iso3Code>
+      <wits:name>Cook Islands</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="170" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>COL</wits:iso3Code>
+      <wits:name>Colombia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="174" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>COM</wits:iso3Code>
+      <wits:name>Comoros</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="132" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CPV</wits:iso3Code>
+      <wits:name>Cape Verde</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="188" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CRI</wits:iso3Code>
+      <wits:name>Costa Rica</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="200" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CSK</wits:iso3Code>
+      <wits:name>Czechoslovakia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="192" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CUB</wits:iso3Code>
+      <wits:name>Cuba</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="196" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CYP</wits:iso3Code>
+      <wits:name>Cyprus</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="203" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>CZE</wits:iso3Code>
+      <wits:name>Czech Republic</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="262" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>DJI</wits:iso3Code>
+      <wits:name>Djibouti</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="212" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>DMA</wits:iso3Code>
+      <wits:name>Dominica</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="214" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>DOM</wits:iso3Code>
+      <wits:name>Dominican Republic</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="012" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>DZA</wits:iso3Code>
+      <wits:name>Algeria</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="218" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ECU</wits:iso3Code>
+      <wits:name>Ecuador</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="818" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>EGY</wits:iso3Code>
+      <wits:name>Egypt, Arab Rep.</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="232" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ERI</wits:iso3Code>
+      <wits:name>Eritrea</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="233" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>EST</wits:iso3Code>
+      <wits:name>Estonia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="231" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ETH</wits:iso3Code>
+      <wits:name>Ethiopia(excludes Eritrea)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="918" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>EUN</wits:iso3Code>
+      <wits:name>European Union</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="246" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>FIN</wits:iso3Code>
+      <wits:name>Finland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="242" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>FJI</wits:iso3Code>
+      <wits:name>Fiji</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="234" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>FRO</wits:iso3Code>
+      <wits:name>Faeroe Islands</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G10" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G10</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 1994</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G11" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G11</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G12" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G12</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G13" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G13</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G14" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G14</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G15" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G15</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G16" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G16</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 2000</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G17" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G17</wits:iso3Code>
+      <wits:name>GSP beneficiaries:Canada 2004</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G18" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G18</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G19" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G19</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Canada 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G20" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G20</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 1994</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G21" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G21</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G22" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G22</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G23" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G23</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G24" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G24</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G25" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G25</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G26" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G26</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 2000</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G27" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G27</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 2004
+</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G30" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G30</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 1994</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G31" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G31</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G32" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G32</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G33" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G33</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G34" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G34</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G35" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G35</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G36" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G36</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 2000</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G37" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G37</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 2004-2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G38" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G38</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G39" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G39</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 2006</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G40" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G40</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 1994</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G41" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G41</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G42" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G42</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G43" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G43</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G44" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G44</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G45" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G45</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G46" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G46</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2000</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G47" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G47</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2002</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G48" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G48</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2003</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G49" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G49</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2004</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G50" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G50</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G51" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G51</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Australia 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G52" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G52</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Hungary 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G53" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G53</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: New Zealand 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G54" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G54</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Norway 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G57" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G57</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Poland 1994</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G58" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G58</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Poland 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G59" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G59</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Poland 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G60" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G60</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Russia 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G61" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G61</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Switzerland 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G62" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G62</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Switzerland 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G63" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G63</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: New Zealand 2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G64" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G64</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: New Zealand 2006
+</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G65" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G65</wits:iso3Code>
+      <wits:name>GSP1: Australia 2006 (Code 'DCS')</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G70" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G70</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Japan 2007</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G80" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G80</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2006</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G81" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G81</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2007</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G82" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G82</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="G83" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>G83</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2010</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="266" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GAB</wits:iso3Code>
+      <wits:name>Gabon</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="274" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GAZ</wits:iso3Code>
+      <wits:name>Gaza Strip</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="826" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GBR</wits:iso3Code>
+      <wits:name>United Kingdom</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="268" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GEO</wits:iso3Code>
+      <wits:name>Georgia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="288" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GHA</wits:iso3Code>
+      <wits:name>Ghana</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="324" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GIN</wits:iso3Code>
+      <wits:name>Guinea</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="270" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GMB</wits:iso3Code>
+      <wits:name>Gambia, The</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="624" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GNB</wits:iso3Code>
+      <wits:name>Guinea-Bissau</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="226" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GNQ</wits:iso3Code>
+      <wits:name>Equatorial Guinea</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="308" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GRD</wits:iso3Code>
+      <wits:name>Grenada</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="304" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GRL</wits:iso3Code>
+      <wits:name>Greenland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="320" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GTM</wits:iso3Code>
+      <wits:name>Guatemala</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="254" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GUF</wits:iso3Code>
+      <wits:name>French Guiana</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="328" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>GUY</wits:iso3Code>
+      <wits:name>Guyana</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="H01" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>H01</wits:iso3Code>
+      <wits:name>European Community 12  (-1994)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="H02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>H02</wits:iso3Code>
+      <wits:name>EFTA 6 (-1994)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="344" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>HKG</wits:iso3Code>
+      <wits:name>Hong Kong, China</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="340" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>HND</wits:iso3Code>
+      <wits:name>Honduras</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="191" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>HRV</wits:iso3Code>
+      <wits:name>Croatia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="332" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>HTI</wits:iso3Code>
+      <wits:name>Haiti</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="348" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>HUN</wits:iso3Code>
+      <wits:name>Hungary</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="360" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>IDN</wits:iso3Code>
+      <wits:name>Indonesia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="356" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>IND</wits:iso3Code>
+      <wits:name>India</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="364" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>IRN</wits:iso3Code>
+      <wits:name>Iran, Islamic Rep.</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="368" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>IRQ</wits:iso3Code>
+      <wits:name>Iraq</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="352" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ISL</wits:iso3Code>
+      <wits:name>Iceland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="376" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ISR</wits:iso3Code>
+      <wits:name>Israel</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="J72" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>J72</wits:iso3Code>
+      <wits:name>Preferential tariff for CARICOM MDC countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="388" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>JAM</wits:iso3Code>
+      <wits:name>Jamaica</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="400" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>JOR</wits:iso3Code>
+      <wits:name>Jordan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="392" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>JPN</wits:iso3Code>
+      <wits:name>Japan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="K31" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>K31</wits:iso3Code>
+      <wits:name>Preferential tariff for PICTA countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="K51" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>K51</wits:iso3Code>
+      <wits:name>Customs Union (Russia-Belarus-Kazakhstan)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="398" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>KAZ</wits:iso3Code>
+      <wits:name>Kazakhstan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="404" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>KEN</wits:iso3Code>
+      <wits:name>Kenya</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="417" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>KGZ</wits:iso3Code>
+      <wits:name>Kyrgyz Republic</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="116" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>KHM</wits:iso3Code>
+      <wits:name>Cambodia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="659" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>KNA</wits:iso3Code>
+      <wits:name>St. Kitts and Nevis</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="410" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>KOR</wits:iso3Code>
+      <wits:name>Korea, Rep.</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="414" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>KWT</wits:iso3Code>
+      <wits:name>Kuwait</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L10" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L10</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Canada 1</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L11" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L11</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Canada 1</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L14" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L14</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Canada 1</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L15" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L15</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Canada 1</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L16" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L16</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Canada 2</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L17" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L17</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Canada 2001</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L19" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L19</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Canada 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L20" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L20</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 1994</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L21" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L21</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L22" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L22</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L23" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L23</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L24" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L24</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L25" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L25</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L26" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L26</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 2000</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L27" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L27</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: EU 2001</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L28" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L28</wits:iso3Code>
+      <wits:name>GSP LDC Beneficiaries: Beneficiaries: EU 2004
+</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L30" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L30</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Japan 19</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L31" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L31</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Japan 19</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L32" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L32</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Japan 19</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L33" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L33</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Beneficiaries: Japan 19</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L34" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L34</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Japan 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L35" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L35</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Japan 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L36" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L36</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Japan 2000</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L37" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L37</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Japan 2004-2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L38" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L38</wits:iso3Code>
+      <wits:name>LDC Beneficiaries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L39" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L39</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Japan 2007</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L43" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L43</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L44" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L44</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L45" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L45</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L46" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L46</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 2000</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L47" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L47</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 2002</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L48" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L48</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 2003</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L50" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L50</wits:iso3Code>
+      <wits:name>LDC 51 Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L51" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L51</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Australia 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L52" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L52</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Hungary 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L53" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L53</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: New Zealand 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L54" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L54</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Norway 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L56" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L56</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Norway 1998</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L57" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L57</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Poland 1994</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L58" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L58</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Poland 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L59" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L59</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Poland 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L60" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L60</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Russia 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L61" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L61</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Switzerland 1995</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L62" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L62</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Switzerland 1996</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L63" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L63</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: Switzerland 1997</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L64" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L64</wits:iso3Code>
+      <wits:name>LDC Beneficiaries:Turkey 1999</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L69" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L69</wits:iso3Code>
+      <wits:name>Preferential tariff for African LDC countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L70" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L70</wits:iso3Code>
+      <wits:name>GSP2: Australia 2006 (Code 'DC')</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L71" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L71</wits:iso3Code>
+      <wits:name>GSP for LDC: Australia 2006 (Code 'LDC')</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L72" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L72</wits:iso3Code>
+      <wits:name>Switzerland LDC GSP beneficiary countries in 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L77" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L77</wits:iso3Code>
+      <wits:name>LDC 51 Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L79" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L79</wits:iso3Code>
+      <wits:name>Preferential duty for 27 African LDCs:China 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L80" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L80</wits:iso3Code>
+      <wits:name>Pref for 5 Asian and Pacific LDCs: China 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L81" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L81</wits:iso3Code>
+      <wits:name>Preferential duty for 3 African LDCs:China 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L82" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L82</wits:iso3Code>
+      <wits:name>Special Preferential duty for 31 African Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L83" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L83</wits:iso3Code>
+      <wits:name>Special Preferential for 6 Asia Pacific Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L85" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L85</wits:iso3Code>
+      <wits:name>Preferential tariff for EPA countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L87" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L87</wits:iso3Code>
+      <wits:name>AGOA eligible for certain textiles and apparel</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L90" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L90</wits:iso3Code>
+      <wits:name>LDC Beneficiaries in 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="L91" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>L91</wits:iso3Code>
+      <wits:name>GSP for LDC Beneficiaries: USA 2010</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="418" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LAO</wits:iso3Code>
+      <wits:name>Lao PDR</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="422" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LBN</wits:iso3Code>
+      <wits:name>Lebanon</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="430" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LBR</wits:iso3Code>
+      <wits:name>Liberia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="434" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LBY</wits:iso3Code>
+      <wits:name>Libya</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="662" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LCA</wits:iso3Code>
+      <wits:name>St. Lucia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="438" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LIE</wits:iso3Code>
+      <wits:name>Liechtenstein</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="144" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LKA</wits:iso3Code>
+      <wits:name>Sri Lanka</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="426" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LSO</wits:iso3Code>
+      <wits:name>Lesotho</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="440" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LTU</wits:iso3Code>
+      <wits:name>Lithuania</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="428" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>LVA</wits:iso3Code>
+      <wits:name>Latvia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M01" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M01</wits:iso3Code>
+      <wits:name>Preferential tariff for selected GSTP countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M02</wits:iso3Code>
+      <wits:name>EU 27 members</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M03" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M03</wits:iso3Code>
+      <wits:name>Asia-Pacific Trade Agreement (APTA)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M04" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M04</wits:iso3Code>
+      <wits:name>SIECA member states</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M05" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M05</wits:iso3Code>
+      <wits:name>COMESA Free Trade Area in 2007</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M06" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M06</wits:iso3Code>
+      <wits:name>Countries members of the Indian Ocean Commission (</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M07" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M07</wits:iso3Code>
+      <wits:name>COMESA countries not members of the FTA in 2007</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M08" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M08</wits:iso3Code>
+      <wits:name>AGADIR countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M10" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M10</wits:iso3Code>
+      <wits:name>Switzerland LDC GSP beneficiary countries in 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M11" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M11</wits:iso3Code>
+      <wits:name>Switzerland GSP beneficiary  countries in 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M12" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M12</wits:iso3Code>
+      <wits:name>COMESA Free Trade Area 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M13" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M13</wits:iso3Code>
+      <wits:name>EU countries (32 territories):Switzerland 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M14" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M14</wits:iso3Code>
+      <wits:name>Switzerland GSP beneficiary  countries in 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M15" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M15</wits:iso3Code>
+      <wits:name>Preferential tariff for APTA(LDC)countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="M16" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>M16</wits:iso3Code>
+      <wits:name>COMESA countries not members of the FTA in 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="446" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MAC</wits:iso3Code>
+      <wits:name>Macao</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="504" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MAR</wits:iso3Code>
+      <wits:name>Morocco</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="498" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MDA</wits:iso3Code>
+      <wits:name>Moldova</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="450" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MDG</wits:iso3Code>
+      <wits:name>Madagascar</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="462" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MDV</wits:iso3Code>
+      <wits:name>Maldives</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="484" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MEX</wits:iso3Code>
+      <wits:name>Mexico</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="807" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MKD</wits:iso3Code>
+      <wits:name>Macedonia, FYR</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="466" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MLI</wits:iso3Code>
+      <wits:name>Mali</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="470" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MLT</wits:iso3Code>
+      <wits:name>Malta</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="104" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MMR</wits:iso3Code>
+      <wits:name>Myanmar</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="496" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MNG</wits:iso3Code>
+      <wits:name>Mongolia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="499" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MNT</wits:iso3Code>
+      <wits:name>Montenegro</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="508" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MOZ</wits:iso3Code>
+      <wits:name>Mozambique</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="478" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MRT</wits:iso3Code>
+      <wits:name>Mauritania</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="500" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MSR</wits:iso3Code>
+      <wits:name>Montserrat</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="480" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MUS</wits:iso3Code>
+      <wits:name>Mauritius</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="454" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MWI</wits:iso3Code>
+      <wits:name>Malawi</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="458" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MYS</wits:iso3Code>
+      <wits:name>Malaysia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="175" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>MYT</wits:iso3Code>
+      <wits:name>Mayotte</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N01" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N01</wits:iso3Code>
+      <wits:name>Developing Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N04" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N04</wits:iso3Code>
+      <wits:name>European Union</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N05" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N05</wits:iso3Code>
+      <wits:name>European Free Trade Association</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N08" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N08</wits:iso3Code>
+      <wits:name>ACP (Africa, Caribbean and Pacific)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N09" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N09</wits:iso3Code>
+      <wits:name>Least Developed Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N12" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N12</wits:iso3Code>
+      <wits:name>Maghreb Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N13" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N13</wits:iso3Code>
+      <wits:name>UDEAC</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N14" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N14</wits:iso3Code>
+      <wits:name>ECOWAS</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N16" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N16</wits:iso3Code>
+      <wits:name>COMESA</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N19" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N19</wits:iso3Code>
+      <wits:name>Bosnia, Croatia and Macedonia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N20" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N20</wits:iso3Code>
+      <wits:name>TAG</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N22" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N22</wits:iso3Code>
+      <wits:name>AndeanGroup and Central American Common Market</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N23" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N23</wits:iso3Code>
+      <wits:name>COMESA</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N24" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N24</wits:iso3Code>
+      <wits:name>East African Community</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N25" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N25</wits:iso3Code>
+      <wits:name>COMESA Free Trade Area in 2003</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N26" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N26</wits:iso3Code>
+      <wits:name>SACU (Southern African Customs Union)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N27" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N27</wits:iso3Code>
+      <wits:name>COMESA Free Trade Area 2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N28" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N28</wits:iso3Code>
+      <wits:name>COMESA Free Trade Area 2006</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N29" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N29</wits:iso3Code>
+      <wits:name>Peru and Panama</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N32" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N32</wits:iso3Code>
+      <wits:name>LAIA (ALADI)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N33" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N33</wits:iso3Code>
+      <wits:name>Andean Pact countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N34" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N34</wits:iso3Code>
+      <wits:name>C. American Common Market</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N35" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N35</wits:iso3Code>
+      <wits:name>Caribbean Community</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N37" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N37</wits:iso3Code>
+      <wits:name>MERCOSUR</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N39" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N39</wits:iso3Code>
+      <wits:name>African Growth and Opportunity Act (AGOA) Preferen</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N44" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N44</wits:iso3Code>
+      <wits:name>ASEAN</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N45" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N45</wits:iso3Code>
+      <wits:name>Bangkok Agreement</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N47" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N47</wits:iso3Code>
+      <wits:name>SAARC</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N48" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N48</wits:iso3Code>
+      <wits:name>Bhutan, Maldives, Nepal</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N49" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N49</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2002</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N51" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N51</wits:iso3Code>
+      <wits:name>Caribbean Basin Trade Partnership Act : 2002      </wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N52" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N52</wits:iso3Code>
+      <wits:name>ASEAN</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N54" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N54</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2004</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N55" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N55</wits:iso3Code>
+      <wits:name>EU beneficiaries:Switzerland 2004</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N56" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N56</wits:iso3Code>
+      <wits:name>EFTA beneficiaries:Switzerland 2004</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N57" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N57</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Switzerland 2004</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N58" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N58</wits:iso3Code>
+      <wits:name>SADC</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N59" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N59</wits:iso3Code>
+      <wits:name>CEMAC Member States</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N60" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N60</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N61" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N61</wits:iso3Code>
+      <wits:name>Gulf Cooperation Council (GCC) countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N62" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N62</wits:iso3Code>
+      <wits:name>League of Arab States</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N63" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N63</wits:iso3Code>
+      <wits:name>EU25</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N64" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N64</wits:iso3Code>
+      <wits:name>Countries of the Protocol of 16</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N65" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N65</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: Turkey 2005</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N66" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N66</wits:iso3Code>
+      <wits:name>Caribbean Community
+ (CARICOM countries)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N67" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N67</wits:iso3Code>
+      <wits:name>Caribbean Community - CARICOM LDC members</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N68" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N68</wits:iso3Code>
+      <wits:name>Caribbean Community - MDC members</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N69" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N69</wits:iso3Code>
+      <wits:name>UEMOA</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N72" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N72</wits:iso3Code>
+      <wits:name>Forum Islands Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N73" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N73</wits:iso3Code>
+      <wits:name>Caribbean Basin Trade Partnership Act : 2006</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N74" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N74</wits:iso3Code>
+      <wits:name>SADC countries excluding South Africa</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N75" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N75</wits:iso3Code>
+      <wits:name>Preferential tariff for CAFTA countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N78" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N78</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2006</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N79" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N79</wits:iso3Code>
+      <wits:name>Preferential tariff for MSG countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N80" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N80</wits:iso3Code>
+      <wits:name>CIS Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N82" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N82</wits:iso3Code>
+      <wits:name>GSTP 48 Signatories</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N85" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N85</wits:iso3Code>
+      <wits:name>GSTP - LDCs</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N86" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N86</wits:iso3Code>
+      <wits:name>Forum Islands Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N87" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N87</wits:iso3Code>
+      <wits:name>Hong Kong, Korea Rep., Singapore, Taiwan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N88" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N88</wits:iso3Code>
+      <wits:name>British Preferential Tariff for Canada</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N89" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N89</wits:iso3Code>
+      <wits:name>Czech Rep.,Slovakia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N90" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N90</wits:iso3Code>
+      <wits:name>Commonwealth Caribbean Countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N91" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N91</wits:iso3Code>
+      <wits:name>Botswana, Namibia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N92" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N92</wits:iso3Code>
+      <wits:name>Australia, New Zealand</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N93" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N93</wits:iso3Code>
+      <wits:name>Iceland, Liechtensten, Norway</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N94" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N94</wits:iso3Code>
+      <wits:name>Estonia, Latvia, Lithuania</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N95" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N95</wits:iso3Code>
+      <wits:name>Iran, Pakistan, Turkey</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N96" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N96</wits:iso3Code>
+      <wits:name>Trade Negotiations among Developing Countries (TND</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="N97" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>N97</wits:iso3Code>
+      <wits:name>Caribbean Economic Recovery Act</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="516" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NAM</wits:iso3Code>
+      <wits:name>Namibia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="562" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NER</wits:iso3Code>
+      <wits:name>Niger</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="566" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NGA</wits:iso3Code>
+      <wits:name>Nigeria</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="558" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NIC</wits:iso3Code>
+      <wits:name>Nicaragua</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="578" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NOR</wits:iso3Code>
+      <wits:name>Norway</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="524" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NPL</wits:iso3Code>
+      <wits:name>Nepal</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="520" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NRU</wits:iso3Code>
+      <wits:name>Nauru</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="554" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>NZL</wits:iso3Code>
+      <wits:name>New Zealand</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="O02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>O02</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="O03" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>O03</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="O04" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>O04</wits:iso3Code>
+      <wits:name>AGOA beneficiaries: USA 2010</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="512" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>OMN</wits:iso3Code>
+      <wits:name>Oman</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="OT3" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>OT3</wits:iso3Code>
+      <wits:name>AGOA eligible countries for textiles and apparel</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P00" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P00</wits:iso3Code>
+      <wits:name>EU Special incentive arrangement: 2006-2008</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P01" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P01</wits:iso3Code>
+      <wits:name>Overseas countries and Territories</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P02</wits:iso3Code>
+      <wits:name>Countries fighting drug</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P15" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P15</wits:iso3Code>
+      <wits:name>Non-MFN Countries: Japan 2006</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P21" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P21</wits:iso3Code>
+      <wits:name>East African Community (EAC)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P22" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P22</wits:iso3Code>
+      <wits:name>North American Free Trade Agreement (NAFTA)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P23" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P23</wits:iso3Code>
+      <wits:name>Preferential tariff for CARIFORUM countries</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P24" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P24</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: EU 2010</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P25" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P25</wits:iso3Code>
+      <wits:name>Botswana, Namibia, Swaziland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P26" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P26</wits:iso3Code>
+      <wits:name>Preferential tariff for CAFTA countries 2011</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P27" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P27</wits:iso3Code>
+      <wits:name>GSP Beneficiaries: USA 2011</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="P29" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>P29</wits:iso3Code>
+      <wits:name>CARIFORUM - EU EPA: (CARICOM, DOM, EU) </wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="586" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PAK</wits:iso3Code>
+      <wits:name>Pakistan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="591" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PAN</wits:iso3Code>
+      <wits:name>Panama</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="604" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PER</wits:iso3Code>
+      <wits:name>Peru</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="608" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PHL</wits:iso3Code>
+      <wits:name>Philippines</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="585" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PLW</wits:iso3Code>
+      <wits:name>Palau</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="598" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PNG</wits:iso3Code>
+      <wits:name>Papua New Guinea</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="616" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>POL</wits:iso3Code>
+      <wits:name>Poland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="408" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PRK</wits:iso3Code>
+      <wits:name>Korea, Dem. Rep.</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="620" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PRT</wits:iso3Code>
+      <wits:name>Portugal</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="600" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PRY</wits:iso3Code>
+      <wits:name>Paraguay</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="275" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PSE</wits:iso3Code>
+      <wits:name>Occ.Pal.Terr</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="258" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>PYF</wits:iso3Code>
+      <wits:name>French Polynesia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="Q02" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>Q02</wits:iso3Code>
+      <wits:name>Preferential tariff for GSTP R. of Korea 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="Q06" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>Q06</wits:iso3Code>
+      <wits:name>Preferential tariff for SAARC 2009</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="634" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>QAT</wits:iso3Code>
+      <wits:name>Qatar</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="R30" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>R30</wits:iso3Code>
+      <wits:name>GSP Beneficiaries:Kazakhstan 2010</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="R50" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>R50</wits:iso3Code>
+      <wits:name>LDC Beneficiaries:Kazakhstan 2010</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="642" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ROM</wits:iso3Code>
+      <wits:name>Romania</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="643" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>RUS</wits:iso3Code>
+      <wits:name>Russian Federation</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="646" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>RWA</wits:iso3Code>
+      <wits:name>Rwanda</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="682" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SAU</wits:iso3Code>
+      <wits:name>Saudi Arabia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="736" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SDN</wits:iso3Code>
+      <wits:name>Fm Sudan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="686" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SEN</wits:iso3Code>
+      <wits:name>Senegal</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="891" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SER</wits:iso3Code>
+      <wits:name>Serbia, FR(Serbia/Montenegro)</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="702" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SGP</wits:iso3Code>
+      <wits:name>Singapore</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="090" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SLB</wits:iso3Code>
+      <wits:name>Solomon Islands</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="694" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SLE</wits:iso3Code>
+      <wits:name>Sierra Leone</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="222" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SLV</wits:iso3Code>
+      <wits:name>El Salvador</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="674" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SMR</wits:iso3Code>
+      <wits:name>San Marino</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="678" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>STP</wits:iso3Code>
+      <wits:name>Sao Tome and Principe</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="729" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SUD</wits:iso3Code>
+      <wits:name>Sudan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="740" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SUR</wits:iso3Code>
+      <wits:name>Suriname</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="703" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SVK</wits:iso3Code>
+      <wits:name>Slovak Republic</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="705" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SVN</wits:iso3Code>
+      <wits:name>Slovenia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="752" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SWE</wits:iso3Code>
+      <wits:name>Sweden</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="748" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SWZ</wits:iso3Code>
+      <wits:name>Swaziland</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="690" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SYC</wits:iso3Code>
+      <wits:name>Seychelles</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="760" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>SYR</wits:iso3Code>
+      <wits:name>Syrian Arab Republic</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="T00" isreporter="0" ispartner="1" isgroup="Yes" grouptype="Beneficiaries">
+      <wits:iso3Code>T00</wits:iso3Code>
+      <wits:name>Trans-Pacific Strategic Ec. Prtnrshp. Agrmnt.</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="148" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TCD</wits:iso3Code>
+      <wits:name>Chad</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="768" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TGO</wits:iso3Code>
+      <wits:name>Togo</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="764" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>THA</wits:iso3Code>
+      <wits:name>Thailand</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="762" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TJK</wits:iso3Code>
+      <wits:name>Tajikistan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="795" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TKM</wits:iso3Code>
+      <wits:name>Turkmenistan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="626" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TMP</wits:iso3Code>
+      <wits:name>East Timor</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="776" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TON</wits:iso3Code>
+      <wits:name>Tonga</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="780" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TTO</wits:iso3Code>
+      <wits:name>Trinidad and Tobago</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="788" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TUN</wits:iso3Code>
+      <wits:name>Tunisia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="792" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TUR</wits:iso3Code>
+      <wits:name>Turkey</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="798" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TUV</wits:iso3Code>
+      <wits:name>Tuvalu</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="158" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TWN</wits:iso3Code>
+      <wits:name>Taiwan, China</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="834" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>TZA</wits:iso3Code>
+      <wits:name>Tanzania</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="800" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>UGA</wits:iso3Code>
+      <wits:name>Uganda</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="804" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>UKR</wits:iso3Code>
+      <wits:name>Ukraine</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="898" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>UNS</wits:iso3Code>
+      <wits:name>Unspecified</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="858" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>URY</wits:iso3Code>
+      <wits:name>Uruguay</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="840" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>USA</wits:iso3Code>
+      <wits:name>United States</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="860" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>UZB</wits:iso3Code>
+      <wits:name>Uzbekistan</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="670" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>VCT</wits:iso3Code>
+      <wits:name>St. Vincent and the Grenadines</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="862" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>VEN</wits:iso3Code>
+      <wits:name>Venezuela</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="704" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>VNM</wits:iso3Code>
+      <wits:name>Vietnam</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="548" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>VUT</wits:iso3Code>
+      <wits:name>Vanuatu</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="882" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>WSM</wits:iso3Code>
+      <wits:name>Samoa</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="887" isreporter="1" ispartner="0" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>YEM</wits:iso3Code>
+      <wits:name>Yemen</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="890" isreporter="0" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>YUG</wits:iso3Code>
+      <wits:name>Yugoslavia,FR(Serbia/Montenegr</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="710" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ZAF</wits:iso3Code>
+      <wits:name>South Africa</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="180" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ZAR</wits:iso3Code>
+      <wits:name>Congo, Dem. Rep.</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="894" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ZMB</wits:iso3Code>
+      <wits:name>Zambia</wits:name>
+      <wits:notes />
+    </wits:country>
+    <wits:country countrycode="716" isreporter="1" ispartner="1" isgroup="No" grouptype="N/A">
+      <wits:iso3Code>ZWE</wits:iso3Code>
+      <wits:name>Zimbabwe</wits:name>
+      <wits:notes />
+    </wits:country>
+  </wits:countries>
+</wits:datasource>

@@ -1,0 +1,24 @@
+Building baseline events...
+Mensagen de aviso:
+In dplyr::inner_join(., type_df, by = "atopid") :
+  Detected an unexpected many-to-many relationship between `x` and `y`.
+ℹ Row 1 of `x` matches multiple rows in `y`.
+ℹ Row 410 of `y` matches multiple rows in `x`.
+ℹ If a many-to-many relationship is expected, set `relationship =
+  "many-to-many"` to silence this warning.
+Error in `dplyr::bind_rows()`:
+! Can't combine `..1$treaty_type` <double> and `..2$treaty_type` <character>.
+Backtrace:
+     ▆
+  1. ├─dplyr::bind_rows(...)
+  2. │ └─vctrs::vec_rbind(!!!dots, .names_to = .id, .error_call = current_env())
+  3. └─vctrs (local) `<fn>`()
+  4.   └─vctrs::vec_default_ptype2(...)
+  5.     ├─base::withRestarts(...)
+  6.     │ └─base (local) withOneRestart(expr, restarts[[1L]])
+  7.     │   └─base (local) doWithOneRestart(return(expr), restart)
+  8.     └─vctrs::stop_incompatible_type(...)
+  9.       └─vctrs:::stop_incompatible(...)
+ 10.         └─vctrs:::stop_vctrs(...)
+ 11.           └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = call)
+Execução interrompida

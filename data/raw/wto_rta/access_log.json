@@ -1,0 +1,13 @@
+{
+  "access_date": "2026-02-01",
+  "candidate_links": [],
+  "downloaded_files": [
+    "data/raw/wto_rta/WTO_RTA_AllRTAs.xlsx"
+  ],
+  "errors": [],
+  "landing_url": "https://data.wto.org/en/dataset/ext_rta",
+  "notes": [
+    "Downloaded via direct RTAIS export endpoint."
+  ],
+  "source_name": "WTO RTA Database"
+}

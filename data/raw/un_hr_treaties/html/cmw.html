@@ -1,0 +1,1891 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="dc.description" content="This is the United Nations Treaty Collection homepage. Here you will find related information and links." /><meta name="dc.title" content="United Nations Treaty Collection" /><meta name="dc.subject" content="UN, United Nations, UN Treaties, Treaties" /><meta name="keywords" content="treaty law, international law, registration and publication of treaties, treaty, agreements, signatures, capacity building, UN training, UNITAR, UN treaties" /><meta name="description" content="This is the United Nations Treaty Collection homepage. Here you will find related information and links." /><meta name="dc.language" content="EN" /><meta name="dc.description" content="Ceci est la page d&#39;accueil de la Collection des traités des Nations Unies." /><meta name="dc.title" content="Collection des traités des Nations Unies" /><meta name="dc.subject" content="ONU, Nations Unies, Traités des Nations Unies, Traités" /><meta name="keywords" content="droit des traités, enregistrement et publication des traités, conventions internationales, ratifications, signatures, accords, UNITAR" /><meta name="description" content="Ceci est la page d&#39;accueil de la Collection des traités des Nations Unies." /><meta name="dc.language" content="FR" /><title>
+	UNTC
+</title>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TLLHMXN');</script>
+    <!-- End Google Tag Manager -->
+
+	<link rel="stylesheet" href="../css/bootstrap-5.3.0.min.css" type="text/css" /><link rel="stylesheet" href="../css/styles.css" type="text/css" /><link rel="stylesheet" href="../css/scrollbar.css" type="text/css" /><link rel="stylesheet" href="../css/font-awesome.css" type="text/css" />
+    
+    <script src="../js/jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap-5.3.0.bundle.min.js" type="text/javascript"></script>
+    
+    
+    <link href="../Css/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Css/jquery-ui-1.13.2.min.css"/>
+    
+
+    
+    
+    <script src="../Js/jquery-ui-1.13.2.min.js" type="text/javascript"></script>  
+
+    <script src="../Js/moment-with-locales.js" type="text/javascript"></script>
+    <script src="../Js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="../Js/scw.js" type="text/javascript"></script>
+    <script src="../Js/Tsips.js" type="text/javascript"></script>
+    <script src="../Js/Common.js" type="text/javascript"></script>
+    <script src="../Js/dropdown_menu_hack.js" type="text/javascript"></script>
+    <script src="../Js/jsPopup.js" type="text/javascript"></script>   
+     
+  
+    <script type="text/javascript">         
+        window.onload = ConfirmExit;
+        function ConfirmExit() {
+
+            var getSessionValue = $('#sessionInput').val();
+            if (getSessionValue == null || getSessionValue == '') {
+                return true;
+            }
+            //$(function () {
+            //    $('#dialog').show();
+            //    $("#dialog").dialog();
+            //});
+
+            if (document.referrer.indexOf(window.location.hostname) != -1) {
+                //alert(window.location.pathname);
+                var previousPage = document.referrer;
+                //alert(previousPage);
+                //alert(previousPage);
+                //alert(previousPage.indexOf("Subscription_Category.aspx"));
+                var currentPage = window.location.href;
+
+                if (currentPage.indexOf("PageNotFound.aspx") >= 0) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Pages/Ajax.aspx" + "/LogOutSession",
+                        data: '{}',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+
+
+                        },
+                        error: function (xhr, status, error) {
+                            alert(error);
+                        }
+                    });
+
+                }
+                //alert(currentPage);
+                //alert(currentPage.indexOf("Subscription_Category.aspx"));
+
+                if ((getSessionValue != null || getSessionValue != '')
+                    //   (previousPage.indexOf("Subscription_Category.aspx") >= 0 || previousPage.indexOf("Subscription_Navigate.aspx") >= 0 || previousPage.indexOf("CN_Subscription.aspx") >= 0 || previousPage.indexOf("CN_Participant.aspx") >= 0
+                    //|| previousPage.indexOf("UnSubscription.aspx") >= 0 || previousPage.indexOf("UNTSSubscription.aspx") >= 0 || previousPage.indexOf("CCTC_Subscription.aspx") >= 0 || previousPage.indexOf("CTC_Subscription.aspx") >= 0
+                    //|| previousPage.indexOf("CI_Subscription.aspx") >= 0 || previousPage.indexOf("MonthlyStateSubscription.aspx") >= 0 || previousPage.indexOf("UNTS_Unsubscription.aspx") >= 0
+                    //|| previousPage.indexOf("ContactForm.aspx") >= 0 || previousPage.indexOf("ChangePass.aspx") >= 0 || previousPage.indexOf("Subscription.aspx") >= 0
+                    //|| previousPage.indexOf("Registration_Success.aspx") >= 0 || previousPage.indexOf("Disclaimer.aspx") >= 0
+
+
+
+
+                    &&
+
+                    (currentPage.indexOf("Subscription_Category.aspx") <= -1 && currentPage.indexOf("Subscription_Navigate.aspx") <= -1 && currentPage.indexOf("CN_Subscription.aspx") <= -1 && currentPage.indexOf("CN_Participant.aspx") <= -1
+                        && currentPage.indexOf("UnSubscription.aspx") <= -1 && currentPage.indexOf("UNTSSubscription.aspx") <= -1 && currentPage.indexOf("CCTC_Subscription.aspx") <= -1 && currentPage.indexOf("CTC_Subscription.aspx") <= -1
+                        && currentPage.indexOf("MonthlyStateSubscription.aspx") <= -1 && currentPage.indexOf("UNTS_Unsubscription.aspx") <= -1
+                        && currentPage.indexOf("ContactForm.aspx") <= -1 && currentPage.indexOf("ChangePass.aspx") <= -1 && currentPage.indexOf("Subscription.aspx") <= -1 && currentPage.indexOf("Login.aspx") <= -1
+                        && currentPage.indexOf("Registration_Success.aspx") <= -1 && currentPage.indexOf("Disclaimer.aspx") <= -1 && currentPage.indexOf("RT_Participant.aspx") <= -1
+                    )) {
+                    var culture = '_en';
+
+                    $("#btnYes").addClass("btn btn-primary");
+                    $("#btnNo").addClass("btn btn-info");
+                    $("#dialog").css('line-height', '24px')
+
+                    if (culture == "_en") {
+                        $("#dialog").show();
+						$("#dialog").removeClass("hidden");
+                        $("#btnYes").prop('value', 'Log Out');
+
+                        $("#btnNo").prop('value', 'Cancel');
+
+                        $("#dialog").prop('title', 'Automated Subscription');
+
+                        //$("#dialog").prop('background-color', '#C1D3F2');
+
+                        //$("#btnYes").value= "Log Out-I";
+                        //$("#btnNo").value="Cancel-I"
+                        Dialog('You are leaving the Automated Subscription Services. Please Log out.',
+                            function () {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/Pages/Ajax.aspx" + "/LogOutSession",
+                                    data: '{}',
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    success: function (data) {
+                                        //alert('yes');
+                                        $('#ctl00_ctl00_lblUserName').html("");
+                                },
+                                error: function (xhr, status, error) {
+                                    alert(error);
+                                }
+                            });
+                            },
+                            function () {
+
+                                history.go(-1);
+                                $(location).attr('href', previousPage);
+                            }
+
+                        );
+
+                        return true;
+                    }
+                    else {
+                        $('#dialog').show();
+						$("#dialog").removeClass("hidden");
+                        $("#btnYes").prop('value', 'Déconnecter');
+                        $("#btnNo").prop('value', 'Annuler');
+                        $("#dialog").prop('title', 'Services automatisés d\'abonnement');
+                        Dialog("Vous êtes sur le point de quitter le Service d'inscription. Veuillez vous déconnecter.",
+                            function () {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "/Pages/Ajax.aspx" + "/LogOutSession",
+                                    data: '{}',
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    success: function (data) {
+                                        $('#ctl00_ctl00_lblUserName').html("");
+                                },
+                                error: function (xhr, status, error) {
+                                    alert(error);
+                                }
+                            });
+                            },
+                            function () {
+
+                                history.go(-1);
+                                $(location).attr('href', previousPage);
+                            }
+
+
+                        );
+
+
+                        //if (!confirm("You are leaving the Automated Subscription Services. Please Log out"))
+                        //{
+                        //    history.go(-1);                        
+                        //}
+                        //else
+                        //{
+                        ////    $.ajax({
+                        ////        type: "POST",
+                        ////        url: "/Pages/Ajax.aspx" + "/LogOutSession",
+                        ////        data: '{}',
+                        ////        contentType: "application/json; charset=utf-8",
+                        ////        dataType: "json",
+                        ////        success: function (data) {
+                        ////        },
+                        ////        error: function (xhr, status, error) {
+                        ////            alert(error);
+                        ////        }
+                        ////    });
+                        ////}
+                        return true;
+                    }
+
+
+                }
+
+
+                function Dialog(message, yesCallback, noCallback) {
+                    $('.title').html(message);
+                    var dialog = $('#dialog').dialog({ modal: true });
+
+                    $('#btnYes').click(function () {
+                        dialog.dialog('close');
+                        yesCallback();
+                    });
+                    $('#btnNo').click(function () {
+                        dialog.dialog('close');
+                        noCallback();
+                    });
+                }
+            }
+        }
+
+
+
+
+        $(document).ready(function () {
+
+
+
+            if ($("#ctl00_ctl00_ContentPlaceHolder1_hdnJobRunningStatus").val() == "running") {
+
+                /*$("#updating").text("The website is being updated… please wait...");
+                $("#updating").show();
+                $(".content").hide();*/
+            }
+
+
+            //Update all links in the content section with french language parameter
+            var cc = "_en";
+            if (cc == "_fr") {
+                $("div.col-sm-9.content").find("a").each(function () {
+                    var link = $(this).attr("href");
+                    if (link != null && link.indexOf("javascript") < 0 && link.indexOf(".pdf") < 0 && link.indexOf("#") < 0) { //Ignore javascript links
+
+                        link = link.replace("_en", "_fr");
+                        if (link.indexOf("_fr") < 0) {
+                            if (link.indexOf("?") < 0) {
+                                $(this).attr("href", link + "?clang=_fr");
+                            }
+                            else {
+                                $(this).attr("href", link + "&clang=_fr");
+                            }
+                        }
+                    }
+
+                });
+            }
+            //return false;
+        });
+    </script>
+</head>
+<body id="ctl00_ctl00_htmlBody">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLLHMXN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <form name="aspnetForm" method="post" action="./ViewDetails.aspx?src=TREATY&amp;mtdsg_no=IV-13&amp;chapter=4&amp;clang=_en" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=nnHyWnZ5bTPuYszCeiYmK60zbek0Itjq_w79Nsa5l8Dev4ETTQowYovyBE0-BEWHwmzr-NSG6elRxD8f4oyV-jw3DOserCnVRDqRRLwpT4Q7m_Pa2n3gXlzPG-fqbockiiQOaEhS6KcUCjMM94BLrywvBMEVCQ-gKt8nMGYurfo1&amp;t=b990ecd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="678F106B" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="WOC/evlrwqt2EXujp6Cz2b19LcwTkXE9jgPFRhY+q9uG/bzBgjcToYM9URoJwtxB5d5U/HOXMTtiXp0maWgNrBGHLaglv3To06YryD7h9lKesxwWZibmHdW0wJPqAl+XsTRZYvqqLm8zFVv1ia4br3baCm08FertiOW/8hS9mq/VyQAI7DbWZYT9gqFFm6Hcocd3ba/mSiccGr30rMrv+j6XjbO62JAOS2Jh4ijJA2PnXAb/rkm1I76+pO7sks2vSQq0c+r6H3UlaZyhakXnfaIh1lavOIxWLyW4tdtdTfWn6jwfA4i/ZMKWyyKn0RkALCibvUPgSpJDYeHrnbo0+79cvuMzhIV4i02PFLcYrdiagV7ElI1qWPhd7W8Ln/jIwnqnEtQO2czbHZmpduw0u3RQO19xyzBdWoBrHuKKgHnxFjXE6R54/nhWxtj0dZoS9EUQXC9pCC615ZDEfgPOEQzSFLiqzapu6FFwpymmdDjrnHhp0VTZzfgBtIxzo2sw3DD6C5McuEwByQN3XOAFmhmW/G3aQNeY/Hkdn54cTi3DjWMlfCCJ31wRP/ptp12ASA6dy/gesA7R3tyUUTC6a8VG977IvjnKAcStbeKmXz6LegzeunZGFK2ljP8Tk4YgnwTfBh3pWBCaii9zS6pree8B5li9pnQZk19PcXn4fHrO8rPAyp5XbAZ8v5T3kOCJ4eFkhjMswhwRtSfM8znTxJVJTU4aoDtsdU9AZxwk10BU+aOrqb1o0Xce/UNKCZM04xp4N9P50elN2xAtbi5FRE0B1JGTThH4lFq3wiW4FxHoT4zy0pciuxP795AiPIXmwsDGHFy7Kc8fEBeMe3pWyebyuMZLH3eUht0tJD9ZIjrzaDRXc0/cmQRIn1yXA7VvqOy/YTuBdBHEkDWXIXXEYlqwufYE5zObddQ4I/xS3crKGU75T1EiCdDXR1g+C8Q2Ldwim57DwdKXwDGWu+8jKbFkN8gD4wRq0jgm2yW8LxE/uq4oroUKIG4qBusv/D0yDbz+TmhZSwWcomybsKXZCc/SnAykJ8qV/vqdbfA0FV8bR9cLfSXiTqSHw5VE+4a3d5iYIkQWEHZurSaPZzq6WWMkcdy7t/3FW4FkGThvqhTgR0cjl9DIX4XQHAIuXHbn1mNmaP81q1l/pVLKIRHrJTVcOKjfkRmKkzRW63jHKHT9PXtvP/dch3n0oiUJm0X7ZJjU1HhnL7k1daUCVF6H3btxIo1uXZREltfl0WQQSJRo2hTfclyUdl8Bbna7lf8XmAg/aOjK5uYFZP+eWe5sfErWaMAFRT9UrSU8Z1eSaKtkyBKEUea3mRIw4oRG++IUlGtKBcI27SG5dQDs03HMjQ==" />
+        <!-- Start of Header Section -->
+        <!-- Start of Top Bar Section -->
+        <div class="top-bar-section">
+            <div class="container p-0">
+                <div class="col-lg-12 text-right">
+                    <ul>
+                        <li><span id="ctl00_ctl00_lblEnvironment"></span></li>
+                            
+                        <li><span id="ctl00_ctl00_lblPipe"></span></li>
+                            
+
+                        
+                        <li>
+                            <span id="ctl00_ctl00_lblUserName"></span></li>
+                        <li><a href="/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-13&chapter=4&clang=_fr" id="ctl00_ctl00_langSwitch">Fran&#231;ais</a></li>
+                        <li>|</li>
+                        <li>
+                            <a id="ctl00_ctl00_linkContactUs" href="Contact.aspx?clang=_en">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Top Bar Section -->
+        <!-- Start of Logo, Search & Navigation Section -->
+        <div class="container p-0">
+            <div class="col-sm-6 col-xs-6">
+                <h1>
+                    <a id="ctl00_ctl00_linkLogo" title="United Nations Treaty Collection" class="logo" href="Home.aspx?clang=_en">Home Page</a>
+                    
+                </h1>
+            </div>
+            <div class="col-sm-6 col-xs-6 search-section">
+                <input type="text" placeholder="Search" title="Search" id="txtSearch" />  
+                <button type="submit" value="" alt="clear" onclick="FullTextSearch()"><i class="fa fa-search"><span style="font-size:0px">Search</span></i></button>              
+               
+                <input type="hidden" name="ctl00$ctl00$hdnLanguage" id="ctl00_ctl00_hdnLanguage" value="_en" />
+            </div>
+            <div class="clearfix"></div>
+            
+
+<nav class="navbar navbar-expand-md navbar-inverse navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-bs-target="#navbar" data-bs-toggle="collapse" class="navbar-toggle collapsed" type="button"><span class="sr-only">Main Menu</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar">
+            
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl00_linkMenu" class="nav-link" aria-current="page" href="Home.aspx?clang=_en">
+                                <img src="../images/icon-home.png" alt="Home" title="Home">
+							</a>
+						</li>
+                
+                    <li class="nav-item dropdown">
+                        <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl01_linkMenu" aria-expanded="false" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" href="#">Overview <span class="fa fa-angle-down caret"></span></a>
+                        
+                                <ul class="dropdown-menu" role="menu">
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl01_rptTopSubMenu_ctl01_linkSubMenu" class="dropdown-item" href="Overview.aspx?path=overview/glossary/page1_en.xml">Glossary</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl01_rptTopSubMenu_ctl02_linkSubMenu" class="dropdown-item" href="Overview.aspx?path=overview/faq/page1_en.xml">FAQ</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl01_rptTopSubMenu_ctl03_linkSubMenu" class="dropdown-item" href="Overview.aspx?path=overview/sitemap/page1_en.xml">Sitemap</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl01_rptTopSubMenu_ctl04_linkSubMenu" class="dropdown-item" href="Contact.aspx?clang=_en">Contact Us</a>
+                                </li>
+                            
+                                </ul>
+                            
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_linkMenu" class="active" aria-expanded="false" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" href="#">Depositary <span class="fa fa-angle-down caret"></span></a>
+                        
+                                <ul class="dropdown-menu" role="menu">
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl01_linkSubMenu" class="dropdown-item" href="ParticipationStatus.aspx?clang=_en">Status of Treaties</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl02_linkSubMenu" class="dropdown-item" href="CNs.aspx?cnTab=tab2&amp;clang=_en">Depositary Notifications</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl03_linkSubMenu" class="dropdown-item" href="CTCs.aspx?clang=_en">Certified True Copies</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl04_linkSubMenu" class="dropdown-item" href="PhotoList.aspx?clang=_en">Photos of Treaty Ceremonies</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl05_linkSubMenu" class="dropdown-item" href="Content.aspx?path=Publication/ModelInstruments/Page1_en.xml">Model Instruments</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl06_linkSubMenu" class="dropdown-item" href="Content.aspx?path=DB/titles/page1_en.xml">Titles of Treaties</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl07_linkSubMenu" class="dropdown-item" href="LON.aspx?clang=_en">League of Nations Treaties</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl02_rptTopSubMenu_ctl08_linkSubMenu" class="dropdown-item" href="Content.aspx?path=Publication/MTDSG/Volume_en.xml">Status of treaties (1959-2009)</a>
+                                </li>
+                            
+                                </ul>
+                            
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_linkMenu" aria-expanded="false" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" href="#">Registration & Publication <span class="fa fa-angle-down caret"></span></a>
+                        
+                                <ul class="dropdown-menu" role="menu">
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl01_linkSubMenu" class="dropdown-item" href="AdvanceSearch.aspx?tab=UNTS&amp;clang=_en">UN Treaty Series</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl02_linkSubMenu" class="dropdown-item" href="MSDatabase.aspx?clang=_en">Monthly Statements</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl03_linkSubMenu" class="dropdown-item" href="CumulativeIndexes.aspx?clang=_en">Cumulative Index</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl04_linkSubMenu" class="dropdown-item" href="LONOnline.aspx?clang=_en">League of Nations Treaty Series</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl05_linkSubMenu" class="dropdown-item" href="https://treaties.un.org/doc/source/checklist-E.pdf" target="_blank">Registration Checklist</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl06_linkSubMenu" class="dropdown-item" href="../doc/source/PublicationChecklist-E.pdf" target="_blank">Publication Checklist</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl07_linkSubMenu" class="dropdown-item" href="RegistrationPublication.aspx?path=overview/limitedPubPolicy/page1_en.xml">Limited Publication Policy</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl03_rptTopSubMenu_ctl08_linkSubMenu" class="dropdown-item" href="https://treaties.un.org/doc/source/guidelines.pdf" target="_blank">Technical Guidelines</a>
+                                </li>
+                            
+                                </ul>
+                            
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_linkMenu" aria-expanded="false" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" href="#">Resources <span class="fa fa-angle-down caret"></span></a>
+                        
+                                <ul class="dropdown-menu" role="menu">
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl01_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/TH/Page1_en.xml">Treaty Handbook</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl02_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/FC/Page1_en.xml">Final Clauses Handbook</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl03_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/SoP/Page1_en.xml">Summary of Practice</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl04_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/GA/Page1_en.xml">General Assembly Resolutions</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl05_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/NV/Page1_en.xml">Notes verbales</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl06_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/Regulation/Page1_en.xml">Regulations</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl07_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/SGBulletin/Page1_en.xml">Secretary-General Bulletin</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl08_linkSubMenu" class="dropdown-item" href="Resource.aspx?path=Publication/ModelInstruments/Page1_en.xml">Model Instruments</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl04_rptTopSubMenu_ctl09_linkSubMenu" class="dropdown-item" href="../doc/source/ModelCertifyingStatement.pdf" target="_blank">Model Certifying Statement</a>
+                                </li>
+                            
+                                </ul>
+                            
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl05_linkMenu" aria-expanded="false" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" href="#">Training <span class="fa fa-angle-down caret"></span></a>
+                        
+                                <ul class="dropdown-menu" role="menu">
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl05_rptTopSubMenu_ctl01_linkSubMenu" class="dropdown-item" href="Training.aspx?path=Training/trainingNY/Page1_en.xml">UN Headquarters</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl05_rptTopSubMenu_ctl02_linkSubMenu" class="dropdown-item" href="Training.aspx?path=Training/trainingRegional/Page1_en.xml">Regional</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl05_rptTopSubMenu_ctl03_linkSubMenu" class="dropdown-item" href="Training.aspx?path=Training/LTAssist/Page1_en.xml">Legal Technical Assistance</a>
+                                </li>
+                            
+                                </ul>
+                            
+                    </li>
+                
+                    <li class="nav-item dropdown">
+                        <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl06_linkMenu" aria-expanded="false" role="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" href="#">Treaty Events <span class="fa fa-angle-down caret"></span></a>
+                        
+                                <ul class="dropdown-menu" role="menu">
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl06_rptTopSubMenu_ctl01_linkSubMenu" class="dropdown-item" href="TreatyEvents.aspx?path=Treaty/Focus/Page1_en.xml">Current Event</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl06_rptTopSubMenu_ctl02_linkSubMenu" class="dropdown-item" href="TreatyEvents.aspx?path=Treaty/PastTreaty/Page1_en.xml">Past Events</a>
+                                </li>
+                            
+                                <li>
+                                    <a id="ctl00_ctl00_TopMenu_rptTopMenu_ctl06_rptTopSubMenu_ctl03_linkSubMenu" class="dropdown-item" href="TreatyEvents.aspx?path=Treaty/SpecialTreaty/Page1_en.xml">Special Events</a>
+                                </li>
+                            
+                                </ul>
+                            
+                    </li>
+                
+                    </ul>
+                
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+
+
+        </div>
+        <!-- End of Logo, Search & Navigation Section -->
+        <!-- End of Header Section -->
+        <div class="clearfix"></div>
+        <div>
+            
+            <div id="ctl00_ctl00_UpdtProgress" style="display:none;">
+	
+                    <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #ccc; opacity: 0.5; filter: alpha(opacity=50);">
+                        <image  src="../Images/ajax-loader (2).gif" alt="Image Loading.." style="padding: 10px; position: fixed; top: 45%; left: 50%;" />
+                    </div>
+                
+</div>
+            
+    <!-- Start of Contentarea Section -->
+    
+    <div id="dialog" title="Automated Subscription" class="hidden">
+        <div class='title'>
+
+        </div>
+        <br />
+         <input  type='button' value='Log Out' id='btnYes' />
+         <input type='button' value='Cancel' id='btnNo' />
+    </div>
+
+   
+
+    <div class="container contentarea menu-section">
+        <!-- Start of Left Menu Section -->
+        <div class="col-sm-3 left-menu">
+            <div class="left-menu-section">
+                
+
+<h2><span id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_spnHeader">Depositary</span></h2>
+
+        <ul>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl01_linkMenu" class="active" href="ParticipationStatus.aspx?clang=_en">Status of Treaties</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl02_linkMenu" href="CNs.aspx?cnTab=tab2&amp;clang=_en">Depositary Notifications</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl03_linkMenu" href="CTCs.aspx?clang=_en">Certified True Copies</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl04_linkMenu" href="PhotoList.aspx?clang=_en">Photos of Treaty Ceremonies</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl05_linkMenu" href="Content.aspx?path=Publication/ModelInstruments/Page1_en.xml">Model Instruments</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl06_linkMenu" href="Content.aspx?path=DB/titles/page1_en.xml">Titles of Treaties</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl07_linkMenu" href="LON.aspx?clang=_en">League of Nations Treaties</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl08_linkMenu" href="Content.aspx?path=Publication/MTDSG/Volume_en.xml">Status of treaties (1959-2009)</a>
+        </li>
+    
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_LeftMenu_rptLeftMenu_ctl09_linkMenu" href="Login.aspx?lang=_en">Automated Subscription Services</a>
+        </li>
+    
+        </ul>
+    
+
+            </div>
+        </div>
+        <!-- End of Left Menu Section -->
+        <!-- Start of Right Menu Section -->
+        <div class="col-sm-9 content">
+            
+            
+    <script>
+        $(document).ready(function () {
+            //Hide subchaper dropdown if now available
+            if ($("#subchapter").html() == "") {
+                $("#subchapter").hide();
+            }
+        });
+    </script>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" class="contenttable">
+        <tr>
+            <td align="left" valign="top">
+                
+                
+                
+                
+                
+                
+                
+                
+                <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolderInnerPage$divFlag" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divFlag" value="1" />
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                    <tr>
+                        <td align="right" valign="top" style="padding: 5px 0;">
+                            
+<div id="navcontainer">
+
+    <ul class="result-options top-mar-0">
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ucicons_Printimg" title="Print this page" onclick="return PrintMTDSGDetails(1)" target="_blank" style="Display:none;"><i class="glyphicon glyphicon-print"></i>PRINT</a>
+        </li>
+
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ucicons_lnkMailTo" title="Send the link to this page by mail" href="mailto:?subject=Participation Status information&amp;body=https://treaties.un.org/Pages/src-TREATY-mtdsg_no-IV~13-chapter-4-lang-_en-PageView.aspx" target="_blank" style="Display:none;"><i class="fa fa-envelope-o"></i>SEND MAIL</a></li>
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ucicons_lnkPdfFile" title="View PDF of this page" href="/doc/Publication/MTDSG/Volume%20I/Chapter%20IV/IV-13.en.pdf" target="_blank" style="Display:block;"><i class="fa  fa-file-pdf-o"></i>VIEW THIS PAGE IN PDF</a></li>
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ucicons_lnkVolume" title="View the full record" href="/Pages/showDetails.aspx?objid=080000028004b0a9&amp;clang=_en" target="_blank" style="Display:none;"> <i class="fa   fa-file-text-o"></i>FULL DETAILS</a></li>
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ucicons_lnkCTC" title="Certified True Copy in PDF" target="_blank" style="Display:none;"> <i class="fa  fa-certificate"></i>VIEW CTC</a></li>
+        <li>
+            <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ucicons_lnkXml" title="XML source of the page" class="iconxml" href="/doc/Publication/MTDSG/Volume%20I/Chapter%20IV/IV-13.en.xml" target="_blank" style="Display:none;"><i class="fa  fa-file-code-o"></i>VIEW XML</a></li>
+        <li>
+
+            <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ucicons_lnkfavorites" title="Create a bookmark" onclick="javascript:window.external.AddFavorite(location.href, location.href)" target="_blank" style="Display:none;"><i class="fa fa-bookmark-o"></i>BOOKMARK</a></li>
+    </ul>
+</div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_lblMsg" class="ErrorMessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top">
+                            <div class="rows">
+                                <div class=" col-sm-3 no-padd">
+                                    <select name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolderInnerPage$drpChapters" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_drpChapters" class="form-control" title="Chapters">
+	<option value="1">CHAPTER I</option>
+	<option value="2">CHAPTER II</option>
+	<option value="3">CHAPTER III</option>
+	<option selected="selected" value="4">CHAPTER IV</option>
+	<option value="5">CHAPTER V</option>
+	<option value="6">CHAPTER VI</option>
+	<option value="7">CHAPTER VII</option>
+	<option value="8">CHAPTER VIII</option>
+	<option value="9">CHAPTER IX</option>
+	<option value="10">CHAPTER X</option>
+	<option value="11">CHAPTER XI</option>
+	<option value="12">CHAPTER XII</option>
+	<option value="13">CHAPTER XIII</option>
+	<option value="14">CHAPTER XIV</option>
+	<option value="15">CHAPTER XV</option>
+	<option value="16">CHAPTER XVI</option>
+	<option value="17">CHAPTER XVII</option>
+	<option value="18">CHAPTER XVIII</option>
+	<option value="19">CHAPTER XIX</option>
+	<option value="20">CHAPTER XX</option>
+	<option value="21">CHAPTER XXI</option>
+	<option value="22">CHAPTER XXII</option>
+	<option value="23">CHAPTER XXIII</option>
+	<option value="24">CHAPTER XXIV</option>
+	<option value="25">CHAPTER XXV</option>
+	<option value="26">CHAPTER XXVI</option>
+	<option value="27">CHAPTER XXVII</option>
+	<option value="28">CHAPTER XXVIII</option>
+	<option value="29">CHAPTER XXIX</option>
+
+</select>
+                                </div>
+
+                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_subchapter" class="col-sm-1 no-padd no-padd-mob-left" style="padding-left:10px;display:none;">
+                                    
+                                </div>
+
+                                <div class="col-sm-2 no-padd-mob-left">
+                                    <select name="ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolderInnerPage$drpSubChapters" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_drpSubChapters" class="form-control" title="Sub Chapters">
+	<option value="329">1.</option>
+	<option value="330">2.</option>
+	<option value="331">2.a.</option>
+	<option value="332">3.</option>
+	<option value="118">3.a.</option>
+	<option value="335">4.</option>
+	<option value="336">5.</option>
+	<option value="337">6.</option>
+	<option value="338">7.</option>
+	<option value="339">8.</option>
+	<option value="133">8.a.</option>
+	<option value="134">8.b.</option>
+	<option value="135">9.</option>
+	<option value="136">9.a.</option>
+	<option value="137">9.b.</option>
+	<option value="138">10.</option>
+	<option value="139">11.</option>
+	<option value="140">11.a.</option>
+	<option value="141">11.b.</option>
+	<option value="142">11.c.</option>
+	<option value="679">11.d.</option>
+	<option value="143">12.</option>
+	<option selected="selected" value="144">13.</option>
+	<option value="145">14.</option>
+	<option value="2">15.</option>
+	<option value="3">15.a.</option>
+	<option value="4">16.</option>
+
+</select>
+                                </div>
+                            </div>
+
+                            <a id="top">
+                                <!--  <img id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_imgBottom" src="../Images/bottom_btn.gif" border="0" />-->
+                            </a>
+
+                        </td>
+                    </tr>
+
+                    
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="contenttable table-responsive tbl-mob">
+                    <tr>
+
+                        <td align="left" valign="top" id="headerbox">
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_mainTable">
+                                <div class="rows">
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_div3" class="rows top-10 padd-5 heading-three">STATUS AS AT : 03-02-2026 10:16:18 EDT</div>
+
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tcHead1">
+                                        
+                                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptHead_ctl00_tcHead" style="font-weight: bold; text-align: center;">
+                                                    CHAPTER IV
+                                                </div>
+                                                <div>
+                                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptHead_ctl00_tcText" class="tcTextCenter bold">
+                                                        HUMAN RIGHTS
+                                                    </div>
+                                                </div>
+
+                                            
+                                    </div>
+
+
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Td1" valign="middle">
+                                        
+
+                                    </div>
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tc" class="heading-four">
+                                        
+                                                <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                                    <tr>
+                                                        <td align="center" valign="top" style="padding-left: 2px">
+                                                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptTreaty_ctl00_tcTreaty" style="font-weight: bold" class="treatyCenter">
+                                                                13. 
+                                                                
+                                                                International Convention on the Protection of the Rights of All Migrant Workers and Members of their Families
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" valign="top" style="width: 83%">
+                                                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptTreaty_ctl00_tcText" class="treatyCenterSub normal">
+                                                                New York, 18 December 1990
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            
+                                    </div>
+
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr1">
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tcrptEIF" align="left" class="tcrptEIF" valign="middle" style="">
+                                            
+                                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                                        <tr>
+                                                            <td align="left" valign="top" style="padding-left: 2px; width: 15%;">
+                                                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptEIF_ctl00_tcEifLabel" style="font-weight: bold">
+                                                                    Entry into force
+                                                                </div>
+                                                            </td>
+                                                            <td align="center" valign="top" style="width: 2%">:
+                                                            </td>
+                                                            <td align="left" valign="top" style="">
+                                                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptEIF_ctl00_tcText">
+                                                                    1 July 2003, in accordance with article 87(1).
+                                                          <SUP><A onclick='ShowNoteAll()' href='#' class='noteIndex'></A> </SUP></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                
+                                        </div>
+                                    </div>
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr2">
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tcRegistration" class="tcRegistration" align="left" valign="middle" style="">
+                                            
+                                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 15%; padding-left: 2px; font-weight: bold;">
+                                                                Registration
+                                                            </td>
+                                                            <td align="center" valign="top" style="width: 2%">:
+                                                            </td>
+                                                            <td align="left" valign="top" style="">
+                                                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptRegistration_ctl00_tcText">
+                                                                    1 July 2003, No. 39481
+                                                          <SUP><A onclick='ShowNoteAll()' href='#' class='noteIndex'></A> </SUP></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                
+                                        </div>
+                                    </div>
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr3">
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tcStatus" align="left" valign="middle" style="" class="tcStatus">
+                                            
+                                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 15%; padding-left: 2px; font-weight: bold;" class="headStatus">
+                                                                Status
+                                                            </td>
+                                                            <td align="center" valign="top" style="width: 2%">:
+                                                            </td>
+                                                            <td align="left" valign="top" style="/*width: 78%*/">
+                                                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptStatus_ctl00_tcText">Signatories :                                                                    40.                                                                     Parties :                                                                    60</div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                
+                                        </div>
+                                    </div>
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr4">
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tcText1" class="tcText1" align="left" valign="middle" style="">
+                                            
+                                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                                        <tr>
+
+
+                                                            <td align="left" valign="top" style="font-weight: bold; padding-left: 2px; width: 15%">
+                                                                Text
+                                                            </td>
+                                                            <td align="center" valign="top" style="width: 2%">:
+                                                            </td>
+                                                            <td align="left" valign="top" style="">
+                                                                <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptText_ctl00_hypCTC" href="/doc/Treaties/1990/12/19901218%2008-12%20AM/Ch_IV_13p.pdf" target="_blank"><b>Certified true copy<br/><br/></b></a>
+
+                                                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptText_ctl00_tcText" style="text-align: left"><Text>United Nations, <i>Treaty Series</i>, <a href='https://treaties.un.org/doc/Publication/UNTS/Volume 2220/v2220.pdf' target='_blank'>vol. 2220</a>, p. 3; Doc. <a href="/doc/source/docs/A_RES_45_158-E.pdf" target="_blank">A/RES/45/158</a>.</text><br></text><br></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr5">
+                                        
+                                    </div>
+                                    <!---->
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr6">
+                                        
+                                    </div>
+                                    <!-- -->
+                                    <!---->
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr7">
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tcNotes" align="left" valign="middle" style="" class="tcCommon">
+                                            
+                                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                                        <tr>
+                                                            <td align="left" valign="top" style="font-weight: bold; padding-left: 2px; width: 15%;">Note
+                                                            </td>
+                                                            <td align="center" valign="top" style="width: 2%">:
+                                                            </td>
+                                                            <td align="left" valign="top" style="">
+                                                                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rptNotes_ctl00_tcText" style="text-align: left"><Text>The Convention, of which the Arabic, Chinese, English, French, Russian and Spanish texts are equally authentic, was adopted by Resolution &nbsp;<a href="/doc/source/docs/A_RES_45_158-E.pdf" target="_blank">A/RES/45/158</a><SUP><A  onclick='ShowNoteAll()' href='#1' class='noteIndex' >1</A></SUP> of 18 December 1990 at the forty-fifth session of the General Assembly of the United Nations. The Convention is open for signature by all States in accordance with its article 86 (1).</text><br></text><br></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+        <tr id="Tr8">
+            <td id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_ractification_Td" align="left" valign="middle" style="background-color: #ffffff; height: 5px" disabled="disabled">
+                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tcText" style="text-align: left" disabled="disabled">
+                </div>
+            </td>
+
+        </tr>
+        <tr id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr9">
+	<td id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_td_Ptitle" align="left" valign="middle" style="background-color: #ffffff; height: 5px">
+                
+                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                            <tr>
+                                <td align="left" valign="top" style="width: 78%; background-color: #ffffff;">
+                                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_rpt_Ptitle_ctl00_tcText" style="text-align: left; display: block"><center><b>
+                                        
+                                    </b></center></div>
+                                </td>
+                            </tr>
+                        </table>
+                    
+            </td>
+</tr>
+
+        <tr>
+            <td>
+                <table class="table-responsive tbl-mob" style="width: 100%;">
+                    <tr>
+
+                        <td align="left" valign="top" id="participants" style="height: 18px">
+
+                            <a id="A1"></a>
+
+                            <div class="table-responsive">
+                                <div>
+
+
+
+                                    <table id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblgrid" class="table table-striped table-bordered table-hover table-condensed" style="background-color:#D7D7D7">
+	<tr class="thead-one">
+		<td valign="bottom" width="43%">Participant<br></td>
+		<td valign="bottom" width="100">Signature, Succession to signature(d)<br></td>
+		<td valign="bottom">Ratification, Accession(a), Succession(d)<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Albania<br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;5 Jun	 2007 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Algeria</A><br></td>
+		<td>&nbsp;</td>
+		<td>21 Apr	 2005 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Argentina</A><br></td>
+		<td>10 Aug	 2004 <br></td>
+		<td>23 Feb	 2007 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Armenia<br></td>
+		<td>26 Sep	 2013 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Azerbaijan<br></td>
+		<td>&nbsp;</td>
+		<td>11 Jan	 1999 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Bangladesh<br></td>
+		<td> &nbsp;7 Oct	 1998 <br></td>
+		<td>24 Aug	 2011 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Belize<br></td>
+		<td>&nbsp;</td>
+		<td>14 Nov	 2001 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Benin<br></td>
+		<td>15 Sep	 2005 <br></td>
+		<td> &nbsp;6 Jul	 2018 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Bolivia (Plurinational State of)<br></td>
+		<td>&nbsp;</td>
+		<td>16 Oct	 2000 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Bosnia and Herzegovina<br></td>
+		<td>&nbsp;</td>
+		<td>13 Dec	 1996 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Burkina Faso<br></td>
+		<td>16 Nov	 2001 <br></td>
+		<td>26 Nov	 2003 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Cabo Verde<br></td>
+		<td>&nbsp;</td>
+		<td>16 Sep	 1997 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Cambodia<br></td>
+		<td>27 Sep	 2004 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Cameroon<br></td>
+		<td>15 Dec	 2009 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Chad<br></td>
+		<td>26 Sep	 2012 <br></td>
+		<td>22 Feb	 2022 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Chile</A><br></td>
+		<td>24 Sep	 1993 <br></td>
+		<td>21 Mar	 2005 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Colombia</A><br></td>
+		<td>&nbsp;</td>
+		<td>24 May	 1995 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Comoros<br></td>
+		<td>22 Sep	 2000 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Congo<br></td>
+		<td>29 Sep	 2008 <br></td>
+		<td>31 Mar	 2017 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Côte d'Ivoire<br></td>
+		<td>&nbsp;</td>
+		<td>26 Sep	 2023 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Ecuador</A><br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;5 Feb	 2002 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Egypt</A><br></td>
+		<td>&nbsp;</td>
+		<td>19 Feb	 1993 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>El Salvador</A><br></td>
+		<td>13 Sep	 2002 <br></td>
+		<td>14 Mar	 2003 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Fiji</A><br></td>
+		<td>&nbsp;</td>
+		<td>19 Aug	 2019 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Gabon<br></td>
+		<td>15 Dec	 2004 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Gambia<br></td>
+		<td>20 Sep	 2017 <br></td>
+		<td>28 Sep	 2018 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Ghana<br></td>
+		<td> &nbsp;7 Sep	 2000 <br></td>
+		<td> &nbsp;7 Sep	 2000 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Guatemala</A><br></td>
+		<td> &nbsp;7 Sep	 2000 <br></td>
+		<td>14 Mar	 2003 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Guinea<br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;7 Sep	 2000 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Guinea-Bissau</A><br></td>
+		<td>12 Sep	 2000 <br></td>
+		<td>22 Oct	 2018 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Guyana<br></td>
+		<td>15 Sep	 2005 <br></td>
+		<td> &nbsp;7 Jul	 2010 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Haiti<br></td>
+		<td> &nbsp;5 Dec	 2013 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Honduras<br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;9 Aug	 2005 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Indonesia<br></td>
+		<td>22 Sep	 2004 <br></td>
+		<td>31 May	 2012 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Jamaica<br></td>
+		<td>25 Sep	 2008 <br></td>
+		<td>25 Sep	 2008 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Kyrgyzstan<br></td>
+		<td>&nbsp;</td>
+		<td>29 Sep	 2003 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Lesotho<br></td>
+		<td>24 Sep	 2004 <br></td>
+		<td>16 Sep	 2005 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Liberia<br></td>
+		<td>22 Sep	 2004 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Libya<br></td>
+		<td>&nbsp;</td>
+		<td>18 Jun	 2004 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Madagascar<br></td>
+		<td>24 Sep	 2014 <br></td>
+		<td>13 May	 2015 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Malawi<br></td>
+		<td>23 Sep	 2022 <br></td>
+		<td>23 Sep	 2022 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Mali<br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;5 Jun	 2003 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Mauritania<br></td>
+		<td>&nbsp;</td>
+		<td>22 Jan	 2007 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Mexico</A><br></td>
+		<td>22 May	 1991 <br></td>
+		<td> &nbsp;8 Mar	 1999 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Montenegro <SUP><A onclick='ShowNoteAll()' href='#2' class='noteIndex'>2</A> </SUP><br></td>
+		<td>23 Oct	 2006 d<br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Morocco</A><br></td>
+		<td>15 Aug	 1991 <br></td>
+		<td>21 Jun	 1993 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Mozambique<br></td>
+		<td>15 Mar	 2012 <br></td>
+		<td>19 Aug	 2013 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Nicaragua</A><br></td>
+		<td>&nbsp;</td>
+		<td>26 Oct	 2005 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Niger<br></td>
+		<td>&nbsp;</td>
+		<td>18 Mar	 2009 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Nigeria<br></td>
+		<td>&nbsp;</td>
+		<td>27 Jul	 2009 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Palau<br></td>
+		<td>20 Sep	 2011 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Paraguay<br></td>
+		<td>13 Sep	 2000 <br></td>
+		<td>23 Sep	 2008 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Peru<br></td>
+		<td>22 Sep	 2004 <br></td>
+		<td>14 Sep	 2005 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Philippines<br></td>
+		<td>15 Nov	 1993 <br></td>
+		<td> &nbsp;5 Jul	 1995 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Rwanda<br></td>
+		<td>&nbsp;</td>
+		<td>15 Dec	 2008 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Sao Tome and Principe<br></td>
+		<td> &nbsp;6 Sep	 2000 <br></td>
+		<td>10 Jan	 2017 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Senegal<br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;9 Jun	 1999 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Serbia<br></td>
+		<td>11 Nov	 2004 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Seychelles<br></td>
+		<td>&nbsp;</td>
+		<td>15 Dec	 1994 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Sierra Leone<br></td>
+		<td>15 Sep	 2000 <br></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Sri Lanka</A><br></td>
+		<td>&nbsp;</td>
+		<td>11 Mar	 1996 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>St. Vincent and the Grenadines<br></td>
+		<td>&nbsp;</td>
+		<td>29 Oct	 2010 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Syrian Arab Republic</A><br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;2 Jun	 2005 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Tajikistan<br></td>
+		<td> &nbsp;7 Sep	 2000 <br></td>
+		<td> &nbsp;8 Jan	 2002 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Timor-Leste<br></td>
+		<td>&nbsp;</td>
+		<td>30 Jan	 2004 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td>Togo<br></td>
+		<td>15 Nov	 2001 <br></td>
+		<td>16 Dec	 2020 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Türkiye</A><br></td>
+		<td>13 Jan	 1999 <br></td>
+		<td>27 Sep	 2004 <br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Uganda</A><br></td>
+		<td>&nbsp;</td>
+		<td>14 Nov	 1995 a<br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Uruguay</A><br></td>
+		<td>&nbsp;</td>
+		<td>15 Feb	 2001 a<br></td>
+	</tr>
+	<tr class="trBGGrey">
+		<td><A href='#EndDec' class='noteIndex' onclick='return ShowDeclarationsNew(getInnerText(this),"","_en","4","144");'>Venezuela (Bolivarian Republic of)</A><br></td>
+		<td> &nbsp;4 Oct	 2011 <br></td>
+		<td>25 Oct	 2016 <br></td>
+	</tr>
+	<tr class="trBWhite">
+		<td>Zimbabwe<br></td>
+		<td>&nbsp;</td>
+		<td> &nbsp;5 Nov	 2024 a<br></td>
+	</tr>
+</table>
+
+                                </div>
+                            </div>
+
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        
+        <tr>
+            <td>
+                <table class="table-responsive tbl-mob" style="width: 100%;">
+                    <tr>
+
+                        <td align="left" valign="bottom" id="specialTable">
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divnew" style="border: 0px;" class="caption">
+                            </div>
+                            <div id="specialtbl">
+
+
+                                <div class="table-responsive">
+                                    <!-- Special table Title-->
+                                    <table id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Table2" class="heading-four bdr-three" cellpadding="2" cellspacing="1" border="0" width="100%" style="Display:none;">
+	<tr id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Tr10">
+		<td id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Td2" align="left" valign="middle">
+                                                
+                                            </td>
+	</tr>
+</table>
+
+                                </div>
+
+                                <span id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_TblSpace" style="margin-bottom: 15px; display: block"></span>
+                                <div class="table-responsive">
+                                    <!-- Special Table content -->
+                                    <table id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_Table1" style="Display:none;">
+</table>
+
+                                </div>
+                            </div>
+
+
+                        </td>
+
+
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="width: 100%">
+                <a name="EndDec">
+                    <div class="scroll-wrapper">
+                        <iframe id="ifrm" name="ifrm" frameborder="0" style="display: none; border: solid 1px #CCCCCC;"
+                            height="300" width="98%" scrolling="yes"></iframe>
+                    </div>
+                </a>
+                <a id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_hlkFrameClose" class="noteIndex" style="display: none; text-align: center;" onclick="CloseDecFrame();">Close Window</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top">
+                <div id="divAll" class="table-responsive divAll">
+                    <!--- fdasdhajusdi -->
+                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblMain">
+                        <!-- row1-->
+                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divParentDecTitle" class="heading-four">
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divMainDecTilte" class="bold"><div align=center>Declarations and Reservations</div></div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divDecTilte" class="heading-four-one normal"><div align=center>(Unless otherwise indicated, the declarations and reservations were made<br>upon ratification, accession or succession.)<br></div></div>
+                        </div>
+
+                        <div>
+	<table cellspacing="0" cellpadding="0" border="0" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec">
+		<tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl02_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl02_divParticipant" class="heading-two">Algeria</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl02_divText" class="content-two"><p class='invisible'>Algeria</p><p align=left><i>Reservation:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Government of the People's Algerian Democratic Republic does not consider itself bound by article 92, paragraph 1 of this Convention which provides that any dispute between two or more States Parties concerning the interpretation or application of the present Convention, that is not settled by negotiation shall, at the request of one of them, be submitted to arbitration or to the International Court of Justice.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Government of the People's Algerian Democratic Republic considers that any such dispute may be submitted to arbitration only with the agreement of all the parties to the conflict.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl03_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl03_divParticipant" class="heading-two">Argentina</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl03_divText" class="content-two"><p class='invisible'>Argentina</p><p align=left><i>Declaration:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As provided for in article 92 (2), the Republic of Argentina does not consider itself bound by the provisions of article 92 (1) of the International Convention on the Protection of the Rights of All Migrant Workers and Members of their Families.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl04_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl04_divParticipant" class="heading-two">Chile</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl04_divText" class="content-two"><p class='invisible'>Chile</p><p align=left><i>Reservations:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Republic of Chile makes a reservation with respect to the provisions of article 22, paragraph 5, of this Convention which it considers to be inapplicable to Chile.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Republic of Chile will consider the provisions of article 48, paragraph 2, to be fulfilled under the terms of international conventions for the avoidance of double taxation that either have been entered into or will be entered into in the future.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl05_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl05_divParticipant" class="heading-two">Colombia</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl05_divText" class="content-two"><p class='invisible'>Colombia</p><p align=left><i>Reservation:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Articles 15, 46 and 47 of the [said Convention], which was adopted by means of Act No. 146 of 1994, shall be executed with the understanding that the State of Colombia retains the right to promulgate taxation, exchange and monetary regulations establishing equality of treatment of migrant workers and their families with that of nationals in respect of the import and export of personal and household effects and the transfer of earnings and savings abroad, and in respect of expropriation for reasons of equity and the nullification of ownership of property in the cases envisaged in article 34 of the Political Constitution.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl06_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl06_divParticipant" class="heading-two">Ecuador</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl06_divText" class="content-two"><p class='invisible'>Ecuador</p><p align=right>12 January 2018</p><br></n><p align=left><i>Declaration under articles 76 and 77:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Government of the Republic of Ecuador recognizes the competence of the Committee on the Protection of the Rights of All Migrant Workers and Members of Their Families:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a)	to receive and consider communications to the effect that a State Party claims that another State Party is not fulfilling its obligations under the Convention, in accordance with article 76 of the Convention; and<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b)	to receive and consider communications from or on behalf of individuals subject to its jurisdiction who claim that their individual rights as established by the Convention have been violated by that State Party, in accordance with the article 77 of the Convention.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl07_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl07_divParticipant" class="heading-two">Egypt</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl07_divText" class="content-two"><p class='invisible'>Egypt</p><p align=left><i>Reservation concerning article 4:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the purposes of the present Convention the term `members of the family' refers to persons married to migrant workers or having with them a relationship that, according to applicable law, produces effects equivalent to marriage, as well as their dependent children and other dependent persons who are recognized as members of the family by applicable legislation or applicable bilateral or multilateral agreements between the States concerned.<br></n><p align=left><i>Reservation concerning article 18, paragraph 6:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When a migrant worker or a member of his or her family has, by a final decision, been convicted of a criminal offence and when subsequently his or her conviction has been reversed or he or she has been pardoned on the ground that a new or newly discovered fact shows conclusively that there has been a miscarriage of justice, the person who has suffered punishment as a result of such conviction shall be compensated according to law, unless it is proved that the non-disclosure of the unknown fact in time is wholly or partially attributable to that person.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl08_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl08_divParticipant" class="heading-two">El Salvador</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl08_divText" class="content-two"><p class='invisible'>El Salvador</p><p align=left><i>Declarations:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Government of the Republic of El Salvador does not consider itself bound by article 92, paragraph 1, of the Convention. With respect to articles 46, 47, 48 and 61, paragraph 4, governing exemption from import and export duties and taxes in respect of personal and household effects and the right to transfer earnings and savings, the Government of El Salvador wishes to make it clear that the exemption shall apply only after any taxes that the articles in question might incur have been paid. Moreover, the right of workers to transfer their earnings to their State of origin or State of habitual residence may be exercised without restriction, provided that the tax obligations arising in each particular case have been fulfilled. With regard to article 32, transfer of earnings and savings shall include amounts accumulated under retirement social security schemes, whether public or private. The Government of the Republic of El Salvador wishes to reiterate its respect for all universal and regional human rights principles and norms enshrined in international human rights instruments.<br></n><p align=right>23 January 2015</p><br></n><p align=left><i>Declaration under articles 76 and 77<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... the Government of the Republic of El Salvador recognizes the competence of the Committee on the Protection of the Rights of All Migrant Workers and Members of their Families, to receive and consider communications to the effect that a State Party claims that another Party is not fulfilling its obligations, as well as communications from or on behalf of individuals subject to its jurisdiction, under articles 76 and 77, respectively, of the International Convention on the Protection of the Rights of All Migrant Workers and Members of their Families.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl09_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl09_divParticipant" class="heading-two">Fiji</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl09_divText" class="content-two"><p class='invisible'>Fiji</p><p align=left><i>Reservation:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“The Government of the Republic of Fiji declares that it does not consider itself bound by provisions of Article 92(1).”<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl10_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl10_divParticipant" class="heading-two">Guatemala</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl10_divText" class="content-two"><p class='invisible'>Guatemala</p><p align=right>11 September 2007</p><br></n><p align=left><i>Declarations:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Agrees to] recognize the competence of the Committee on the Protection of the Rights of All Migrant Workers and Members of Their Families to receive and examine communications in which one State Party to the International Convention on the Protection of the Rights of All Migrant Workers and Members of their Families alleges non-compliance by another State Party with obligations arising under the Convention, as well as to receive and examine communications sent by persons subject to the jurisdiction of a State Party, alleging the violation by that State Party of their individual rights as recognized under the Convention.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl11_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl11_divParticipant" class="heading-two">Guinea-Bissau</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl11_divText" class="content-two"><p class='invisible'>Guinea-Bissau</p><p align=left><i>Declaration regarding article 76 (1):<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Republic of Guinea-Bissau recognizes the competence of the Committee to receive and consider communications by which a Party claims that another Party is not fulfilling its obligations under the above-mentioned Convention.<br></n><p align=left><i>Declaration regarding paragraph 1 of article 92:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Republic of Guinea-Bissau does not consider itself bound by paragraph 1 of article 92, according to which any dispute between Parties concerning the interpretation or application of the Convention which is not settled by negotiation is subject to arbitration, at the request of one of them and if the Parties fail to agree on the organization of the arbitration, any of them may submit the dispute to the International Court of Justice.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl12_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl12_divParticipant" class="heading-two">Mexico <SUP><A onclick='ShowNoteAll()' href='#3' class='noteIndex'>3</A> </SUP></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl12_divText" class="content-two"><p class='invisible'>Mexico<superscript>3</superscript></p><p align=left><i>Interpretative declaration:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upon ratifying the [Convention], the Government of the United Mexican States reaffirms its political will to ensure international protection of the rights of all migrant workers, in accordance with this international instrument. all the provisions of this Convention will be applied in conformity with its national legislation.<br></n><p align=right>15 September 2008</p><br></n><p align=left><i>Declaration under article 77:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The United Mexican States recognizes as fully binding the competence of the Committee on the Protection of the Rights of All Migrant Workers and Members of Their Families, established by the International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families adopted in New York on 18 December 1990.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In accordance with article 77 of the Convention, the United Mexican States declares that it recognizes the competence of the Committee to receive and consider communications from or on behalf of individuals subject to its jurisdiction who claim that the United Mexican States has violated their individual rights as established by the Convention.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl13_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl13_divParticipant" class="heading-two">Morocco</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl13_divText" class="content-two"><p class='invisible'>Morocco</p><p align=left><i>Reservation:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The &nbsp;Government of the Kingdom of Morocco does not consider itself bound by article 92, paragraph 1 of this Convention which provides that any dispute between two or more States Parties concerning the interpretation or application of the present Convention shall, at the request of one of them, be submitted to arbitration.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Government of the Kingdom of Morocco considers that any such dispute may be submitted to arbitration only with the agreement of all the parties to the conflict.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl14_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl14_divParticipant" class="heading-two">Nicaragua</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl14_divText" class="content-two"><p class='invisible'>Nicaragua</p><p align=left><i>Declaration and reservation:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Declaration<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Republic of Nicaragua, onacceding to this Convention, agrees to apply it in accordance with its domestic laws.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reservations:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Republic of Nicaragua, in the exercise of its sovereignty, does not allow foreigners to enjoy political rights; this is embodied in articles 27 and 182 of the Constitution.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article 91 of the Convention establishes the possibility of formulating reservations at the time of signature, ratification or accession. Consequently, by virtue of the provisions of article 42, paragraph 3, of this Convention, the Republic of Nicaragua will not grant political rights to migratory workers owing to the express prohibition contained in article 27, paragraph 2, of its Constitution, which states:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Foreigners have the same rights and obligations as Nicaraguans, with the exception of political rights and others established by law; they may not intervene in the political affairs of the country."<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Republic of Nicaragua considers that this reservation is not incompatible with the object and purpose of the Convention.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl15_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl15_divParticipant" class="heading-two">Sri Lanka <SUP><A onclick='ShowNoteAll()' href='#4' class='noteIndex'>4</A> </SUP></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl15_divText" class="content-two"><p class='invisible'>Sri Lanka<superscript>4</superscript></p><p align=left><i>Declarations:<br></n><p align=left><i>Article 8 (2):<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The right of non-Sri Lankans to enter and remain in Sri&nbsp;Lanka shall be subject to existing visa regulations.<br></n><p align=left><i>Article 49:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resident visas to expatriate workers are allowed in respect of identified professions where there is a dearth of qualified personnel. Existing visa regulations do not permit migrant workers either to change their professions or the institutions in which they have been authorised to work, which is the basis on which the visa is issued.<br></n><p align=left><i>Article 54:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Protection against dismissal, quantum of remuneration, period of employment, etc., are governed by the terms of individual contracts entered into between the worker and the organisation which employs him. A visa issued to an expatriate worker under the visa regulations is limited to a pre-identified job assignment."<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl16_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl16_divParticipant" class="heading-two">Syrian Arab Republic</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl16_divText" class="content-two"><p class='invisible'>Syrian Arab Republic</p><p align=left><i>Declaration:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....accession of the Syrian Arab Republic to the said Convention thereof by its Government does not, in any way, imply recognition of Israel, nor shall it lead to any such dealing with the latter as are governed by the provisions of the Convention.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl17_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl17_divParticipant" class="heading-two">Türkiye</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl17_divText" class="content-two"><p class='invisible'>Türkiye</p><p align=left><i>Declarations:<br></n><p align=left><i>“A) The declaration regarding Article 15:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The restrictions by the related Turkish laws regarding acquisition of immovable property by the foreigners are preserved....<br></n><p align=left><i>B) The reservation regarding Article 40:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Turkish Law on Trade Unions allows only the Turkish citizens to form trade unions in Turkey."<br></n><p align=left><i>C) The declaration regarding Article 45:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The stipulations of the paragraphs 2, 3 and 4 of the Article 45 will be implemented in accordance with the provisions of the Turkish Constitution and the related Laws.<br></n><p align=left><i>D) The declaration regarding Article 46:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The implementation of the Article 46 will be made in accordance with the national laws.<br></n><p align=left><i>E) The declaration regarding Articles 76 and 77:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turkey will recognize the competence of the Committee on the Protection of the Rights of All Migrant Workers and Members of Their Families at a later time."<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl18_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl18_divParticipant" class="heading-two">Uganda</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl18_divText" class="content-two"><p class='invisible'>Uganda</p><p align=left><i>Reservation:<br></n><p align=left><i>Article 18:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"The Republic of Uganda cannot guarantee at all times to provide free legal assistance in accordance with the provisions of article 18 paragraph 3(d)."<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl19_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl19_divParticipant" class="heading-two">Uruguay</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl19_divText" class="content-two"><p class='invisible'>Uruguay</p><p align=right> 13 April 2012</p><br></n><p align=left><i>Declaration under article 77<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On behalf of the Eastern Republic of Uruguay, I have the honour to inform you that the Government of Uruguay has decided to recognize, pursuant to article 77 of the International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families, the competence of the Committee on the Protection of the Rights of All Migrant Workers and Members of Their Families to receive and consider communications from or on behalf of individuals subject to its jurisdiction who claim that their individual rights as established by the above-mentioned international instrument have been violated by the Uruguayan State.<br></n><br></div>
+                                    </td>
+		</tr><tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl20_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl20_divParticipant" class="heading-two">Venezuela (Bolivarian Republic of)</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgDec_ctl20_divText" class="content-two"><p class='invisible'>Venezuela (Bolivarian Republic of)</p><p align=left><i>Declaration:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With regard to the provisions of article 26, paragraph 1, of the International Convention on the Protection of the Rights of All Migrant Workers and Members of their Families, the Bolivarian Republic of Venezuela considers that the right to join freely any trade union, contained in subparagraph (b), applies exclusively to migrant workers.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Considering the provisions of article 92, paragraph 2, of the International Convention on the Protection of the Rights of All Migrant Workers and Members of their Families, the Bolivarian Republic of Venezuela declares that it does not consider itself bound by paragraph 1 of said article. Consequently, it does not consider itself bound to resort to arbitration as a means of dispute settlement, and does not recognize the binding jurisdiction of the International Court of Justice.<br></n><br></div>
+                                    </td>
+		</tr>
+	</table>
+</div>
+                        <!--row1 end -->
+                        <!-- row2-->
+                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divParentObjTitle" class="heading-four" style="Display:none;">
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divMainObjTitle" class="bold" style="Display:none;">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divObjTitle" class="heading-four-one normal">
+                            </div>
+                        </div>
+                        <!--row2 -->
+                        <!--row3-->
+                        <div>
+	<table cellspacing="0" cellpadding="0" border="0" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgObj" style="margin: 0 auto;">
+		<tr align="left" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgObj_ctl02_divMainText"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgObj_ctl02_divParticipant" class="heading-two">Mexico</div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgObj_ctl02_divText" class="content-two"><p class='invisible'>Mexico</p><p align=right>26 October 2017</p></n><p align=left><i>With regard to the declaration made by Venezuela upon ratification:<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After analyzing the declaration made by the Bolivarian Republic of Venezuela regarding the International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families, the Government of the United Mexican States has reached the conclusion that the declaration in fact constitutes a reservation.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This reservation, which is designed to exclude the legal effects of article 26, paragraph 1, of the Convention, is contrary to the object and purpose of the Convention and, particularly, to the right of members of the families of migrant workers to join freely any trade union or association, and therefore contravenes the provisions of article 91, paragraph 2, of the Convention and article 19 of the Vienna Convention on the Law of Treaties.<br></n></i></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This objection does not prevent the entry into force of the Convention between the Bolivarian Republic of Venezuela and the United Mexican States. &nbsp;Consequently, the Convention will apply between the two States without the Bolivarian Republic of Venezuela being able to avail itself of the above-mentioned reservation.<br></n><br></div>
+                                    </td>
+		</tr>
+	</table>
+</div>
+                        <!--row3 end-->
+                        <!--row4-->
+                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divParentDecArt" class="heading-four" style="Display:none;">
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divMainDecArt" class="bold" style="Display:none;">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divDecArt" class="heading-four-one normal">
+                            </div>
+                        </div>
+                        <!--row4 end-->
+                        <!--row5-->
+                        <div>
+
+</div>
+                        <!--row5 end-->
+                        <!--row6-->
+                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divParentNotification" class="heading-four" style="Display:none;">
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_div1" class="bold" style="Display:none;">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_div2" class="heading-four-one normal">
+                            </div>
+                        </div>
+                        <!--row6 end-->
+                        <!--row7-->
+                        
+                        <!--row7 end-->
+                        <!--row8-->
+                        
+                        
+                        
+
+                        <!--row8 end-->
+                        <!--row9-->
+                        
+                        <table id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tblDec" class="table table-striped table-bordered table-hover table-condensed" border="0" width="100%">
+</table>
+
+                        <!--row9 end-->
+                        <!--row10-->
+                        
+                        <!--row10 end-->
+                    </div>
+
+                </div>
+
+                <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divNotes" class="table-responsive">
+                    <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_divAllNotes" class="end-notes">
+                        End Note
+                    </div>
+                    <div>
+                        <div>
+	<table class="table table-striped table-bordered table-condensed bullet-points-one" cellspacing="0" cellpadding="0" border="0" id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll">
+		<tr align="justify" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl02_divNote"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl02_divNotesAll" class="divNotesAll" style="text-align: justify"><a name='1'>1</a><index></index><i>Official Records of the General Assembly, Forty-fifth Session, Supplement No. 49 (A/45/49) </i>, p. 261.<br><br></div>
+                                    </td>
+		</tr><tr align="justify" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl03_divNote"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl03_divNotesAll" class="divNotesAll" style="text-align: justify"><a name='2'>2</a><index></index>See note 1 under "Montenegro" in the "Historical Information" section in the front matter of this volume.<br><br></div>
+                                    </td>
+		</tr><tr align="justify" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl04_divNote"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl04_divNotesAll" class="divNotesAll" style="text-align: justify"><a name='3'>3</a><index></index> On 11 July 2014, the Government of Mexico notified the Secretary-General of the withdrawal of the reservation to article 22 paragraph 4 made upon ratification. The reservation which has been withdrawn read as follows:<br><br>The Government of the United Mexican States makes an express reservation with regard to article 22, paragraph 4, of this Convention, insofar as it refers to the application of article 33 of the Political Constitution of the United Mexican States and article 125 of the General Population Act.<br><br></div>
+                                    </td>
+		</tr><tr align="justify" valign="top">
+			<td>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl05_divNote"></div>
+                                        <div id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_dgNotesAll_ctl05_divNotesAll" class="divNotesAll" style="text-align: justify"><a name='4'>4</a><index></index>On 16 August 2016, the Government of the Democratic Socialist Republic of Sri Lanka notified the Secretary-General of the withdrawal of the reservation to article 29 made upon accession. The reservation which has been withdrawn read as follows: <br><br>“According to the citizenship Act No. 18 of 1948, citizenship rights flow from the father and in the event a child is born out of wedlock, from the mother. A child will be deemed to be a citizen of Sri Lanka if he and his father were born in Sri Lanka before 1.11.49 or if at the time of his birth the father was a Sri Lankan.”<br><br></div>
+                                    </td>
+		</tr>
+	</table>
+</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_tclnkNote" align="left" valign="top">
+                <table border="0" cellpadding="2" cellspacing="1" style="width: 100%">
+                    <tr>
+                        <td align="left" valign="top"></td>
+                        <td align="right" valign="top">
+                            <div class="btn-wrapper-two">
+                                <a href="#bottom">
+                                    <i class="fa fa-chevron-down"><span style="font-size: 0px">chevron-down</span></i>
+                                </a>
+                                <a href="#top">
+                                    <i class="fa fa-chevron-up"><span style="font-size: 0px">chevron-up</span></i>
+                                </a>
+                            </div>
+                            <a id="bottom">
+                                <!--<img id="ctl00_ctl00_ContentPlaceHolder1_ContentPlaceHolderInnerPage_imgTop" src="../Images/top_btn.gif" border="0" />-->
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td align="left" valign="bottom">
+                <div>
+
+</div>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top">
+                
+            </td>
+        </tr>
+    </table>
+
+        </div>
+        <div style="color: Red;" id="updating">
+
+        </div>
+        <!-- End of Right Menu Section -->
+    </div>
+    <!-- End of Contentarea Section -->
+    <input type="hidden" name="ctl00$ctl00$ContentPlaceHolder1$hdnJobRunningStatus" id="ctl00_ctl00_ContentPlaceHolder1_hdnJobRunningStatus" />
+    <input id="sessionInput" type="hidden" value='' />
+
+        </div>
+        <!-- Start of Footer Section -->
+        <div id="ctl00_ctl00_Footer_div_tout">
+<div class="footer-section">
+<div class="container">
+<div class="col-sm-4">
+<h4>ABOUT</h4>
+
+<ul>
+	<li><a href="https://www.un.org/ola/en/content/div-treaty" target="_blank">Treaty Section</a></li>
+	<li class="text-nowrap"><a href="https://www.un.org/ola/" target="_blank">Office of Legal Affairs</a></li>
+</ul>
+</div>
+
+<div class="col-sm-5">
+<h4>QUICK LINKS</h4>
+
+<ul>
+	<li><a href="../Pages/Login.aspx?lang=_en">Automated Subscription Services</a></li>
+	<li><a href="../Pages/Resource.aspx?path=Publication/TH/Page1_en.xml">Treaty Handbook</a></li>
+	<li><a href="../Pages/Resource.aspx?path=Publication/FC/Page1_en.xml">Final Clauses Handbook</a></li>
+	<li><a href="../Pages/Resource.aspx?path=Publication/SoP/Page1_en.xml">Summary of Practice</a></li>
+</ul>
+</div>
+
+<div class="col-sm-3">
+<h4>HELP</h4>
+
+<ul>
+	<li><a href="../Pages/Overview.aspx?path=overview/faq/page1_en.xml">FAQ</a></li>
+	<li><a href="../doc/source/guide_en.pdf" target="_blank">Website User Guide</a></li>
+	<li><a href="../Pages/Overview.aspx?path=overview/sitemap/page1_en.xml">Sitemap</a></li>
+</ul>
+</div>
+
+<div class="col-sm-12 footer-links">
+<ul>
+	<li><a href="https://www.un.org/en/about-us/copyright" target="_blank">COPYRIGHT</a></li>
+	<li>|</li>
+	<li><a href="https://www.un.org/en/about-us/fraud-alert" target="_blank">FRAUD ALERT</a></li>
+	<li>|</li>
+	<li><a href="https://www.un.org/en/about-us/privacy-notice" target="_blank">PRIVACY NOTICE</a></li>
+	<li>|</li>
+	<li><a href="https://www.un.org/en/about-us/terms-of-use" target="_blank">TERMS OF USE</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+        <!-- End of Footer Section -->
+    </form>
+    <script type="text/javascript">     
+        $(document).ready(function () {            
+            var hdnLangSearch = $("#ctl00_ctl00_hdnLanguage").val();
+            if (hdnLangSearch == '_en')
+            {
+                $('#txtSearch').removeAttr('value');
+                $('txtSearch').attr('placeholder', 'Search');
+            }
+            else
+            {
+                $('#txtSearch').removeAttr('value');
+                $('#txtSearch').attr('placeholder', 'Recherche');
+            }
+            
+            //if ($(window).width() > 767)
+            {
+                //Open navbar menu items on hover
+                $(".nav li.nav-item.dropdown")
+                    .on("mouseenter",
+                        function () {
+                            $('.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                            $('span', this).toggleClass("fa-angle-down fa-angle-up");
+                            $(this).addClass('open');
+                        }).on("mouseleave",
+                            function () {
+                                $('.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                                $('span', this).toggleClass("fa-angle-down fa-angle-up");
+                                $(this).removeClass('open');
+                                $(this).children("a").removeClass("show");
+                                $(this).children("ul").removeClass("show");
+                        });
+
+                //IR - 20230621 - Bootstrap's default behaviour is to require a click to open and close dropdown (https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/); the code above has been adjusted to deal with that, no longer needing the code below for "click" event (it was throwing errors anyway)
+                /*
+                $('.nav li.nav-item.dropdown').on('click', function (event) {
+                    $(this).parent().siblings().removeClass('open');
+                    $(this).parent().siblings().children("ul").removeClass('show');
+                    $(this).parent().toggleClass('open');
+                    if ($(this).parent().hasClass("open")) {
+                        $(this).siblings().css("display", "none");
+                        $(this).parent().context.firstElementChild.className = 'fa caret fa-angle-down';
+                        //alert($(this).parent().context.firstElementChild.className);
+                    }
+                    else
+                    {
+                        $(this).siblings().css("display", "block");
+                        $(this).parent().context.firstElementChild.className = 'fa caret fa-angle-up';
+                        //alert($(this).parent().context.firstElementChild.className);
+                    }
+                    //alert($(this).parent().context.firstElementChild);
+                });
+                */
+            }
+            //if ($(window).width() < 767)
+            //{
+            //    alert("test");
+            //    //setTimeout(function () {
+            //    //    $("#ctl00_TopMenu_rptTopMenu_ctl01_linkMenu").attr('href', '#');
+            //    //}, 0);
+            //    //$("a[id$='linkMenu']").attr('href', '#');
+            //    $(".test12").attr('href', '#');
+            //}
+            //else
+            //{
+            //    //alert($("a[id$='linkMenu'].dropdown-toggle"));
+            //    $("a[id$='linkMenu'].dropdown-toggle").removeAttr('href');
+            //    $("a[id$='linkMenu'].dropdown-toggle").click(
+            //          function () {
+            //              alert('1st');
+            //              $('.dropdown-menu', this).stop(true, true).fadeIn("fast");
+            //              $(this).addClass('open');
+            //              $('span', this).toggleClass("fa-angle-down fa-angle-up");
+            //          },
+            //          function () {
+            //              alert('2nd');
+            //              $('.dropdown-menu', this).stop(true, true).fadeOut("fast");
+            //              $(this).removeClass('open');
+            //              $(this).find("ul").show();
+            //              $('span', this).toggleClass("fa-angle-down fa-angle-up");
+            //              //return true;
+            //          });
+            //}
+        });
+
+        //        //alert("1")
+                //$("[id$='linkMenu']").off('click');
+                //$("[id$='linkMenu']").attr("disabled", "disabled");
+                //alert("2");
+                //$(".dropdown").click(
+                //      function () {
+                //          alert("2");
+                //          $('.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                //          $(this).addClass('open');
+                //          $('span', this).toggleClass("fa-angle-down fa-angle-up");
+                //      },
+                //      function () {
+                //          $('.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                //          $(this).removeClass('open');
+                //          $('span', this).toggleClass("fa-angle-down fa-angle-up");
+                //      });
+                //alert("Mobile");
+                //alert($("[id$='linkMenu']").attr('href'));
+                //$("[id$='linkMenu']").removeAttr('href');
+                //alert("Mobile");
+                //alert($(".dropdown-toggle").attr('href'));
+                //$(".dropdown-toggle").removeAttr("href");
+                //$("element[id$='txtTitle']")
+                //$("[id$='txtTitle']")
+                //$('#disableanchor').attr("disabled", "disabled");
+                //$("#anchorid").off('click');
+
+           
+            //else
+            //{
+            //    alert("Mobile")
+            //    $("#ctl00_ctl00_TopMenu_rptTopMenu_ctl02_linkMenu".removeAttr("href"));
+            //}
+                //$("a").removeAttr("href");
+
+
+            //}
+            //else
+            //{
+               
+            
+
+            
+           
+        
+
+        function FullTextSearch() {
+            //alert("start");
+            var txtValue = $("#txtSearch").val();
+            var hdnLang = $("#ctl00_ctl00_hdnLanguage").val();
+            if (hdnLang.indexOf("_") == 0) {
+                hdnLang = hdnLang.replace("_", "");
+            }
+
+            if ((txtValue != null && txtValue != '')) {
+                //var urlen = escape('url:("treaties.un.org")');
+                //var finalUrl = "http://search.un.org/?" + "query=" + encodeURI(txtValue) + "&fq=" + urlen + "&tpl=un" + "&lang=" + encodeURI(hdnLang);
+                //window.open(finalUrl);                
+                var urlen = escape('url:("treaties.un.org")');
+                //URL as provided by Unite Search via email on 2023-05-25
+                var finalUrl = "https://search.un.org/search?collection=un&currentPageNumber=1&fq=" + urlen + "&q=" + txtValue + "&row=10&sort=relevance&start=1"
+                /*
+                var finalUrl = "http://search.un.org/?" + "query=" + txtValue + "&fq=" + urlen 
+                    finalUrl = finalUrl + "&LtpaToken=b7mLRVDEmWbZCPwMSHW9UChjrzv8xDjUoxbAIsCiIW+KpsZF1El04LWr4AvkuVg5f+zPWPYYd+YKsmqdpwn5V%2F0KDzqotLfvHnLqLlRDfwDsNkMTMRJrh51m%2FyOFCoxOFbAxd6dUE3a2GncAvRAvJ1tzA7jG2rFEuX1DAv+h2XVaMoRhOKr3he0Q27bsrz30Of8eWiqSC1Niz5uKRhygWex9ZGk1Jsa1xyCTi5S6oVzE14F5%2FFhI6wHMa4XSiGtiElp3pqUAw%2F879nwnIET8W6d5nbamnWud6lTAXv2cVjHROynmWk08K8MgzZj1UFiq+Rs57mR3tEfQcQWTSjBzZw%3D%3D"
+                    finalUrl = finalUrl + "&lang=" + encodeURI(hdnLang) + "&tpl=custom" + "&page=1";
+                */
+                window.open(finalUrl);
+                //alert("end");
+                //document.write(finalUrl);
+
+
+
+            }
+        }
+    </script>
+</body>
+</html>

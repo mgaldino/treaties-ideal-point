@@ -1,0 +1,334 @@
+---
+title: "Measuring the International Liberal Order: Preliminary Results"
+subtitle: "Treaty-Based Dynamic Ideal Points, 1990--2018"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
+    toc_depth: 2
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE,
+  fig.width = 8, fig.height = 5, dpi = 150
+)
+library(tidyverse)
+library(knitr)
+
+# Key countries for plots
+key_countries <- c("USA", "CHN", "RUS", "BRA", "IND",
+                   "DEU", "DNK", "IRN", "ZAF", "JPN")
+key_labels <- c(
+  USA = "United States", CHN = "China", RUS = "Russia",
+  BRA = "Brazil", IND = "India", DEU = "Germany",
+  DNK = "Denmark", IRN = "Iran", ZAF = "South Africa", JPN = "Japan"
+)
+```
+
+# Introduction
+
+This report summarizes preliminary results from estimating dynamic ideal points of countries based on their participation in international treaties and agreements across three issue areas: **investment**, **security**, and **environment**. The estimates cover the period 1990--2018, divided into six five-year windows.
+
+The latent dimension is interpreted as *commitment to the International Liberal Order* (ILO)---the post-WWII system of multilateral institutions, open markets, collective security, and normative commitments to global governance.
+
+A fourth issue area (trade) was excluded from estimation at this stage because PCA diagnostics revealed that the dominant dimension of variation in trade agreement participation captures regional bloc structure (e.g., EU, CIS) rather than ILO commitment.
+
+## Method
+
+Dynamic 1D ideal points were estimated separately for each issue area using **variational EM** via `emIRT::dynIRT()` (Imai, Lo \& Olmsted, 2016). The input data uses a **flow coding**: for each treaty-period combination, a country is coded as 1 (newly ratified in this period), $-$1 (available but not ratified), or 0 (missing/not applicable).
+
+Identification is achieved through tight priors on **anchor countries** (Denmark as positive, Iran as negative for investment and security; Denmark and Saudi Arabia for environment) and post-estimation verification of **anchor item** discrimination signs.
+
+# Data Overview
+
+```{r data-overview}
+flow_files <- list.files("validation", pattern = "^flow_matrix_summary_",
+                         full.names = TRUE)
+flow_df <- map_dfr(flow_files, read_csv, show_col_types = FALSE)
+
+flow_df |>
+  mutate(
+    pct_yea   = scales::percent(share_one, accuracy = 0.1),
+    pct_nay   = scales::percent(share_minus_one, accuracy = 0.1),
+    pct_miss  = scales::percent(share_zero, accuracy = 0.1)
+  ) |>
+  select(
+    `Issue area` = issue_area,
+    Countries = countries,
+    `Phantom items` = items,
+    Periods = T,
+    `% Yea` = pct_yea,
+    `% Nay` = pct_nay,
+    `% Missing` = pct_miss
+  ) |>
+  kable(caption = "Flow matrix summary by issue area.")
+```
+
+The matrices are sparse, particularly for investment (1.4\% yea) and security (1.5\% yea). Environment is denser (10.5\% yea), reflecting more widespread ratification of multilateral environmental agreements.
+
+# Exploratory Diagnostics
+
+## PCA Scree Plots
+
+PCA was run on the flow matrices to assess dimensionality. In all issue areas, PC1 explains approximately 7\% of variance, with no clear dominant single factor.
+
+```{r scree-plots, fig.cap="Scree plots for each issue area. PC1 explains roughly 7\\% of variance in all cases.", fig.height=7}
+scree_files <- c(
+  "Investment" = "eda_phase2/figures/fig_scree_investment.png",
+  "Security"   = "eda_phase2/figures/fig_scree_security.png",
+  "Environment" = "eda_phase2/figures/fig_scree_environment.png"
+)
+
+existing <- scree_files[file.exists(scree_files)]
+if (length(existing) > 0) {
+  plots <- lapply(names(existing), function(nm) {
+    img <- png::readPNG(existing[[nm]])
+    g <- grid::rasterGrob(img, interpolate = TRUE)
+    ggplot() +
+      annotation_custom(g, xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf) +
+      labs(title = nm) +
+      theme_void() +
+      theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 11))
+  })
+  gridExtra::grid.arrange(grobs = plots, ncol = 1)
+} else {
+  cat("Scree plot files not found.\n")
+}
+```
+
+## Participation Time Series (EDA Phase 2)
+
+```{r eda-timeseries, fig.cap="New ratifications per period for selected countries.", fig.height=7}
+ts_files <- c(
+  "Investment" = "eda_phase2/figures/fig_timeseries_investment.png",
+  "Security"   = "eda_phase2/figures/fig_timeseries_security.png",
+  "Environment" = "eda_phase2/figures/fig_timeseries_environment.png"
+)
+
+existing_ts <- ts_files[file.exists(ts_files)]
+if (length(existing_ts) > 0) {
+  plots_ts <- lapply(names(existing_ts), function(nm) {
+    img <- png::readPNG(existing_ts[[nm]])
+    g <- grid::rasterGrob(img, interpolate = TRUE)
+    ggplot() +
+      annotation_custom(g, xmin = -Inf, xmax = Inf, ymin = -Inf, ymax = Inf) +
+      labs(title = nm) +
+      theme_void() +
+      theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 11))
+  })
+  gridExtra::grid.arrange(grobs = plots_ts, ncol = 1)
+} else {
+  cat("Time series EDA files not found.\n")
+}
+```
+
+# Ideal Point Estimates
+
+```{r load-estimates}
+inv <- read_csv("estimates/investment_ideal_points.csv", show_col_types = FALSE) |>
+  mutate(issue_area = "Investment")
+sec <- read_csv("estimates/security_ideal_points.csv", show_col_types = FALSE) |>
+  mutate(issue_area = "Security")
+env <- read_csv("estimates/environment_ideal_points.csv", show_col_types = FALSE) |>
+  mutate(issue_area = "Environment")
+
+all_ip <- bind_rows(inv, sec, env) |>
+  mutate(
+    period_mid = case_when(
+      period == "1990-1994" ~ 1992,
+      period == "1995-1999" ~ 1997,
+      period == "2000-2004" ~ 2002,
+      period == "2005-2009" ~ 2007,
+      period == "2010-2014" ~ 2012,
+      period == "2015-2018" ~ 2016.5,
+      TRUE ~ NA_real_
+    ),
+    country_label = key_labels[country_iso3]
+  )
+
+key_ip <- all_ip |> filter(country_iso3 %in% key_countries)
+```
+
+## Investment
+
+```{r plot-investment, fig.cap="Dynamic ideal points --- Investment (UNCTAD IIA). Higher values indicate greater commitment to international investment regime.", fig.height=5}
+key_ip |>
+  filter(issue_area == "Investment") |>
+  ggplot(aes(x = period_mid, y = ideal_point, colour = country_label)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 1.5) +
+  scale_x_continuous(breaks = c(1992, 1997, 2002, 2007, 2012, 2016.5),
+                     labels = c("90-94", "95-99", "00-04", "05-09", "10-14", "15-18")) +
+  labs(x = "Period", y = "Ideal point", colour = "Country",
+       title = "Investment ideal points (selected countries)") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom",
+        legend.text = element_text(size = 8)) +
+  guides(colour = guide_legend(nrow = 2))
+```
+
+## Security
+
+```{r plot-security, fig.cap="Dynamic ideal points --- Security (ATOP). Higher values indicate greater alignment with Western alliance architecture.", fig.height=5}
+key_ip |>
+  filter(issue_area == "Security") |>
+  ggplot(aes(x = period_mid, y = ideal_point, colour = country_label)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 1.5) +
+  scale_x_continuous(breaks = c(1992, 1997, 2002, 2007, 2012, 2016.5),
+                     labels = c("90-94", "95-99", "00-04", "05-09", "10-14", "15-18")) +
+  labs(x = "Period", y = "Ideal point", colour = "Country",
+       title = "Security ideal points (selected countries)") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom",
+        legend.text = element_text(size = 8)) +
+  guides(colour = guide_legend(nrow = 2))
+```
+
+## Environment
+
+```{r plot-environment, fig.cap="Dynamic ideal points --- Environment (IEADB). Higher values indicate greater commitment to multilateral environmental governance.", fig.height=5}
+key_ip |>
+  filter(issue_area == "Environment") |>
+  ggplot(aes(x = period_mid, y = ideal_point, colour = country_label)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 1.5) +
+  scale_x_continuous(breaks = c(1992, 1997, 2002, 2007, 2012, 2016.5),
+                     labels = c("90-94", "95-99", "00-04", "05-09", "10-14", "15-18")) +
+  labs(x = "Period", y = "Ideal point", colour = "Country",
+       title = "Environment ideal points (selected countries)") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom",
+        legend.text = element_text(size = 8)) +
+  guides(colour = guide_legend(nrow = 2))
+```
+
+## Cross-Issue Comparison
+
+```{r plot-cross-issue, fig.cap="Ideal point trajectories across all three issue areas for selected countries.", fig.height=8, fig.width=10}
+key_ip |>
+  ggplot(aes(x = period_mid, y = ideal_point, colour = issue_area)) +
+  geom_line(linewidth = 0.7) +
+  geom_point(size = 1.2) +
+  facet_wrap(~ country_label, scales = "free_y", ncol = 3) +
+  scale_x_continuous(breaks = c(1992, 2002, 2012),
+                     labels = c("92", "02", "12")) +
+  labs(x = "Period", y = "Ideal point", colour = "Issue area",
+       title = "Ideal points by issue area and country") +
+  theme_minimal(base_size = 10) +
+  theme(legend.position = "bottom",
+        strip.text = element_text(face = "bold"))
+```
+
+# Validation Against UNGA Ideal Points
+
+Treaty-based ideal points are compared with the Bailey, Strezhnev \& Voeten (2017) UNGA ideal points, aggregated to five-year periods.
+
+## Overall Correlations
+
+```{r unga-overall}
+overall <- read_csv("validation/unga_correlations_overall.csv",
+                    show_col_types = FALSE)
+overall |>
+  mutate(correlation = round(correlation, 3)) |>
+  select(`Issue area` = issue_area,
+         `Correlation (r)` = correlation,
+         `N (country-periods)` = n) |>
+  kable(caption = "Overall Pearson correlations between treaty-based and UNGA ideal points.")
+```
+
+## Correlations by Period
+
+```{r unga-by-period}
+summary_df <- read_csv("validation/unga_correlations_summary.csv",
+                       show_col_types = FALSE)
+summary_df |>
+  mutate(across(starts_with("corr"), ~ round(.x, 3))) |>
+  select(
+    `Issue area` = issue_area,
+    `Mean r` = corr_mean,
+    `Min r` = corr_min,
+    `Max r` = corr_max,
+    `Periods positive` = n_positive,
+    `Periods negative` = n_negative
+  ) |>
+  kable(caption = "Correlation summary across six periods.")
+```
+
+```{r unga-detail-tables, results='asis'}
+for (area in c("investment", "security", "environment")) {
+  f <- paste0("validation/unga_correlations_by_period_", area, ".csv")
+  if (file.exists(f)) {
+    df <- read_csv(f, show_col_types = FALSE) |>
+      mutate(correlation = round(correlation, 3))
+    cat(sprintf("\n\n### %s\n\n", tools::toTitleCase(area)))
+    print(kable(df, caption = paste("Correlations by period ---", area)))
+    cat("\n")
+  }
+}
+```
+
+## Time-Series Comparisons (Selected Countries)
+
+The following figures compare z-scored treaty-based ideal points (blue) with z-scored UNGA ideal points (red) for selected countries.
+
+```{r unga-figures, fig.cap="Treaty-based vs. UNGA ideal points (z-scores) for selected countries.", fig.height=6, results='asis'}
+unga_figs <- c(
+  "Investment" = "validation/figures/fig_timeseries_unga_investment.png",
+  "Security"   = "validation/figures/fig_timeseries_unga_security.png",
+  "Environment" = "validation/figures/fig_timeseries_unga_environment.png"
+)
+
+for (nm in names(unga_figs)) {
+  f <- unga_figs[[nm]]
+  if (file.exists(f)) {
+    cat(sprintf("\n\n### %s\n\n", nm))
+    cat(sprintf("![Treaty vs. UNGA ideal points --- %s](%s)\n\n", nm, f))
+  }
+}
+```
+
+# Key Findings
+
+1. **Environment shows the strongest alignment with UNGA preferences** ($r \approx 0.50$, stable across all periods). Participation in multilateral environmental agreements tracks closely with the broader multilateral alignment captured by UNGA voting. This dimension appears to be a reliable marker of ILO commitment.
+
+2. **Security shows moderate but declining alignment** ($r \approx 0.41$ in 1990--1994, falling to $r \approx 0.16$ in 2015--2018). Alliance patterns were more closely aligned with UNGA preferences in the immediate post-Cold War period and have gradually decoupled. This is consistent with the hypothesis that the security architecture of the liberal order has fragmented over time.
+
+3. **Investment is essentially orthogonal to UNGA** ($r \approx -0.08$, oscillating around zero across all periods). This suggests that the investment treaty regime captures a genuinely distinct dimension of international engagement, possibly driven by economic incentives and bilateral bargaining rather than geopolitical alignment.
+
+4. **Trade was excluded** because PCA diagnostics showed that the dominant dimension of variation captures regional bloc structure (EU members have identical patterns) rather than ILO commitment. This is itself a substantive finding: trade cooperation is organized regionally, not along a single liberal-order axis.
+
+5. **The ILO is not monolithic.** The three estimated dimensions evolve independently and correlate differently with UNGA-based preferences, supporting the interpretation that the international liberal order comprises distinct regimes that do not necessarily move in tandem.
+
+# Limitations and Next Steps
+
+## Current limitations
+
+- **No uncertainty quantification.** The variational EM estimates from `dynIRT()` do not produce reliable standard errors. Parametric bootstrap is planned but not yet implemented.
+- **Extreme sparsity.** The flow matrices have 1--10\% yea rates, far below typical roll-call data. Simulation studies are needed to verify that `dynIRT()` recovers ideal points reliably under this level of sparsity.
+- **Trade excluded.** Covering only three of four planned issue areas limits the comprehensiveness of the ILO measurement.
+- **omega2 not estimated.** The evolution variance is fixed as a hyperparameter ($\omega^2 = 0.1$), not estimated from the data. Sensitivity analysis is needed.
+- **Single external benchmark.** Validation relies solely on UNGA ideal points. External correlates (trade openness, V-Dem democracy indices, Environmental Performance Index) are planned.
+- **Short post-2016 window.** The data ends in 2018, limiting the ability to assess the Trump-era disruption of the liberal order.
+
+## Planned next steps
+
+1. Parametric bootstrap for standard errors.
+2. Monte Carlo simulations to assess performance under observed sparsity.
+3. omega2 sensitivity analysis (0.01, 0.05, 0.5).
+4. Additional validation against V-Dem liberal democracy index, trade openness (PWT), and Environmental Performance Index.
+5. Extend the time window with updated data sources.
+6. Resolve trade identification (PC2 analysis or EU-as-single-actor approach).
+7. Develop theoretical framework connecting regime theory to dimensional divergence.
+8. Multidimensional joint model in Stan (Phase 5).
+
+# References
+
+- Bailey, M. A., Strezhnev, A., \& Voeten, E. (2017). Estimating dynamic state preferences from United Nations voting data. *Journal of Conflict Resolution*, 61(2), 430--456.
+- Imai, K., Lo, J., \& Olmsted, J. (2016). Fast estimation of ideal points with massive data. *American Political Science Review*, 110(4), 631--656.
+- Ikenberry, G. J. (2001). *After Victory: Institutions, Strategic Restraint, and the Rebuilding of Order After Major Wars*. Princeton University Press.
+- Ikenberry, G. J. (2018). The end of liberal international order? *International Affairs*, 94(1), 7--23.
+- Martin, A. D., \& Quinn, K. M. (2002). Dynamic ideal point estimation via Markov chain Monte Carlo for the U.S. Supreme Court, 1953--1999. *Political Analysis*, 10(2), 134--153.

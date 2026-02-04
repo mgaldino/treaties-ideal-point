@@ -1,0 +1,81 @@
+CMD: Rscript scripts/R/08_diagnose_hs_mapping.R --reporter-iso3 BRA
+CMD: Rscript scripts/R/09_write_mapping_summary.R
+Wrote: docs/tariff_mapping_summary.md
+CMD: Rscript scripts/R/10_consolidate_wits_tariffs.R --reporter-iso3 BRA
+Error in `bind_rows()`:
+! Can't combine `..1$hs4_code` <double> and `..2$hs4_code` <character>.
+Backtrace:
+     ▆
+  1. ├─global main()
+  2. │ ├─... %>% arrange(year, partner_code, hs4_code)
+  3. │ └─dplyr::bind_rows(margins_list)
+  4. │   └─vctrs::vec_rbind(!!!dots, .names_to = .id, .error_call = current_env())
+  5. ├─dplyr::arrange(., year, partner_code, hs4_code)
+  6. ├─dplyr::mutate(., year = as.integer(year))
+  7. ├─vctrs (local) `<fn>`()
+  8. │ └─vctrs::vec_default_ptype2(...)
+  9. │   └─vctrs:::vec_ptype2_df_fallback(...)
+ 10. │     └─vctrs:::vec_ptype2_params(...)
+ 11. │       └─vctrs:::vec_ptype2_opts(...)
+ 12. └─vctrs (local) `<fn>`()
+ 13.   └─vctrs::vec_default_ptype2(...)
+ 14.     ├─base::withRestarts(...)
+ 15.     │ └─base (local) withOneRestart(expr, restarts[[1L]])
+ 16.     │   └─base (local) doWithOneRestart(return(expr), restart)
+ 17.     └─vctrs::stop_incompatible_type(...)
+ 18.       └─vctrs:::stop_incompatible(...)
+ 19.         └─vctrs:::stop_vctrs(...)
+ 20.           └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = call)
+Execução interrompida
+FAILED exit=1
+Retry consolidate after hs4_code type fix.
+CMD: Rscript scripts/R/10_consolidate_wits_tariffs.R --reporter-iso3 BRA
+Error in `bind_rows()`:
+! Can't combine `..1$year` <double> and `..4$year` <character>.
+Backtrace:
+     ▆
+  1. ├─global main()
+  2. │ ├─... %>% arrange(year, partner_code, hs4_code)
+  3. │ └─dplyr::bind_rows(margins_list)
+  4. │   └─vctrs::vec_rbind(!!!dots, .names_to = .id, .error_call = current_env())
+  5. ├─dplyr::arrange(., year, partner_code, hs4_code)
+  6. ├─dplyr::mutate(., year = as.integer(year))
+  7. └─vctrs (local) `<fn>`()
+  8.   └─vctrs::vec_default_ptype2(...)
+  9.     ├─base::withRestarts(...)
+ 10.     │ └─base (local) withOneRestart(expr, restarts[[1L]])
+ 11.     │   └─base (local) doWithOneRestart(return(expr), restart)
+ 12.     └─vctrs::stop_incompatible_type(...)
+ 13.       └─vctrs:::stop_incompatible(...)
+ 14.         └─vctrs:::stop_vctrs(...)
+ 15.           └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = call)
+Execução interrompida
+FAILED exit=1
+Retry consolidate after year type fix.
+CMD: Rscript scripts/R/10_consolidate_wits_tariffs.R --reporter-iso3 BRA
+Error in `bind_rows()`:
+! Can't combine `..1$applied_tariff` <double> and `..4$applied_tariff` <character>.
+Backtrace:
+     ▆
+  1. ├─global main()
+  2. │ ├─... %>% arrange(year, partner_code, hs4_code)
+  3. │ └─dplyr::bind_rows(margins_list)
+  4. │   └─vctrs::vec_rbind(!!!dots, .names_to = .id, .error_call = current_env())
+  5. ├─dplyr::arrange(., year, partner_code, hs4_code)
+  6. ├─dplyr::mutate(., year = as.integer(year))
+  7. └─vctrs (local) `<fn>`()
+  8.   └─vctrs::vec_default_ptype2(...)
+  9.     ├─base::withRestarts(...)
+ 10.     │ └─base (local) withOneRestart(expr, restarts[[1L]])
+ 11.     │   └─base (local) doWithOneRestart(return(expr), restart)
+ 12.     └─vctrs::stop_incompatible_type(...)
+ 13.       └─vctrs:::stop_incompatible(...)
+ 14.         └─vctrs:::stop_vctrs(...)
+ 15.           └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = call)
+Execução interrompida
+FAILED exit=1
+Retry consolidate after numeric column fixes.
+CMD: Rscript scripts/R/10_consolidate_wits_tariffs.R --reporter-iso3 BRA
+Wrote: data/processed/tariffs/wits_trn/BRA/margins_hs4_timeseries.csv
+Wrote: data/processed/tariffs/wits_trn/BRA/mfn_hs4_timeseries.csv
+DONE

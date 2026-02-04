@@ -1,0 +1,181 @@
+"wto_id","wto_name","wto_sig_year","desta_id","desta_name","desta_sig_year","dist_norm","year_diff","match_ok"
+"847","EU - Singapore",2018,"1008a","EC Singapore (consolidated)",2018,0.0833333333333333,0,TRUE
+"872","EU - Viet Nam",2019,"1010a","EC Vietnam (consolidated)",2019,0.181818181818182,0,TRUE
+"909","Eurasian Economic Union (EAEU)",2014,"1040","Eurasian Economic Union (EAEU)",2014,0,0,TRUE
+"649","Colombia - Mexico",1994,"1045a","Colombia Mexico (consolidated)",2011,0,17,TRUE
+"1034","China - Mauritius",2019,"1047","China Mauritius",2019,0,0,TRUE
+"113","Canada - Israel",1996,"1065a","Canada Israel (consolidated)",2018,0,22,TRUE
+"413","Namibia - Zimbabwe",1992,"1071a","Namibia Zimbabwe (consolidated)",2009,0,17,TRUE
+"8","Chile - China",2005,"1074a","Chile China (consolidated)",2017,0,12,TRUE
+"110","Canada - Chile",1996,"1075a","Canada Chile (consolidated)",2017,0,21,TRUE
+"1248","Kazakhstan - Serbia",2010,"1083","Kazakhstan Serbia",2010,0,0,TRUE
+"1149","Eurasian Economic Union (EAEU) - Serbia",2019,"1084","Eurasian Economic Union (EAEU) Serbia",2019,0,0,TRUE
+"1213","China - Ecuador",2023,"1099","China Ecuador",2023,0,0,TRUE
+"1220","EU - Kenya",2023,"1103","EC Kenya",2023,0.125,0,TRUE
+"1209","China - Nicaragua",2023,"1104","China Nicaragua",2023,0,0,TRUE
+"1232","China - Serbia",2023,"1107","China Serbia",2023,0,0,TRUE
+"664","China - New Zealand",2008,"1109a","China New Zealand (consolidated)",2019,0,11,TRUE
+"1086","African Continental Free Trade Area (AfCFTA)",2018,"1110a","African Continental Free Trade Area (AfCFTA) (consolidated)",2023,0,5,TRUE
+"1270","Canada - Ukraine",2023,"1112a","Canada Ukraine (consolidated)",2023,0,0,TRUE
+"604","EFTA - Ukraine",2010,"1123a","EFTA Ukraine (consolidated)",2025,0,15,TRUE
+"80","Chile - Mexico",1998,"1127a","Chile Mexico (consolidated)",2024,0,26,TRUE
+"194","Albania - Moldova",2003,"12","Albania Moldova",2003,0,0,TRUE
+"195","Albania - Romania",2003,"13","Albania Romania",2003,0,0,TRUE
+"663","Brazil - Mexico",2002,"141","Brazil Mexico",2002,0,0,TRUE
+"203","Bulgaria - Estonia",2001,"150","Bulgaria Estonia",2001,0,0,TRUE
+"205","Bulgaria - Israel",2001,"152","Bulgaria Israel",2001,0,0,TRUE
+"206","Bulgaria - Latvia",2002,"153","Bulgaria Latvia",2002,0,0,TRUE
+"207","Bulgaria - Lithuania",2001,"154","Bulgaria Lithuania",2001,0,0,TRUE
+"210","Bulgaria - Slovenia",1996,"159","Bulgaria Slovenia",1996,0,0,TRUE
+"211","Bulgaria - Türkiye",1998,"160","Bulgaria Turkey",1998,0.176470588235294,0,TRUE
+"162","Canada - Colombia",2008,"162","Canada Colombia",2008,0,0,TRUE
+"66","Canada - Costa Rica",2001,"163","Canada Costa Rica",2001,0,0,TRUE
+"568","Canada - Jordan",2009,"166","Canada Jordan",2009,0,0,TRUE
+"672","Canada - Peru",2008,"168","Canada Peru",2008,0,0,TRUE
+"215","Central European Free Trade Agreement (CEFTA)",1992,"192","Central European Free Trade Agreement (CEFTA)",1992,0,0,TRUE
+"509","Chile - Colombia",2006,"200","Chile Colombia",1993,0,13,TRUE
+"625","Chile - India",2006,"206","Chile India",2006,0,0,TRUE
+"3","Chile - Japan",2007,"207","Chile Japan",2007,0,0,TRUE
+"496","China - Singapore",2008,"228","China Singapore",2008,0,0,TRUE
+"755","Colombia - Northern Triangle (El Salvador, Guatemala, Honduras)",2007,"239","Colombia Northern Triangle",2007,0,0,TRUE
+"579","Common Economic Zone (CEZ)",2003,"242","Common Economic Zone",2003,0,0,TRUE
+"121","Common Market for Eastern and Southern Africa (COMESA)",1993,"243","Common Market for Eastern and Southern Africa (COMESA)",1993,0,0,TRUE
+"99","Commonwealth of Independent States (CIS)",1994,"244","Commonwealth of Independent States (CIS)",1994,0,0,TRUE
+"20","Costa Rica - Mexico",1994,"248","Costa Rica Mexico",1994,0,0,TRUE
+"222","Croatia - Serbia and Montenegro",2004,"261","Croatia Serbia and Montenegro",2004,0,0,TRUE
+"224","Czech Republic - Estonia",1996,"282","Czech Republic Estonia",1996,0,0,TRUE
+"225","Czech Republic - Israel",1996,"283","Czech Republic Israel",1996,0,0,TRUE
+"226","Czech Republic - Latvia",1996,"284","Czech Republic Latvia",1996,0,0,TRUE
+"227","Czech Republic - Lithuania",1996,"285","Czech Republic Lithuania",1995,0,1,TRUE
+"228","Czech Republic - Romania Free Trade Agreement",1994,"286","Czech Republic Romania",1994,0,0,TRUE
+"230","Czech Republic - Slovenia",1993,"288","Czech Republic Slovenia",1993,0,0,TRUE
+"231","Czech Republic - Türkiye",1997,"289","Czech Republic Turkey",1997,0.130434782608696,0,TRUE
+"243","EC - Estonia Agreement",1994,"305","EC Estonia",1993,0,1,TRUE
+"112","EU - Faeroe Islands",1996,"307","EC Faroe Islands",1996,0.117647058823529,0,TRUE
+"254","EC - Latvia Agreement",1994,"319","EC Latvia",1994,0,0,TRUE
+"258","EC - Lithuania",1994,"325","EC Lithuania",1994,0,0,TRUE
+"73","EU - Mexico",1997,"330","EC Mexico",2000,0.111111111111111,3,TRUE
+"386","EU - San Marino",1991,"341","EC San Marino",1991,0.0769230769230769,0,TRUE
+"272","EC - Slovenia Cooperation Agreement",1993,"345","EC Slovenia",1993,0,0,TRUE
+"273","EC - Slovenia Europe Agreement",1996,"346","EC Slovenia Europe Agreement",1996,0,0,TRUE
+"91","EU - South Africa",1999,"347","EC South Africa",1999,0.0666666666666667,0,TRUE
+"95","Economic and Monetary Community of Central Africa (CEMAC)",1994,"360","Economic and Monetary Community of Central Africa (CEMAC)",1994,0,0,TRUE
+"36","Economic Community of West African States (ECOWAS)",1993,"367","Economic Community Of West African States (ECOWAS)",1993,0,0,TRUE
+"128","Economic Cooperation Organization (ECO)",1992,"371","Economic Cooperation Organization Trade Agreement (ECOTA)",2003,0,11,TRUE
+"5","EFTA - Egypt",2007,"376","EFTA Egypt",2007,0,0,TRUE
+"288","EFTA - Estonia Free Trade Agreement",1995,"377","EFTA Estonia",1995,0,0,TRUE
+"289","EFTA - Hungary Agreement",1993,"380","EFTA Hungary",1993,0,0,TRUE
+"125","EFTA - Israel",1992,"382","EFTA Israel",1992,0,0,TRUE
+"75","EFTA - Jordan",2001,"383","EFTA Jordan",2001,0,0,TRUE
+"290","EFTA - Latvia",1995,"385","EFTA Latvia",1995,0,0,TRUE
+"291","EFTA - Lithuania",1995,"388","EFTA Lithuania",1995,0,0,TRUE
+"79","EFTA - Mexico",2000,"390","EFTA Mexico",2000,0,0,TRUE
+"96","EFTA - Morocco",1997,"391","EFTA Morocco",1997,0,0,TRUE
+"292","EFTA - Poland Agreement",1992,"392","EFTA Poland",1992,0,0,TRUE
+"293","EFTA - Romania Free Trade Agreement",1992,"393","EFTA Romania",1992,0,0,TRUE
+"603","EFTA - Serbia",2009,"394","EFTA Serbia",2009,0,0,TRUE
+"65","EFTA - Singapore",2002,"396","EFTA Singapore",2002,0,0,TRUE
+"295","EFTA - Slovenia",1995,"398","EFTA Slovenia",1995,0,0,TRUE
+"583","Agadir Agreement",2004,"4","Agadir Agreement",2004,0,0,TRUE
+"37","EFTA - Tunisia",2004,"401","EFTA Tunisia",2004,0,0,TRUE
+"299","Estonia - Faeroe Islands",1997,"424","Estonia Faroe Islands",1997,0.0454545454545455,0,TRUE
+"301","Estonia - Norway Free Trade Agreement",1992,"427","Estonia Norway",1992,0,0,TRUE
+"302","Estonia - Sweden Free Trade Agreement",1992,"430","Estonia Sweden",1991,0,1,TRUE
+"303","Estonia - Switzerland Free Trade Agreement",1992,"431","Estonia Switzerland",1992,0,0,TRUE
+"304","Estonia - Ukraine",1995,"433","Estonia Ukraine",1995,0,0,TRUE
+"106","Eurasian Economic Community (EAEC)",1996,"434","Eurasian Economic Community (EAEC)",1999,0,3,TRUE
+"114","European Economic Area (EEA)",1992,"437","European Economic Area (EEA)",1992,0,0,TRUE
+"117","Faeroe Islands - Iceland",1992,"438","Faroe Islands Iceland",1992,0.0454545454545455,0,TRUE
+"115","Faeroe Islands - Norway",1992,"440","Faroe Islands Norway",1992,0.0476190476190476,0,TRUE
+"116","Faeroe Islands - Switzerland",1994,"443","Faroe Islands Switzerland",1994,0.0384615384615385,0,TRUE
+"310","Finland - Latvia Protocol",1992,"448","Finland Latvia",1992,0,0,TRUE
+"311","Finland - Lithuania Protocol",1992,"449","Finland Lithuania",1992,0,0,TRUE
+"84","Georgia - Kazakhstan",1997,"454","Georgia Kazakhstan",1997,0,0,TRUE
+"86","Georgia - Turkmenistan",1996,"457","Georgia Turkmenistan",1996,0,0,TRUE
+"87","Georgia - Ukraine",1995,"458","Georgia Ukraine",1995,0,0,TRUE
+"17","Gulf Cooperation Council (GCC)",2001,"474","Gulf Cooperation Council (GCC)",2001,0,0,TRUE
+"921","Gulf Cooperation Council (GCC) - Singapore",2008,"475","Gulf Cooperation Council (GCC) Singapore",2008,0,0,TRUE
+"318","Hungary - Israel",1997,"481","Hungary Israel",1997,0,0,TRUE
+"319","Hungary - Latvia",1999,"482","Hungary Latvia",1999,0,0,TRUE
+"320","Hungary - Lithuania",1998,"483","Hungary Lithuania",1998,0,0,TRUE
+"321","Hungary - Slovenia Free Trade Agreement",1994,"487","Hungary Slovenia",1994,0,0,TRUE
+"322","Hungary - Türkiye",1997,"488","Hungary Turkey",1997,0.1875,0,TRUE
+"392","India - Nepal",2009,"491","India Nepal",1991,0,18,TRUE
+"10","India - Singapore",2005,"493","India Singapore",2005,0,0,TRUE
+"72","India - Sri Lanka",1998,"494","India Sri Lanka",1998,0,0,TRUE
+"191","Albania - Bosnia and Herzegovina",2003,"5","Albania Bosnia and Herzegovina",2003,0,0,TRUE
+"81","Israel - Mexico",2000,"509","Israel Mexico",2000,0,0,TRUE
+"22","Japan - Malaysia",2005,"517","Japan Malaysia",2005,0,0,TRUE
+"38","Japan - Mexico",2004,"518","Japan Mexico",2004,0,0,TRUE
+"622","Japan - Philippines",2006,"519","Japan Philippines",2006,0,0,TRUE
+"70","Japan - Singapore",2002,"520","Japan Singapore",2002,0,0,TRUE
+"179","Japan - Switzerland",2009,"521","Japan Switzerland",2009,0,0,TRUE
+"1","Japan - Thailand",2007,"522","Japan Thailand",2007,0,0,TRUE
+"170","Japan - Viet Nam",2008,"523","Japan Vietnam",2008,0.0714285714285714,0,TRUE
+"23","Jordan - Singapore",2004,"534","Jordan Singapore",2004,0,0,TRUE
+"50","Armenia - Kazakhstan",1999,"54","Armenia Kazakhstan",1999,0,0,TRUE
+"1249","Kazakhstan - Uzbekistan",1997,"549","Kazakhstan Uzbekistan",1997,0,0,TRUE
+"325","Latvia - Norway Free Trade Agreement",1992,"564","Latvia Norway",1992,0,0,TRUE
+"326","Latvia - Sweden Free Trade Agreement",1992,"568","Latvia Sweden",1992,0,0,TRUE
+"327","Latvia - Switzerland Free Trade Agreement",1992,"569","Latvia Switzerland",1992,0,0,TRUE
+"328","Lithuania - Norway Free Trade Agreement",1992,"576","Lithuania Norway",1992,0,0,TRUE
+"329","Lithuania - Sweden Free Trade Agreement",1992,"580","Lithuania Sweden",1991,0,1,TRUE
+"330","Lithuania - Switzerland Free-Trade Agreement",1992,"581","Lithuania Switzerland",1992,0,0,TRUE
+"47","Armenia - Turkmenistan",1995,"59","Armenia Turkmenistan",1995,0,0,TRUE
+"192","Albania - Bulgaria",2003,"6","Albania Bulgaria",2003,0,0,TRUE
+"51","Armenia - Ukraine",1994,"60","Armenia Ukraine",1994,0,0,TRUE
+"638","Mauritius - Pakistan",2007,"602","Mauritius Pakistan",2007,0,0,TRUE
+"98","Melanesian Spearhead Group (MSG)",1993,"603","Melanesian Spearhead Group (MSG)",1993,0,0,TRUE
+"32","Mexico - Nicaragua",1997,"611","Mexico Nicaragua",1997,0,0,TRUE
+"651","Mexico - Uruguay",2003,"616","Mexico Uruguay",2004,0,1,TRUE
+"78","New Zealand - Singapore",2000,"631","New Zealand Singapore",2000,0,0,TRUE
+"122","North American Free Trade Agreement (NAFTA)",1992,"636","North American Free Trade Agreement (NAFTA)",1992,0,0,TRUE
+"582","Pacific Island Countries Trade Agreement (PICTA)",2001,"639","Pacific Island Countries Trade Agreement (PICTA)",2001,0,0,TRUE
+"561","Pakistan - Sri Lanka",2002,"640","Pakistan Sri Lanka",2002,0,0,TRUE
+"11","Panama - Singapore",2006,"641","Panama Singapore",2006,0,0,TRUE
+"495","Peru - Singapore",2008,"644","Peru Singapore",2008,0,0,TRUE
+"345","Romania - Türkiye",1997,"650","Romania Turkey",1997,0.1875,0,TRUE
+"188","South Asian Free Trade Agreement (SAFTA)",2004,"667","South Asian Free Trade Area (SAFTA)",2004,0,0,TRUE
+"7","Southern African Customs Union (SACU)",2002,"670","Southern Africa Customs Union (SACU)",2002,0.0333333333333333,0,TRUE
+"45","Southern African Development Community (SADC)",1996,"671","Southern African Development Community (SADC)",1992,0,4,TRUE
+"9","Trans-Pacific Strategic Economic Partnership",2005,"679","Trans Pacific Strategic EPA",2005,0.148148148148148,0,TRUE
+"578","Ukraine - Uzbekistan",1994,"686","Ukraine Uzbekistan",1994,0,0,TRUE
+"97","West African Economic and Monetary Union (WAEMU)",1994,"688","West African Economic and Monetary Union",1994,0,0,TRUE
+"157","Australia - Chile",2008,"75","Australia Chile",2008,0,0,TRUE
+"94","East African Community (EAC)",1999,"787","East African Community (EAC)",1999,0,0,TRUE
+"911","Canada - Honduras",2013,"797","Canada Honduras",2013,0,0,TRUE
+"608","Canada - Panama",2010,"798","Canada Panama",2010,0,0,TRUE
+"453","Chile - Malaysia",2010,"800","Chile Malaysia",2010,0,0,TRUE
+"684","Chile - Thailand",2013,"801","Chile Thailand",2013,0,0,TRUE
+"685","Chile - Viet Nam",2011,"803","Chile Vietnam",2011,0.0714285714285714,0,TRUE
+"677","China - Costa Rica",2010,"804","China Costa Rica",2010,0,0,TRUE
+"844","Colombia - Israel",2013,"806","Colombia Israel",2013,0,0,TRUE
+"741","Costa Rica - Peru",2011,"813","Costa Rica Peru",2011,0,0,TRUE
+"678","Costa Rica - Singapore",2010,"814","Costa Rica Singapore",2010,0,0,TRUE
+"765","EFTA - Montenegro",2011,"818","EFTA Montenegro",2011,0,0,TRUE
+"178","EFTA - Peru",2010,"819","EFTA Peru",2010,0,0,TRUE
+"173","India - Japan",2011,"826","India Japan",2011,0,0,TRUE
+"544","India - Malaysia",2011,"827","India Malaysia",2011,0,0,TRUE
+"760","Japan - Peru",2011,"829","Japan Peru",2011,0,0,TRUE
+"889","Pacific Alliance",2014,"836","Pacific Alliance",2012,0,2,TRUE
+"742","Panama - Peru",2011,"837","Panama Peru",2011,0,0,TRUE
+"156","Australia - China",2015,"840","Australia China",2015,0,0,TRUE
+"848","EU - Georgia",2014,"866","EC Georgia",2014,0.1,0,TRUE
+"836","EU - Japan",2018,"869","EC Japan",2018,0.125,0,TRUE
+"681","EU - Ukraine",2014,"876","EC Ukraine",2014,0.1,0,TRUE
+"598","EFTA - India",2024,"878","EFTA India",2024,0,0,TRUE
+"601","EFTA - Indonesia",2018,"879","EFTA Indonesia",2018,0,0,TRUE
+"779","Mexico - Panama",2014,"891","Mexico Panama",2014,0,0,TRUE
+"683","Pacific Agreement on Closer Economic Relations Plus (PACER Plus)",2017,"895","Pacific Agreement on Closer Economic Relations (PACER) Plus",2017,0,0,TRUE
+"973","Eurasian Economic Union (EAEU) - Viet Nam",2015,"915","Eurasian Economic Union (EAEU) Vietnam",2015,0.0434782608695652,0,TRUE
+"906","Chile - Indonesia",2017,"920","Chile Indonesia",2017,0,0,TRUE
+"835","Japan - Mongolia",2015,"930","Japan Mongolia",2015,0,0,TRUE
+"517","India - Mauritius",2021,"933","India Mauritius",2021,0,0,TRUE
+"954","EFTA - Philippines",2016,"965","EFTA Philippines",2016,0,0,TRUE
+"995","EU - New Zealand",2023,"966","EC New Zealand",2023,0.0714285714285714,0,TRUE
+"952","Indonesia - Pakistan",2012,"971","Indonesia Pakistan",2012,0,0,TRUE
+"953","EFTA - Georgia",2016,"981","EFTA Georgia",2016,0,0,TRUE
+"640","Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP)",2018,"989","Comprehensive and Progressive Agreement for Transpacific Partnership (CPTPP)",2018,0.0256410256410256,0,TRUE
+"991","China - Georgia",2017,"990","China Georgia",2017,0,0,TRUE
+"990","China - Maldives",2017,"991","China Maldives",2017,0,0,TRUE
+"1316","Eurasian Economic Union (EAEU) - Iran",2023,"995","Eurasian Economic Union (EAEU) Iran",2023,0,0,TRUE

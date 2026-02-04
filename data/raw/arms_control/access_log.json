@@ -1,0 +1,27 @@
+{
+  "access_date": "2026-02-03",
+  "downloaded_files": [
+    "data/raw/arms_control/arms_control_ratifications.csv"
+  ],
+  "errors": [],
+  "landing_url": "https://treaties.un.org/Pages/Treaties.aspx?id=26&subid=A&clang=_en",
+  "notes": [
+    "enmod: 95 participants parsed",
+    "ccw: 132 participants parsed",
+    "ccw_p4: 111 participants parsed",
+    "ccw_p2a: 107 participants parsed",
+    "ccw_art1: 90 participants parsed",
+    "ccw_p5: 99 participants parsed",
+    "cwc: 194 participants parsed",
+    "ctbt: 187 participants parsed",
+    "ottawa: 162 participants parsed",
+    "ccm: 124 participants parsed",
+    "att: 142 participants parsed",
+    "tpnw: 99 participants parsed",
+    "Wrote 1541 total records to data/raw/arms_control/arms_control_ratifications.csv",
+    "Note: NPT (1968) and BWC (1972) are not in the UN Treaty Collection (different depositaries). Consider adding from IAEA/BWC ISU separately."
+  ],
+  "source_name": "UN Treaty Collection \u2014 Chapter XXVI (Disarmament)",
+  "total_records": 1541,
+  "treaties_attempted": 12
+}

@@ -1,0 +1,16 @@
+{
+  "access_date": "2026-02-01",
+  "downloaded_files": [
+    "data/raw/unctad_iia/unctad_iia_country_treaties.csv",
+    "data/raw/unctad_iia/country_catalog.json"
+  ],
+  "errors": [],
+  "landing_url": "https://investmentpolicy.unctad.org/international-investment-agreements/advanced-search",
+  "notes": [
+    "Scraped 235 country pages.",
+    "Saved raw HTML to data/raw/unctad_iia/html.",
+    "HTML files available: 235.",
+    "Resume mode enabled (skipped existing HTML files)."
+  ],
+  "source_name": "UNCTAD IIA Navigator"
+}

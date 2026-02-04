@@ -1,0 +1,9 @@
+Building baseline events...
+Mensagen de aviso:
+In dplyr::inner_join(., type_df, by = "atopid") :
+  Detected an unexpected many-to-many relationship between `x` and `y`.
+ℹ Row 1 of `x` matches multiple rows in `y`.
+ℹ Row 410 of `y` matches multiple rows in `x`.
+ℹ If a many-to-many relationship is expected, set `relationship =
+  "many-to-many"` to silence this warning.
+Phase 1 preparation completed.

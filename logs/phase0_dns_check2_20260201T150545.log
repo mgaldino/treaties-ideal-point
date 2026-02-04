@@ -1,0 +1,7 @@
+/AppleInternal/Library/BuildRoots/289ffcb4-455d-11ef-953d-e2437461156c/Library/Caches/com.apple.xbs/Sources/bind9/bind9/lib/isc/unix/socket.c:5580: bind: Operation not permitted
+nslookup: isc_socket_bind: unexpected error
+/AppleInternal/Library/BuildRoots/289ffcb4-455d-11ef-953d-e2437461156c/Library/Caches/com.apple.xbs/Sources/bind9/bind9/lib/isc/unix/socket.c:5580: bind: Operation not permitted
+nslookup: isc_socket_bind: unexpected error
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: www.wto.org

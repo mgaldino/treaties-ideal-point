@@ -1,0 +1,106 @@
+{
+  "access_date": "2026-02-03",
+  "base_url": "https://wits.worldbank.org/API/V1",
+  "countries_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/country/all",
+  "data_availability_url": "https://wits.worldbank.org/API/V1/wits/datasource/trn/dataavailability/country/076/year/2010",
+  "datatype": "reported",
+  "errors": [],
+  "partner_count": 15,
+  "product": "ALL",
+  "reporter_code": "076",
+  "reporter_iso3": "BRA",
+  "requests": [
+    {
+      "bytes": 850337,
+      "partner": "000",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/000/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 807847,
+      "partner": "032",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/032/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 810884,
+      "partner": "068",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/068/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 808230,
+      "partner": "152",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/152/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 856463,
+      "partner": "170",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/170/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 850515,
+      "partner": "192",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/192/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 870274,
+      "partner": "218",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/218/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 22665,
+      "partner": "328",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/328/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 840021,
+      "partner": "484",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/484/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 803954,
+      "partner": "600",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/600/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 857559,
+      "partner": "604",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/604/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 2982,
+      "partner": "740",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/740/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 808061,
+      "partner": "858",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/858/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 861192,
+      "partner": "862",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/862/product/ALL/year/2010/datatype/reported?format=JSON"
+    },
+    {
+      "bytes": 796886,
+      "partner": "N37",
+      "status": "ok",
+      "url": "https://wits.worldbank.org/API/V1/SDMX/V21/datasource/TRN/reporter/076/partner/N37/product/ALL/year/2010/datatype/reported?format=JSON"
+    }
+  ],
+  "source": "WITS/TRAINS API",
+  "year": 2010
+}

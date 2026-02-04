@@ -1,0 +1,12 @@
+{
+  "access_date": "2026-02-02",
+  "base_url": "https://wits.worldbank.org/data/public/concordance",
+  "downloaded": [
+    "data/raw/concordance/wits/Concordance_H4_to_H0.zip"
+  ],
+  "errors": [],
+  "requested_tables": [
+    "Concordance_H4_to_H0.zip"
+  ],
+  "source": "WITS Product Concordance"
+}

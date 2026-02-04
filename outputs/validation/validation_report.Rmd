@@ -1,0 +1,70 @@
+---
+title: "Validation Report: Treaty-Based Ideal Points vs UNGA"
+output:
+  pdf_document:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+# Overview
+
+Este relatório compara pontos ideais baseados em tratados (investment, security, environment) com pontos ideais da UNGA (Bailey–Strezhnev–Voeten), agregados por períodos de cinco anos (1990–2018). A dimensão de trade está excluída nesta etapa.
+
+# Tables
+
+```{r tables, results='asis'}
+overall <- readr::read_csv("unga_correlations_overall.csv", show_col_types = FALSE)
+summary_df <- readr::read_csv("unga_correlations_summary.csv", show_col_types = FALSE)
+cat("\n\n**Table 1.** Overall correlations between treaty-based and UNGA ideal points.\n\n")
+knitr::kable(overall)
+
+cat("\n\n**Table 2.** Summary of correlations by period.\n\n")
+knitr::kable(summary_df)
+
+for (area in overall$issue_area) {
+  by_period <- readr::read_csv(paste0("unga_correlations_by_period_", area, ".csv"), show_col_types = FALSE)
+  idx <- which(overall$issue_area == area) + 2
+  cat(sprintf("\n\n**Table %d.** Correlations by period for %s.\n\n", idx, area))
+  knitr::kable(by_period)
+}
+```
+
+# Interpretation
+
+## Investment
+
+A correlação geral entre os pontos ideais de investimento baseados em tratados e os pontos ideais da UNGA é **ligeiramente negativa** (r ≈ -0,08). Isso sugere que, no agregado, os alinhamentos capturados por tratados de investimento **não** se movem na mesma direção das preferências reveladas por votos na Assembleia Geral. Há algumas explicações plausíveis: (i) o regime de investimentos é mais técnico e jurídico, menos politizado em termos de alinhamento Norte–Sul clássico; (ii) países podem assinar IIAs por motivos estratégicos (atração de capital) sem convergir politicamente na UNGA; (iii) o período 1990–2018 inclui ondas de tratados bilaterais e renegociações que podem refletir cláusulas domésticas e não alinhamentos geopolíticos. Se a correlação por período oscilar em torno de zero, isso reforça a hipótese de que o eixo “investment” é parcialmente ortogonal ao eixo de preferências UNGA. Para a agenda do paper, esse resultado é substantivamente relevante: sugere que a dimensão de investimento pode capturar um aspecto **distinto** da ordem liberal internacional.
+
+## Security
+
+A correlação geral é **positiva porém baixa** (r ≈ 0,20). Isso indica alguma convergência entre alinhamentos de segurança (alianças) e preferências UNGA, mas longe de ser uma relação forte. É compatível com a ideia de que alianças refletem preocupações regionais e estratégicas específicas, enquanto a UNGA agrega posições sobre temas normativos mais amplos. Se, por período, a correlação for mais alta em momentos de polarização (Guerra Fria tardia ou pós-11 de Setembro), isso pode sinalizar que a dimensão de segurança se alinha mais à UNGA em contextos de maior conflito geopolítico. Uma correlação moderada também sugere que o eixo de segurança não é redundante com a UNGA, preservando valor informativo para o modelo.
+
+## Environment
+
+A correlação geral é **moderadamente positiva** (r ≈ 0,50), a mais alta entre as três áreas. Isso sugere que a participação em acordos ambientais (measured via EIF) está mais alinhada à dimensão UNGA, possivelmente porque ambos capturam compromissos normativos e políticas públicas internacionais mais consensuais. Esse resultado é consistente com a literatura que associa engajamento ambiental a padrões de governança e inserção internacional. Se a correlação por período for estável e positiva, isso fortalece a interpretação de que a dimensão ambiental funciona como um marcador de comprometimento com bens públicos globais, alinhado ao eixo UNGA.
+
+## Implicações
+
+Em conjunto, os resultados reforçam que cada issue area carrega informação **não redundante**: environment mostra forte alinhamento com UNGA, security mostra alinhamento fraco-moderado, e investment parece capturar uma dimensão distinta. Isso sustenta a decisão metodológica de estimar dimensões separadas e sugere que uma eventual análise multidimensional futura pode revelar componentes substantivamente diferentes, em vez de um único eixo comum.
+
+# Limitações e cautelas
+
+- **Comparabilidade limitada**: UNGA ideal points refletem comportamento de voto em resoluções políticas, enquanto os tratados capturam compromissos jurídicos e institucionais. A correlação mede apenas alinhamento agregado, não equivalência substantiva.
+- **Não causalidade**: correlações não identificam mecanismos causais; alinhamentos podem ser simultâneos ou mediados por fatores não observados (capacidade estatal, integração econômica, segurança regional).
+- **Agregação temporal**: o uso de períodos quinquenais suaviza variações anuais e pode esconder mudanças rápidas ou efeitos de janelas curtas.
+- **Seleção de tratados**: a cobertura depende das bases utilizadas (p.ex., IEADB, UNCTAD), e diferentes regimes têm dinâmicas próprias. Isso pode gerar eixos substantivamente distintos sem implicar inconsistência.
+- **Orientação do eixo**: sinais podem ser invertidos entre domínios; a interpretação depende da ancoragem e da verificação de itens/países âncora.
+
+# Figures
+
+```{r figures, results='asis'}
+figs <- list.files("figures", pattern = "fig_timeseries_unga_.*\\.png$", full.names = TRUE)
+figs <- sort(figs)
+for (i in seq_along(figs)) {
+  cat(sprintf("\n\n**Figure %d.** Treaty vs UNGA ideal points (z-scores) - %s.\n\n", i, basename(figs[i])))
+  cat(sprintf("![](%s)\n", figs[i]))
+}
+```

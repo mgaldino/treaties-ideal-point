@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wits:datasource datasourcecode="TRN" datasourcename="WITS - UNTCTAD TRAINS" language="en" total="1" xmlns:wits="http://wits.worldbank.org">
+  <wits:dataavailability>
+    <wits:reporter countrycode="076" iso3Code="BRA" isgroup="No" grouptype="N/A">
+      <wits:name>Brazil</wits:name>
+      <wits:year>1990</wits:year>
+      <wits:reporternernomenclature reporternernomenclaturecode="H0">Harmonized System 1988/92</wits:reporternernomenclature>
+      <wits:numberofpreferentialagreement>2</wits:numberofpreferentialagreement>
+      <wits:partnerlist>000;N32;</wits:partnerlist>
+      <wits:isspecificdutyexpressionestimatedavailable>No</wits:isspecificdutyexpressionestimatedavailable>
+      <wits:notes />
+      <wits:lastupdateddate>2014/08/04</wits:lastupdateddate>
+    </wits:reporter>
+  </wits:dataavailability>
+</wits:datasource>

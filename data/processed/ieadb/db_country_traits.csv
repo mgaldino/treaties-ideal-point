@@ -1,0 +1,547 @@
+﻿"All users are required to cite the website: International Environmental Agreements Database Project, hosted by Université Laval, available at: https://www.iea.ulaval.ca."
+"Data described in: Ronald B. Mitchell, Liliana B. Andonova, Mark Axelrod, Jörg Balsiger, Thomas Bernauer, Jessica F. Green, James Hollway, Rakhyun E. Kim and Jean-Frédéric Morin (2020) “What We Know (and Could Know) About International Environmental Agreements”, Global Environmental Politics 20(1): 103-121. https://doi.org/10.1162/glep_a_00544"
+
+Country;"Continent SUB";"Continent UN";"Country ACOW";"Country Code";"Country Ended";"Country Formed";"Country Group";"Country ISO2";"Country N";"Country NCOW";"Country Notes";"Country Type";"EMEP Usage Rules";EU;"EU Poor";"french translation";OECD;"Post 1950 Changes";"Precursor State";"Successor State";"UN member";"Warsaw Pact";Nid
+"aaSources of names";Other;Other;;;;;Sources;;;;;non-country;;;0;;;;;;;0;240
+Abkhazia;"Western Asia";Asia;;;;;;;;;;sub-country;;;0;"Abkhazie ";;;;;;1;244
+Afghanistan;"Southern Asia";Asia;AFG;AFG;;1919-08-20;;AF;4;700;1;country;;;0;"Afghanistan ";;"No significant changes after state formed";;;1946-11-19;0;246
+"Aggregate: Africa";Africa;Africa;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;247
+"Aggregate: Americas";;Americas;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;248
+"Aggregate: Arab World";;"Arab World";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;249
+"Aggregate: Asia";;Asia;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;250
+"Aggregate: Australia and New Zealand";"Australia and New Zealand";Oceania;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;251
+"Aggregate: Baltic States";"Northern Europe";Europe;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;252
+"Aggregate: Belgium-Luxembourg";"Western Europe";Europe;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;253
+"Aggregate: Caribbean";Caribbean;Caribbean;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;254
+"Aggregate: Caribbean small states";Caribbean;Caribbean;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;255
+"Aggregate: Central America";"Central America";"Central America";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;256
+"Aggregate: Central Asia";"Central Asia";Asia;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;257
+"Aggregate: Central Europe (rest of)";;Europe;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;258
+"Aggregate: East Asia & Pacific (all income levels)";"Eastern Asia";Asia;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;259
+"Aggregate: East Asia & Pacific (developing only)";"Eastern Asia";Asia;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;260
+"Aggregate: Eastern Africa";"Eastern Africa";Africa;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;261
+"Aggregate: Eastern Asia";"Eastern Asia";Asia;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;262
+"Aggregate: Eastern Europe";"Eastern Europe";Europe;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;263
+"Aggregate: Euro Area";Europe;Europe;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;264
+"Aggregate: Europe";Europe;Europe;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;265
+"Aggregate: Europe & Central Asia (all income levels)";;"Europe & Central Asia (all income levels)";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;266
+"Aggregate: Europe & Central Asia (developing only)";Europe;"Europe & Central Asia (developing only)";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;267
+"Aggregate: Former Soviet Union - Asia";;Asia;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;268
+"Aggregate: Heavily indebted poor countries (HIPC)";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;269
+"Aggregate: High income";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;270
+"Aggregate: High income: nonOECD";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;271
+"Aggregate: High income: OECD";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;272
+"Aggregate: LandLocked developing countries";;"LandLocked developing countries";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;273
+"Aggregate: Latin America & Caribbean (all income levels)";;"Latin America & Caribbean (all income levels)";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;274
+"Aggregate: Latin America & Caribbean (developing only)";;"Latin America & Caribbean (developing only)";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;275
+"Aggregate: Latin America and the Caribbean";;"Latin America and the Caribbean";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;276
+"Aggregate: Least Developed Countries";;"Least Developed Countries";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;277
+"Aggregate: Least developed countries: UN classification";;"Least developed countries: UN classification";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;278
+"Aggregate: Less dev. reg. - China";;"Less dev. reg. - China";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;279
+"Aggregate: Less dev. reg.-least dev. c.";;"Less dev. reg.-least dev. c.";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;280
+"Aggregate: Less developed regions";;"Less developed regions";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;281
+"Aggregate: Low & middle income";;"Low & middle income";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;282
+"Aggregate: Low income";;"Low income";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;283
+"Aggregate: Low Income Food Deficit Countries";;"Low Income Food Deficit Countries";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;284
+"Aggregate: Lower middle income";;"Lower middle income";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;285
+"Aggregate: Melanesia";Melanesia;Oceania;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;286
+"Aggregate: Middle Africa";;Africa;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;287
+"Aggregate: Middle East";"Western Asia";Asia;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;288
+"Aggregate: Middle East & North Africa (all income levels)";;"Middle East & North Africa (all income levels)";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;289
+"Aggregate: Middle East & North Africa (developing only)";;"Middle East & North Africa (developing only)";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;290
+"Aggregate: Middle income";;"Middle income";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;291
+"Aggregate: More developed regions";;"More developed regions";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;292
+"Aggregate: Net Food Importing Developing Countries";;"Net Food Importing Developing Countries";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;293
+"Aggregate: Northern Africa";"Northern Africa";"Northern Africa";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;294
+"Aggregate: Northern America";"Northern America";"Northern America";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;295
+"Aggregate: Northern Europe";"Northern Europe";"Northern Europe";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;296
+"Aggregate: Not classified";Other;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;297
+"Aggregate: Oceania";Oceania;Oceania;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;298
+"Aggregate: OECD members";;OECD;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;299
+"Aggregate: Other Africa";;Africa;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;300
+"Aggregate: Other NEI";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;301
+"Aggregate: Other small states";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;302
+"Aggregate: Pacific island small states";;Oceania;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;303
+"Aggregate: Polynesia";Polynesia;Oceania;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;304
+"Aggregate: Small Island Developing States";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;305
+"Aggregate: Small states";;Other;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;306
+"Aggregate: South America";"South America";"South America";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;307
+"Aggregate: South America without Brazil";;"South America";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;308
+"Aggregate: South Asia";"South Asia";"South Asia";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;309
+"Aggregate: South-Central Asia";"South-Central Asia";"South-Central Asia";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;310
+"Aggregate: South-Eastern Asia";"South-Eastern Asia";"South-Eastern Asia";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;312
+"Aggregate: Southeastern Asia";"Southeastern Asia";"Southeastern Asia";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;311
+"Aggregate: Southern Africa";"Southern Africa";"Southern Africa";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;313
+"Aggregate: Southern Asia";"Southern Asia";"Southern Asia";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;314
+"Aggregate: Southern Europe";"Southern Europe";"Southern Europe";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;315
+"Aggregate: Sub-Saharan Africa";"Sub-Saharan Africa";"Sub-Saharan Africa";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;316
+"Aggregate: Sub-Saharan Africa (developing only)";"Sub-Saharan Africa (developing";"Sub-Saharan Africa (developing";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;317
+"Aggregate: Upper middle income";"Upper middle income";"Upper middle income";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;318
+"Aggregate: Western Africa";"Western Africa";"Western Africa";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;319
+"Aggregate: Western Asia";"Western Asia";"Western Asia";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;320
+"Aggregate: Western Europe";"Western Europe";"Western Europe";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;321
+"Aggregate: Western Europe (rest of)";"Western Europe (rest of)";"Western Europe (rest of)";;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;322
+"Aggregate: World";World;World;;;;;Aggregate;;;;;aggregate;;;0;;;;;;;0;323
+Agreement;;Agreement;;AGR;;;Non-country;;;;;non-country;;;0;Accords;;;;;;0;324
+"Akrotiri and Dhekelia";"Western Asia";Asia;;;;;"Territory: United Kingdom";;;;;sub-country;;;0;;;;;;;0;325
+"Aland Islands";"Northern Europe";Europe;;ALA;;;"Territory: Finland";AX;248;;;sub-country;;;0;;;;;;;0;326
+Albania;"Southern Europe";Europe;ALB;ALB;;1913-07-29;;AL;8;339;;country;;;0;"Albanie ";;"No significant changes after state formed";;;1955-12-14;1;327
+Algeria;"Northern Africa";Africa;ALG;DZA;;1962-07-03;"Recently formed";DZ;12;615;;country;;;0;Algérie;;"No changes after state formed";;;1962-10-08;0;328
+"American Samoa";Polynesia;Oceania;;ASM;;;"Territory: United States";AS;16;;;sub-country;;;0;;;;;;;0;329
+Andorra;"Southern Europe";Europe;AND;AND;;1278-01-01;;AD;20;232;;country;;;0;Andorre;;"No significant changes after state formed";;;1993-07-28;0;330
+Angola;"Central Africa";Africa;ANG;AGO;;1975-11-11;"Recently formed";AO;24;540;"Independence from Portugal";country;;;0;Angola;;"No changes after state formed";;;1976-12-01;0;331
+Anguilla;Caribbean;Caribbean;;AIA;;;"Territory: United Kingdom";AI;660;;;sub-country;;;0;;;;;;;0;332
+Antarctica;;Antarctica;;ATA;;1961-00-00;;AQ;10;;"In order to form a legal framework for the activities of nations on the continent, an Antarctic Treaty was negotiated that neither denies nor gives recognition to existing territorial claims; signed in 1959, it entered into force in 1961.";non-country;;;0;;;"No changes after state formed";;;;0;333
+"Antigua and Barbuda";Caribbean;Caribbean;AAB;ATG;;1981-11-01;"Recently formed";AG;28;58;;country;;;0;Antigua-et-Barbuda;;"No changes after state formed";;;1981-11-11;0;334
+Argentina;"South America";"South America";ARG;ARG;;1816-07-09;;AR;32;160;"Independence recognized by Spain";country;;;0;Argentine;;"No significant changes after state formed";;;1945-10-24;0;335
+Armenia;"Western Asia";Asia;ARM;ARM;;1991-09-21;"Union of Soviet Socialist Republics";AM;51;371;;country;"combine - USSR";;0;Arménie;;"No changes after state formed";"Soviet Union";;1992-03-02;1;336
+"Armenia (backcast)";"Western Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6051;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;337
+Aruba;Caribbean;Caribbean;;ABW;;1986-01-01;"Recently formed";AW;533;;;country;;;0;Aruba;;"No changes after state formed";;;;0;338
+Australia;"Australia and New Zealand";Oceania;AUL;AUS;;1901-01-01;;AU;36;900;"Statue of Westminster is adopted by Australia";country;;;0;Australie;1971;"Papua New Guinea gained independence";;"Australia; Papua New Guinea";1945-11-01;0;339
+Austria;"Western Europe";Europe;AUS;AUT;;1918-11-12;;AT;40;305;;country;;1995;0;Autriche;1961;"No changes after state formed";;;1955-12-14;0;340
+Austria-Hungary;"Western Europe";Europe;AUH;;1918-11-13;1816-01-01;;;;300;;"pre-modern country";;;0;"Autriche-Hongrie ";;;;;;0;341
+Azerbaijan;"Western Asia";Asia;AZE;AZE;;1991-08-30;"Union of Soviet Socialist Republics";AZ;31;373;;country;"combine - USSR";;0;"Azerbaïdjan ";;"No changes after state formed";"Soviet Union";;1992-03-02;1;342
+"Azerbaijan (backcast)";"Western Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6031;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;343
+"Azores Islands";;Europe;;;;;;;;;"Territory of Portugal";non-country;;;0;;;;;;;0;784
+Bahamas;Caribbean;Caribbean;BHM;BHS;;1973-07-10;"Recently formed";BS;44;31;;country;;;0;Bahamas;;"No changes after state formed";;;1973-08-18;0;344
+Bahrain;"Western Asia";Asia;BAH;BHR;;1971-08-15;"Recently formed";BH;48;692;"Independence from the United Kingdom";country;;;0;Bahreïn;;"No changes after state formed";;;1971-09-21;0;345
+Bangladesh;"Southern Asia";Asia;BNG;BGD;;1971-12-16;"Recently formed";BD;50;771;"Independence from Pakistan declared";country;;;0;Bangladesh;;"No changes after state formed";Pakistan;;1974-09-17;0;346
+Barbados;Caribbean;Caribbean;BAR;BRB;;1966-11-30;"Recently formed";BB;52;53;;country;;;0;"Barbade ";;"No changes after state formed";;;1966-12-09;0;347
+Bavaria;"Western Europe";Europe;BAV;;;;;;;245;;sub-country;;;0;;;;;;;0;348
+Belarus;"Eastern Europe";Europe;BLR;BLR;;1991-08-25;"Union of Soviet Socialist Republics";BY;112;370;;country;"combine - USSR";;0;"Biélorussie ";;"No changes after state formed";"Soviet Union";;1945-10-24;1;349
+"Belarus (backcast)";"Eastern Europe";Europe;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6112;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;350
+"Belarus (Soviet period)";;Europe;;;1991-08-25;1917-09-14;"Union of Soviet Socialist Republics";;;370;;"pre-modern country";;;0;"Biélorussie (période soviétique) ";;;;;;1;728
+Belgium;"Western Europe";Europe;BEL;BEL;;1830-10-04;;BE;56;211;;country;;1952;0;"Belgique ";1961;"No significant changes after state formed";;;1945-12-27;0;351
+"Belgium (Brussels)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Belgique (Bruxelles) ";;;;;;0;352
+"Belgium (Flemish)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Belgique (Flandre) ";;;;;;0;353
+"Belgium (Walloon)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Belgique (Wallonie)";;;;;;0;354
+Belize;"Central America";"Central America";BLZ;BLZ;;1981-09-21;"Recently formed";BZ;84;80;;country;;;0;"Belize ";;"No changes after state formed";;;1981-09-25;0;355
+Benin;"Western Africa";Africa;BEN;BEN;;1960-08-01;"Recently formed";BJ;204;434;"Independence from France";country;;;0;Bénin;;"No changes after state formed";;;1960-09-20;0;356
+Bermuda;"Northern America";Caribbean;;BMU;;;"Territory: United Kingdom";BM;60;;;sub-country;;;0;;;;;;;0;357
+Bhutan;"Southern Asia";Asia;BHU;BTN;;1700-01-01;;BT;64;760;;country;;;0;Bhoutan;;"No significant changes after state formed";;;1971-09-21;0;358
+Bolivia;"South America";"South America";BOL;BOL;;1825-08-06;;BO;68;145;;country;;;0;Bolivie;;"No significant changes after state formed";;;1945-11-14;0;359
+Bonaire;Caribbean;Caribbean;;;;2010-10-10;;BQ;;;"Incorporated into the Netherlands on 10 October 2010 in response to dissolution of the Netherlands Antilles";sub-country;;;0;;;;;;;0;360
+Bophutatswana;"Southern Africa";Africa;;;;;;;;;;sub-country;;;0;Bophutatswana;;;;;;0;723
+"Bosnia and Herzegovina";"Southern Europe";Europe;BOS;BIH;;1992-03-01;Yugoslavia;BA;70;346;;country;"combine - Yugoslavia";;0;"Bosnie-Herzégovine ";;"No changes after state formed";Yugoslavia;;1992-05-22;0;361
+"Bosnia and Herzegovina (backcast)";"Southern Europe";Europe;;"mitchell entered name and code";;;Yugoslavia;;6070;;;forecast/backcast;;;0;;;;Yugoslavia;;;0;362
+"Bosnia and Herzegovina (pre-1992)";"Southern Europe";Europe;BOS;BIH;;1992-03-01;Yugoslavia;BA;70;346;;"pre-modern country";"combine - Yugoslavia";;0;;;"No changes after state formed";Yugoslavia;;;0;734
+Botswana;"Southern Africa";Africa;BOT;BWA;;1966-09-30;"Recently formed";BW;72;571;"Independence from United Kingdom";country;;;0;Botswana;;"No changes after state formed";;;1966-10-17;0;363
+"Bouvet Island";;Antarctica;;BVT;;;"Territory: Norway";BV;74;;;sub-country;;;0;;;;;;;0;364
+Brazil;"South America";"South America";BRA;BRA;;1822-09-07;;BR;76;140;"Independence recognized by Portugal";country;;;0;Brésil;;"No significant changes after state formed";;;1945-10-24;0;365
+"British Indian Ocean Territory";"Southern Asia";Asia;;IOT;;;"Territory: United Kingdom";IO;86;;;sub-country;;;0;;;;;;;0;366
+"British Virgin Islands";Caribbean;Caribbean;;VGB;;;"Territory: United Kingdom";VG;92;;;sub-country;;;0;"Îles Vierges britanniques";;;;;;0;367
+"Brunei Darussalam";"South-Eastern Asia";Asia;BRU;BRN;;1984-01-01;"Recently formed";BN;96;835;;country;;;0;"Brunéi Darussalam";;"No changes after state formed";;;1984-09-21;0;368
+Bulgaria;"Eastern Europe";Europe;BUL;BGR;;1878-03-03;;BG;100;355;;country;;2007;1;Bulgarie;;"No significant changes after state formed";;;1955-12-14;1;369
+"Burkina Faso";"Western Africa";Africa;BFO;BFA;;1960-08-05;"Recently formed";BF;854;439;"Independence from France";country;;;0;"Burkina Faso";;"No changes after state formed";;;1960-09-20;0;370
+Burundi;"Eastern Africa";Africa;BUI;BDI;;1962-07-01;"Recently formed";BI;108;516;"Independence from Belgium";country;;;0;Burundi;;"No changes after state formed";;;1962-09-18;0;371
+Cambodia;"South-Eastern Asia";Asia;CAM;KHM;;1953-11-09;;KH;116;811;;country;;;0;Cambodge;;"No changes after state formed";;;1955-12-14;0;372
+"Cambodia (pre-1953)";"South-Eastern Asia";Asia;CAM;KHM;1953-11-09;1099-12-31;;KH;116;811;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;;0;"Cambodge (avant 1953)";;;;;;0;746
+Cameroon;"Central Africa";Africa;CAO;CMR;;1960-01-01;"Recently formed";CM;120;471;"Independence from France";country;;;0;Cameroun;;"No changes after state formed";;;1960-09-20;0;373
+Canada;"Northern America";"North America";CAN;CAN;;1867-07-01;;CA;124;20;"Canadian Confederation from 18670701";country;;;0;Canada;1961;"No significant changes after state formed";;;1945-11-09;0;374
+"Canary Islands";;Europe;;;;;;;;;"Territory of Spain";non-country;;;0;;;;;;;0;783
+"Cape Verde";"Western Africa";Africa;CAP;CPV;;1975-07-05;"Recently formed";CV;132;402;"Independence from Portugal";country;;;0;Cap-Vert;;"No changes after state formed";;;1975-09-16;0;375
+"Cayman Islands";Caribbean;Caribbean;;CYM;;;"Territory: United Kingdom";KY;136;;;sub-country;;;0;;;;;;;0;376
+"Central African Republic";"Central Africa";Africa;CEN;CAF;;1960-08-13;"Recently formed";CF;140;482;"Independence from France";country;;;0;"République Centrafricaine";;"No changes after state formed";;;1960-09-20;0;377
+"Central African Republic (pre-1960)";"Central Africa";Africa;CEN;CAF;1960-08-12;1099-12-31;"Recently formed";CF;140;482;"Independence from France";"pre-modern country";;;0;"République centrafricaine (avant 1960)";;;;;;0;750
+Chad;"Central Africa";Africa;CHA;TCD;;1960-08-11;"Recently formed";TD;148;483;"Independence from France";country;;;0;Tchad;;"No changes after state formed";;;1960-09-20;0;378
+"Chad (pre-1960)";"Central Africa";Africa;CHA;TCD;1960-08-11;1099-12-31;"Recently formed";TD;148;483;"Independence from France";"pre-modern country";;;0;"Tchad (avant 1960)";;"No changes after state formed";;;;0;751
+"Channel Islands";;Europe;;;;;"Territory: United Kingdom";;830;;;sub-country;;;0;;;;;;;0;379
+Chile;"South America";"South America";CHL;CHL;;1810-09-18;;CL;152;155;"Independence recognized by Spain";country;;;0;Chili;2010;"No significant changes after state formed";;;1945-10-24;0;380
+China;"Eastern Asia";Asia;CHN;CHN;;1816-01-01;;CN;156;710;"Establishment of the People's Republic of China";country;;;0;Chine;;"No significant changes after state formed";;;1945-10-24;0;381
+"Christmas Island";"South-Eastern Asia";Asia;;CXR;;;"Territory: Australia";CX;162;;;sub-country;;;0;;;;;;;0;382
+Ciskei;"Southern Africa";Africa;;;;;;;;;;sub-country;;;0;Ciskei;;;;;;0;725
+"Cocos (Keeling) Islands";"South-Eastern Asia";Asia;;CCK;;;"Territory: Australia";CC;166;;;sub-country;;;0;;;;;;;0;383
+Colombia;"South America";"South America";COL;COL;;1810-07-20;;CO;170;100;"Independence recognized by Spain";country;;;0;Colombie;;"No significant changes after state formed";;;1945-11-05;0;384
+Comoros;"Eastern Africa";Africa;COM;COM;;1975-07-06;"Recently formed";KM;174;581;"Independence from France";country;;;0;Comores;;"No changes after state formed";;;1975-11-12;0;385
+"Congo, Democratic Republic of";"Central Africa";Africa;DRC;COD;;1960-06-30;"Recently formed";CD;180;490;;country;;;0;"Congo, République Démocratique du";;;;;1960-09-20;0;386
+"Congo, Democratic Republic of (pre-1960)";"Central Africa";Africa;DRC;COD;1960-06-30;1099-12-31;"Recently formed";CD;180;490;;"pre-modern country";;;0;"Congo, République Démocratique du (avant 1960) ";;"No changes after state formed";;;;0;752
+"Congo, Republic of the";"Central Africa";Africa;CON;COG;;1960-08-15;"Recently formed";CG;178;484;;country;;;0;"Congo, République du";;;;;1960-09-20;0;387
+"Congo, Republic of the (pre-1960)";;Africa;;;1960-08-14;1099-12-31;;;;;;"pre-modern country";;;0;"Congo, République du (avant 1960) ";;;;;;0;775
+"Cook Islands";Polynesia;Oceania;;COK;;1965-08-04;;CK;184;;"Residents of Cook Islands chose self-government in free association with New Zealand";country;;;0;"Îles Cook";;"No changes after state formed";"New Zealand";;;0;388
+"Costa Rica";"Central America";"Central America";COS;CRI;;1821-09-15;;CR;188;94;"18210915 Costa Rica declared independence from Spain";country;;;0;"Costa Rica";;"No significant changes after state formed";;;1945-11-02;0;389
+"Côte d'Ivoire";"Western Africa";Africa;CDI;CIV;;1960-08-07;"Recently formed";CI;384;437;"Independence from France";country;;;0;"Côte d'Ivoire";;"No changes after state formed";;;1960-09-20;0;390
+Croatia;"Southern Europe";Europe;CRO;HRV;;1991-06-25;Yugoslavia;HR;191;344;;country;"combine - Yugoslavia";2013;1;Croatie;;"No changes after state formed";Yugoslavia;;1992-05-22;0;391
+"Croatia (backcast)";"Southern Europe";Europe;;"mitchell entered name and code";;;Yugoslavia;;6191;;;forecast/backcast;;;0;;;;Yugoslavia;;;0;392
+"Croatia (pre-1991)";"Southern Europe";Europe;CRO;HRV;1991-06-24;1099-12-31;Yugoslavia;HR;191;344;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";"combine - Yugoslavia";2013;1;"Croatie (avant 1991)";;;Yugoslavia;;;0;737
+Cuba;Caribbean;Caribbean;CUB;CUB;;1902-05-20;;CU;192;40;;country;;;0;"Cuba ";;"No significant changes after state formed";;;1945-10-24;0;393
+Curacao;Caribbean;Caribbean;;;;2010-10-10;;CW;;;;country;;;0;Curaçao;;;;;;0;394
+Cyprus;"Western Asia";Asia;CYP;CYP;;1960-08-16;"Recently formed";CY;196;352;"Independence from UK";country;;2004;1;Chypre;;"No changes after state formed";;;1960-09-20;0;395
+"Czech Republic";"Eastern Europe";Europe;CZR;CZE;;1993-01-01;Czechoslovakia;CZ;203;316;;country;"combine - Czechoslovakia";2004;1;;1995;"Renamed to Czechia from Czech Republic in 2016";Czechoslovakia;;1993-01-19;1;396
+"Czech Republic (backcast)";"Eastern Europe";Europe;;"mitchell entered name and code";;;Czechoslovakia;;6203;;;forecast/backcast;;;0;;;;Czechoslovakia;;;1;397
+Czechia;"Eastern Europe";Europe;CZR;CZE;;1993-01-01;Czechoslovakia;CZ;203;316;;country;"combine - Czechoslovakia";2004;1;Tchéquie;1995;"Renamed to Czechia from Czech Republic in 2016";Czechoslovakia;;1993-01-19;1;720
+Czechoslovakia;"Eastern Europe";Europe;CZE;CZS;1993-01-01;1918-10-28;Czechoslovakia;;200;315;;"pre-modern country";;;0;;;"Country ended";;"Czech Republic; Slovakia";;1;398
+"Czechoslovakia (forecast)";"Eastern Europe";Europe;;"mitchell entered name and code";;;Czechoslovakia;;7200;;;forecast/backcast;;;0;;;;;"Czech Republic; Slovakia";;1;399
+Denmark;"Northern Europe";Europe;DEN;DNK;;1816-01-01;;DK;208;390;;country;;1973;0;Danemark;1961;"No significant changes after state formed";;;1945-10-24;0;400
+Djibouti;"Eastern Africa";Africa;DJI;DJI;;1977-06-27;"Recently formed";DJ;262;522;"Independence from France";country;;;0;Djibouti;;"No changes after state formed";;;1977-09-20;0;401
+Dominica;Caribbean;Caribbean;DMA;DMA;;1978-11-03;"Recently formed";DM;212;54;;country;;;0;Dominique;;"No changes after state formed";;;1978-12-18;0;402
+"Dominican Republic";Caribbean;Caribbean;DOM;DOM;;1844-02-27;;DO;214;42;;country;;;0;"République Dominicaine";;"No significant changes after state formed";;;1945-10-24;0;403
+Ecuador;"South America";"South America";ECU;ECU;;1822-05-24;;EC;218;130;;country;;;0;Équateur;;"No significant changes after state formed";;;1945-12-21;0;404
+Egypt;"Northern Africa";Africa;EGY;EGY;;1827-01-01;;EG;818;651;"Recognition of independence by the United Kingdom";country;;;0;Égypte;;"No significant changes after state formed";;;1945-10-24;0;405
+"El Salvador";"Central America";"Central America";SAL;SLV;;1821-09-15;;SV;222;92;"18210915 El Salvador becomes state in Federal Republic of Central America, which declared independence from Spain";country;;;0;"El Salvador";;"No significant changes after state formed";;;1945-10-24;0;406
+"EMEP Land Areas in the extended domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;;;0;;;;;;;0;407
+"EMEP-Aral Lake in the former official EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;409
+"EMEP-Arctic Ocean in the extended EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;410
+"EMEP-Arctic Ocean in the former official EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;;;0;;;;;;;0;411
+"EMEP-Baltic Sea";Europe;Europe;;NoCode;;;EMEP;;15002;;;non-country;exclude;;0;;;;;;;0;412
+EMEP-BIC;Europe;Europe;;NoCode;;;EMEP;;15013;;;non-country;;;0;;;;;;;0;413
+"EMEP-Biogenic sea emissions";Europe;Europe;;NoCode;;;EMEP;;15007;;;non-country;;;0;;;;;;;0;414
+"EMEP-Black Sea";Europe;Europe;;NoCode;;;EMEP;;15006;;;non-country;exclude;;0;;;;;;;0;415
+"EMEP-Boundary and initial conditions";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;;;0;;;;;;;0;416
+"EMEP-Caspian Sea";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;417
+"EMEP-Deposition of Indeterminate Origins";Europe;Europe;;NoCode;;;EMEP;;15008;;;non-country;;;0;;;;;;;0;418
+"EMEP-external part of Russian Federation";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - Russia";;0;;;;;;;0;419
+"EMEP-external Remaining North-East Atlantic Ocean";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;420
+EMEP-GL;Europe;Europe;;NoCode;;;EMEP;;15012;;;non-country;;;0;;;;;;;0;421
+EMEP-Kaliningrad;Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - Russia";;0;;;;;;;0;422
+"EMEP-Kazakhstan in the former official EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;423
+EMEP-Kola/Karelia;Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - Russia";;0;;;;;;;0;424
+"EMEP-Mediterranean Sea";Europe;Europe;;NoCode;;;EMEP;;15005;;;non-country;exclude;;0;;;;;;;0;425
+"EMEP-Modified Remaining Asian Areas in the former official EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;426
+"EMEP-Natural marine emissions";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;427
+"EMEP-North Africa";Europe;Europe;;NoCode;;;EMEP;;15011;;;non-country;exclude;;0;;;;;;;0;428
+"EMEP-North Sea";Europe;Europe;;NoCode;;;EMEP;;15003;;;non-country;exclude;;0;;;;;;;0;429
+"EMEP-Remaining Asian Areas";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;430
+"EMEP-Remaining Asian Areas in the extended EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;431
+"EMEP-Remaining Land Areas";Europe;Europe;;NoCode;;;EMEP;;15001;;;non-country;;;0;;;;;;;0;432
+"EMEP-Remaining North-East Atlantic Ocean";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;433
+"EMEP-Rest of Aral Lake in the extended EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;exclude;;0;;;;;;;0;434
+"EMEP-Rest of Kazakhstan in the extended EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;435
+"EMEP-Rest of Russian Federation";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;436
+"EMEP-Rest of Russian Federation in the extended EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;437
+"EMEP-Rest of the Russian Federation";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - Russia";;0;;;;;;;0;438
+"EMEP-Rest of Turkmenistan in the extended EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;439
+"EMEP-Rest of Uzbekistan in the extended EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;440
+"EMEP-Russian Federation in the former official EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;;;0;;;;;;;0;441
+"EMEP-St. Petersburg/Novgorod-Pskov";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - Russia";;0;;;;;;;0;442
+"EMEP-Total attributable sources";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;;;0;;;;;;;0;443
+"EMEP-Turkmenistan in the former official EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;444
+"EMEP-Uzbekistan in the former official EMEP domain";Europe;Europe;;NoCode;;;EMEP;;;;;non-country;"combine - USSR";;0;;;;;;;0;445
+"EMEP-Volcanic emissions";Europe;Europe;;NoCode;;;EMEP;;15009;;;non-country;exclude;;0;;;;;;;0;446
+"EMEP: Introduction from the Sea";Europe;Europe;;;;;;;;;;non-country;;;0;;;;;;;0;408
+"Equatorial Guinea";"Central Africa";Africa;EQG;GNQ;;1968-10-12;"Recently formed";GQ;226;411;"Independence from Spain";country;;;0;"Guinée équatoriale";;"No changes after state formed";;;1968-11-12;0;447
+Eritrea;"Eastern Africa";Africa;ERI;ERI;;1991-05-24;Ethiopia;ER;232;531;"20071130 the Eritrea-Ethiopia Boundary Commission remotely demarcated the border by coordinates";country;;;0;Érythrée;;"Border dispute with Ethiopia";Ethiopia;;1993-05-28;0;448
+Estonia;"Northern Europe";Europe;EST;EST;;1991-09-06;"Union of Soviet Socialist Republics";EE;233;366;;country;"combine - USSR";2004;1;Estonie;2010;"No changes after state formed";"Soviet Union";;1991-09-17;1;449
+"Estonia (backcast)";"Northern Europe";Europe;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6233;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;450
+"Estonia (pre-1940)";Europe;Europe;;;1940-01-01;1099-12-31;;;;366;"Pre-WWII Estonia";"pre-modern country";;;0;"Estonie (avant 1940)";;;;;;0;773
+"Estonia (Soviet period)";"Northern Europe";Europe;EST;EST;1991-09-05;1940-01-02;"Union of Soviet Socialist Republics";EE;233;366;"This is for period of German and then Soviet occupation.";"pre-modern country";"combine - USSR";2004;1;"Estonie (Période soviétique)";2010;;"Soviet Union";;;1;733
+Eswatini;"Southern Africa";Africa;SWA;SWZ;;1968-09-06;"Recently formed";SZ;748;572;"Independence from United Kingdom";country;;;0;Eswatini;;"No changes after state formed";;;1968-09-24;0;661
+Ethiopia;"Eastern Africa";Africa;ETH;ETH;;1855-02-11;Ethiopia;ET;231;530;"20071130 the Eritrea-Ethiopia Boundary Commission remotely demarcated the border by coordinates";country;;;0;Éthiopie;;"Border dispute with Eritrea";;"Ethiopia; Eritrea";1945-11-13;0;451
+"European Union";Europe;Europe;;EUR;;1957-03-25;;;999;;"Treaty establishing the European Economic Community (Treaty of Rome) created the European Economic Community (EEC), the best-known of the European Communities (EC) was signed on 25 March 1957 by Belgium, France, Italy, Luxembourg, the Netherlands and West Germany.";non-country;;;0;"Union européenne ";;;;;;0;452
+"Faeroe Islands";"Northern Europe";Europe;;FRO;;;"Territory: Denmark";FO;234;;;sub-country;;;0;"Îles Féroé";;;;;;0;453
+"Falkland Islands (Malvinas)";"South America";"South America";;FLK;;;"Territory: United Kingdom";FK;238;;;sub-country;;;0;"Îles Falkland (Malvinas)";;;;;;0;454
+Fiji;Melanesia;Oceania;FIJ;FJI;;1970-10-10;"Recently formed";FJ;242;950;"Independence from United Kingdom";country;;;0;Fiji;;"No changes after state formed";;;1970-10-13;0;455
+Finland;"Northern Europe";Europe;FIN;FIN;;1917-12-06;;FI;246;375;;country;;1995;0;Finlande;1969;"No significant changes after state formed";;;1955-12-14;0;456
+France;"Western Europe";Europe;FRN;FRA;;1792-09-22;;FR;250;220;"Treaty of Verdun";country;;1952;0;France;1961;"No significant changes after state formed";;;1945-10-24;0;457
+"French Antilles";Caribbean;Caribbean;;;;;;;;;;sub-country;;;0;;;;;;;0;458
+"French Guiana";"South America";"South America";;GUF;;;"Territory: French";GF;254;;;sub-country;;;0;"Guyane française";;;;;;0;459
+"French Polynesia";Polynesia;Oceania;;PYF;;;"Territory: French";PF;258;;;sub-country;;;0;;;;;;;0;460
+"French Southern Territories";;Antarctica;;ATF;;;"Territory: French";TF;260;;;sub-country;;;0;;;;;;;0;461
+Gabon;"Central Africa";Africa;GAB;GAB;;1960-08-17;"Recently formed";GA;266;481;"Independence from France";country;;;0;Gabon;;"No changes after state formed";;;1960-09-20;0;462
+"Gabon (pre-1960)";"Central Africa";Africa;GAB;GAB;1960-08-16;1099-12-31;"Recently formed";GA;266;481;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;;0;"Gabon (avant 1960)";;;;;;0;753
+Gambia;"Western Africa";Africa;GAM;GMB;;1965-02-18;"Recently formed";GM;270;420;"Independence from United Kingdom";country;;;0;Gambie;;"No changes after state formed";;;1965-09-21;0;463
+Georgia;"Western Asia";Asia;GRG;GEO;;1991-09-06;"Union of Soviet Socialist Republics";GE;268;372;;country;"combine - USSR";;0;Géorgie;;"No changes after state formed";"Soviet Union";;1992-07-31;1;464
+"Georgia (backcast)";"Western Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6268;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;465
+Germany;"Western Europe";Europe;GMY;DEU;;1949-05-23;Germany;DE;276;255;"19901003 -- Germany formed on this date but treated in IEADB as having formed with start of Federal Republic of Germany in 19490523 to reflect assumption that Germany assumed memberships of FRG.";country;;1952;0;Allemagne;1961;"No changes after state formed";"German Democratic Republic; Germany, Federal Republic of";;1973-09-18;0;466
+"Germany (Alsace-Lorraine)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Allemagne (Alsace-Lorraine)";;;;;;0;467
+"Germany (backcast)";"Western Europe";Europe;;"mitchell entered name and code";;;Germany;;7276;;;forecast/backcast;;;0;;;;;;;0;468
+"Germany (Baden)";"Western Europe";Europe;BAD;;1871-01-17;1816-01-01;;;;267;;sub-country;;;0;"Allemagne (Bade) ";;;;;;0;469
+"Germany (Baden-Wurttemberg)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Allemagne (Bade-Wurtemberg)";;;;;;0;470
+"Germany (Bavaria)";"Western Europe";Europe;;;1871-01-17;1816-01-01;;;;;;sub-country;;;0;"Allemagne (Bavière)";;;;;;0;471
+"Germany (Hanover)";"Western Europe";Europe;HAN;;1871-01-17;1816-01-01;;;;240;;sub-country;;;0;;;;;;;0;472
+"Germany (Hesse - Electoral)";"Western Europe";Europe;HSE;;;;;;;273;;sub-country;;;0;;;;;;;0;473
+"Germany (Hesse - Grand Ducal)";"Western Europe";Europe;HSG;;;;;;;275;;sub-country;;;0;;;;;;;0;474
+"Germany (Hesse)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Allemagne (Hesse)";;;;;;0;475
+"Germany (Mecklenburg Schwerin)";"Western Europe";Europe;MEC;;;;;;;280;;sub-country;;;0;;;;;;;0;476
+"Germany (Oldenburg)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Allemagne (Oldenburg)";;;;;;0;190846
+"Germany (pre-1949)";"Western Europe";Europe;GMY;DEU;1990-10-02;1099-12-31;Germany;DE;276;255;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;1952;0;"Allemagne (avant 1949)";1961;;"German Democratic Republic; Germany, Federal Republic of";;;0;745
+"Germany (Wurttemberg)";"Western Europe";Europe;;;;;;;;;;sub-country;;;0;"Allemagne (Wurtemberg)";;;;;;0;477
+"Germany, Former FRG";"Western Europe";Europe;GFR;BRD;1990-10-02;1949-05-23;Germany;;278;260;;"pre-modern country";"combine - Germany";;0;;;;;Germany;;0;478
+"Germany, Former FRG (forecast)";"Western Europe";Europe;;"mitchell entered name and code";;;Germany;;6278;;;forecast/backcast;;;0;;;;;Germany;;0;479
+"Germany, Former GDR";"Western Europe";Europe;GDR;DDR;1990-10-02;1949-10-07;Germany;;277;265;;"pre-modern country";"combine - Germany";;0;"Allemagne, ex-RDA";;;;Germany;;1;480
+"Germany, Former GDR (forecast)";"Western Europe";Europe;;"mitchell entered name and code";;;Germany;;6277;;;forecast/backcast;;;0;;;;;Germany;;1;481
+Ghana;"Western Africa";Africa;GHA;GHA;;1957-03-06;;GH;288;452;"Independence from United Kingdom";country;;;0;Ghana;;"No changes after state formed";;;1957-03-08;0;482
+Gibraltar;"Southern Europe";Europe;;GIB;;;"Territory: United Kingdom";GI;292;;;sub-country;;;0;;;;;;;0;483
+"Gran Colombia";"South America";"South America";;;1830-09-22;1821-08-30;;;;;;sub-country;;;0;;;;;;;0;484
+Greece;"Southern Europe";Europe;GRC;GRC;;1832-03-04;;GR;300;350;;country;;1981;1;Grèce;1961;"No significant changes after state formed";;;1945-10-25;0;485
+Greenland;Europe;Europe;;GRL;;;"Territory: Denmark";GL;304;;;sub-country;;;0;Groenland;;;;;;0;486
+Grenada;Caribbean;Caribbean;GRN;GRD;;1974-02-07;"Recently formed";GD;308;55;;country;;;0;Grenade;;"No changes after state formed";;;1974-09-17;0;487
+Guadeloupe;Caribbean;Caribbean;;GLP;;;"Territory: French";GP;312;;;sub-country;;;0;;;;;;;0;488
+Guam;Micronesia;Oceania;;GUM;;;"Territory: United States";GU;316;;;sub-country;;;0;;;;;;;0;489
+Guatemala;"Central America";"Central America";GUA;GTM;;1839-04-17;;GT;320;90;"18210915 Guatemala becomes state in Federal Republic of Central America, which declared independence from Spain";country;;;0;Guatemala;;"No significant changes after state formed";;;1945-11-21;0;490
+Guernsey;"Northern Europe";Europe;;GGY;;;;GG;831;;;sub-country;;;0;;;;;;;0;491
+"Guernsey and Isle of Man";"Northern Europe";Europe;;IMN;;;"Territory: United Kingdom";;831;;;sub-country;;;0;;;;;;;0;492
+Guinea;"Western Africa";Africa;GUI;GIN;;1958-10-02;;GN;324;438;"Independence from France";country;;;0;Guinée;;"No changes after state formed";;;1958-12-12;0;493
+Guinea-Bissau;"Western Africa";Africa;GNB;GNB;;1973-09-24;"Recently formed";GW;624;404;"Independence from Portugal recognized";country;;;0;Guinée-Bissau;;"No changes after state formed";;;1974-09-17;0;494
+Guyana;"South America";"South America";GUY;GUY;;1966-05-26;"Recently formed";GY;328;110;;country;;;0;Guyana;;"No changes after state formed";;;1966-09-20;0;495
+Haiti;Caribbean;Caribbean;HAI;HTI;;1804-01-01;;HT;332;41;;country;;;0;Haïti;;"No significant changes after state formed";;;1945-10-24;0;496
+Hawaii;;Oceania;;;;;"Territory: United States";;;;;sub-country;;;0;;;;;;;0;497
+"Heard Island and McDonald Islands";;Antarctica;;HMD;;;"Territory: Australia";HM;334;;;sub-country;;;0;;;;;;;0;498
+"Holy See";"Southern Europe";Europe;PAP;VAT;;1929-06-07;;VA;336;327;;country;;;0;Saint-Siège;;"No significant changes after state formed";;;;0;499
+Honduras;"Central America";"Central America";HON;HND;;1838-10-26;;HN;340;91;"18210915 Honduras becomes state in Federal Republic of Central America, which declared independence from Spain";country;;;0;Honduras;;"No significant changes after state formed";;;1945-12-17;0;500
+"Hong Kong";"Eastern Asia";Asia;;HKG;;1945-08-15;;HK;344;;"Transfer of sovereignty in 19970630 to China";sub-country;;;0;"Hong Kong";;;;;;0;501
+Hungary;"Eastern Europe";Europe;HUN;HUN;;1918-11-16;;HU;348;310;;country;;2004;1;Hongrie;1996;"19910619 End of Soviet occupation";;;1955-12-14;1;502
+Iceland;"Northern Europe";Europe;ICE;ISL;;1944-06-17;;IS;352;395;;country;;;0;Islande;1961;"No significant changes after state formed";;;1946-11-19;0;503
+"Iceland (pre-1944)";"Northern Europe";Europe;;;1944-06-17;1099-12-31;;;;;;"pre-modern country";;;0;"Islande (avant 1944)";;;;;;0;767
+India;"Southern Asia";Asia;IND;IND;;1947-08-15;;IN;356;750;"Independence from the United Kingdom";country;;;0;Inde;;"No significant changes after state formed";;;1945-10-30;0;504
+"India (pre-1947)";"Southern Asia";Asia;IND;IND;1947-08-14;1099-12-31;;IN;356;750;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;;0;"Inde (avant 1947)";;"No significant changes after state formed";;;;0;743
+Indochina;;Asia;;;;;;;;;;"pre-modern country";;;0;Indochine;;;;;;0;505
+Indonesia;"South-Eastern Asia";Asia;INS;IDN;;1945-08-17;;ID;360;850;"Independence from the Netherlands recognized";country;;;0;Indonésie;;"No significant changes after state formed";;"Indonesia; Timor-Leste";1950-09-28;0;506
+"IO-African Intellectual Property Organization";;IO;;AIPO;;;"International Organization";;;;;non-country;;;0;"OI-Organisation africaine de la propriété intellectuelle";;;;;;0;721
+IO-ASEAN;;IO;;;;;;;;;;non-country;;;0;;;;;;;0;507
+"IO-Birdlife International";;IO;;BLI;;;"International Organization";;;;;non-country;;;0;;;;;;;0;508
+"IO-Comprehensive Nuclear-Test-Ban Treaty Organisation";;IO;;;;;"International Organization";;;;;non-country;;;0;;;;;;;0;778
+"IO-Conseil de l'Entente";;IO;;CDE;;;"International Organization";;;;;non-country;;;0;;;;;;;0;509
+IO-EUMETSAT;;IO;;EUMET;;;"International Organization";;;;;non-country;;;0;;;;;;;0;510
+"IO-European Atomic Energy Community";;IO;;EAEC;;;"International Organization";;;;;non-country;;;0;"OI-Communauté européenne de l'énergie atomique";;;;;;0;511
+"IO-European Bank for Reconstruction and Development (EBRD)";;IO;;EBRD;;;"International Organization";;;;;non-country;;;0;"OI-Banque Européenne pour la Reconstruction et le Développement (BERD)";;;;;;0;512
+"IO-European Space Agency";;IO;;EUR-Space;;;"International Organization";;;;;non-country;;;0;;;;;;;0;513
+IO-Eutelsat;;IO;;EUTEL;;;"International Organization";;;;;non-country;;;0;;;;;;;0;514
+IO-IAEA;;IO;;;;;;;;;;non-country;;;0;"OI-Agence Internationale de l'Énergie Atomique (AIEA)";;;;;;0;515
+"IO-International Bank for Reconstruction and Development";;IO;;;;;;;;;;non-country;;;0;"OI-Banque Internationale pour la Reconstruction et le Développement";;;;;;0;516
+"IO-International Energy Agency";;IO;;IEA;;;"International Organization";;;;;non-country;;;0;;;;;;;0;517
+"IO-International Epizootic Bureau";;IO;;;;;"International Organization";;;;;non-country;;;0;;;;;;;0;779
+IO-IUCN/SSC;;IO;;IUC;;;"International Organization";;;;;non-country;;;0;;;;;;;0;518
+"IO-Nordic Environment Finance Corporation (NEFCO)";;IO;;NEFCO;;;"International Organization";;;;;non-country;;;0;"OI-Société Nordique de Financement de l'Environnement (NEFCO)";;;;;;0;519
+"IO-Secretariat To The Agreement On The Conservation Of Albatrosses And Petrels";;IO;;;;;;;;;;non-country;;;0;;;;;;;0;520
+"IO-UN Food and Agriculture Organization";;IO;;FAO;;;"International Organization";;;;;non-country;;;0;"OI-Organisation des Nations Unies pour l'Alimentation et l'Agriculture (FAO)";;;;;;0;521
+"IO-UNEP/CMS Secretariat";;IO;;CMS;;;"International Organization";;;;;non-country;;;0;;;;;;;0;522
+"IO-World Health Organization";;IO;;WHO;;;"International Organization";;;;;non-country;;;0;"OI-Organisation Mondiale de la Santé (OMS)";;;;;;0;523
+"IO-World Meteorological Organization";;IO;;WMO;;;"International Organization";;;;;non-country;;;0;"OI-Organisation Météorologique Mondiale (OMM)";;;;;;0;524
+Iran;"Southern Asia";Asia;IRN;IRN;;1925-12-12;;IR;364;630;"Known as Persia until 1935";country;;;0;Iran;;"No significant changes after state formed";;;1945-10-24;0;525
+Iraq;"Western Asia";Asia;IRQ;IRQ;;1932-10-03;;IQ;368;645;;country;;;0;Irak;;"No significant changes after state formed";;;1945-12-21;0;526
+"Iraq (pre-1932)";"Western Asia";Asia;IRQ;IRQ;1932-10-02;1099-12-31;;IQ;368;645;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;;0;"Irak (avant 1932)";;;;;;0;741
+Ireland;"Northern Europe";Europe;IRE;IRL;;1921-12-06;;IE;372;205;;country;;1973;0;Irlande;1961;"No significant changes after state formed";;;1955-12-14;0;527
+"Isle of Man";"Northern Europe";Europe;;IMN;;;"Territory: United Kingdom";IM;833;;;sub-country;;;0;;;;;;;0;528
+Israel;"Western Asia";Asia;ISR;ISR;;1948-05-14;;IL;376;666;;country;;;0;Israël;2010;"No significant changes after state formed";;;1949-05-11;0;529
+Italy;"Southern Europe";Europe;ITA;ITA;;1861-03-17;;IT;380;325;;country;;1952;1;Italie;1962;"No significant changes after state formed";;;1955-12-14;0;530
+Jamaica;Caribbean;Caribbean;JAM;JAM;;1962-08-06;"Recently formed";JM;388;51;;country;;;0;Jamaïque;;"No changes after state formed";;;1962-09-18;0;531
+Japan;"Eastern Asia";Asia;JPN;JPN;;1890-11-29;;JP;392;740;"Japan's independence is reinstated";country;;;0;Japon;1964;"No changes after state formed";;;1956-12-18;0;532
+Jersey;"Northern Europe";Europe;;JEY;;;"Territory: United Kingdom";JE;832;;;sub-country;;;0;;;;;;;0;533
+Jordan;"Western Asia";Asia;JOR;JOR;;1921-04-11;;JO;400;663;;country;;;0;Jordanie;;"No significant changes after state formed";;;1955-12-14;0;534
+Kazakhstan;"Central Asia";Asia;KZK;KAZ;;1991-12-16;"Union of Soviet Socialist Republics";KZ;398;705;;country;;;0;Kazakhstan;;"No changes after state formed";"Soviet Union";;1992-03-02;1;535
+"Kazakhstan (backcast)";"Central Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6398;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;536
+Kenya;"Eastern Africa";Africa;KEN;KEN;;1963-12-12;"Recently formed";KE;404;501;"Independence from United Kingdom";country;;;0;Kenya;;"No changes after state formed";;;1963-12-16;0;537
+"Kenya (pre-1963)";"Eastern Africa";Africa;KEN;KEN;1963-12-12;1099-12-31;"Recently formed";KE;404;501;"Independence from United Kingdom";"pre-modern country";;;0;"Kenya (avant 1963)";;"No changes after state formed";;;;0;760
+Kiribati;Micronesia;Oceania;KIR;KIR;;1979-07-12;"Recently formed";KI;296;946;"Independence from United Kingdom";country;;;0;Kiribati;;"No changes after state formed";;;1999-09-14;0;538
+"Korea (pre-1950)";"Eastern Asia";Asia;KOR;;;;;;;730;;"pre-modern country";;;0;;;;;;;0;539
+"Korea, Democratic People's Republic";"Eastern Asia";Asia;PRK;PRK;;1948-09-09;;KP;408;731;;country;;;0;"République Populaire Démocratique de Corée";;"No significant changes after state formed";;;1991-09-17;0;540
+"Korea, Republic of";"Eastern Asia";Asia;ROK;KOR;;1948-08-15;;KR;410;732;;country;;;0;"République de Corée";1996;;;;1991-09-17;0;541
+Kosovo;"Southern Europe";Europe;KOS;;;2008-02-17;Yugoslavia;;;341;;country;;;0;Kosovo;;;;;;0;542
+Kuwait;"Western Asia";Asia;KUW;KWT;;1961-06-19;"Recently formed";KW;414;690;"19910228 End of Iraqi occupation";country;;;0;Koweït;;"No changes after state formed";;;1963-05-14;0;543
+Kyrgyzstan;"Central Asia";Asia;KYR;KGZ;;1991-08-31;"Union of Soviet Socialist Republics";KG;417;703;;country;"combine - USSR";;0;Kirghizistan;;"No changes after state formed";"Soviet Union";;1992-03-02;1;544
+"Kyrgyzstan (backcast)";"Central Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6417;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;545
+Laos;"South-Eastern Asia";Asia;LAO;LAO;;1949-07-19;;LA;418;812;"Independence from France";country;;;0;Laos;;"No significant changes after state formed";;;1955-12-14;0;546
+Latvia;"Northern Europe";Europe;LAT;LVA;;1990-05-04;"Union of Soviet Socialist Republics";LV;428;367;;country;"combine - USSR";2004;1;Lettonie;;"No changes after state formed";"Soviet Union";;1991-09-17;1;547
+"Latvia (backcast)";"Northern Europe";Europe;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6428;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;548
+"Latvia (pre-1940)";;Europe;;;1940-08-04;1099-12-31;;;;367;"Pre-WWII Latvia";"pre-modern country";;;0;"Lettonie (avant 1940)";;;;;;1;771
+"Latvia (Soviet period)";"Northern Europe";Europe;LAT;LVA;1990-05-03;1940-08-05;"Union of Soviet Socialist Republics";LV;428;367;"Period of Soviet occupation.";"pre-modern country";"combine - USSR";2004;1;;2016;;"Soviet Union";;;1;731
+Lebanon;"Western Asia";Asia;LEB;LBN;;1943-11-22;;LB;422;660;"Independence from France recognized";country;;;0;Liban;;"No significant changes after state formed";;;1945-10-24;0;549
+Lesotho;"Southern Africa";Africa;LES;LSO;;1966-10-04;"Recently formed";LS;426;570;"Independence from United Kingdom";country;;;0;Lesotho;;"No changes after state formed";;;1966-10-17;0;550
+Liberia;"Western Africa";Africa;LBR;LBR;;1847-07-26;;LR;430;450;"Independence from the United States";country;;;0;Libéria;;"No significant changes after state formed";;;1945-11-02;0;551
+Libya;"Northern Africa";Africa;LIB;LBY;;1951-12-24;;LY;434;620;"Independence from UN Trusteeship";country;;;0;Libye;;"No changes after state formed";;;1955-12-14;0;552
+Liechtenstein;"Western Europe";Europe;LIE;LIE;;1813-10-19;;LI;438;223;;country;;;0;Liechtenstein;;"No significant changes after state formed";;;1990-09-18;0;553
+Lithuania;"Northern Europe";Europe;LIT;LTU;;1991-09-06;"Union of Soviet Socialist Republics";LT;440;368;;country;"combine - USSR";2004;1;Lituanie;;"No changes after state formed";"Soviet Union";;1991-09-17;1;554
+"Lithuania (backcast)";"Northern Europe";Europe;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6440;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;555
+"Lithuania (pre-1940)";Europe;Europe;;;1940-06-14;1099-12-31;;;;368;"Pre-WWII Lithuania";"pre-modern country";;;0;"Lituanie (avant 1940)";;;;;;0;772
+"Lithuania (Soviet period)";"Northern Europe";Europe;LIT;LTU;1991-09-05;1940-06-15;"Union of Soviet Socialist Republics";LT;440;368;"This is for period of German and then Soviet occupation.";"pre-modern country";"combine - USSR";2004;1;;;;"Soviet Union";;;1;732
+Luxembourg;"Western Europe";Europe;LUX;LUX;;1868-10-17;;LU;442;212;;country;;1952;0;Luxembourg;1961;"No significant changes after state formed";;;1945-10-24;0;556
+Macao;"Eastern Asia";Asia;;MAC;;1987-04-13;;MO;446;;"Transfer of sovereignty in 19991220 to China";sub-country;;;0;Macao;;;;;;0;557
+Macedonia;"Southern Europe";Europe;MAC;MKD;;1991-09-08;Yugoslavia;MK;807;343;;country;"combine - Yugoslavia";;0;;;"No changes after state formed";Yugoslavia;;1993-04-08;0;558
+"Macedonia (backcast)";"Southern Europe";Europe;;"mitchell entered name and code";;;Yugoslavia;;6807;;;forecast/backcast;;;0;;;;Yugoslavia;;;0;559
+Madagascar;"Eastern Africa";Africa;MAG;MDG;;1960-06-26;"Recently formed";MG;450;580;"Independence recognized by France";country;;;0;Madagascar;;"No changes after state formed";;;1960-09-20;0;560
+Malawi;"Eastern Africa";Africa;MAW;MWI;;1964-07-06;"Recently formed";MW;454;553;"Independence from United Kingdom";country;;;0;Malawi;;"No changes after state formed";;;1964-12-01;0;561
+Malaysia;"South-Eastern Asia";Asia;MAL;MYS;;1957-08-31;;MY;458;820;;country;;;0;Malaisie;;"Singapore secedes 19650809";;;1957-09-17;0;562
+Maldives;"Southern Asia";Asia;MAD;MDV;;1965-07-26;"Recently formed";MV;462;781;;country;;;0;Maldives;;"No changes after state formed";;;1965-09-21;0;563
+Mali;"Western Africa";Africa;MLI;MLI;;1960-09-22;"Recently formed";ML;466;432;"Independence from France";country;;;0;Mali;;"No changes after state formed";;;1960-09-28;0;564
+Malta;"Southern Europe";Europe;MLT;MLT;;1964-09-21;"Recently formed";MT;470;338;;country;;2004;0;Malte;;"No changes after state formed";;;1964-12-01;0;565
+"Marshall Islands";Micronesia;Oceania;MSI;MHL;;1986-10-21;"Recently formed";MH;584;983;;country;;;0;"Îles Marshall";;"No changes after state formed";;;1991-09-17;0;566
+"Marshall Islands (pre-1986)";Micronesia;Oceania;MSI;MHL;1986-10-20;1099-12-31;"Recently formed";MH;584;983;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;;0;"Îles Marshall (avant 1986)";;;;;;0;764
+Martinique;Caribbean;Caribbean;;MTQ;;;"Territory: French";MQ;474;;;sub-country;;;0;;;;;;;0;567
+Mauritania;"Western Africa";Africa;MAA;MRT;;1960-11-28;"Recently formed";MR;478;435;"Independence from France";country;;;0;Mauritanie;;"No changes after state formed";;;1961-10-27;0;568
+"Mauritania (pre-1960)";"Western Africa";Africa;MAA;MRT;1960-11-27;1099-12-31;"Recently formed";MR;478;435;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.. Independence from France";"pre-modern country";;;0;"Mauritanie (avant 1960)";;;;;;0;754
+Mauritius;"Eastern Africa";Africa;MAS;MUS;;1968-03-12;"Recently formed";MU;480;590;"Independence from United Kingdom";country;;;0;Maurice;;"No changes after state formed";;;1968-04-24;0;569
+Mayotte;"Eastern Africa";Africa;;MYT;;;"Territory: French";YT;175;;;sub-country;;;0;;;;;;;0;570
+"Member countries not listed";;Other;;;;;;;;;;non-country;;;0;;;;;;;0;571
+Mexico;"Central America";"Central America";MEX;MEX;;1821-08-24;;MX;484;70;"18100916 Independence from Spain declared";country;;;0;Mexique;1994;"No significant changes after state formed";;;1945-11-07;0;572
+Micronesia;Micronesia;Oceania;FSM;FSM;;1986-11-03;"Recently formed";FM;583;987;;country;;;0;Micronésie;;"No changes after state formed";;;1991-09-17;0;573
+"Micronesia (pre-1986)";Micronesia;Oceania;FSM;FSM;1986-11-02;1099-12-31;"Recently formed";FM;583;987;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;;0;"Micronésie (avant 1986)";;;;;;0;765
+Modena;"Southern Europe";Europe;MOD;;1861-03-16;;;;;332;;sub-country;;;0;;;;;;;0;574
+Moldova;"Eastern Europe";Europe;MLD;MDA;;1991-08-27;"Union of Soviet Socialist Republics";MD;498;359;;country;"combine - USSR";;0;Moldavie;;"No changes after state formed";"Soviet Union";;1992-03-02;1;575
+"Moldova (backcast)";"Eastern Europe";Europe;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6498;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;576
+Monaco;"Western Europe";Europe;MNC;MCO;;1814-05-17;;MC;492;221;;country;;;0;Monaco;;"No significant changes after state formed";;;1993-05-28;0;577
+Mongolia;"Eastern Asia";Asia;MON;MNG;;1911-12-29;;MN;496;712;;country;;;0;Mongolie;;"No significant changes after state formed";;;1961-10-27;0;578
+Montenegro;"Southern Europe";Europe;MNG;MNE;;2006-06-03;Yugoslavia;ME;891;348;;country;"combine - Yugoslavia";;0;Monténégro;;"No changes after state formed";Yugoslavia;;2006-06-28;0;579
+Montserrat;Caribbean;Caribbean;;MSR;;;"Territory: United Kingdom";MS;500;;;sub-country;;;0;Montserrat;;;;;;0;580
+Morocco;"Northern Africa";Africa;MOR;MAR;;1956-04-07;;MA;504;600;"Independence from France";country;;;0;Maroc;;"No changes after state formed";;;1956-11-12;0;581
+"Morocco (pre-1956)";"Northern Africa";Africa;MOR;MAR;1956-03-01;1099-12-31;;MA;504;600;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.. Independence from France.";"pre-modern country";;;0;"Maroc (avant 1956)";;;;;;0;747
+Mozambique;"Eastern Africa";Africa;MZM;MOZ;;1975-06-25;"Recently formed";MZ;508;541;"Independence from Portugal";country;;;0;Mozambique;;"No changes after state formed";;;1975-09-16;0;582
+"Mozambique (pre-1975)";"Eastern Africa";Africa;MZM;MOZ;1975-06-24;1099-12-31;"Recently formed";MZ;508;541;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.. Independence from Portugal.";"pre-modern country";;;0;"Mozambique (avant 1975)";;;;;;0;763
+Myanmar;"South-Eastern Asia";Asia;MYA;BUR;;1948-01-04;;MM;104;775;;country;;;0;Myanmar;;"No significant changes after state formed";;;1948-04-19;0;583
+"Myanmar (pre-1948)";"South-Eastern Asia";Asia;MYA;BUR;1948-01-04;1099-12-31;;MM;104;775;;"pre-modern country";;;0;"Myanmar (avant 1948)";;"No significant changes after state formed";;;;0;744
+Namibia;"Southern Africa";Africa;NAM;NAM;;1990-03-21;"Recently formed";NA;516;565;"Independence from South African rule";country;;;0;Namibie;;"No changes after state formed";"South Africa";;1990-04-23;0;584
+"Namibia (pre-1990)";"Southern Africa";Africa;NAM;NAM;1990-03-20;1099-12-31;"Recently formed";NA;516;565;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.. Independence from South African rule.";"pre-modern country";;;0;"Namibie (avant 1990)";;;"South Africa";;;0;766
+Nauru;Micronesia;Oceania;NAU;NRU;;1968-01-31;"Recently formed";NR;520;970;;country;;;0;Nauru;;"No changes after state formed";;;1999-09-14;0;585
+Nepal;"Southern Asia";Asia;NEP;NPL;;1768-12-21;;NP;524;790;"20080528 Formation of Republic";country;;;0;Népal;;"No significant changes after state formed";;;1955-12-14;0;586
+Netherlands;"Western Europe";Europe;NTH;NLD;;1581-07-26;;NL;528;210;;country;;1952;0;Pays-Bas;1961;"No significant changes after state formed";;;1945-12-10;0;587
+"Netherlands Antilles";Caribbean;Caribbean;;ANT;2010-10-10;1954-12-15;;;530;;"Established: 15 December 1954; Dissolved: 10 October 2010";country;;;0;"Antilles néerlandaises";;;;;;0;588
+"New Caledonia";Melanesia;Oceania;;NCL;;;"Territory: French";NC;540;;;sub-country;;;0;Nouvelle-Calédonie;;;;;;0;589
+"New Zealand";"Australia and New Zealand";Oceania;NEW;NZL;;1907-09-26;;NZ;554;920;;country;;;0;Nouvelle-Zélande;1973;"Several territories gained independence or self-govering in free association with New Zealand";;"New Zealand; Cook Islands; Niue; Samoa; Tokelau";1945-10-24;0;590
+Newfoundland;;"North America";;;;;;;;;;sub-country;;;0;;;;;;;0;591
+Nicaragua;"Central America";"Central America";NIC;NIC;;1838-11-05;;NI;558;93;"18210915 Nicaragua  becomes state in Federal Republic of Central America, which declared independence from Spain";country;;;0;Nicaragua;;"No significant changes after state formed";;;1945-10-24;0;592
+Niger;"Western Africa";Africa;NIR;NER;;1960-08-03;"Recently formed";NE;562;436;"Independence from France";country;;;0;Niger;;"No changes after state formed";;;1960-09-20;0;593
+"Niger (pre-1960)";"Western Africa";Africa;NIR;NER;1960-08-02;1099-12-31;"Recently formed";NE;562;436;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.. Independence from France.";"pre-modern country";;;0;"Niger (avant 1960)";;;;;;0;755
+Nigeria;"Western Africa";Africa;NIG;NGA;;1960-10-01;"Recently formed";NG;566;475;"Independence from United Kingdom";country;;;0;Nigéria;;"No changes after state formed";;;1960-10-07;0;594
+Niue;Polynesia;Oceania;;NIU;;1974-10-19;"Recently formed";NU;570;;"Self-governing in free association with New Zealand since 1974";country;;;0;Niue;;"No changes after state formed";"New Zealand";;;0;595
+"Norfolk Island";"Australia and New Zealand";Oceania;;NFK;;;"Territory: Australia";NF;574;;;sub-country;;;0;;;;;;;0;596
+"North Macedonia";"Southern Europe";Europe;MAC;MKD;;1991-09-08;Yugoslavia;MK;807;343;;country;"combine - Yugoslavia";;0;"Macédoine du Nord";;"Macedonia renamed as North Macedonia in 2019";Yugoslavia;;2019-02-12;0;780
+"Northern Ireland";"Northern Europe";Europe;;;;;"Territory: United Kingdom";;;;;sub-country;;;0;;;;;;;0;597
+"Northern Mariana Islands";Micronesia;Oceania;;MNP;;;"Territory: United States";MP;580;;;sub-country;;;0;;;;;;;0;598
+Norway;"Northern Europe";Europe;NOR;NOR;;1905-06-07;;NO;578;385;"Dissolution of the union between Norway and Sweden";country;;;0;Norvège;1961;"No significant changes after state formed";;;1945-11-27;0;599
+"Norway (pre-1905)";"Northern Europe";Europe;NOR;NOR;1905-06-06;1099-12-31;;NO;578;385;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.. Dissolution of the union between Norway and Sweden";"pre-modern country";;;0;"Norvège (avant 1905)";1961;;;;;0;735
+Oman;"Western Asia";Asia;OMA;OMN;;1650-01-26;;OM;512;698;;country;;;0;Oman;;"No significant changes after state formed";;;1971-10-07;0;600
+"Orange Free State";"Southern Africa";Africa;;;1910-05-30;1854-03-28;;;;;;sub-country;;;0;;;;;;;0;601
+"Organisation of Eastern Caribbean States";;;;;;;"International Organization";;;;;aggregate;;;0;"Organisation des États de la Caraïbe orientale";;;;;;0;781
+"Pacific Islands, Trust Territory";Micronesia;Oceania;;PCI;;;"Territory: United States";;582;;;sub-country;;;0;;;;;;;0;602
+Pakistan;"Southern Asia";Asia;PAK;PAK;;1947-08-14;;PK;586;770;;country;;;0;Pakistan;;"East Pakistan becomes Bangladesh";;"Bangladesh; Pakistan";1947-09-30;0;603
+Palau;Micronesia;Oceania;PAL;PLW;;1979-04-02;"Recently formed";PW;585;986;;country;;;0;Palaos;;"No changes after state formed";;;1994-12-15;0;604
+"Palestine (pre-1988)";;;;;;1900-01-01;;;;;"Placeholder for Palestine IEADB actions before it was recognized by other states";"pre-modern country";;;0;;;;;;;0;782
+"Palestine, Occupied Territories";"Western Asia";Asia;;PSE;;1900-01-01;;PS;275;;"Its independence was declared on 15 November 1988 by the Palestine Liberation Organization (PLO).";"not recognized country";;;0;"Palestine, Territoires occupés";;;;"Palestinian Authority";;0;605
+Panama;"Central America";"Central America";PAN;PAN;;1903-11-03;;PA;591;95;"Separation of Panama from Colombia";country;;;0;Panama;;"No significant changes after state formed";;;1945-11-13;0;606
+"Panama, Canal Zone";"Central America";"Central America";PAN;PAN;;1903-11-03;;PA;591;95;"Separation of Panama from Colombia";sub-country;;;0;;;"No significant changes after state formed";;;;0;607
+"Panama, excluding Canal Zone";"Central America";"Central America";PAN;PAN;;1903-11-03;;PA;591;95;"Separation of Panama from Colombia";sub-country;;;0;;;"No significant changes after state formed";;;;0;608
+"Papua New Guinea";Melanesia;Oceania;PNG;PNG;;1975-09-16;"Recently formed";PG;598;910;"Independence from Australia";country;;;0;Papouasie-Nouvelle-Guinée;;"No changes after state formed";Australia;;1975-10-10;0;609
+Paraguay;"South America";"South America";PAR;PRY;;1811-05-14;;PY;600;150;;country;;;0;Paraguay;;"No significant changes after state formed";;;1945-10-24;0;610
+Parma;"Southern Europe";Europe;PMA;;1861-03-16;;;;;335;;sub-country;;;0;;;;;;;0;611
+Peru;"South America";"South America";PER;PER;;1821-07-28;;PE;604;135;;country;;;0;Pérou;;"No significant changes after state formed";;;1945-10-31;0;612
+Philippines;"South-Eastern Asia";Asia;PHI;PHL;;1935-05-14;;PH;608;840;;country;;;0;Philippines;;"No significant changes after state formed";;;1945-10-24;0;613
+Pitcairn;Polynesia;Oceania;;PCN;;;"Territory: United Kingdom";PN;612;;;sub-country;;;0;;;;;;;0;614
+Poland;"Eastern Europe";Europe;POL;POL;;1918-11-11;;PL;616;290;;country;;2004;1;Pologne;1996;"No significant changes after state formed";;;1945-10-24;1;615
+"Poland (Danzig)";"Eastern Europe";Europe;;;;;;;;;;sub-country;;;0;"Pologne (Dantzig)";;;;;;0;616
+Portugal;"Southern Europe";Europe;POR;PRT;;1640-12-01;;PT;620;235;;country;;1986;1;Portugal;1961;"No significant changes after state formed";;;1955-12-14;0;617
+Prussia;"Western Europe";Europe;;;1918-11-11;1525-04-10;;;;;https://en.wikipedia.org/wiki/Kingdom_of_Prussia#1871%E2%80%931918:_Peak_and_fall;"pre-modern country";;;0;Prusse;;;;;;0;618
+"Puerto Rico";Caribbean;Caribbean;;PRI;;;"Territory: United States";PR;630;;;sub-country;;;0;;;;;;;0;619
+Qatar;"Western Asia";Asia;QAT;QAT;;1971-09-01;"Recently formed";QA;634;694;"Independence from United Kingdom";country;;;0;Qatar;;"No changes after state formed";;;1971-09-21;0;620
+"Qatar (pre-1971)";"Western Asia";Asia;QAT;QAT;1971-09-02;1099-12-31;"Recently formed";QA;634;694;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed. Independence from United Kingdom";"pre-modern country";;;0;"Qatar (avant 1971)";;;;;;0;762
+Reunion;"Eastern Africa";Africa;;REU;;;"Territory: French";RE;638;;;sub-country;;;0;;;;;;;0;621
+Romania;"Eastern Europe";Europe;ROM;ROU;;1878-07-13;;RO;642;360;;country;;2007;1;Roumanie;;"No significant changes after state formed";;;1955-12-14;1;622
+"Russia (pre-1917)";Europe;Europe;;;1917-09-13;1099-12-31;;;;365;"Pre-1917 Russia";"pre-modern country";;;0;"Russie (avant 1917)";;;;;;0;774
+"Russian Federation";"Eastern Europe";Europe;RUS;RUS;;1917-09-14;"Union of Soviet Socialist Republics";RU;643;365;"19911225 -- Country formed date treated as start of Soviet Union to accommodate default as succession by Russian Federation of USSR IEA memberships";country;;;0;"Fédération de Russie";;"No changes after state formed";"Union of Soviet Socialist Republics";;1945-10-24;1;623
+"Russian Federation (backcast)";"Eastern Europe";Europe;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6643;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;624
+"Russian Federation (Soviet period)";"Eastern Europe";Europe;RUS;RUS;1991-12-25;1917-09-13;"Union of Soviet Socialist Republics";RU;643;365;;"pre-modern country";;;0;;;;"Soviet Union";"Russian Federation";;1;730
+Rwanda;"Eastern Africa";Africa;RWA;RWA;;1962-07-01;"Recently formed";RW;646;517;"Independence from Belgium";country;;;0;Rwanda;;"No changes after state formed";;;1962-09-18;0;625
+"Sahrawi Arab Democratic Republic";"Northern Africa";Africa;;ESH;;1976-02-27;"Recently formed";;732;;"SADR government controls about 20-25% of the territory it claims";"not recognized country";;;0;"République arabe sahraouie démocratique";;"No changes after state formed";"Mauritania; Morocco";;;0;626
+"Saint Barthelemy";;Europe;;;;;;;;;"Territory of France";non-country;;;0;;;;;;;0;785
+"Saint Helena";"Western Africa";Africa;;SHN;;;"Territory: United Kingdom";SH;654;;;sub-country;;;0;Sainte-Hélène;;;;;;0;627
+"Saint Kitts and Nevis";Caribbean;Caribbean;SKN;KNA;;1983-09-19;"Recently formed";KN;659;60;;country;;;0;Saint-Kitts-et-Nevis;;"No changes after state formed";;;1983-09-23;0;628
+"Saint Kitts and Nevis (pre-1983)";Caribbean;Caribbean;;;1983-09-19;1099-12-31;;;;;;"pre-modern country";;;0;;;;;;;0;768
+"Saint Lucia";Caribbean;Caribbean;SLU;LCA;;1979-02-22;"Recently formed";LC;662;56;;country;;;0;Sainte-Lucie;;"No changes after state formed";;;1979-09-18;0;629
+"Saint Martin";Caribbean;Caribbean;;;;;;MF;;;;sub-country;;;0;Saint-Martin;;;;;;0;630
+"Saint Martin (Dutch)";Caribbean;Caribbean;;;;;;;;;;sub-country;;;0;;;;;;;0;726
+"Saint Martin (French)";Caribbean;Caribbean;;;;;;;;;;sub-country;;;0;;;;;;;0;727
+"Saint Pierre and Miquelon";"Northern America";"North America";;SPM;;;"Territory: French";PM;666;;;sub-country;;;0;;;;;;;0;631
+"Saint Vincent and the Grenadines";Caribbean;Caribbean;SVG;VCT;;1979-10-27;"Recently formed";VC;670;57;;country;;;0;Saint-Vincent-et-les-Grenadines;;"No changes after state formed";;;1980-09-16;0;632
+Samoa;Polynesia;Oceania;WSM;WSM;;1962-01-01;"Recently formed";WS;882;990;"Independence from New Zealand";country;;;0;Samoa;;"No changes after state formed";"New Zealand";;1976-12-15;0;633
+"San Marino";"Southern Europe";Europe;SNM;SMR;;1600-10-08;;SM;674;331;;country;;;0;Saint-Marin;;"No significant changes after state formed";;;1992-03-02;0;634
+"Sao Tome and Principe";"Central Africa";Africa;STP;STP;;1975-07-12;"Recently formed";ST;678;403;"Independence from Portugal";country;;;0;"Sao Tomé-et-Principe";;"No changes after state formed";;;1975-09-16;0;635
+Sardinia;"Southern Europe";Europe;;;;;;;;;;sub-country;;;0;;;;;;;0;636
+"Saudi Arabia";"Western Asia";Asia;SAU;SAU;;1932-09-23;;SA;682;670;;country;;;0;"Arabie saoudite";;"No significant changes after state formed";;;1945-10-24;0;637
+"Saudi Arabia (pre-1927)";"Western Asia";Asia;SAU;SAU;1927-05-19;1099-12-31;;SA;682;670;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed..";"pre-modern country";;;0;"Arabie saoudite (avant 1927)";;;;;;0;742
+Saxony;"Western Europe";Europe;SAX;;1871-01-17;;;;;269;;sub-country;;;0;;;;;;;0;638
+Senegal;"Western Africa";Africa;SEN;SEN;;1960-04-04;"Recently formed";SN;686;433;"Independence from France";country;;;0;Sénégal;;"No changes after state formed";;;1960-09-28;0;639
+Serbia;"Southern Europe";Europe;;SRB;;1943-11-29;Yugoslavia;RS;891;342;"IEADB treats Serbia as having assumed the IEADB commitments of Yugoslavia and of Serbia and Montenegro. Therefore, while modern-day Serbia officially formed on 20060605 (but reported as 20060603 for IMO treaties and some others), it is treated as having formed on 19431129, the date Yugoslavia was formed, to capture continuous membership from the period of the original Yugoslavia.";country;"combine - Yugoslavia";;0;Serbie;;"No changes after state formed";Yugoslavia;;2000-11-01;0;640
+"Serbia (pre-1992)";"Southern Europe";Europe;;SRB;2006-06-04;1099-12-31;Yugoslavia;RS;891;342;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";"combine - Yugoslavia";;0;"Serbie (avant 1992)";;;Yugoslavia;;;0;738
+"Serbia and Montenegro";"Southern Europe";Europe;;SCG;2006-06-05;1992-04-27;Yugoslavia;;891;;;"pre-modern country";"combine - Yugoslavia";;0;;;"Country ended";Yugoslavia;;;0;641
+"Serbia and Montenegro (backcast)";"Southern Europe";Europe;;"mitchell entered name and code";;;Yugoslavia;;6891;;;forecast/backcast;;;0;;;;Yugoslavia;;;0;642
+"Serbia, Montenegro and Macedonia";"Southern Europe";Europe;;NoCode;;;Yugoslavia;;;;;"pre-modern country";;;0;;;;Yugoslavia;;;0;643
+Seychelles;"Eastern Africa";Africa;SEY;SYC;;1976-06-29;"Recently formed";SC;690;591;"Independence from United Kingdom";country;;;0;Seychelles;;"No changes after state formed";;;1976-09-21;0;644
+"Sierra Leone";"Western Africa";Africa;SIE;SLE;;1961-04-27;"Recently formed";SL;694;451;"Independence from United Kingdom";country;;;0;"Sierra Leone";;"No changes after state formed";;;1961-09-27;0;645
+Singapore;"South-Eastern Asia";Asia;SIN;SGP;;1965-08-09;"Recently formed";SG;702;830;;country;;;0;Singapour;;"No changes after state formed";Malaysia;;1965-09-21;0;646
+Slovakia;"Eastern Europe";Europe;SLO;SVK;;1993-01-01;Czechoslovakia;SK;703;317;;country;"combine - Czechoslovakia";2004;1;Slovaquie;2000;"No changes after state formed";Czechoslovakia;;1993-01-19;1;647
+"Slovakia (backcast)";"Eastern Europe";Europe;;"mitchell entered name and code";;;Czechoslovakia;;6703;;;forecast/backcast;;;0;;;;Czechoslovakia;;;1;648
+Slovenia;"Southern Europe";Europe;SLV;SVN;;1991-06-25;Yugoslavia;SI;705;349;;country;"combine - Yugoslavia";2004;1;Slovénie;2010;"No changes after state formed";Yugoslavia;;1992-05-22;0;649
+"Slovenia (backcast)";"Southern Europe";Europe;;"mitchell entered name and code";;;Yugoslavia;;6705;;;forecast/backcast;;;0;;;;Yugoslavia;;;0;650
+"Solomon Islands";Melanesia;Oceania;SOL;SLB;;1978-07-07;"Recently formed";SB;90;940;"Independence from United Kingdom";country;;;0;"Îles Salomon";;"No changes after state formed";;;1978-09-19;0;651
+Somalia;"Eastern Africa";Africa;SOM;SOM;;1960-07-01;"Recently formed";SO;706;520;;country;;;0;Somalie;;"No changes after state formed";;;1960-09-20;0;652
+"South Africa";"Southern Africa";Africa;SAF;ZAF;;1910-05-31;;ZA;710;560;;country;;;0;"Afrique du Sud";;"Namibia gets independence";;"South Africa; Namibia";1945-11-07;0;653
+"South Georgia and the South Sandwich Islands";;Antarctica;;SGS;;;"Territory: United Kingdom";GS;239;;;sub-country;;;0;;;;;;;0;654
+"South Ossetia";"West Asia";Asia;;;;1991-12-21;"Union of Soviet Socialist Republics";;;;"South Ossetia is geographically part of Georgia and was recognized, along with Abkhazia, as an independent state by Russia in 2008. ""The European Union, Council of Europe, North Atlantic Treaty Organization (NATO) and most UN member countries do not recognize South Ossetia as an independent state."" --Wikipedia";"not recognized country";;;0;"Ossétie du Sud";;;;;;1;777
+"South Sudan";"Eastern Africa";Africa;SSD;;;2011-07-09;;SS;;626;;country;;;0;"Soudan du Sud";;;;;2011-07-14;0;655
+Spain;"Southern Europe";Europe;SPN;ESP;;1492-01-01;;ES;724;230;;country;;1986;1;Espagne;1961;"No significant changes after state formed";;;1955-12-14;0;656
+"Sri Lanka";"Southern Asia";Asia;SRI;LKA;;1948-02-04;;LK;144;780;"Independence from United Kingdom";country;;;0;"Sri Lanka";;"No significant changes after state formed";;;1955-12-14;0;657
+Sudan;"Northern Africa";Africa;SUD;SDN;;1956-01-01;;SD;736;625;"Independence from Egyptian and British rule";country;;;0;Soudan;;"South Sudan gets independence 20110709";;"Sudan; South Sudan";1956-11-12;0;658
+"Sudan (pre-1956)";"Northern Africa";Africa;SUD;SDN;1955-12-31;1099-12-31;;SD;736;625;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed. Independence from Egyptian and British rule";"pre-modern country";;;0;"Soudan (avant 1956)";;"South Sudan gets independence 20110709";;"Sudan; South Sudan";;0;748
+Suriname;"South America";"South America";SUR;SUR;;1975-11-25;"Recently formed";SR;740;115;;country;;;0;Suriname;;"No changes after state formed";;;1975-12-04;0;659
+"Suriname (pre-1975)";"South America";"South America";;;1975-11-25;1099-12-31;;;;;;"pre-modern country";;;0;"Suriname (avant 1975)";;;;;;0;769
+"Svalbard and Jan Mayen Islands";"Northern Europe";Europe;;SJM;;;"Territory: Norway";SJ;744;;;sub-country;;;0;;;;;;;0;660
+Sweden;"Northern Europe";Europe;SWD;SWE;;1905-06-07;;SE;752;380;"Dissolution of the union between Norway and Sweden";country;;1995;0;Suède;1961;"No significant changes after state formed";;;1946-11-19;0;662
+"Sweden (pre-1905)";"Northern Europe";Europe;SWD;SWE;1905-06-06;1099-12-31;;SE;752;380;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed. Dissolution of the union between Norway and Sweden";"pre-modern country";;1995;0;"Suède (avant 1905)";1961;;;;;0;736
+Switzerland;"Western Europe";Europe;SWZ;CHE;;1815-08-07;;CH;756;225;;country;;;0;Suisse;1961;"No significant changes after state formed";;;2002-09-10;0;663
+Syria;"Western Asia";Asia;SYR;SYR;;1961-09-28;;SY;760;652;;country;;;0;Syrie;;"No changes after state formed";;;1945-10-24;0;664
+"Syria (pre-1961)";"Western Asia";Asia;SYR;SYR;1961-09-27;1099-12-31;;SY;760;652;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";;;0;"Syrie (avant 1961)";;;;;;0;756
+Taiwan;"Eastern Asia";Asia;TAW;TWN;;1949-12-08;;TW;158;713;;country;;;0;Taïwan;;"No significant changes after state formed";;;;0;665
+Tajikistan;"Central Asia";Asia;TAJ;TJK;;1991-09-09;"Union of Soviet Socialist Republics";TJ;762;702;;country;"combine - USSR";;0;Tadjikistan;;"No changes after state formed";"Soviet Union";;1992-03-02;1;666
+"Tajikistan (backcast)";"Central Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6762;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;667
+Tanganyika;"Eastern Africa";Africa;;;1964-04-26;1961-12-09;;;;;;"pre-modern country";;;0;;;;;;;0;668
+Tanzania;"Eastern Africa";Africa;TAZ;TAA;;1961-12-09;"Recently formed";TZ;834;510;"19640426 -- Tanzania form on this date but treated in IEADB as having formed with start of Tanganyika in 19611209, to reflect assumption that Tanzania assumed memberships of Tanganyika.";country;;;0;Tanzanie;;"No changes after state formed";"Zanzibar; Tanganyika";;1961-12-14;0;669
+"Tanzania (pre-1964)";"Eastern Africa";Africa;TAZ;TAA;1964-04-26;1099-12-31;"Recently formed";TZ;834;510;;"pre-modern country";;;0;;;"No changes after state formed";"Zanzibar; Tanganyika";;;0;757
+Thailand;"South-Eastern Asia";Asia;THI;THA;;1782-04-06;;TH;764;800;;country;;;0;Thaïlande;;"No significant changes after state formed";;;1946-12-16;0;670
+Tibet;"Eastern Asia";Asia;;;1950-10-01;1913-01-01;;;157;;"Tibet Autonomous Region in China";country;;;0;;;"Country ended";;;;0;671
+Timor-Leste;"South-Eastern Asia";Asia;ETM;TMP;;2002-05-20;"Recently formed";TL;626;860;;country;;;0;Timor-Leste;;"No changes after state formed";Indonesia;;2002-09-27;0;672
+Togo;"Western Africa";Africa;TOG;TGO;;1960-04-27;"Recently formed";TG;768;461;"Independence from France";country;;;0;Togo;;"No changes after state formed";;;1960-09-20;0;673
+Tokelau;Polynesia;Oceania;;TKL;;;"Territory: New Zealand";TK;772;;"Referenda held in 2006 and 2007 to change the status of the islands from that of a New Zealand territory to one of free association with New Zealand did not meet the needed threshold for approval.";sub-country;;;0;Tokelau;;;"New Zealand";;;0;674
+Tonga;Polynesia;Oceania;TON;TON;;1970-07-04;"Recently formed";TO;776;955;"Independence from United Kingdom";country;;;0;Tonga;;"No changes after state formed";;;1999-09-14;0;675
+Transkei;"Southern Africa";Africa;;;;;;;;;;sub-country;;;0;Transkei;;;;;;0;722
+"Trinidad and Tobago";Caribbean;Caribbean;TRI;TTO;;1962-08-31;"Recently formed";TT;780;52;;country;;;0;Trinité-et-Tobago;;"No changes after state formed";;;1962-09-18;0;676
+Tunisia;"Northern Africa";Africa;TUN;TUN;;1956-03-20;;TN;788;616;"Independence from France";country;;;0;Tunisie;;"No changes after state formed";;;1956-11-12;0;677
+"Tunisia (pre-1956)";"Northern Africa";Africa;TUN;TUN;1956-03-19;1099-12-31;;TN;788;616;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed. Independence from France";"pre-modern country";;;0;"Tunisie (avant 1956)";;;;;;0;749
+"Turkey (pre-1923)";"Western Asia";Asia;TUR;TUR;1923-10-29;1099-12-31;;TR;792;640;;"pre-modern country";;;0;"Turquie (avant 1923)";1961;"No significant changes after state formed";;;;0;740
+Türkiye;"Western Asia";Asia;TUR;TUR;;1923-10-29;;TR;792;640;;country;;;0;Turquie;1961;"Change of name from Turkey to Türkiye in 2022";;;1945-10-24;0;678
+Turkmenistan;"Central Asia";Asia;TKM;TKM;;1991-12-08;"Union of Soviet Socialist Republics";TM;795;701;;country;"combine - USSR";;0;Turkménistan;;"No changes after state formed";"Soviet Union";;1992-03-02;1;679
+"Turkmenistan (backcast)";"Central Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6795;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;680
+"Turks and Caicos Islands";Caribbean;Caribbean;;TCA;;;"Territory: United Kingdom";TC;796;;;sub-country;;;0;"Îles Turques-et-Caïques";;;;;;0;681
+Tuscany;"Southern Europe";Europe;TUS;;1861-03-16;;;;;337;;sub-country;;;0;;;;;;;0;682
+Tuvalu;Polynesia;Oceania;TUV;TUV;;1978-10-01;"Recently formed";TV;798;947;"Independence from United Kingdom";country;;;0;Tuvalu;;"No changes after state formed";;;2000-09-05;0;683
+"Two Sicilies";"Southern Europe";Europe;SIC;;1861-03-16;;;;;329;;sub-country;;;0;;;;;;;0;684
+Uganda;"Eastern Africa";Africa;UGA;UGA;;1962-10-09;"Recently formed";UG;800;500;"Independence from United Kingdom";country;;;0;Ouganda;;"No changes after state formed";;;1962-10-25;0;685
+"Uganda (pre-1962)";"Eastern Africa";Africa;UGA;UGA;1962-10-09;1099-12-31;"Recently formed";UG;800;500;"Independence from United Kingdom";"pre-modern country";;;0;"Ouganda (avant 1962)";;"No changes after state formed";;;;0;758
+Ukraine;"Eastern Europe";Europe;UKR;UKR;;1991-08-24;"Union of Soviet Socialist Republics";UA;804;369;;country;"combine - USSR";;0;Ukraine;;"No changes after state formed";"Soviet Union";;1945-10-24;1;686
+"Ukraine (backcast)";"Eastern Europe";Europe;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6804;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;687
+"Ukraine (Soviet period)";"Eastern Europe";Europe;UKR;UKR;1991-08-23;1099-12-31;"Union of Soviet Socialist Republics";UA;804;369;"Pre-modern period assumed to start on 10991231 and end on day before modern variant of country is formed.";"pre-modern country";"combine - USSR";;0;"Ukraine (période soviétique)";;;"Soviet Union";;;1;729
+"Union of Soviet Socialist Republics";;Asia;;SVU;1991-12-25;1917-09-14;"Union of Soviet Socialist Republics";;810;364;;"pre-modern country";;;0;;;"Country ended";;"Armenia; Azerbaijan; Belarus; Estonia; Georgia; Kazakhstan; Kyrgyzstan; Latvia; Lithuania; Moldova; Russian Federation; Tajikistan; Turkmenistan; Ukraine; Uzbekistan";;1;688
+"Union of Soviet Socialist Republics (10)";;Asia;;;;;"Union of Soviet Socialist Republics";;;;;sub-country;;;0;;;;;;;1;689
+"Union of Soviet Socialist Republics (11)";;Asia;;;;;"Union of Soviet Socialist Republics";;;;;sub-country;;;0;;;;;;;1;690
+"Union of Soviet Socialist Republics (7)";;Asia;;;;;"Union of Soviet Socialist Republics";;;;;sub-country;;;0;;;;;;;1;691
+"Union of Soviet Socialist Republics (9)";;Asia;;;;;"Union of Soviet Socialist Republics";;;;;sub-country;;;0;;;;;;;1;692
+"Union of Soviet Socialist Republics (forecast)";;Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;7810;;;forecast/backcast;;;0;;;;;"Armenia; Azerbaijan; Belarus; Estonia; Georgia; Kazakhstan; Kyrgyzstan; Latvia; Lithuania; Moldova; Russian Federation; Tajikistan; Turkmenistan; Ukraine; Uzbekistan";;1;693
+"United Arab Emirates";"Western Asia";Asia;UAE;ARE;;1971-12-02;"Recently formed";AE;784;696;;country;;;0;"Émirats arabes unis";;"No changes after state formed";;;1971-12-09;0;694
+"United Kingdom";"Northern Europe";Europe;UKG;GBR;;1707-05-01;;GB;826;200;;country;;1973;0;Royaume-Uni;1961;"No significant changes after state formed";;;1945-10-24;0;695
+"United Province CA";"North America";"North America";;;;;;;;;;sub-country;;;0;;;;;;;0;696
+"United States";"Northern America";"North America";USA;USA;;1776-07-04;;US;840;2;"Independence from UK recognized";country;;;0;États-Unis;1961;"No significant changes after state formed";;;1945-10-24;0;697
+"United States Minor Outlying Islands";Polynesia;Oceania;;UMI;;;"Territory: United States";UM;581;;;sub-country;;;0;;;;;;;0;698
+"United States Virgin Islands";Caribbean;Caribbean;;VIR;;;"Territory: United States";VI;850;;;sub-country;;;0;;;;;;;0;699
+Unknown;;Other;;;;;;;;;;non-country;;;0;;;;;;;0;700
+Uruguay;"South America";"South America";URU;URY;;1828-08-27;;UY;858;165;;country;;;0;Uruguay;;"No significant changes after state formed";;;1945-12-18;0;701
+Uzbekistan;"Central Asia";Asia;UZB;UZB;;1991-12-08;"Union of Soviet Socialist Republics";UZ;860;704;;country;;;0;Ouzbékistan;;"No changes after state formed";"Soviet Union";;1992-03-02;1;702
+"Uzbekistan (backcast)";"Central Asia";Asia;;"mitchell entered name and code";;;"Union of Soviet Socialist Republics";;6860;;;forecast/backcast;;;0;;;;"Soviet Union";;;1;703
+Vanuatu;Melanesia;Oceania;VAN;VUT;;1980-07-30;"Recently formed";VU;548;935;"Independence from joint British-French condominium";country;;;0;Vanuatu;;"No changes after state formed";;;1981-09-15;0;704
+Various;;Other;;;;;;;;;;non-country;;;0;;;;;;;0;705
+Venda;"Southern Africa";Africa;;;;;;;;;;sub-country;;;0;Venda;;;;;;0;724
+Venezuela;"South America";"South America";VEN;VEN;;1811-07-05;;VE;862;101;;country;;;0;Venezuela;;"No significant changes after state formed";;;1945-11-15;0;706
+"Viet Nam";"South-Eastern Asia";Asia;DRV;VNM;;1976-07-02;"Viet Nam";VN;704;818;;country;;;0;"Viêt Nam";;"No changes after state formed";"Vietnam, North; Vietnam, South";;1977-09-20;0;707
+"Viet Nam (pre-1954)";"South-Eastern Asia";Asia;;;1954-07-20;1945-09-02;"Viet Nam";;;;"This reflects Vietnam after independence from France and declaration of independence until time of Geneva accords when South Viet Nam and North Viet Nam were officially divided";"pre-modern country";;;0;"Viêt Nam (avant 1954)";;;;;;0;776
+"Vietnam, North";"South-Eastern Asia";Asia;DRV;DRV;1976-07-02;1954-07-20;"Viet Nam";;700;816;;"pre-modern country";;;0;;;"Country ended";;"Viet Nam";;0;708
+"Vietnam, South";"South-Eastern Asia";Asia;RVN;VDR;1976-07-02;1954-07-20;"Viet Nam";;701;817;;"pre-modern country";;;0;"Viêt Nam du Sud";;"Country ended";;"Viet Nam";;0;709
+"Wallis and Futuna Islands";Polynesia;Oceania;;WLF;;;"Territory: French";WF;876;;;sub-country;;;0;;;;;;;0;710
+"Western Sahara";"Northern Africa";Africa;;ESH;;1976-00-00;"Recently formed";;732;;;"not recognized country";;;0;;;;;;;0;711
+Yemen;"Western Asia";Asia;YEM;YEM;;1990-05-22;Yemen;YE;887;679;;country;;;0;Yémen;;"No changes after state formed";"Yemen, Arab Republic; Yemen, Democratic";;1947-09-30;0;712
+"Yemen (pre-1962)";"Western Asia";Asia;YEM;YEM;1962-09-27;1099-01-01;Yemen;YE;887;679;;"pre-modern country";;;0;"Yémen (avant 1962)";;"No changes after state formed";"Yemen, Arab Republic; Yemen, Democratic";;;0;759
+"Yemen, Arab Republic";"Western Asia";Asia;YAR;ADE;1990-05-22;1962-09-27;Yemen;;886;678;;"pre-modern country";;;0;"République arabe du Yémen";;"Country ended";;Yemen;;0;713
+"Yemen, Democratic";"Western Asia";Asia;YPR;YPR;1990-05-21;1967-11-30;Yemen;;720;680;;"pre-modern country";;;0;"Yémen démocratique";;"Country ended";;Yemen;;0;714
+Yugoslavia;"Southern Europe";Europe;YUG;"mitchell entered name and code";1991-06-25;1943-11-29;Yugoslavia;;890;345;;"pre-modern country";;;0;Yougoslavie;;"Country ended";;"Bosnia and Herzegovina; Croatia; Macedonia; Montenegro; Serbia; Slovenia";;0;715
+"Yugoslavia (1918-1943)";;Europe;;;1943-11-28;1918-01-02;;;;345;"Kingdom of Yugoslavia period.";"pre-modern country";;;0;"Yougoslavie (1918-1943)";;;;;;0;770
+"Yugoslavia (forecast)";"Southern Europe";Europe;;"mitchell entered name and code";;;Yugoslavia;;7890;;;forecast/backcast;;;0;;;;;"Bosnia and Herzegovina; Croatia; Macedonia; Montenegro; Serbia; Slovenia";;0;716
+"Yugoslavia (pre-1918)";"Southern Europe";Europe;YUG;"mitchell entered name and code";1918-01-01;1099-12-31;Yugoslavia;;890;345;"Pre-modern period assumed to start on 10991231 and end on day before Kingdom of Yugoslavia is formed.";"pre-modern country";;;0;;;;;;;0;739
+Zambia;"Eastern Africa";Africa;ZAM;ZMB;;1964-10-24;"Recently formed";ZM;894;551;"Independence from United Kingdom";country;;;0;Zambie;;"No changes after state formed";;;1964-12-01;0;717
+Zanzibar;"Eastern Africa";Africa;ZAN;;1964-04-26;1963-12-19;;;;511;;"pre-modern country";;;0;;;;;;;0;718
+Zimbabwe;"Eastern Africa";Africa;ZIM;ZWE;;1965-11-11;"Recently formed";ZW;716;552;"Recognized Independece from United Kingdom";country;;;0;Zimbabwe;;"No changes after state formed";"Southern Rhodesia ";;1980-08-25;0;719
+"Zimbabwe (pre-1965)";"Eastern Africa";Africa;ZIM;ZWE;1965-11-11;1099-12-31;"Recently formed";ZW;716;552;"Recognized Independece from United Kingdom";"pre-modern country";;;0;"Zimbabwe (avant 1965)";;"No changes after state formed";"Southern Rhodesia ";;;0;761

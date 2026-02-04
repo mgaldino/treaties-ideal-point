@@ -1,0 +1,4 @@
+2026-02-02
+
+USA 1990 WITS download timed out during the full partner fetch (command timed out at ~10s). 
+Follow-up: verified partial files in data/raw/tariffs/wits_trn/USA/1990 and re-ran fetch for missing partner (N97) successfully.
