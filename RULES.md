@@ -9,7 +9,7 @@ Here I present rules that you must follow to produce great outputs to me, things
 5. For papers and reports, the desired default output is pdf.
 6. Always start with Q&A. 
 7. Follow up with more questions after the first iteration of Q&A
-8. More often than not I have an ultimate or long term goal than what I am asking for. If helpful to complte the present task, try to confirm what it is.
+8. More often than not I have an ultimate or long term goal than what I am asking for. If helpful to complete the present task, try to confirm what it is.
 9. Keep computation in separate R scripts.
 10. Make reports, analysis and academic papers fully reproducible.
 11. Preserve raw/extracted files in the repo.
