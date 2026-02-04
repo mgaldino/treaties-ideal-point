@@ -27,3 +27,4 @@ Here I present rules that you must follow to produce great outputs to me, things
 22. Se alguma extração via rede falhar (DNS, timeout, HTTP 403) mesmo com permissionamento escalado : opção "a" é tentar novamente após 30 segundos (pode ser falha temporária); opção "b", se falha persistir, tente uma fonte alternativa. Grave em log as falhas.
 23. When any step fails (script error, download failure, package installation error, etc.), do NOT simply retry the same command or give up. Run diagnostic commands **before** retrying and **act** on the diagnosis.  If all else fails, log the exact error message and diagnostic results to `logs/` and report to user.
 24. Sempre que um plano tiver várias fases, escreva o plano completo em um arquivo (ex: `docs/`) antes de começar a execução.
+25. Always ask if you can proceed before stating a new phase. Wait untill I authorize for you to start a new phase.

@@ -1,0 +1,30 @@
+Phase 5 — Final Documentation for New Issue Areas
+===================================================
+Date: 2026-02-03
+Status: SUCCESS
+Plan: docs/new_sources_plan.md (Phase 5)
+
+Changes:
+  1. scripts/R/04_validation_summary.R
+     - Updated `areas` from 3 to 6 (added human_rights, arms_control, intellectual_property)
+     - Re-ran successfully; output: outputs/validation/unga_correlations_summary.csv
+
+  2. docs/data_dictionary.md
+     - Updated `source` field to include 3 new sources
+     - Updated `issue_area` field to include 3 new labels
+     - Added documentation sections for:
+       - Raw data: un_hr_ratifications.csv, arms_control_ratifications.csv, wipo_ratifications.csv
+       - Flow matrices: human_rights, arms_control, intellectual_property
+       - Estimates: ideal_points.csv and item_params.csv for 3 new areas
+
+  3. docs/source_registry.md — already up to date (updated in Phase 14)
+
+  4. HANDOFF.md — updated with Phase 19 entry
+
+New sources plan (docs/new_sources_plan.md) is now FULLY IMPLEMENTED:
+  Phase 0: Data acquisition — DONE
+  Phase 1: R integration — DONE
+  Phase 2: EDA — DONE
+  Phase 3: Estimation — DONE
+  Phase 4: Validation — DONE
+  Phase 5: Documentation — DONE

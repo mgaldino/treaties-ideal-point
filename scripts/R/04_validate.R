@@ -33,9 +33,9 @@ if (!file.exists(unga_path)) {
 
 unga <- readr::read_csv(unga_path, show_col_types = FALSE)
 
-areas <- c("investment", "security", "environment")
+areas <- c("investment", "security", "environment", "human_rights", "arms_control", "intellectual_property")
 
-selected_countries <- c("United States", "China", "Russia", "Brazil", "India", "Germany", "Denmark", "Iran", "South Africa", "Japan")
+selected_countries <- c("United States", "China", "Russia", "Brazil", "India", "Germany", "Denmark", "Iran", "South Africa", "Japan", "New Zealand", "North Korea", "Israel", "Angola")
 selected_iso3 <- countrycode::countrycode(selected_countries, "country.name", "iso3c", warn = FALSE)
 
 corr_overall <- list()
@@ -110,4 +110,4 @@ for (area in areas) {
 corr_overall_df <- dplyr::bind_rows(corr_overall)
 readr::write_csv(corr_overall_df, file.path(out_dir, "unga_correlations_overall.csv"))
 
-cat("Phase 4 validation completed. Outputs in outputs/validation/.\n")
+cat("Phase 4 validation completed for all", length(areas), "areas. Outputs in outputs/validation/.\n")

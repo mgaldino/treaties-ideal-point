@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 })
 
 out_dir <- "outputs/validation"
-areas <- c("investment", "security", "environment")
+areas <- c("investment", "security", "environment", "human_rights", "arms_control", "intellectual_property")
 
 summaries <- list()
 

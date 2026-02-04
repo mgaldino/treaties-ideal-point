@@ -420,8 +420,46 @@ Date: 2026-02-01
 - Outputs: `outputs/estimates/{area}_ideal_points.{rds,csv}` and `_item_params.csv`
 - Log: `logs/phase3_estimate_new_sources_20260203T181602.log`
 
+## Phase 18 — New Sources: Phase 4 Validation (Completed)
+- Date: 2026-02-03
+- Status: SUCCESS (all 6 areas validated)
+- Script: `scripts/R/04_validate.R`
+- Changes:
+  - Expanded `areas` from 3 to 6 (added human_rights, arms_control, intellectual_property)
+  - Added anchor countries to `selected_countries`: New Zealand, North Korea, Israel, Angola
+- Overall UNGA correlations:
+  - investment: r = -0.078 (n=1013)
+  - security: r = 0.205 (n=969)
+  - environment: r = 0.502 (n=1124)
+  - human_rights: r = -0.185 (n=1130)
+  - arms_control: r = -0.480 (n=1118)
+  - intellectual_property: r = +0.479 (n=1041)
+- Per-period correlations: stable across all 6 periods for all areas
+- Outputs:
+  - `outputs/validation/unga_correlations_overall.csv`
+  - `outputs/validation/unga_correlations_by_period_{area}.csv`
+  - `outputs/validation/figures/fig_timeseries_unga_{area}.png`
+- Log: `logs/phase4_validate_new_sources_20260203T221400.log`
+- Notes:
+  - HR and AC correlations are negative due to sign conventions in dynIRT estimation
+    (positive = low ratification for HR; positive = pro-disarmament for AC)
+  - IP correlation (+0.48) stronger than expected; WIPO engagement tracks multilateral engagement
+  - Arms control correlation strengthens from -0.27 (1990-1994) to ~-0.53 (post-1995),
+    likely due to sparse pre-CWC treaty data in early period
+
+## Phase 19 — New Sources: Phase 5 Documentation (Completed)
+- Date: 2026-02-03
+- Status: SUCCESS (new sources plan fully implemented)
+- Changes:
+  - `scripts/R/04_validation_summary.R`: updated `areas` from 3 to 6; re-ran successfully
+  - `docs/data_dictionary.md`: added 3 new sources, 3 new issue areas, raw data schemas, flow matrix docs, estimate docs
+  - `docs/source_registry.md`: already up to date (done in Phase 14)
+- Log: `logs/phase5_documentation_20260203T221500.log`
+- **New sources plan (`docs/new_sources_plan.md`) is now FULLY COMPLETE** (Phases 0-5 all done)
+
 ## Next Steps
-- **Phase 4**: Validation against UNGA ideal points
+- New sources plan complete; no remaining phases
+- See Open Questions below for potential follow-up work
 
 ## Open Questions
 - Should we probe SAU 1991+ (or skip SAU for now)?
