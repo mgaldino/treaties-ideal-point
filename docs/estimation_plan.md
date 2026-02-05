@@ -908,19 +908,22 @@ Estimate a joint K-dimensional dynamic IRT model across all issue areas simultan
 ## 9. Appendix A — Robustness Checks
 
 These should be run after the main results are established, not during the first estimation.
+See `docs/research_design_notes.md` for detailed implementation plans on HIGH-priority items.
 
-| Check | Description | Priority |
-|-------|-------------|----------|
-| Ordinal coding | Replace binary (member/not) with ordinal (signed < ratified < in-force) | Medium |
-| Event-type robustness | Re-estimate using signature-only and ratification-only dates (separate runs) | Medium |
-| Stock/cumulative coding | Use cumulative participation instead of flow | Medium |
-| 3-year periods | Finer temporal resolution: 10 periods instead of 6 | Medium |
-| 4-year periods | Alternative temporal resolution: 7 periods | Low |
-| Annual periods | Finest resolution (only if sparsity permits) | Low |
-| Drop regional agreements | Exclude PTAs/alliances with strong regional component | Medium |
-| Alternative anchors | Replace Denmark/Iran with other anchor pairs from PCA extremes | High |
-| omega2 sensitivity | Re-estimate with omega2 = 0.01, 0.05, 0.5 | High |
-| Bootstrap SEs | If not run in main analysis, run for final paper | High |
+| Check | Description | Priority | Notes |
+|-------|-------------|----------|-------|
+| Stock/cumulative coding | Use cumulative participation instead of flow | **HIGH** | Flow creates "activity bias" penalizing long-standing members. See design notes §1. |
+| Alternative country anchors | Replace Denmark/Iran with 2+ alternative anchor pairs per domain | **HIGH** | Risk of artificial cross-domain coherence. See design notes §2a. |
+| Item anchor sensitivity | Re-estimate using item-side anchoring (constrain anchor item betas) | **HIGH** | Complementary identification strategy. See design notes §2b. |
+| omega2 sensitivity | Re-estimate with omega2 = 0.01, 0.05, 0.5 | **HIGH** | |
+| Bootstrap SEs | If not run in main analysis, run for final paper | **HIGH** | |
+| 3-year periods | Finer temporal resolution: ~10 periods instead of 6 | **MEDIUM** | Captures rapid systemic shifts (e.g., 2017-18 withdrawals). See design notes §3. |
+| Annual periods | Finest resolution (only if sparsity permits) | **MEDIUM** | Try environment domain first (densest data). See design notes §3. |
+| Ordinal coding | Replace binary (member/not) with ordinal (signed < ratified < in-force) | Medium | |
+| Event-type robustness | Re-estimate using signature-only and ratification-only dates (separate runs) | Medium | |
+| Drop regional agreements | Exclude PTAs/alliances with strong regional component | Medium | |
+| 4-year periods | Alternative temporal resolution: 7 periods | Low | |
+| Multi-dimensional model | Estimate K > 1 dimensions jointly across domains | **BACKLOG** | Requires Stan; `emIRT` only supports 1D. See design notes §4. |
 
 ---
 

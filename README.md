@@ -48,6 +48,21 @@ Minimum fields:
 - All transformations are scripted and versioned.
 - Sources and access dates are documented.
 
+## Environment setup (new sessions)
+1. Create a local `.env` from `.env.example` in the repo root.
+2. Fill in `WITS_USER` and `WITS_PASS` with your WITS credentials.
+3. Load variables in a new shell session before running acquisition scripts:
+```bash
+set -a
+source .env
+set +a
+```
+Alternatively, run acquisition scripts with the helper:
+```bash
+python3 scripts/python/run_with_env.py -- python3 scripts/python/acquire_wits_tariffs.py --reporter-iso3 BRA --year 1990
+```
+4. Do not commit `.env` (it is already in `.gitignore`).
+
 ## Workflow (planned)
 1) Identify candidate sources and evaluate coverage, openness, and structure.
 2) Acquire raw data (Python where needed), archive in `data/raw/`.
@@ -55,6 +70,12 @@ Minimum fields:
 4) Build country-year-issue participation table in R.
 5) Estimate ideal points (Bayesian methods where appropriate).
 6) Generate PDF reports and replication package.
+
+## Key documentation
+- `docs/estimation_plan.md` — full estimation methodology (dynIRT, anchoring, robustness checks)
+- `docs/research_design_notes.md` — threats to credibility, agreed robustness checks, and design decisions (systemic-level framing, stock coding, anchor/item sensitivity, temporal resolution)
+- `docs/source_registry.md` — all data sources with URLs and coverage
+- `docs/data_dictionary.md` — raw and processed data schemas
 
 ## Repository structure (planned)
 - data/raw/            # raw downloads, snapshots
