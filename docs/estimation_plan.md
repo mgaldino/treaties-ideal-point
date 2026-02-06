@@ -1,9 +1,15 @@
-# Estimation Plan: Dynamic 1D Ideal Points from Treaty Participation
+# Estimation Plan: Dynamic Ideal Points from Treaty Participation (2D Main Results)
 
-**Date**: 2026-02-01
-**Status**: Approved (pending implementation)
+**Date**: 2026-02-06
+**Status**: Revised for 2D main results and 7 domains
 **Language**: R (data analysis and estimation), Python (data acquisition only)
-**Key package**: `emIRT` (Imai, Lo & Olmsted 2016)
+**Key packages**: `dynIRT_KD` (primary 2D EM), `emIRT` (K=1 diagnostic only)
+
+**Update summary (2026-02-06)**:
+- Main results are **2D** (K = 2) using `dynIRT_KD`; 1D is diagnostic only.
+- The project now includes **7 domains** (trade, investment, security, environment, human_rights, arms_control, intellectual_property).
+- The **trade domain is paused** in treaty form; the paper requires a **continuous-response IRT** using tariff data (WITS/TRAINS) to measure trade/ILO support.
+- Two estimation approaches must be run before choosing the final specification: **joint 2D** (all domains pooled) and **per-domain 2D**.
 
 ---
 
@@ -83,19 +89,23 @@ python3 -c "import urllib.request; print(urllib.request.urlopen('https://www.goo
 
 ## 1. Overview
 
-**Goal**: Estimate dynamic 1D ideal points for countries, one model per issue area, using treaty/agreement participation data (not UNGA/UNSC votes). The latent dimension is interpreted as *commitment to the International Liberal Order (ILO)*. We do not assume the four issue-area dimensions are distinct; convergence toward a shared dimension is a possible empirical finding.
+**Goal**: Estimate dynamic **2D** ideal points for countries (K = 2), using treaty participation data across **7 domains**. The latent space is interpreted as *systemic commitment to the International Liberal Order (ILO)*. The 1D model is used only as a diagnostic (K = 1 equivalence).
 
-**Data sources** (5 core, already acquired in `data/raw/`):
+**Data sources** (7 domains + trade tariffs, all under `data/raw/`):
 
 | # | Source | Issue area | Raw location |
 |---|--------|-----------|--------------|
-| 1 | DESTA v2.3 + WTO RTA (merged, deduplicated) | Trade | `data/raw/desta/`, `data/raw/wto_rta/` |
+| 1 | DESTA v2.3 + WTO RTA (merged, deduplicated) | Trade treaties (paused for main results) | `data/raw/desta/`, `data/raw/wto_rta/` |
 | 2 | UNCTAD IIA Navigator | Investment | `data/raw/unctad_iia/` |
 | 3 | ATOP 5.1 | Security | `data/raw/atop/` |
 | 4 | IEADB | Environment | `data/raw/ieadb/` |
-| 5 | WTO accession dates | Trade (added item) | `data/raw/wto_accession/` (to be acquired) |
+| 5 | UN HR treaties (Chapter IV) | Human rights | `data/raw/un_hr_treaties/` |
+| 6 | Arms control treaties (Chapter XXVI) | Arms control | `data/raw/arms_control/` |
+| 7 | WIPO treaties | Intellectual property | `data/raw/wipo_treaties/` |
+| 8 | WTO accession dates | Trade anchor item | `data/raw/wto_accession/` |
+| 9 | WITS/UNCTAD TRAINS tariffs | Trade (continuous response IRT) | `data/raw/tariffs/` |
 
-**Method**: `emIRT::dynIRT()` — variational EM for dynamic 1D IRT. Run separately for each of the 4 issue areas (trade, investment, security, environment).
+**Method**: `dynIRT_KD` — EM with data augmentation + Kalman filter–smoother for K-dimensional dynamic IRT. Two specifications must be run before final choice: **joint 2D** (all domains pooled) and **per-domain 2D**. `emIRT::dynIRT()` is used only as a diagnostic baseline (K = 1).
 
 **Time structure**: 6 five-year periods: 1990–1994, 1995–1999, 2000–2004, 2005–2009, 2010–2014, 2015–2018.
 
@@ -110,11 +120,13 @@ These decisions were agreed upon in the Q&A process. Do not change them without 
 | Vote coding | Flow/transition (newly ratified in period) | Better discrimination than cumulative |
 | Time periods | 5-year windows (6 periods) | Treaties are infrequent; annual is too sparse |
 | Common window | 1990–2018 (truncated to shortest source) | ATOP ends 2018, DESTA ends 2019 |
-| Models | Separate 1D per issue area | Start simple; multidimensional model is future-only |
+| Domains | 7 domains (trade, investment, security, environment, human_rights, arms_control, intellectual_property) | Full coverage of ILO institutional architecture |
+| Models | K = 2 main; run joint 2D and per-domain 2D; 1D diagnostic only | 2D required for paper and cross-domain structure |
+| Trade dimension | Treaty-based trade paused; main trade signal via continuous-response IRT on tariffs | Tariff policy is central to ILO support |
 | Baseline event type | Entry-into-force (EIF) only | Signature/ratification used only in robustness checks |
-| Identification | Item-side anchoring (primary), country-side priors (secondary) | Avoids freezing country positions |
-| Anchor items | WTO accession (trade), Paris Agreement (environment) | Well-understood ILO signal |
-| Anchor countries | Denmark (+), Iran (−) — to be confirmed by PCA | Stable throughout 1990–2018 |
+| Identification | Country anchors from PCA + theory; item anchors via **sign constraints** on beta | Identification + substantive direction without tight priors |
+| Anchor items | WTO accession, Paris, ICSID, NATO, ICCPR, NPT, TRIPS (sign constraints) | Clear ILO direction per domain |
+| Anchor countries | Denmark/Iran/China (PCA-checked) + alternatives for sensitivity | Non-collinearity in 2D and robustness |
 | REIO/territories | Exclude from estimation; keep in separate files | Preserve for robustness or later re-inclusion |
 | Estimates | Point estimates (SEs via bootstrap if needed) | dynIRT variance estimates are unreliable |
 | Language | R for all analysis and estimation | Per RULES.md |
@@ -125,6 +137,8 @@ These decisions were agreed upon in the Q&A process. Do not change them without 
 
 ### Objective
 Add WTO membership accession dates as a standalone item in the trade issue area.
+
+**Note (2026-02-06)**: The treaty-based trade dimension is paused for main results. WTO accession remains useful for anchors and robustness, but the paper requires a **continuous-response IRT** trade dimension built from tariff data (WITS/TRAINS).
 
 ### Why this matters
 WTO accession is one of the strongest signals of commitment to the liberal trade order. It is not captured by DESTA or WTO RTA (those cover trade agreements *between* countries, not accession to the WTO itself). It will serve as an **anchor item** for scale identification in the trade model.
@@ -923,7 +937,7 @@ See `docs/research_design_notes.md` for detailed implementation plans on HIGH-pr
 | Event-type robustness | Re-estimate using signature-only and ratification-only dates (separate runs) | Medium | |
 | Drop regional agreements | Exclude PTAs/alliances with strong regional component | Medium | |
 | 4-year periods | Alternative temporal resolution: 7 periods | Low | |
-| Multi-dimensional model | Estimate K > 1 dimensions jointly across domains | **BACKLOG** | Requires Stan; `emIRT` only supports 1D. See design notes §4. |
+| Multi-dimensional model | Estimate K > 1 dimensions jointly across domains | **SPECIFIED** | Full EM algorithm documented in `docs/estimation_plan_2d.md`. Custom R implementation (no Stan needed). See design notes §4. |
 
 ---
 

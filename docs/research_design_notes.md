@@ -15,6 +15,15 @@ This framing affects how we interpret validation results, choose robustness chec
 
 ---
 
+## 0b. Scope Update (2026-02-06)
+
+- The paper's main results will be **2D (K = 2)** using `dynIRT_KD`; 1D is diagnostic only.
+- Both **joint 2D** and **per-domain 2D** specifications must be estimated before selecting the final presentation.
+- The treaty-based **trade** dimension is paused for main results; the paper requires a **continuous-response IRT** trade dimension based on tariff data (WITS/TRAINS).
+- Item anchoring uses **sign constraints** on beta (not tight priors), combined with country anchors informed by PCA + theory.
+
+---
+
 ## 1. Robustness Check: Stock Coding
 
 ### Decision
@@ -34,7 +43,7 @@ The baseline **flow coding** (+1 = newly ratified in period) creates an "activit
   - **+1**: Country is a party to the treaty in this period (whether newly joined or already a member)
   - **-1**: Treaty is available but country is not a party
   - **0**: Treaty not yet open, or country does not yet exist
-- Re-run `dynIRT()` for all issue areas with the stock matrices
+- Re-run `dynIRT_KD()` (K = 2) for all issue areas with the stock matrices
 - Compare flow-based and stock-based ideal points:
   - Compute Pearson correlation (per domain, per period, and overall)
   - If r > 0.8: the coding choice has minimal impact — report and move on
@@ -61,7 +70,7 @@ Run sensitivity analyses using (a) alternative anchor country pairs and (b) alte
   - Pair 1: PCA-based extremes (top-1 and bottom-1 on PC1, excluding Denmark/Iran)
   - Pair 2: Theoretically motivated alternatives (e.g., Netherlands/North Korea, Norway/Syria)
 - For each alternative anchor pair:
-  - Re-run `dynIRT()` with updated priors
+- Re-run `dynIRT_KD()` (K = 2) with updated priors
   - Compute correlation between baseline and alternative ideal points
   - Report as a sensitivity table: anchor pair → correlation with baseline
 - If correlations are consistently > 0.9: anchoring is robust
@@ -123,7 +132,7 @@ For a **systemic-level** analysis, temporal resolution matters even more: a wave
 - Periods: 1990-92, 1993-95, 1996-98, 1999-01, 2002-04, 2005-07, 2008-10, 2011-13, 2014-16, 2017-18
 - Yields ~10 periods (last may be 2 years only)
 - Rebuild flow matrices with 3-year periodization
-- Re-run `dynIRT()` with same priors and omega2
+- Re-run `dynIRT_KD()` (K = 2) with the same priors and omega2
 - Compare with 5-year baseline: correlation of ideal points at overlapping country-period midpoints
 
 #### Option B: Annual estimation
@@ -144,25 +153,30 @@ Before choosing resolution, compute for each 5-year period:
 
 ---
 
-## 4. Backlog: Multi-Dimensional Estimation
+## 4. Multi-Dimensional Estimation (Main Results)
 
 ### Decision
-Deferred to future work. Document rationale.
+**Main results are 2D (K = 2)** using `dynIRT_KD`. The 1D model is diagnostic only. Both **joint 2D** and **per-domain 2D** specifications must be estimated before selecting the final presentation.
 
-### Reason
-The `emIRT` R package — our current estimation engine — only supports **1-dimensional** ideal point models. The `dynIRT()` function estimates a single latent dimension per model run. There is no built-in support for K > 1 dimensions.
+### Summary
+A custom K-dimensional dynamic IRT estimator via EM with Albert–Chib data augmentation and Kalman filter–smoother has been fully specified. Key design choices:
 
-Estimating multi-dimensional ideal points would require:
-1. Moving to a different estimation framework (Stan via `cmdstanr`, or the `idealstan` package)
-2. Solving the rotation/identification problem in K > 1 dimensions (constrain discrimination matrix to lower-triangular with positive diagonal, per Bafumi et al. 2005)
-3. Substantially more computation (MCMC sampling in high-dimensional parameter space)
+- **Identification**: K+1 anchor countries with tight priors (not lower-triangular β constraint). For K=2, three anchors: Denmark (+2,+2), Iran (−2,−2), China (+1,−1).
+- **Item anchors**: sign constraints on the relevant beta component (no tight priors).
+- **Algorithm**: EM with sequential Kalman filter (efficient for many items per period) + RTS smoother.
+- **Implementation**: Pure R first, same data structures as `emIRT::dynIRT()`.
+- **K=1 reduction**: The algorithm reduces exactly to the existing 1D specification when K=1.
 
-This is documented in the estimation plan as **Phase 5 (Future)**. The current approach — separate 1D models per domain — provides interpretable results and allows cross-domain comparison without requiring rotation identification.
+### Status
+- Specification: **complete** (`docs/estimation_plan_2d.md`)
+- Implementation: **in progress** — this is the main estimator for the paper
+- Required runs: joint 2D and per-domain 2D, each with anchor sensitivity checks
+- Deterministic EM avoids Stan/MCMC and supports reproducibility
 
-### When to revisit
-- After all 7 domains have stable 1D estimates
-- After robustness checks (stock coding, alternative anchors, temporal resolution) are complete
-- If a reviewer specifically requests multi-dimensional estimation
+### When to implement
+- After data preparation is complete for all 7 domains
+- After HIGH-priority robustness checks (stock coding, alternative anchors) are complete
+- Use V3 US Congress validation as the external 2D benchmark
 
 ---
 
