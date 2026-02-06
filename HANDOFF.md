@@ -2,6 +2,83 @@
 
 Date: 2026-02-01
 
+## Index
+- What is done
+- Key scripts
+- Processed outputs
+- Notes
+- Phase 0 — WTO Accession Data (Completed)
+- Phase 1 — Data Preparation (Completed)
+- Phase 2 — Exploratory Data Analysis (Completed)
+- Phase 3 — Estimation Setup (Decisions)
+- Phase 3 — Estimation (Completed)
+- Phase 4 — Validation (Completed)
+- Phase 5 — Tariff Pilot (BRA 1990) (Completed)
+- Phase 6 — Tariff Parsing Pilot (BRA 1990) (Completed)
+- Phase 7 — Tariff Pilot Expansion (BRA 1991–1992) (Completed)
+- Phase 8 — HS88/92 → HS2012 Mapping (BRA 1990–1992, USA 1990) (Completed)
+- Phase 9 — Margin Construction (BRA 1990–1992, USA 1990) (Completed)
+- Phase 10 — USA 1990 Acquisition + Parsing (Completed)
+- Phase 11 — HS Mapping Diagnostics (BRA 1990–1992, USA 1990) (Completed)
+- Phase 12 — Mapping Summary Document (Completed)
+- Phase 13 — SAU 1990 Acquisition Attempt (Blocked)
+- Phase 14 — Tariff Acquisition Expansion (BRA 1993–2024)
+- Phase 15 — Tariff Parsing + Mapping + Margins (BRA 1993–2021)
+- Phase 16 — Tariff Diagnostics + Consolidation (BRA 1990–2021)
+- Next Session Checklist (2026-02-03)
+- New Sources Plan — 3 New Issue Areas (Approved, Not Yet Implemented)
+- Phase 14 — New Sources: Phase 0 Data Acquisition (Completed)
+- Phase 15 — New Sources: Phase 1 R Integration (Completed)
+- Phase 16 — New Sources: Phase 2 EDA (Completed — AWAITING USER REVIEW)
+- Phase 17 — New Sources: Phase 3 Estimation (Completed)
+- Phase 18 — New Sources: Phase 4 Validation (Completed)
+- Phase 19 — New Sources: Phase 5 Documentation (Completed)
+- Next Steps
+- Phase 0 — WITS Credential Preflight (Completed)
+- Phase 1 — WITS Batch Driver + Tests (Completed)
+- Phase 2 — WITS BRA 2022–2024 Re-attempt (Completed)
+- Phase 3 — WITS G20 Pilot (USA, CHN) (Completed)
+- Phase 3 — WITS G20 Pilot (ARG, AUS, CAN) (Completed)
+- Phase 3 — WITS G20 Pilot (DEU, FRA, GBR) (Completed)
+- Phase 3 — WITS G20 Pilot (JPN, KOR, MEX) (Completed)
+- Phase 3 — WITS G20 Pilot (IND, IDN, ZAF) (Completed)
+- Phase 3 — WITS G20 Pilot (RUS, SAU, TUR) (Completed)
+- Phase 3 — WITS G20 Pilot (ITA) (Completed)
+- Phase 3 — WITS Manifest Summary (Completed)
+- Phase 3 — WITS G20 Status Board (Completed)
+- Phase 4 — WITS Non-G20 Priority Batch (Proposed, Pending Approval)
+- Phase 20 — K-Dimensional Dynamic IRT: Core Implementation (Completed)
+- Open Questions
+- Operational Note — WITS Tariff Acquisition at Scale
+- Phase 0 — dynIRT_KD_fast Plan (Completed)
+- Phase 1 — dynIRT_KD_fast Code Review (Completed)
+- Phase 2 — dynIRT_KD_fast Implementation (Completed)
+- Phase 3 — dynIRT_KD_fast Tests (Implemented)
+- Phase 4 — dynIRT_KD_fast Tests (Completed)
+- Phase 5 — dynIRT_KD_fast Nota Técnica (Completed)
+- Phase 6 — dynIRT_KD_fast Validação Real (environment, fast) (Completed)
+- Phase B — dynIRT_KD DA Vectorization (Completed)
+- Phase A — dynIRT_KD Kalman Parallelization (Completed)
+- Phase 21 — V2 Evaluation (Holdout/Temporal/Robustness) (Completed)
+- Phase D — dynIRT_KD Log-Likelihood on Demand (Completed)
+- Final Test Battery — Optimization ABD (Completed)
+- 2026-02-06 Optimization ABD: V1 validation (seq vs parallel)
+- 2026-02-06 Optimization EF: M-step vectorization + cached voters
+- 2026-02-06 Optimization EF: full tests + end-to-end benchmark
+- 2026-02-06 Optimization KB: Kalman block update (R=1)
+- 2026-02-06 Optimization KB: end-to-end V1 benchmark (post-Kalman block)
+- Phase V2 — Equivalence Test (K=1, real data) (Completed - FAILED)
+- Phase V3 — US Congress Benchmark (K=2) (Completed - PARTIAL PASS)
+- Phase V4 — Anchor Sensitivity (Completed - SUCCESS)
+- 2026-02-06 V3 Data Prep: quick check + summaries
+- 2026-02-06 V2 Review: Reviewer 2 documents
+- 2026-02-06 V2 Review: avaliação da resposta
+- 2026-02-06 V2 Test2: Block vs Sequential Kalman
+- 2026-02-06 V2 Test2: report
+- 2026-02-06 V2 Test1: P=0 (mean-field) vs normal
+- 2026-02-06 V2 Evaluation plan + docs + scripts
+- 2026-02-06 — Docs update
+
 ## What is done
 - Core data sources acquired: DESTA, ATOP, IEADB, WTO RTA, UNCTAD IIA.
 - UNCTAD IIA scraped via country pages; raw HTML preserved in `data/raw/unctad_iia/html/`.
