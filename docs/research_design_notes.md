@@ -21,6 +21,7 @@ This framing affects how we interpret validation results, choose robustness chec
 - Both **joint 2D** and **per-domain 2D** specifications must be estimated before selecting the final presentation.
 - The treaty-based **trade** dimension is paused for main results; the paper requires a **continuous-response IRT** trade dimension based on tariff data (WITS/TRAINS).
 - Item anchoring uses **sign constraints** on beta (not tight priors), combined with country anchors informed by PCA + theory.
+- Robustness runs default to **5 random seeds** unless explicitly overridden.
 
 ---
 
