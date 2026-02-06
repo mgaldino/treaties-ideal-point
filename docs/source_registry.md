@@ -60,6 +60,8 @@ New issue-area sources added: 2026-02-03
 - Full citation path:
   - WTO accession status page: https://www.wto.org/english/thewto_e/acc_e/acc_status_e.htm
   - Wikipedia table (used for extraction): https://en.wikipedia.org/wiki/Member_states_of_the_World_Trade_Organization
+
+**Note (2026-02-06)**: For the paper, **trade support is measured primarily via tariff data** using a continuous-response IRT model. Treaty-based trade items (DESTA/WTO RTA, WTO accession) are retained for anchoring and robustness, not as the main trade signal.
 ### World Bank WITS Global Preferential Trade Agreements Database (GPTAD)
 - Issue area: Trade agreements (PTAs)
 - Coverage and scope: PTAs worldwide, including those not notified to the WTO; >330 PTAs; includes original texts; searchable by provisions; integrated with WITS.
