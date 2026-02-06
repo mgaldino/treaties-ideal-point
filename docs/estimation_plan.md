@@ -79,7 +79,7 @@ python3 -c "import urllib.request; print(urllib.request.urlopen('https://www.goo
 3. [Phase 0 — Acquire WTO Accession Data](#3-phase-0--acquire-wto-accession-data)
 4. [Phase 1 — Data Preparation](#4-phase-1--data-preparation)
 5. [Phase 2 — Exploratory Analysis](#5-phase-2--exploratory-analysis)
-6. [Phase 3 — Estimation with emIRT](#6-phase-3--estimation-with-emirt)
+6. [Phase 3 — Estimation with dynIRT_KD](#6-phase-3--estimation-with-dynirt_kd-k--2)
 7. [Phase 4 — Validation](#7-phase-4--validation)
 8. [Phase 5 (Future) — Multidimensional Stan Model](#8-phase-5-future--multidimensional-stan-model)
 9. [Appendix A — Robustness Checks](#9-appendix-a--robustness-checks)
@@ -128,7 +128,7 @@ These decisions were agreed upon in the Q&A process. Do not change them without 
 | Anchor items | WTO accession, Paris, ICSID, NATO, ICCPR, NPT, TRIPS (sign constraints) | Clear ILO direction per domain |
 | Anchor countries | Denmark/Iran/China (PCA-checked) + alternatives for sensitivity | Non-collinearity in 2D and robustness |
 | REIO/territories | Exclude from estimation; keep in separate files | Preserve for robustness or later re-inclusion |
-| Estimates | Point estimates (SEs via bootstrap if needed) | dynIRT variance estimates are unreliable |
+| Estimates | Point estimates (SEs via bootstrap if needed) | dynIRT_KD variance estimates are unreliable |
 | Language | R for all analysis and estimation | Per RULES.md |
 
 ---
@@ -189,7 +189,7 @@ If the primary source (Wikipedia) fails due to DNS, timeout, or HTTP errors:
 ## 4. Phase 1 — Data Preparation
 
 ### Objective
-Build 4 country × item × period flow matrices (one per issue area) ready for `emIRT::dynIRT()`.
+Build 7 country × item × period flow matrices (one per issue area) ready for `dynIRT_KD()` (K = 2). The 1D `emIRT::dynIRT()` model is diagnostic only.
 
 ### Prerequisites
 - All raw data in `data/raw/` (already acquired).
@@ -300,7 +300,7 @@ item_id | issue_area | first_available_period | treaty_open_year
 desta_42| trade      | 2000-2004              | 2001
 ```
 
-**Why this matters**: A country can only "vote" on a treaty starting from the period it becomes available. Before that, the entry in the vote matrix is 0 (missing) in `dynIRT()` coding.
+**Why this matters**: A country can only "vote" on a treaty starting from the period it becomes available. Before that, the entry in the vote matrix is 0 (missing) in `dynIRT_KD()` coding.
 
 ---
 
@@ -365,9 +365,9 @@ rc_matrix <- all_combos |>
 
 ---
 
-### Step 1.7: Build additional `dynIRT()` input vectors
+### Step 1.7: Build additional `dynIRT_KD()` input vectors
 
-Beyond the `rc` matrix, `dynIRT()` needs:
+Beyond the `rc` matrix, `dynIRT_KD()` needs:
 
 ```r
 # N × 1: first period each country is "active" (0-indexed!)
@@ -386,7 +386,7 @@ bill.session <- matrix(period_index_for_each_phantom_item, ncol = 1)
 T_periods <- 6L
 ```
 
-**CRITICAL WARNING**: `dynIRT()` uses **0-indexed** periods. Period 1990–1994 = 0, 1995–1999 = 1, ..., 2015–2018 = 5. This is a common source of bugs. Double-check all indexing.
+**CRITICAL WARNING**: `dynIRT_KD()` uses **0-indexed** periods. Period 1990–1994 = 0, 1995–1999 = 1, ..., 2015–2018 = 5. This is a common source of bugs. Double-check all indexing.
 
 ---
 
@@ -497,35 +497,31 @@ For a selection of ~10 substantively important countries (US, China, Russia, Bra
 
 ---
 
-## 6. Phase 3 — Estimation with emIRT
+## 6. Phase 3 — Estimation with dynIRT_KD (K = 2)
 
 ### Objective
-Estimate dynamic 1D ideal points for each issue area using `emIRT::dynIRT()`.
+Estimate dynamic **2D** ideal points using `dynIRT_KD()` (main results). Run both **joint 2D** and **per-domain 2D** specifications. Use `emIRT::dynIRT()` only for K = 1 diagnostic checks.
 
 ### Script
-`scripts/R/03_estimate_ideal_points.R`
+`scripts/R/03_estimate_ideal_points.R` (must be updated to call `dynIRT_KD()` for K = 2)
 
-### Step 3.0: Install emIRT
+### Step 3.0: Load dynIRT_KD
 
-```r
-install.packages("emIRT")
-library(emIRT)
-```
-
-**Check version**: `packageVersion("emIRT")`. As of January 2026, the latest CRAN version is from September 2025. If installation fails, try installing from GitHub:
+`dynIRT_KD` is implemented locally under `scripts/R/`. Source it before estimation. Install `emIRT` **only** if you need the K = 1 diagnostic.
 
 ```r
-# install.packages("devtools")
-devtools::install_github("kosukeimai/emIRT")
-```
+source("scripts/R/dynIRT_KD.R")
 
-**Known issue**: `emIRT` uses C++ via Rcpp. If compilation fails on macOS, ensure Xcode command-line tools are installed (`xcode-select --install` in Terminal).
+# Optional: only for K = 1 diagnostic
+# install.packages("emIRT")
+# library(emIRT)
+```
 
 ---
 
-### Step 3.1: Prepare `.data` list for `dynIRT()`
+### Step 3.1: Prepare `.data` list for `dynIRT_KD()`
 
-For each issue area, build the required list:
+For each issue area, build the required list (same structure as `emIRT::dynIRT()` and `dynIRT_KD()`):
 
 ```r
 # Load the flow matrix from Phase 1
@@ -559,82 +555,85 @@ stopifnot(all(data_list$startlegis <= data_list$endlegis))
 
 ### Step 3.2: Set starting values (`.starts`)
 
-Good starting values speed convergence. Use PCA results from Phase 2:
+Good starting values speed convergence. Use PCA results from Phase 2 (first two PCs):
 
 ```r
-# From PCA (Phase 2):
-# pca_result$x[, 1] gives PC1 scores per country (length N)
-# Normalize to mean 0, sd 1
-pc1_scores <- scale(pca_result$x[, 1])[, 1]
+K <- 2L
 
-# Starting ideal points: N × T matrix
-# Initialize all periods to the static PCA score
-x_start <- matrix(rep(pc1_scores, times = T_periods),
-                  nrow = N, ncol = T_periods)
+# PCA scores (Phase 2)
+pc_scores <- pca_result$x[, 1:K, drop = FALSE]
+pc_scores <- scale(pc_scores)  # center and scale each PC
 
-# Starting item parameters (from PCA loadings or random)
-alpha_start <- matrix(rnorm(J, 0, 0.1), ncol = 1)  # difficulty (intercept)
-beta_start  <- matrix(rnorm(J, 0, 0.5), ncol = 1)   # discrimination (slope)
+# Starting ideal points: N × K × T array
+x_start <- array(NA_real_, dim = c(N, K, T_periods))
+for (t in 1:T_periods) {
+  x_start[, , t] <- pc_scores
+}
+
+# Starting item parameters (random or PCA-informed)
+alpha_start <- rnorm(J, 0, 0.1)                 # J
+beta_start  <- matrix(rnorm(J * K, 0, 0.5), nrow = J, ncol = K)  # J × K
 
 starts_list <- list(
-  alpha = alpha_start,   # J × 1
-  beta  = beta_start,    # J × 1
-  x     = x_start        # N × T
+  alpha = alpha_start,   # J
+  beta  = beta_start,    # J × K
+  x     = x_start        # N × K × T
 )
 ```
 
-**Tip**: If the model converges to a degenerate solution (all ideal points near 0, or extreme values), try different starting values. A common trick: run `binIRT()` (static model) first, use its estimates as starting values for `dynIRT()`.
+**Tip**: If the model converges to a degenerate solution, try alternative starts: PCA-based vs random, or embed 1D estimates into K = 2 (see `docs/estimation_plan_2d.md` for the initialization options).
 
 ---
 
 ### Step 3.3: Set priors (`.priors`) — THIS IS WHERE IDENTIFICATION HAPPENS
 
-**Identification strategy**: Use informative priors on anchor countries' initial ideal points to set the scale, and verify anchor item discrimination signs post-estimation.
+**Identification strategy**: Use informative priors on **K+1 anchor countries** for the initial ideal points, and enforce **sign constraints** on anchor items (no tight priors on item parameters).
 
 ```r
+K <- 2L
+
 # Default (diffuse) priors for most countries
-x_mu0    <- matrix(0, nrow = N, ncol = 1)         # prior mean for x at t=0
-x_sigma0 <- matrix(1, nrow = N, ncol = 1)         # prior variance for x at t=0
+x_mu0    <- matrix(0, nrow = N, ncol = K)     # prior mean for x at t=1
+x_sigma0 <- matrix(1, nrow = N, ncol = K)     # diagonal variances for x at t=1
 
 # ---- ANCHORING: tighten priors for anchor countries ----
-# Find row indices for anchor countries
 idx_denmark <- which(country_codes == "DNK")
 idx_iran    <- which(country_codes == "IRN")
+idx_china   <- which(country_codes == "CHN")
 
-# Set Denmark's prior: mean = +2, variance = 0.01 (very tight)
-x_mu0[idx_denmark, 1]    <- 2.0
-x_sigma0[idx_denmark, 1] <- 0.01
+# Denmark (+2, +2)
+x_mu0[idx_denmark, ]    <- c(2.0, 2.0)
+x_sigma0[idx_denmark, ] <- c(0.01, 0.01)
 
-# Set Iran's prior: mean = -2, variance = 0.01 (very tight)
-x_mu0[idx_iran, 1]    <- -2.0
-x_sigma0[idx_iran, 1] <- 0.01
+# Iran (-2, -2)
+x_mu0[idx_iran, ]    <- c(-2.0, -2.0)
+x_sigma0[idx_iran, ] <- c(0.01, 0.01)
 
-# Item parameter priors (mildly informative)
-beta_mu    <- matrix(c(0, 0), nrow = 2, ncol = 1)       # prior mean for (alpha, beta)
-beta_sigma <- matrix(c(25, 0, 0, 25), nrow = 2, ncol = 2) # prior covariance (diffuse)
+# China (+1, -1) — off-diagonal anchor
+x_mu0[idx_china, ]    <- c(1.0, -1.0)
+x_sigma0[idx_china, ] <- c(0.01, 0.01)
 
-# Evolution variance: controls how much ideal points can change between periods
-# Smaller omega2 = smoother trajectories; larger = more period-to-period variation
-# Start with 0.1; tune later
-omega2 <- matrix(0.1, nrow = N, ncol = 1)
+# Item parameter priors (diffuse)
+beta_mu    <- rep(0, K + 1)              # mean for (alpha, beta_1, ..., beta_K)
+beta_sigma <- 25 * diag(K + 1)           # diffuse prior covariance
+
+# Evolution covariance (random walk)
+omega <- 0.1 * diag(K)
 
 priors_list <- list(
-  x.mu0      = x_mu0,        # N × 1
-  x.sigma0   = x_sigma0,     # N × 1
-  beta.mu    = beta_mu,       # 2 × 1
-  beta.sigma = beta_sigma,    # 2 × 2
-  omega2     = omega2          # N × 1
+  x.mu0      = x_mu0,        # N × K
+  x.Sigma0   = x_sigma0,     # N × K (diagonal variances)
+  beta.mu    = beta_mu,      # (K+1)
+  beta.sigma = beta_sigma,   # (K+1) × (K+1)
+  omega      = omega         # K × K
 )
 ```
 
-**How to choose omega2**:
-- omega2 = 0.01: very smooth trajectories, ideal points barely change across periods.
-- omega2 = 0.1: moderate smoothness (recommended starting value).
-- omega2 = 1.0: ideal points can jump substantially between periods.
-- After initial estimation, examine the estimated trajectories. If they look too erratic, decrease omega2. If too flat, increase it.
-- In a full Bayesian model (Phase 5), omega2 would be estimated from the data. In emIRT, it's a fixed hyperparameter.
-
-**Important**: `omega2` is per-country. You can set different values for different countries, but start with a single global value for simplicity.
+**How to choose omega**:
+- 0.01 · I_K: very smooth trajectories, ideal points barely change across periods.
+- 0.1 · I_K: moderate smoothness (recommended starting value).
+- 1.0 · I_K: ideal points can jump substantially between periods.
+- After initial estimation, examine the estimated trajectories. If they look too erratic, decrease omega. If too flat, increase it.
 
 ---
 
@@ -649,12 +648,13 @@ control_list <- list(
   checkfreq = 50L      # print every 50 iterations
 )
 
-# ---- RUN THE MODEL ----
-result <- dynIRT(
+# ---- RUN THE MODEL (K = 2) ----
+result <- dynIRT_KD(
   .data    = data_list,
   .starts  = starts_list,
   .priors  = priors_list,
-  .control = control_list
+  .control = control_list,
+  K        = 2L
 )
 ```
 
@@ -667,14 +667,12 @@ result <- dynIRT(
 ### Step 3.5: Extract and examine results
 
 ```r
-# Ideal point estimates: N × T matrix
+# Ideal point estimates: N × K × T array
 ideal_points <- result$means$x
-rownames(ideal_points) <- country_codes
-colnames(ideal_points) <- period_labels
 
 # Item parameters
-alpha <- result$means$alpha  # J × 1 (difficulty)
-beta  <- result$means$beta   # J × 1 (discrimination)
+alpha <- result$means$alpha  # J
+beta  <- result$means$beta   # J × K
 
 # Convergence info
 result$runtime$iters       # iterations used
@@ -687,29 +685,24 @@ result$runtime$threads
 1. **Convergence**: `result$runtime$conv` must be 1. If 0, increase `maxit` and re-run.
 
 2. **Anchor verification**:
-   - Denmark's ideal point should be positive across all periods (~2.0 ± small variation).
-   - Iran's ideal point should be negative across all periods (~-2.0 ± small variation).
-   - If these are reversed, the scale is flipped. Multiply all `ideal_points` by -1 and all `beta` by -1.
+   - Denmark should be near (+2, +2), Iran near (−2, −2), China near (+1, −1) at t = 1.
+   - If the configuration is rotated or flipped, align via Procrustes to the anchor targets.
 
-3. **Anchor item verification** (THIS IS THE ITEM-SIDE CHECK):
-   - Find the WTO accession item (trade model): its `beta` should be positive (ratifying WTO = higher ideal point = more ILO commitment).
-   - Find the Paris Agreement item (environment model): its `beta` should be positive.
-   - If `beta` is negative for these anchor items, the scale is flipped — apply the sign correction above.
+3. **Anchor item verification** (item-side sign constraints):
+   - Anchor items must have **positive** loadings on their intended dimension.
+   - If any anchor item violates the sign constraint, fix the sign and re-estimate or flag as identification failure.
 
 4. **Item parameter reasonableness**:
    - `beta` values should mostly be between -5 and +5. Extreme values (|beta| > 10) suggest identification problems or items with near-zero variation.
    - `alpha` values can range more widely but should not be extreme.
 
-5. **Ideal point trajectories**: Plot ideal points over time for 10+ key countries. Do they make substantive sense?
-   - US: high through ~2010-2014, potentially declining in 2015-2018 (Trump era begins).
-   - China: likely increasing in trade (WTO accession) but lower in security.
-   - Russia: lower overall, potentially declining.
+5. **Ideal point trajectories**: Plot 2D paths over time for 10+ key countries. Do they make substantive sense (e.g., economic vs security/HR separation)?
 
 ---
 
 ### Step 3.6: Handle standard errors
 
-**The problem**: The documentation explicitly warns that `dynIRT()` variance estimates (`result$vars$x`) are "far too small and generally unusable." This is a known limitation of variational inference — it systematically underestimates posterior uncertainty.
+**The problem**: `dynIRT_KD()` does not provide reliable uncertainty estimates by default. If standard errors are needed for the paper, use a bootstrap.
 
 **Solution: Parametric bootstrap** (recommended if SEs are needed for the paper):
 
@@ -726,11 +719,12 @@ for (b in 1:B) {
   data_boot <- data_list
   data_boot$rc <- rc_boot
 
-  result_boot <- dynIRT(
+  result_boot <- dynIRT_KD(
     .data = data_boot, .starts = starts_list,
     .priors = priors_list,
     .control = list(threads = 1, verbose = FALSE,
-                    thresh = 1e-5, maxit = 300)
+                    thresh = 1e-5, maxit = 300),
+    K = 2L
   )
 
   boot_ideal_points[, , b] <- result_boot$means$x
@@ -745,13 +739,15 @@ se_matrix <- apply(boot_ideal_points, c(1, 2), sd)
 
 ```r
 simulate_votes <- function(x, alpha, beta, data_list) {
-  N <- nrow(x)
+  N <- dim(x)[1]
+  K <- dim(x)[2]
   J <- length(alpha)
   rc_sim <- matrix(0L, nrow = N, ncol = J)
 
   for (j in 1:J) {
     t_j <- data_list$bill.session[j, 1] + 1  # convert 0-indexed to 1-indexed
-    prob_yea <- pnorm(beta[j] * x[, t_j] - alpha[j])
+    linpred <- alpha[j] + x[, , t_j] %*% beta[j, ]
+    prob_yea <- pnorm(as.vector(linpred))
     votes <- rbinom(N, 1, prob_yea)
     rc_sim[, j] <- ifelse(votes == 1, 1L, -1L)
   }
