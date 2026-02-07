@@ -1,4 +1,0 @@
-/Users/manoelgaldino/Documents/DCP/Papers/Ideal point/scripts/python/acquire_wto_accession.py:25: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
-Parsed 166 WTO members; missing dates: 0
-Wrote: data/raw/wto_accession/wto_members.csv

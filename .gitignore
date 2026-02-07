@@ -46,6 +46,9 @@ vignettes/*.pdf
 # Data (raw/processed)
 data/
 
+# Logs
+logs/
+
 # translation temp files
 po/*~
 
