@@ -46,15 +46,22 @@ This document specifies a **K-dimensional dynamic probit IRT model** estimated v
 **Scope**: The primary target is K = 2, but all formulas are written for general K. The K = 1 case must reduce exactly to the existing `emIRT::dynIRT()` formulation (Section 14), but this is a **diagnostic check**, not a prerequisite for the main results.
 
 **Two required specifications**:
-- **Joint 2D**: pool all items across the 7 domains into a single model.
-- **Per-domain 2D**: estimate a separate 2D model for each domain.
+- **Joint 2D**: pool all **treaty-based** domains into a single model. The trade dimension is handled via tariffs (continuous-response IRT) and aligned after estimation.
+- **Per-domain 2D**: estimate a separate 2D model for each domain. The trade domain uses tariff data (continuous-response IRT), not treaty items.
 
 **Trade note**: the treaty-based trade dimension is paused for main results; the paper requires a **continuous-response IRT** dimension built from tariff data (WITS/TRAINS).
 
 **Continuous-response trade dimension (summary)**:
 - Use tariff rates (MFN applied and effectively applied) as continuous outcomes.
-- Model a latent “trade openness/ILO support” dimension with a continuous-response IRT (e.g., normal or logit-normal link), estimated separately and then aligned to the 2D space.
+- Estimate a latent “trade openness/ILO support” dimension using a continuous-response IRT model.
+- Align the tariff-based trade dimension to the 2D treaty space after estimation (Procrustes or affine alignment on overlapping countries/periods).
 - Treaty-based trade items are retained for anchoring and robustness, but not as the primary trade signal.
+
+**Trade domain plan (tariffs)**:
+- Build the tariff panel following `docs/tariff_plan.md` (WITS/TRAINS raw → parsed → mapped → margins).
+- Aggregate to the 5-year periods used in the treaty models.
+- Fit continuous-response IRT to tariff outcomes and export trade ideal points by country-period.
+- Align trade ideal points to the 2D treaty space for comparison and joint interpretation.
 
 ---
 
@@ -632,7 +639,7 @@ where μ\*ᵢⱼ = αⱼ + β'ⱼ x̂ᵢ,s(j)|T. Monitor that ℓ(θ) is non-dec
 
 ### 11.1 From PCA
 
-Pool all items across domains into a single N × J matrix. Run PCA (after recoding −1 → 0 and imputing NAs with column means):
+Pool all **treaty-based** items across domains into a single N × J matrix (exclude the tariff-based trade domain). Run PCA (after recoding −1 → 0 and imputing NAs with column means):
 
 ```r
 pca_result <- prcomp(rc_for_pca, center = TRUE, scale. = TRUE)
@@ -817,8 +824,8 @@ m_step_Omega <- function(
 
 ### 13.2 Concrete Estimates for Our Data
 
-Assuming (conservative):
-- N = 180 countries, J = 2000 phantom items (pooled across domains), T = 6, K = 2
+Assuming (conservative, treaty-only):
+- N = 180 countries, J = 2000 phantom items (pooled across treaty domains), T = 6, K = 2
 
 | Step | Operations | Time estimate (pure R) |
 |------|-----------|----------------------|
@@ -828,7 +835,7 @@ Assuming (conservative):
 | **Total per iteration** | | **~2–8 s** |
 | **500 iterations** | | **~15–60 min** |
 
-This is manageable in pure R. If too slow, the Kalman filter (the bottleneck) can be ported to C++ via Rcpp.
+This is manageable in pure R. The tariff-based trade model is estimated separately using continuous outcomes. If the treaty model is too slow, the Kalman filter (the bottleneck) can be ported to C++ via Rcpp.
 
 ### 13.3 Parallelization Opportunities
 
@@ -1064,19 +1071,14 @@ If dimension 1 correlation drops below 0.7 after Procrustes alignment, this sign
    - Compute Procrustes-rotated correlation between estimate sets (since different anchors define different coordinate systems, alignment is needed before comparison)
    - Target: rotated correlation > 0.85
 
-### Phase V5: Treaty Data (Real Application)
+### Phase V5: Treaty Data + Trade Tariffs (Real Application)
 
-**Goal**: Produce and interpret the first 2D estimates on our treaty participation data.
+**Goal**: Produce and interpret the first 2D estimates on treaty participation data, and integrate the tariff-based trade dimension.
 
-1. Pool all items from domains with stable 1D estimates (at minimum: investment, security, environment)
-2. Run `dynIRT_KD` with K = 2
-3. Examine:
-   - Dimension interpretation: do the two dimensions correspond to substantively meaningful axes? (e.g., economic vs. political/security)
-   - Cross-loadings: do items from different domains load on different dimensions?
-   - Country trajectories: do 2D paths make substantive sense?
-4. Compare with separate 1D estimates:
-   - For each domain, correlate the relevant dimension of the 2D estimate with the 1D estimate
-   - High correlation (r > 0.8) = 2D model is consistent with 1D; lower = 2D reveals structure 1D misses
+1. Pool all treaty-based items across domains and run `dynIRT_KD` with K = 2
+2. Examine dimension interpretation, cross-loadings, and country trajectories for substantive coherence.
+3. Estimate the trade domain separately using continuous-response IRT on tariffs (WITS/TRAINS)
+4. Align the tariff-based trade dimension to the treaty 2D space and compare trajectories
 
 ### Summary: Verification Sequence
 
