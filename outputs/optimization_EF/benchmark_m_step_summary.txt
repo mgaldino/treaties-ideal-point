@@ -1,0 +1,7 @@
+Seed: 101
+N=120 J=300 T=4 K=2
+Slow elapsed: 0.068 s
+Fast elapsed: 0.016 s
+Speedup: 4.25x
+Max |alpha diff|: 5.551e-17
+Max |beta diff|: 2.776e-16

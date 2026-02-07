@@ -1,0 +1,7 @@
+Seed: 303
+K=2 T=6 n_items=300
+Sequential elapsed: 0.027 s
+Block elapsed: 0.022 s
+Speedup: 1.23x
+Max |x diff|: 1.665e-16
+Max |P diff|: 1.041e-17

@@ -1,0 +1,8 @@
+Seed: 42
+Detected cores: 1
+ncores_half: 1
+Equivalence: x=TRUE, alpha=TRUE, beta=TRUE
+Seq runtime: iters=500, conv=0, seconds=65.79, ncores_used=1
+Par runtime: iters=500, conv=0, seconds=66.02, ncores_used=1
+Mean x corr (seq): 0.9396
+Mean x corr (par): 0.9396

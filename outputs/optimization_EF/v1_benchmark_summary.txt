@@ -1,0 +1,7 @@
+Seed: 42
+Detected cores: 1
+ncores_target: 1
+Equivalence: x=TRUE, alpha=TRUE, beta=TRUE
+Slow runtime: iters=500, conv=0, seconds=35.02, ncores_used=1
+Fast runtime: iters=500, conv=0, seconds=21.20, ncores_used=1
+Speedup: 1.65x

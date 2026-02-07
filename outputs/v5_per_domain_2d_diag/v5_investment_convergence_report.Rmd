@@ -1,0 +1,114 @@
+---
+title: "Relatório breve: Convergência V5 — Domínio investment"
+author: "Equipe de pesquisa"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+output:
+  pdf_document:
+    toc: false
+    number_sections: false
+geometry: margin=1in
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+data_path <- "investment_convergence_report_data.rds"
+if (!file.exists(data_path)) {
+  stop("Dados do relatório não encontrados: ", data_path)
+}
+report <- readRDS(data_path)
+```
+
+**Objetivo.** Este relatório resume a estabilidade prática dos ideal points do domínio *investment* na V5, usando snapshots a cada 500 iterações entre 500 e 5000. O foco é descrever tendência de estabilização e registrar métricas-chave.
+
+**Dados utilizados.**  
+Resumo de snapshots: `r report$summary_csv`  
+Diagnóstico de países (4500 → 5000): `r report$country_diag_csv`  
+Data de acesso: `r report$date_access`
+
+## Definição das métricas
+
+**Métricas do resumo de snapshots (`diagnostic_summary.csv`)**
+
+- `iter_prev`: iteração inicial do par de snapshots comparado.  
+- `iter_curr`: iteração final do par de snapshots comparado.  
+- `loglik_prev`: log-verossimilhança no snapshot `iter_prev`.  
+- `loglik_curr`: log-verossimilhança no snapshot `iter_curr`.  
+- `loglik_delta`: diferença `loglik_curr - loglik_prev`.  
+- `max_abs`: máximo de `|x_curr - x_prev|` considerando todos os países, dimensões e períodos.  
+- `mean_abs`: média de `|x_curr - x_prev|` considerando todos os países, dimensões e períodos.  
+- `p95_abs`: percentil 95 de `|x_curr - x_prev|` considerando todos os países, dimensões e períodos.  
+- `cor_dim1`: correlação entre `x_prev` e `x_curr` na dimensão 1 (todos os países e períodos).  
+- `cor_dim2`: correlação entre `x_prev` e `x_curr` na dimensão 2 (todos os países e períodos).  
+- `max_abs_mean`: máximo de `|x_mean_curr - x_mean_prev|` considerando países.  
+- `mean_abs_mean`: média de `|x_mean_curr - x_mean_prev|` considerando países.  
+- `p95_abs_mean`: percentil 95 de `|x_mean_curr - x_mean_prev|` considerando países.  
+- `cor_mean_dim1`: correlação entre `x_mean_prev` e `x_mean_curr` na dimensão 1.  
+- `cor_mean_dim2`: correlação entre `x_mean_prev` e `x_mean_curr` na dimensão 2.  
+- `stable_full`: indicador lógico de estabilidade prática para o array completo `x` (critérios abaixo).  
+- `stable_mean`: indicador lógico de estabilidade prática para `x_mean` (critérios abaixo).  
+- `stable_both`: `TRUE` somente se `stable_full` e `stable_mean` forem `TRUE`.  
+- `full_cor_min`, `full_p95_max`, `full_max_max`: thresholds usados para `stable_full`.  
+- `mean_cor_min`, `mean_p95_max`, `mean_max_max`: thresholds usados para `stable_mean`.  
+
+**Métricas do diagnóstico de países (`*_country_diagnostics_*.csv`)**
+
+- `country_code`: código ISO do país.  
+- `dim1_prev`, `dim2_prev`: ideal point médio no snapshot inicial (dimensões 1 e 2).  
+- `dim1_curr`, `dim2_curr`: ideal point médio no snapshot final (dimensões 1 e 2).  
+- `delta_dim1`, `delta_dim2`: diferença entre snapshots (dimensões 1 e 2).  
+- `delta_l2`: norma L2 de `(delta_dim1, delta_dim2)`.  
+- `delta_l1`: soma de valores absolutos das diferenças nas duas dimensões.  
+- `delta_max`: maior diferença absoluta entre as duas dimensões.  
+- `n_pos`: número de votos positivos do país (todas as votações).  
+- `n_neg`: número de votos negativos do país (todas as votações).  
+- `n_obs`: total de votos observados (`n_pos + n_neg`).  
+- `n_missing`: total de votos ausentes.  
+- `pct_missing`: `n_missing / n_items_total`.  
+- `startlegis`, `endlegis`: período inicial e final de atividade.  
+- `active_periods`: número de períodos ativos.  
+- `n_items_total`: total de itens no domínio.  
+- `n_items_active`: itens com período dentro da janela ativa.  
+- `obs_rate_active`: taxa de observação em itens ativos.  
+- `active_periods_with_votes`: número de períodos ativos com pelo menos um voto.  
+- `prop_active_periods_with_votes`: proporção de períodos ativos com voto.  
+- `mean_obs_per_active_period`: média de votos por período ativo.  
+- `min_obs_active_period`, `max_obs_active_period`: mínimo e máximo de votos por período ativo.  
+- `pos_share`: razão `n_pos / (n_pos + n_neg)`.  
+
+## Resultados
+
+```{r table_summary}
+summary_tbl <- report$summary_table
+summary_tbl$loglik_delta <- round(summary_tbl$loglik_delta, 3)
+summary_tbl$p95_abs_mean <- round(summary_tbl$p95_abs_mean, 3)
+summary_tbl$max_abs_mean <- round(summary_tbl$max_abs_mean, 3)
+summary_tbl$cor_mean_min <- round(summary_tbl$cor_mean_min, 3)
+knitr::kable(
+  summary_tbl,
+  caption = "Tabela 1 — Resumo de estabilidade por intervalo de 500 iterações (investment)."
+)
+```
+
+```{r fig_trend, fig.cap="Figura 1 — Tendência de estabilização (investment), com snapshots a cada 500 iterações."}
+knitr::include_graphics("investment_snapshot_trends.pdf")
+```
+
+```{r table_top10}
+top10 <- report$top10
+top10$pos_share <- round(top10$pos_share, 3)
+top10$delta_l2 <- round(top10$delta_l2, 3)
+top10$delta_dim1 <- round(top10$delta_dim1, 3)
+top10$delta_dim2 <- round(top10$delta_dim2, 3)
+top10 <- top10[, c("country_code", "delta_l2", "delta_dim1", "delta_dim2", "n_pos", "n_neg", "pos_share")]
+knitr::kable(
+  top10,
+  caption = "Tabela 2 — Países com maior mudança entre os snapshots 4500 → 5000 (investment)."
+)
+```
+
+## Interpretação breve
+
+1. O ganho de log-verossimilhança (`loglik_delta`) diminui progressivamente, indicando redução do ganho marginal a partir de ~2500 iterações.  
+2. O `p95_abs_mean` também cai com as iterações e fica em torno de 0.10 entre 4500 → 5000, sugerindo maior estabilidade prática dos ideal points médios, mas ainda ligeiramente acima do threshold estrito.  
+3. As mudanças entre 4500 → 5000 são pequenas e concentradas em deslocamentos de baixa magnitude, o que indica estabilização gradual, embora o critério formal de convergência ainda não seja atingido.
