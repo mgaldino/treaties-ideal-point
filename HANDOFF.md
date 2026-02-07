@@ -101,6 +101,7 @@ Date: 2026-02-01
 ## Notes
 - Schema is considered current but revisable.
 - Event types vary by source (e.g., signature/entry_into_force; alliance_*).
+- 2026-02-07: Added `scripts/R/export_validation_data.R` and `scripts/python/dynIRT_KD_codex/` (dynIRT_KD Python implementation + validation). R export and Python validation PASS using `/usr/bin/python3`.
 
 ## Phase 0 — WTO Accession Data (Completed)
 - Date: 2026-02-01 15:27
@@ -1064,3 +1065,13 @@ Date: 2026-02-01
 ## 2026-02-06 — Docs update
 
 - `docs/estimation_plan_2d.md` is now versioned in git (previously ignored).
+
+## 2026-02-07 Rcpp optimization (Codex)
+- Added plan: `docs/rcpp_codex_plan.md`.
+- Added Rcpp implementations: `scripts/R/rcpp_codex/da_step_rcpp.cpp`, `scripts/R/rcpp_codex/m_step_rcpp.cpp`.
+- Added wrapper + build helpers: `scripts/R/rcpp_codex/dynIRT_KD_rcpp.R`, `scripts/R/rcpp_codex/Makevars`.
+- Added scripts: `scripts/R/rcpp_codex/profile.R`, `scripts/R/rcpp_codex/validate.R`, `scripts/R/rcpp_codex/benchmark.R`.
+- Profiling (Rprof) output: `outputs/rcpp_codex_profile_summary.rds`, log `logs/rcpp_codex_profile.log`.
+- Validation: R vs Rcpp max diff <= 1e-15; tests passed (see `scripts/R/rcpp_codex/validate.R`).
+- Benchmark results saved: `outputs/rcpp_codex_benchmark.rds`, log `logs/rcpp_codex_benchmark.log`.
+- Build diagnostics recorded: `logs/rcpp_codex_validate_error.log`.

@@ -6,6 +6,7 @@ It supports optional basic authentication via env vars WITS_USER/WITS_PASS.
 
 Example:
   python3 scripts/python/acquire_wits_tariffs.py --reporter-iso3 BRA --year 1990
+  python3 scripts/python/run_with_env.py -- python3 scripts/python/acquire_wits_tariffs.py --reporter-iso3 BRA --year 1990
 """
 from __future__ import annotations
 
