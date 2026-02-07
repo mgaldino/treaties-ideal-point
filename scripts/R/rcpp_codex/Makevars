@@ -1,0 +1,1 @@
+FLIBS = -L/opt/homebrew/opt/gcc/lib/gcc/current -L/opt/homebrew/opt/gcc/lib/gcc/current/gcc/aarch64-apple-darwin23/15 -lgfortran -lemutls_w -lquadmath
