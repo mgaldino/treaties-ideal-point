@@ -43,9 +43,6 @@ vignettes/*.pdf
 # Local secrets
 .env
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
