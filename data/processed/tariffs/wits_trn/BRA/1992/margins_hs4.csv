@@ -1,8 +1,0 @@
-reporter_iso3,year,partner_code,partner_iso3,partner_name,partner_is_group,partner_group_type,hs4_code,applied_tariff,applied_lines,mapping_missing_share.x,mfn_tariff,mfn_lines,mapping_missing_share.y,preferential_margin,is_preferential,negative_margin,hs_level,source
-BRA,1992,N32,N32,LAIA (ALADI),Yes,Beneficiaries,3823,0,1,0,0,4,0,0,0,0,HS4,WITS/TRAINS
-BRA,1992,N32,N32,LAIA (ALADI),Yes,Beneficiaries,9701,1,2,0,25.625,2,0,24.625,1,0,HS4,WITS/TRAINS
-BRA,1992,N32,N32,LAIA (ALADI),Yes,Beneficiaries,9702,1,1,0,10,1,0,9,1,0,HS4,WITS/TRAINS
-BRA,1992,N32,N32,LAIA (ALADI),Yes,Beneficiaries,9703,1,1,0,10,1,0,9,1,0,HS4,WITS/TRAINS
-BRA,1992,N32,N32,LAIA (ALADI),Yes,Beneficiaries,9704,1,1,0,10,1,0,9,1,0,HS4,WITS/TRAINS
-BRA,1992,N32,N32,LAIA (ALADI),Yes,Beneficiaries,9705,1,1,0,10,1,0,9,1,0,HS4,WITS/TRAINS
-BRA,1992,N32,N32,LAIA (ALADI),Yes,Beneficiaries,9706,1,1,0,10,1,0,9,1,0,HS4,WITS/TRAINS

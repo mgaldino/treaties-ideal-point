@@ -43,6 +43,9 @@ vignettes/*.pdf
 # Local secrets
 .env
 
+# Data (raw/processed)
+data/
+
 # translation temp files
 po/*~
 
