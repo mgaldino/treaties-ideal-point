@@ -1,0 +1,137 @@
+V7 Validation Report: UNGA + V-Dem (All Domains)
+Generated: 2026-02-08 18:54:23
+
+Domains: arms_control, environment, human_rights, intellectual_property, investment, security
+UNGA source: data/processed/unga_ideal_points_period.csv
+V-Dem available: NO
+V-Dem source attempt: unavailable
+Period mapping: 1=1990-1994, 2=1995-1999, 3=2000-2004, 4=2005-2009, 5=2010-2014, 6=2015-2018, 0=overall
+
+Key Findings
+- dim1 vs UNGA (overall): median r = 0.382
+- Strong UNGA alignment (|r|>0.3): arms_control, environment, intellectual_property, security
+- Not strong (|r|<=0.3 or NA): human_rights, investment
+
+UNGA Correlations (Overall, Sorted by |r_unga_dim1|)
+# A tibble: 6 x 4
+  domain                r_unga_dim1 r_unga_dim2     n
+  <chr>                       <dbl>       <dbl> <int>
+1 environment                0.525       0.321   1124
+2 intellectual_property      0.516      -0.449   1041
+3 security                   0.432      -0.126    969
+4 arms_control               0.332       0.326   1118
+5 human_rights              -0.157      -0.250   1130
+6 investment                 0.0935     -0.0463  1013
+- UNGA vs V-Dem comparison: skipped (V-Dem not available).
+
+Temporal Trends (V7 dim1)
+Interpretation: +delta_mean_dim1 implies increasing average dim1; +delta_sd_dim1 implies increasing dispersion/polarization.
+# A tibble: 6 x 5
+  domain             delta_mean_dim1 slope_mean_dim1 delta_sd_dim1 slope_sd_dim1
+  <chr>                        <dbl>           <dbl>         <dbl>         <dbl>
+1 arms_control                0.0789         0.0156        -0.517       -0.0788 
+2 environment                -0.117         -0.0211         0.581        0.114  
+3 human_rights                0.0123         0.00338        0.133        0.0292 
+4 intellectual_prop~          0.0218         0.00226       -0.0315       0.00173
+5 investment                  0.489          0.0926         0.319        0.0604 
+6 security                    0.183          0.0293         0.212        0.0434 
+
+Data Issues / Diagnostics
+- None detected at merge level (V7 x UNGA).
+# A tibble: 6 x 2
+  domain                min_n
+  <chr>                 <int>
+1 security                157
+2 investment              164
+3 intellectual_property   168
+4 arms_control            180
+5 environment             181
+6 human_rights            182
+
+Full Correlation Table (domain x period)
+# A tibble: 42 x 7
+   domain           period r_unga_dim1 r_vdem_dim1 r_unga_dim2 r_vdem_dim2     n
+   <chr>             <int>       <dbl>       <dbl>       <dbl>       <dbl> <int>
+ 1 arms_control          0      0.332           NA     0.326            NA  1118
+ 2 arms_control          1      0.469           NA    -0.0585           NA   181
+ 3 arms_control          2      0.308           NA     0.425            NA   180
+ 4 arms_control          3      0.320           NA     0.380            NA   188
+ 5 arms_control          4      0.330           NA     0.409            NA   189
+ 6 arms_control          5      0.296           NA     0.420            NA   190
+ 7 arms_control          6      0.292           NA     0.422            NA   190
+ 8 environment           0      0.525           NA     0.321            NA  1124
+ 9 environment           1      0.583           NA     0.336            NA   182
+10 environment           2      0.551           NA     0.366            NA   181
+11 environment           3      0.536           NA     0.292            NA   189
+12 environment           4      0.495           NA     0.321            NA   190
+13 environment           5      0.492           NA     0.319            NA   191
+14 environment           6      0.531           NA     0.301            NA   191
+15 human_rights          0     -0.157           NA    -0.250            NA  1130
+16 human_rights          1     -0.175           NA    -0.283            NA   183
+17 human_rights          2     -0.179           NA    -0.298            NA   182
+18 human_rights          3     -0.151           NA    -0.245            NA   190
+19 human_rights          4     -0.146           NA    -0.236            NA   191
+20 human_rights          5     -0.124           NA    -0.217            NA   192
+21 human_rights          6     -0.174           NA    -0.243            NA   192
+22 intellectual_pr~      0      0.516           NA    -0.449            NA  1041
+23 intellectual_pr~      1      0.474           NA    -0.416            NA   170
+24 intellectual_pr~      2      0.534           NA    -0.453            NA   168
+25 intellectual_pr~      3      0.518           NA    -0.444            NA   175
+26 intellectual_pr~      4      0.526           NA    -0.469            NA   176
+27 intellectual_pr~      5      0.530           NA    -0.467            NA   176
+28 intellectual_pr~      6      0.541           NA    -0.457            NA   176
+29 investment            0      0.0935          NA    -0.0463           NA  1013
+30 investment            1      0.135           NA    -0.00558          NA   164
+31 investment            2      0.122           NA    -0.00750          NA   164
+32 investment            3      0.0954          NA    -0.0430           NA   170
+33 investment            4      0.109           NA    -0.0623           NA   171
+34 investment            5      0.0807          NA    -0.0578           NA   172
+35 investment            6      0.0655          NA    -0.0561           NA   172
+36 security              0      0.432           NA    -0.126            NA   969
+37 security              1      0.378           NA     0.0213           NA   159
+38 security              2      0.390           NA    -0.0994           NA   157
+39 security              3      0.445           NA    -0.186            NA   162
+40 security              4      0.470           NA    -0.151            NA   163
+41 security              5      0.459           NA    -0.129            NA   164
+42 security              6      0.487           NA    -0.158            NA   164
+
+Aggregate Trends (domain x period)
+# A tibble: 36 x 8
+   domain      period period_label mean_dim1 sd_dim1 skew_dim1 mean_dim2 sd_dim2
+   <chr>        <int> <chr>            <dbl>   <dbl>     <dbl>     <dbl>   <dbl>
+ 1 arms_contr~      1 1990-1994     -0.0739    0.881    0.601   0.119      0.988
+ 2 arms_contr~      2 1995-1999     -0.0446    0.418    0.257   0.0599     0.827
+ 3 arms_contr~      3 2000-2004     -0.00651   0.362    0.137   0.00630    0.878
+ 4 arms_contr~      4 2005-2009     -0.00272   0.358   -0.0343  0.00298    0.928
+ 5 arms_contr~      5 2010-2014      0.00398   0.362   -0.118  -0.000963   0.971
+ 6 arms_contr~      6 2015-2018      0.00499   0.364   -0.157   0.00217    0.981
+ 7 environment      1 1990-1994     -0.534     1.59     0.771  -0.865      1.81 
+ 8 environment      2 1995-1999     -0.580     1.76     0.564  -0.964      1.96 
+ 9 environment      3 2000-2004     -0.595     1.86     0.432  -1.05       2.09 
+10 environment      4 2005-2009     -0.574     1.94     0.383  -1.11       2.20 
+11 environment      5 2010-2014     -0.640     2.09     0.286  -1.14       2.30 
+12 environment      6 2015-2018     -0.651     2.17     0.266  -1.16       2.35 
+13 human_righ~      1 1990-1994      0.0338    0.711   -0.146   0.00911    0.723
+14 human_righ~      2 1995-1999      0.0297    0.730   -0.249   0.0415     0.761
+15 human_righ~      3 2000-2004      0.0402    0.778   -0.222   0.0452     0.828
+16 human_righ~      4 2005-2009      0.0444    0.818   -0.232   0.0360     0.879
+17 human_righ~      5 2010-2014      0.0473    0.836   -0.240   0.0398     0.909
+18 human_righ~      6 2015-2018      0.0460    0.844   -0.230   0.0382     0.918
+19 intellectu~      1 1990-1994     -0.0301    0.829    0.142  -0.0783     0.809
+20 intellectu~      2 1995-1999     -0.00211   0.738    0.350  -0.00461    0.668
+21 intellectu~      3 2000-2004      0.00584   0.746    0.423  -0.0106     0.676
+22 intellectu~      4 2005-2009     -0.00614   0.787    0.319  -0.00292    0.698
+23 intellectu~      5 2010-2014     -0.00810   0.797    0.329   0.00508    0.707
+24 intellectu~      6 2015-2018     -0.00826   0.798    0.325  -0.00384    0.724
+25 investment       1 1990-1994      0.978     1.72    -1.36    1.47       1.97 
+26 investment       2 1995-1999      1.21      1.88    -1.56    1.75       2.04 
+27 investment       3 2000-2004      1.44      1.93    -1.95    2.08       2.05 
+28 investment       4 2005-2009      1.46      1.99    -1.96    2.16       2.11 
+29 investment       5 2010-2014      1.47      2.03    -1.97    2.20       2.14 
+30 investment       6 2015-2018      1.47      2.04    -1.98    2.22       2.15 
+31 security         1 1990-1994      0.710     1.61    -0.702   0.595      1.13 
+32 security         2 1995-1999      0.861     1.67    -0.887   0.799      1.27 
+33 security         3 2000-2004      0.857     1.77    -0.828   1.02       1.43 
+34 security         4 2005-2009      0.885     1.80    -0.858   1.04       1.46 
+35 security         5 2010-2014      0.890     1.82    -0.914   1.04       1.48 
+36 security         6 2015-2018      0.892     1.82    -0.961   1.04       1.48 

@@ -720,17 +720,20 @@ Date: 2026-02-01
 - Notes:
   - EU (`EUN`) remains excluded per user decision.
 
-## Phase 4 — WITS Non-G20 Priority Batch (Proposed, Pending Approval)
-- Date: 2026-02-06
-- Status: PENDING (user asked to choose countries; execution planned for tomorrow)
-- Scope: 1990–2022, sequential only
-- Proposed batch 1 (next run):
-  - `SGP`, `THA`, `VNM`
-- Proposed backlog (next batches, in order):
-  - `CHL`, `COL`, `PER`
-  - `EGY`, `MAR`, `NGA`
-  - `CHE`, `NOR`, `NZL`
-  - `ISR`, `ARE`, `MYS`
+## Phase 4 — WITS Non-G20 Batch 1 (APPROVED — Dispatch Ready)
+- Date: 2026-02-08
+- Status: APPROVED (dispatch prompt written; awaiting Gemini execution)
+- Scope: 1990–2022, one Gemini agent per country
+- **Batch 1 (10 countries)**:
+  - `SGP`, `THA`, `VNM` (SE Asia)
+  - `CHL`, `COL`, `PER` (Latin America)
+  - `EGY` (MENA)
+  - `CHE`, `NOR`, `NZL` (Europe/Oceania)
+- Dispatch prompt: `docs/tariff_non_g20_dispatch.md`
+- Pipeline per country: acquire → parse → HS map → margins → consolidate
+- Remaining backlog (future batches):
+  - `MAR`, `NGA` (Africa)
+  - `ISR`, `ARE`, `MYS` (Asia/MENA)
 - Notes:
   - EU reporters remain excluded for now.
   - No further G20 non-EU reporters remain.
@@ -1075,3 +1078,64 @@ Date: 2026-02-01
 - Validation: R vs Rcpp max diff <= 1e-15; tests passed (see `scripts/R/rcpp_codex/validate.R`).
 - Benchmark results saved: `outputs/rcpp_codex_benchmark.rds`, log `logs/rcpp_codex_benchmark.log`.
 - Build diagnostics recorded: `logs/rcpp_codex_validate_error.log`.
+
+## 2026-02-08 V6 Security item-anchors + relatório substantivo
+- Ran `scripts/R/v6_security_item_anchors.R` (item-anchored security). Output: `outputs/v6_item_anchors/security_results.rds`. Logs: `logs/v6_security_item_20260208T130906Z.log` (conclusão) e `logs/v6_security_item_20260208T130746Z.log` (header).
+- Generated substantive report `outputs/v6_substantive_report.md` via `scripts/R/07_v6_substantive_report.R`.
+- Generated treaty list by issue-area `outputs/treaties_by_issue_area.md` via `scripts/R/06_treaties_by_issue_area_report.R`.
+- Generated short substantive report `outputs/v6_substantive_report_short.md` and figures `outputs/fig_v6_investment_trends.png`, `outputs/fig_v6_security_trends.png` via `scripts/R/08_v6_substantive_report_short.R`.
+- Added reflections document on predictors and interpretation strategy: `docs/ilo_predictors_reflections.md` (linked in `README.md`).
+
+## 2026-02-08 V7 Block A — Complete Estimation + Validation (Completed)
+- Date: 2026-02-08
+- Status: COMPLETE
+- Full summary: `outputs/v7_block_a_summary.md`
+- Agent dispatch guide: `docs/agent_dispatch_guide.md`
+- Block A plan: `docs/block_a_plan.md`
+- Prompts: `docs/prompts/{v7_estimation_template,stock_coding_phase1,stock_estimation_template,flow_vs_stock_comparison,validation_unga_vdem}.md`
+
+### Wave 1a — V7 Flow Estimation (6 domains)
+- All 6 converged (17-24 iters, 0.6-2.3s each, Rcpp)
+- V7 anchors: dim1=ILO support, dim2=confounder separation
+  - investment: DNK(+2,0), IRN(-2,0), CHN(0,-2)
+  - security: DNK(+2,0), IRN(-2,0), UKR(0,-2)
+  - environment: DNK(+2,0), SAU(-2,0), AUS(0,-2)
+  - human_rights: DNK(+2,0), PRK(-2,0), USA(0,-2)
+  - arms_control: NZL(+2,0), ISR(-2,0), IND(0,-2)
+  - intellectual_property: DNK(+2,0), AGO(-2,0), BRA(0,-2)
+- Outputs: `outputs/v7_country_anchors/`, `outputs/v7_item_anchors/`, `outputs/v7_comparison/`
+- Scripts: `scripts/R/v7_{domain}_{country_anchors,item_anchors,compare}.R`
+
+### Wave 1b — Stock Coding + Estimation (6 domains)
+- Stock matrices: `data/processed/{domain}_stock_matrix.rds`
+- Investment stock = flow (ratio 1.0, all single-period treaties)
+- Other ratios: security 1.2x, environment 2.8x, HR 2.8x, arms_control 3.5x, IP 2.9x
+- All 6 converged (16-23 iters, 0.6-2.3s each)
+- Outputs: `outputs/v7_stock_country_anchors/`
+- Scripts: `scripts/R/build_stock_matrices.R`, `scripts/R/v7_stock_{domain}.R`
+
+### Wave 2a — Flow vs Stock Comparison
+- Script: `scripts/R/v7_flow_vs_stock_compare.R`
+- Outputs: `outputs/v7_flow_vs_stock/{comparison_table.csv,comparison_report.txt,top_discrepant_countries.csv}`
+- **KEY FINDING**: Activity bias is real and substantive
+  - Robust (r > 0.9): environment, investment
+  - Sensitive (r < 0.8): arms_control, human_rights, IP, security
+  - 4/6 domains show reversed temporal trends between flow and stock coding
+  - This means "erosion" findings depend on coding choice for most domains
+
+### Wave 2b — UNGA Validation
+- Script: `scripts/R/v7_validation.R`
+- Outputs: `outputs/v7_validation/{correlation_table.csv,aggregate_trends.csv,validation_report.txt}`
+- UNGA alignment (overall r_dim1): environment (0.53), IP (0.52), security (0.43), arms_control (0.33)
+- Weak: human_rights (-0.16), investment (0.09)
+- V-Dem: unavailable (network issues); pending manual download
+
+## Next Steps — Priority Order
+
+1. **V-Dem validation** — download V-Dem data manually, re-run `scripts/R/v7_validation.R`
+2. **R2: Alternative country anchors** — 2+ anchor pairs per domain, check stability
+3. **R4: omega2 sensitivity** — vary evolution variance parameter
+4. **R3: Item anchor sensitivity** — constrain anchor item betas
+5. **Trade continuous IRT** — continuous-response IRT on tariff data (WITS/TRAINS), data acquisition mostly done
+6. **R5: 3-year temporal windows** — MEDIUM priority
+7. **WITS Non-G20 Batch 1** — 10 countries dispatched, results pending check

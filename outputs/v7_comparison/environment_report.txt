@@ -1,0 +1,60 @@
+V7 Comparison Report: environment
+Generated: 2026-02-08 17:44:49 UTC
+
+Inputs:
+A (country anchors): outputs/v7_country_anchors/environment_results.rds
+B (item anchors):   outputs/v7_item_anchors/environment_results.rds
+
+Part A runtime:
+iters=17 conv=1 seconds=1.5
+
+Part B runtime:
+iters=450 conv=1 seconds=30.0
+
+Part B anchor items (selected from Part A betas):
+items: 27, 658, 1685
+labels: ieadb_3098__1990-1994 | ieadb_4681__2000-2004 | ieadb_4641__2015-2018
+fixed alpha:
+[1] -0.1086318 -2.0522225  1.7870294
+fixed betas:
+             [,1]        [,2]
+[1,]  1.030977447  0.00149102
+[2,] -0.003092464 -0.29657936
+[3,]  1.084247346  1.61331095
+
+Ideal point correlations (A vs B) over 206 common countries:
+dim1 vs dim1: r=0.7028 | sign-invariant=0.7028
+dim2 vs dim2: r=0.4197 | sign-invariant=0.4197
+
+Cross-dimension correlations (rotation check):
+dim1_A vs dim2_B: r=0.7028
+dim2_A vs dim1_B: r=0.4197
+
+Item parameter correlations:
+alpha: r=0.8681
+beta_dim1: r=0.7496
+beta_dim2: r=0.6375
+
+Top-5 / Bottom-5 countries in Part A (country anchors):
+dim1 top: DEU, FRA, NLD, SWE, ESP
+dim1 bottom: CUW, ABW, GUF, TWN, VGB
+dim2 top: DEU, MKD, LUX, LIE, NLD
+dim2 bottom: VUT, PAN, KOR, CHN, USA
+
+Aggregate trends (Part A):
+  period  mean_dim1  sd_dim1  mean_dim2  sd_dim2 period_label
+1      1 -0.5342124 1.585170 -0.8649498 1.806273    1990-1994
+2      2 -0.5804574 1.755569 -0.9636324 1.959753    1995-1999
+3      3 -0.5947201 1.863843 -1.0472799 2.088835    2000-2004
+4      4 -0.5737818 1.942257 -1.1149089 2.198958    2005-2009
+5      5 -0.6395980 2.091218 -1.1448390 2.296742    2010-2014
+6      6 -0.6507286 2.166110 -1.1621803 2.349205    2015-2018
+
+Aggregate trends (Part B):
+  period  mean_dim1  sd_dim1   mean_dim2  sd_dim2 period_label
+1      1 -0.4398128 1.407543 -0.03678660 1.201924    1990-1994
+2      2 -0.5412356 1.612157 -0.03220916 1.284789    1995-1999
+3      3 -0.6464302 1.825592 -0.04261675 1.322984    2000-2004
+4      4 -0.6826841 1.948698 -0.02856710 1.343241    2005-2009
+5      5 -0.7640575 2.099164 -0.02616757 1.406125    2010-2014
+6      6 -0.7783097 2.167561 -0.02626584 1.464912    2015-2018

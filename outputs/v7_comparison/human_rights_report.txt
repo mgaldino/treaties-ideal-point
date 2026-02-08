@@ -1,0 +1,55 @@
+V7 Comparison Report: human_rights
+Generated: 2026-02-08 17:30:15 (UTC)
+
+== Part A (Country anchors) ==
+Converged: 1 | Iters: 14 | Seconds: 0.5
+Anchors: DNK, PRK, USA
+
+== Part B (Item anchors) ==
+Converged: 1 | Iters: 56 | Seconds: 2.3
+Anchor items (idx): 22, 20, 6
+Anchor items (labels): unhr_crc_op_sc__2010-2014, unhr_crc_op_ac__2010-2014, unhr_crc_op_ac__2000-2004
+Anchor item fixed betas (from Part A):
+item	beta1	beta2	alpha
+unhr_crc_op_sc__2010-2014	-0.5326	-0.615	1.127
+unhr_crc_op_ac__2010-2014	-0.479	-0.6651	0.7329
+unhr_crc_op_ac__2000-2004	-0.4738	-0.5035	-0.0494
+
+== Ideal Points Correlations (A vs B) ==
+dim1: r = 0.9790 | max sign-flip |r| = 0.9790
+dim2: r = 0.9790 | max sign-flip |r| = 0.9790
+cross (dim1_A vs dim2_B): r = 0.9790
+cross (dim2_A vs dim1_B): r = 0.9790
+
+== Item Parameter Correlations (A vs B) ==
+alpha: r = 0.9980
+beta dim1: r = 0.9817
+beta dim2: r = 0.9824
+beta (all entries): r = 0.9808
+
+== Country-Anchor Ranking (Part A) ==
+-- Dim1 top-5 --
+STP	1.60981035046606
+NIU	1.564378227316
+TON	1.564378227316
+SOM	1.56084094477298
+FJI	1.55536395783521
+-- Dim1 bottom-5 --
+URY	-1.5766761338789
+CRI	-1.58641917661278
+ECU	-1.65640946866166
+ESP	-1.67410945037755
+BOL	-1.8764827602652
+
+-- Dim2 top-5 --
+STP	1.60981035046606
+NIU	1.564378227316
+TON	1.564378227316
+SOM	1.56084094477298
+FJI	1.55536395783521
+-- Dim2 bottom-5 --
+URY	-1.5766761338789
+CRI	-1.58641917661278
+ECU	-1.65640946866166
+ESP	-1.67410945037755
+BOL	-1.8764827602652

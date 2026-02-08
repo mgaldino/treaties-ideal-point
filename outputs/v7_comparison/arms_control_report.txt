@@ -1,0 +1,62 @@
+V7 Comparison Report | arms_control
+Generated (local time): 2026-02-08 14:30:17
+
+Inputs:
+  A (country anchors): outputs/v7_country_anchors/arms_control_results.rds
+  B (item anchors):    outputs/v7_item_anchors/arms_control_results.rds
+
+Ideal point correlations (means across active periods):
+  cor(dim1_A, dim1_B) = 0.9005 | abs (sign-flip invariant) = 0.9005
+  cor(dim2_A, dim2_B) = 0.9863 | abs (sign-flip invariant) = 0.9863
+
+Cross-dimension correlations (rotation check):
+  cor(dim1_A, dim2_B) = 0.6513
+  cor(dim2_A, dim1_B) = 0.7325
+
+Item parameter correlations:
+  cor(alpha_A, alpha_B) = 0.9996
+  cor(beta1_A, beta1_B) = 0.8973
+  cor(beta2_A, beta2_B) = 0.9714
+  cor(c(beta_A), c(beta_B)) = 0.9609
+
+Part B anchor items (fixed to Part A values):
+  j=3 | label=arms_cwc__1995-1999 | alpha=0.8350 | beta=(0.1272, 0.0140)
+  j=23 | label=arms_ctbt__2015-2018 | alpha=-0.9455 | beta=(0.0253, 0.2224)
+  j=18 | label=arms_cwc__2010-2014 | alpha=0.2862 | beta=(0.5433, 0.3483)
+
+Top/bottom countries (Part A / country anchors):
+  Dim 1 top 5:
+iso value
+NZL 2.10902458297608
+AUT 0.705353858522185
+SVN 0.612546375772478
+HRV 0.568888202627916
+SVK 0.510494969399699
+  Dim 1 bottom 5:
+iso value
+ISR -2.18252290031201
+AGO -0.721702665332094
+SSD -0.716699890222146
+NIU -0.56975474053022
+DJI -0.504241637376467
+
+  Dim 2 top 5:
+iso value
+MEX 1.78125795766732
+ESP 1.72882059433297
+NOR 1.72882059433297
+AUT 1.63900047166303
+BEL 1.62838196027734
+  Dim 2 bottom 5:
+iso value
+IND -2.08146619422233
+IRN -1.76580270871499
+NPL -1.76580270871499
+PAK -1.76580270871499
+SAU -1.76580270871499
+
+Runtime summary:
+  Part A: conv=1, iters=19, seconds=0.601999999999999
+  Part B: conv=1, iters=6, seconds=0.241000000000001
+
+Saved: outputs/v7_comparison/arms_control_report.txt

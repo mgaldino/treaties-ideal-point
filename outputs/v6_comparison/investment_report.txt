@@ -1,0 +1,20 @@
+
+=== V6 Comparison: investment ===
+Strategy A: Country anchors (DNK/IRN/ESP)
+Strategy B: Item anchors (unctad_/international-investment-agreements/treaties/treaties-with-investment-provisions/3777/ec---ukraine-cooperation-agreement-1994-__1995-1999, unctad_/international-investment-agreements/treaties/bilateral-investment-treaties/2766/philippines---switzerland-bit-1997-__1995-1999, unctad_/international-investment-agreements/treaties/treaties-with-investment-provisions/3185/cotonou-agreement-2000-__2000-2004)
+
+Ideal Point Correlations (A vs B):
+  Dim1: r = 0.5990
+  Dim2: r = 0.4638
+
+Item Parameter Correlations:
+  Alpha: r = 0.3737
+  Beta1: r = 0.8104
+  Beta2: r = 0.7572
+
+Runtime:
+  A: 2.3s (21 iters, conv=1)
+  B: 35.3s (400 iters, conv=1)
+
+N valid countries: 203 / 203
+

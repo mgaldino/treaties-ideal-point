@@ -76,6 +76,7 @@ python3 scripts/python/run_with_env.py -- python3 scripts/python/acquire_wits_ta
 - `docs/research_design_notes.md` — threats to credibility, agreed robustness checks, and design decisions (systemic-level framing, stock coding, anchor/item sensitivity, temporal resolution)
 - `docs/source_registry.md` — all data sources with URLs and coverage
 - `docs/data_dictionary.md` — raw and processed data schemas
+- `docs/ilo_predictors_reflections.md` — reflections on predictors, interpretation risks, and strategy for Dim1 as ILO support
 
 ## Repository structure (planned)
 - data/raw/            # raw downloads, snapshots

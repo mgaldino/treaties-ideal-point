@@ -1,0 +1,50 @@
+=== V7 Comparison: security ===
+Strategy A: Country anchors (DNK/IRN/UKR)
+Strategy B: Item anchors (atop_4675_consul__1995-1999, atop_4905_consul__1995-1999, atop_4953_nonagg__2000-2004)
+
+Ideal Point Correlations (A vs B):
+  Dim1: r_raw = 0.7822 | sign(B1) = +1 | r_aligned = 0.7822
+  Dim2: r_raw = 0.7826 | sign(B2) = +1 | r_aligned = 0.7826
+
+Cross-Dimension Correlations (rotation checks; B aligned by signs above):
+  cor(dim1_A, dim2_B) = 0.7831
+  cor(dim2_A, dim1_B) = 0.7816
+
+Item Parameter Correlations:
+  Alpha: r = -0.0826
+  Beta1: r_raw = 0.9311 | r_aligned = 0.9311
+  Beta2: r_raw = 0.8777 | r_aligned = 0.8777
+  Beta(all dims, aligned): r = 0.9010
+
+Runtime:
+  A: 1.2s (24 iters, conv=1)
+  B: 16.0s (400 iters, conv=1)
+
+N valid countries (complete cases in x_mean): 164 / 164
+
+Top/Bottom Countries (Strategy A, mean ideal points):
+  Dim1 top-5:
+    ESP	3.9898
+    ITA	3.0005
+    HUN	2.9768
+    DEU	2.9146
+    COD	2.9118
+  Dim1 bottom-5:
+    BLR	-2.3214
+    KGZ	-2.4353
+    RUS	-3.0222
+    KAZ	-3.1323
+    UZB	-3.8533
+  Dim2 top-5:
+    ESP	3.9898
+    ITA	3.0005
+    HUN	2.9768
+    DEU	2.9146
+    COD	2.9118
+  Dim2 bottom-5:
+    BLR	-2.3214
+    KGZ	-2.4353
+    RUS	-3.0222
+    KAZ	-3.1323
+    UZB	-3.8533
+

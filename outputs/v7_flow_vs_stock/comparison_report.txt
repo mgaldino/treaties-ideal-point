@@ -1,0 +1,183 @@
+Flow vs Stock Coding Comparison (v7)
+Generated: 2026-02-08 18:52:42
+
+Note on identification/alignment:
+- Ideal-point dimensions can flip sign or rotate across independent estimations.
+- For each domain, I aligned STOCK ideal points to FLOW using an orthogonal Procrustes rotation on country mean 2D ideal points.
+- All correlations, trend checks, and discrepancy rankings below use the aligned STOCK coordinates.
+
+Full Comparison Table (domain x period):
+
+                                       domain    period r_dim1 r_dim2
+arms_control.1                   arms_control 1990-1994 -0.171  0.098
+arms_control.2                   arms_control 1995-1999  0.349  0.832
+arms_control.3                   arms_control 2000-2004  0.528  0.956
+arms_control.4                   arms_control 2005-2009  0.549  0.965
+arms_control.5                   arms_control 2010-2014  0.557  0.967
+arms_control.6                   arms_control 2015-2018  0.550  0.965
+environment.1                     environment 1990-1994  0.993  0.978
+environment.2                     environment 1995-1999  0.992  0.977
+environment.3                     environment 2000-2004  0.986  0.974
+environment.4                     environment 2005-2009  0.977  0.966
+environment.5                     environment 2010-2014  0.968  0.967
+environment.6                     environment 2015-2018  0.960  0.962
+human_rights.1                   human_rights 1990-1994 -0.443  0.806
+human_rights.2                   human_rights 1995-1999 -0.368  0.926
+human_rights.3                   human_rights 2000-2004 -0.382  0.926
+human_rights.4                   human_rights 2005-2009 -0.399  0.925
+human_rights.5                   human_rights 2010-2014 -0.415  0.922
+human_rights.6                   human_rights 2015-2018 -0.423  0.919
+intellectual_property.1 intellectual_property 1990-1994  0.353  0.273
+intellectual_property.2 intellectual_property 1995-1999  0.620  0.664
+intellectual_property.3 intellectual_property 2000-2004  0.794  0.855
+intellectual_property.4 intellectual_property 2005-2009  0.832  0.856
+intellectual_property.5 intellectual_property 2010-2014  0.842  0.863
+intellectual_property.6 intellectual_property 2015-2018  0.838  0.842
+investment.1                       investment 1990-1994  1.000  1.000
+investment.2                       investment 1995-1999  1.000  1.000
+investment.3                       investment 2000-2004  1.000  1.000
+investment.4                       investment 2005-2009  1.000  1.000
+investment.5                       investment 2010-2014  1.000  1.000
+investment.6                       investment 2015-2018  1.000  1.000
+security.1                           security 1990-1994  0.675  0.538
+security.2                           security 1995-1999  0.683  0.588
+security.3                           security 2000-2004  0.721  0.595
+security.4                           security 2005-2009  0.724  0.601
+security.5                           security 2010-2014  0.717  0.599
+security.6                           security 2015-2018  0.711  0.595
+                        mean_dim1_flow mean_dim1_stock delta_mean
+arms_control.1                  -0.074           0.070     -0.144
+arms_control.2                  -0.045           0.035     -0.079
+arms_control.3                  -0.007          -0.005     -0.002
+arms_control.4                  -0.003          -0.008      0.005
+arms_control.5                   0.004          -0.023      0.027
+arms_control.6                   0.005          -0.026      0.031
+environment.1                   -0.534          -0.547      0.013
+environment.2                   -0.580          -0.575     -0.005
+environment.3                   -0.595          -0.533     -0.062
+environment.4                   -0.574          -0.400     -0.174
+environment.5                   -0.640          -0.338     -0.301
+environment.6                   -0.651          -0.286     -0.365
+human_rights.1                   0.034          -0.044      0.078
+human_rights.2                   0.030           0.010      0.019
+human_rights.3                   0.040           0.003      0.037
+human_rights.4                   0.044           0.005      0.039
+human_rights.5                   0.047           0.006      0.042
+human_rights.6                   0.046           0.007      0.039
+intellectual_property.1         -0.030           0.060     -0.090
+intellectual_property.2         -0.002           0.016     -0.018
+intellectual_property.3          0.006          -0.003      0.009
+intellectual_property.4         -0.006          -0.009      0.002
+intellectual_property.5         -0.008          -0.031      0.023
+intellectual_property.6         -0.008          -0.032      0.023
+investment.1                     0.978           0.978      0.000
+investment.2                     1.208           1.208      0.000
+investment.3                     1.435           1.435      0.000
+investment.4                     1.457           1.457      0.000
+investment.5                     1.465           1.465      0.000
+investment.6                     1.467           1.467      0.000
+security.1                       0.710          -0.237      0.947
+security.2                       0.861          -0.222      1.083
+security.3                       0.857          -0.425      1.282
+security.4                       0.885          -0.415      1.301
+security.5                       0.890          -0.421      1.310
+security.6                       0.892          -0.417      1.310
+
+Domain-Level Diagnostics:
+
+                                     domain min_r_dim1 mean_r_dim1
+arms_control                   arms_control     -0.171       0.393
+environment                     environment      0.960       0.979
+human_rights                   human_rights     -0.443      -0.405
+intellectual_property intellectual_property      0.353       0.713
+investment                       investment      1.000       1.000
+security                           security      0.675       0.705
+                      overall_r_dim1_mean overall_r_dim2_mean trend_cor
+arms_control                        0.555               0.958    -0.996
+environment                         0.984               0.973    -0.788
+human_rights                        0.481               0.481     0.378
+intellectual_property               0.822               0.834    -0.619
+investment                          1.000               1.000     1.000
+security                            0.809               0.813    -0.667
+                      any_adjacent_direction_mismatch
+arms_control                                     TRUE
+environment                                      TRUE
+human_rights                                     TRUE
+intellectual_property                            TRUE
+investment                                      FALSE
+security                                         TRUE
+                      overall_direction_mismatch
+arms_control                                TRUE
+environment                                 TRUE
+human_rights                               FALSE
+intellectual_property                       TRUE
+investment                                 FALSE
+security                                    TRUE
+
+Interpretation (per guide):
+
+- If r > 0.9: coding choice has minimal impact.
+- If r < 0.8: flag domain and inspect which countries/periods diverge.
+- If temporal trends differ in direction: CRITICAL (erosion finding may depend on coding choice).
+
+Robust domains (min per-period r_dim1 > 0.9): environment, investment
+Sensitive domains (any per-period r_dim1 < 0.8 OR overall mean r_dim1 < 0.8): arms_control, human_rights, intellectual_property, security
+
+Temporal Trend Agreement (mean dim1 by period):
+- arms_control: trend_cor=-0.996, adjacent_dir_mismatch=YES, overall_dir_mismatch=YES
+- environment: trend_cor=-0.788, adjacent_dir_mismatch=YES, overall_dir_mismatch=YES
+- human_rights: trend_cor=0.378, adjacent_dir_mismatch=YES, overall_dir_mismatch=no
+- intellectual_property: trend_cor=-0.619, adjacent_dir_mismatch=YES, overall_dir_mismatch=YES
+- investment: trend_cor=1.000, adjacent_dir_mismatch=no, overall_dir_mismatch=no
+- security: trend_cor=-0.667, adjacent_dir_mismatch=YES, overall_dir_mismatch=YES
+
+Top Discrepant Countries (Top 5 by |flow-stock| mean dim1) and likely interpretation:
+
+Domain: arms_control
+  1. EST: flow=0.222 stock=2.893 delta(flow-stock)=-2.670
+  2. FIN: flow=0.222 stock=2.893 delta(flow-stock)=-2.670
+  3. KOR: flow=0.085 stock=2.679 delta(flow-stock)=-2.593
+  4. LTU: flow=0.198 stock=2.606 delta(flow-stock)=-2.408
+  5. LVA: flow=0.336 stock=2.650 delta(flow-stock)=-2.313
+  Why (hypothesis): large discrepancies are consistent with activity bias; stock coding can overweight cumulative participation, shifting early joiners relative to late joiners.
+
+Domain: environment
+  1. SMR: flow=-3.026 stock=-2.040 delta(flow-stock)=-0.986
+  2. GRD: flow=-2.103 stock=-1.172 delta(flow-stock)=-0.932
+  3. PSE: flow=-3.725 stock=-4.631 delta(flow-stock)=0.906
+  4. MCO: flow=0.343 stock=1.241 delta(flow-stock)=-0.898
+  5. AUT: flow=1.197 stock=2.085 delta(flow-stock)=-0.887
+  Why (hypothesis): large discrepancies are consistent with activity bias; stock coding can overweight cumulative participation, shifting early joiners relative to late joiners.
+
+Domain: human_rights
+  1. EGY: flow=0.212 stock=-1.900 delta(flow-stock)=2.112
+  2. ESP: flow=-1.674 stock=0.269 delta(flow-stock)=-1.943
+  3. CRI: flow=-1.586 stock=0.354 delta(flow-stock)=-1.941
+  4. MNE: flow=-1.574 stock=0.251 delta(flow-stock)=-1.825
+  5. PRT: flow=-1.434 stock=0.247 delta(flow-stock)=-1.681
+  Why (hypothesis): large discrepancies are consistent with activity bias; stock coding can overweight cumulative participation, shifting early joiners relative to late joiners.
+
+Domain: intellectual_property
+  1. UZB: flow=-0.160 stock=2.058 delta(flow-stock)=-2.218
+  2. BRA: flow=0.000 stock=1.922 delta(flow-stock)=-1.922
+  3. AGO: flow=-2.014 stock=-0.162 delta(flow-stock)=-1.853
+  4. LIE: flow=1.067 stock=2.828 delta(flow-stock)=-1.761
+  5. EGY: flow=-0.437 stock=1.309 delta(flow-stock)=-1.746
+  Why (hypothesis): large discrepancies are consistent with activity bias; stock coding can overweight cumulative participation, shifting early joiners relative to late joiners.
+
+Domain: investment
+  1. TKM: flow=4.255 stock=4.255 delta(flow-stock)=-0.000
+  2. AGO: flow=2.300 stock=2.300 delta(flow-stock)=-0.000
+  3. AUT: flow=2.326 stock=2.326 delta(flow-stock)=-0.000
+  4. BEL: flow=2.569 stock=2.569 delta(flow-stock)=-0.000
+  5. BHR: flow=2.384 stock=2.384 delta(flow-stock)=-0.000
+  Why (hypothesis): large discrepancies are consistent with activity bias; stock coding can overweight cumulative participation, shifting early joiners relative to late joiners.
+
+Domain: security
+  1. COD: flow=2.912 stock=0.194 delta(flow-stock)=2.718
+  2. AGO: flow=2.511 stock=0.227 delta(flow-stock)=2.283
+  3. RWA: flow=1.570 stock=-0.558 delta(flow-stock)=2.129
+  4. BGR: flow=0.249 stock=2.352 delta(flow-stock)=-2.103
+  5. COG: flow=1.863 stock=-0.063 delta(flow-stock)=1.926
+  Why (hypothesis): large discrepancies are consistent with activity bias; stock coding can overweight cumulative participation, shifting early joiners relative to late joiners.
+

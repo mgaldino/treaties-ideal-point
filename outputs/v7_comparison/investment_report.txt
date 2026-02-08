@@ -1,0 +1,50 @@
+=== V7 Comparison: investment ===
+
+Inputs:
+  A: outputs/v7_country_anchors/investment_results.rds (strategy=country_anchors_v7)
+  B: outputs/v7_item_anchors/investment_results.rds (strategy=item_anchors_v7)
+
+Ideal Point Correlations (A vs B) with sign-flip check:
+  Dim1: r_pos=0.5986, r_neg=-0.5986, max|r|=0.5986
+  Dim2: r_pos=0.4559, r_neg=-0.4559, max|r|=0.4559
+
+Rotation diagnostics (cross-dimension correlations, raw):
+  cor(dim1_A, dim2_B) = 0.5987
+  cor(dim2_A, dim1_B) = 0.4557
+
+Item Parameter Correlations (raw):
+  Alpha: r = 0.3838
+  Beta1: r = 0.8226
+  Beta2: r = 0.7456
+
+Runtime:
+  A: 2.3s (21 iters, conv=1)
+  B: 35.0s (400 iters, conv=1)
+
+N valid countries: 203 / 203
+
+Top-5 countries on Dim1 (A):
+  TKM: 4.2549
+  TUN: 3.0050
+  MTQ: 2.8439
+  ITA: 2.8064
+  SAU: 2.8013
+Bottom-5 countries on Dim1 (A):
+  GEO: -3.7857
+  LBY: -4.1051
+  QAT: -4.1127
+  BRB: -4.1779
+  CUW: -4.3084
+
+Top-5 countries on Dim2 (A):
+  IMN: 5.7935
+  BHR: 5.1569
+  BLR: 5.1260
+  TWN: 5.1202
+  ISR: 5.0932
+Bottom-5 countries on Dim2 (A):
+  SAU: -3.3392
+  GBR: -4.0599
+  KEN: -4.4077
+  ESP: -5.8864
+  TCD: -6.1534

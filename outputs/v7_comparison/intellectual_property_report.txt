@@ -1,0 +1,31 @@
+V7 Comparison Report | domain=intellectual_property
+
+Part A (country anchors):
+  converged=1 | iters=25 | runtime_seconds=0.967
+  anchors=DNK, AGO, BRA
+
+Part B (item anchors):
+  converged=1 | iters=300 | runtime_seconds=8.889
+  anchor_items=8, 21, 11
+  anchor_item_labels=wipo_plt__2005-2009 | wipo_marrakesh__2015-2018 | wipo_wct__2005-2009
+
+Ideal point correlations (A vs B, with per-dimension sign alignment):
+  sign_alignment: dim1_B *= 1, dim2_B *= 1
+  cor(dim1_A, dim1_B_aligned)=0.7265
+  cor(dim2_A, dim2_B_aligned)=-0.5553
+
+Cross-dimension correlations (rotation check):
+  cor(dim1_A, dim2_B_aligned)=0.7160
+  cor(dim2_A, dim1_B_aligned)=-0.5832
+
+Item parameter correlations:
+  cor(alpha_A, alpha_B)=0.9922
+  cor(beta1_A, beta1_B_aligned)=0.9757
+  cor(beta2_A, beta2_B_aligned)=0.9851
+
+Top-5 / Bottom-5 countries (Part A):
+  dim1 top: DNK=2.0711, MDA=1.6962, ROU=1.4814, KGZ=1.4728, LVA=1.4251
+  dim1 bottom: SWZ=-0.8159, TZA=-0.8159, VNM=-0.8159, ZMB=-0.8159, AGO=-2.0144
+  dim2 top: AND=0.7818, BGD=0.7818, BOL=0.7818, BTN=0.7818, CIV=0.7818
+  dim2 bottom: ROU=-1.2565, SVK=-1.2953, KGZ=-1.4328, MDA=-1.6310, BRA=-2.0008
+
