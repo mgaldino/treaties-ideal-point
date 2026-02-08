@@ -1128,11 +1128,14 @@ Date: 2026-02-01
 - Outputs: `outputs/v7_validation/{correlation_table.csv,aggregate_trends.csv,validation_report.txt}`
 - UNGA alignment (overall r_dim1): environment (0.53), IP (0.52), security (0.43), arms_control (0.33)
 - Weak: human_rights (-0.16), investment (0.09)
-- V-Dem: unavailable (network issues); pending manual download
+- V-Dem: `data/raw/vdem/vdem_country_year_v14.rds` in place. Validation re-run completed.
+- V-Dem correlates MORE than UNGA in 3/6 domains (environment 0.68, security 0.52, arms_control 0.43)
+- IP exception: UNGA > V-Dem (0.52 vs 0.46) — geopolitical > regime type
+- Human rights: negative with both UNGA (-0.16) and V-Dem (-0.29)
 
 ## Next Steps — Priority Order
 
-1. **V-Dem validation** — download V-Dem data manually, re-run `scripts/R/v7_validation.R`
+1. ~~**V-Dem validation**~~ — DONE. V-Dem > UNGA in 3/6 domains; UNGA > V-Dem for IP
 2. **R2: Alternative country anchors** — 2+ anchor pairs per domain, check stability
 3. **R4: omega2 sensitivity** — vary evolution variance parameter
 4. **R3: Item anchor sensitivity** — constrain anchor item betas

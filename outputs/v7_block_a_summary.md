@@ -126,23 +126,24 @@ Full comparison report: `outputs/v7_flow_vs_stock/comparison_report.txt`
 
 ## Wave 2b: UNGA Validation
 
-### UNGA Correlation with V7 dim1 (overall)
+### UNGA + V-Dem Correlation with V7 dim1 (overall)
 
-| Domain | r_unga_dim1 | r_unga_dim2 | N matched |
-|--------|-------------|-------------|-----------|
-| environment | 0.525 | 0.321 | 1124 |
-| intellectual_property | 0.516 | -0.449 | 1041 |
-| security | 0.432 | -0.126 | 969 |
-| arms_control | 0.332 | 0.326 | 1118 |
-| human_rights | -0.157 | -0.250 | 1130 |
-| investment | 0.094 | -0.046 | 1013 |
+| Domain | r_unga_dim1 | r_vdem_dim1 | r_unga_dim2 | r_vdem_dim2 | N |
+|--------|-------------|-------------|-------------|-------------|---|
+| environment | 0.525 | **0.678** | 0.321 | 0.104 | 1124 |
+| security | 0.432 | **0.521** | -0.126 | 0.048 | 969 |
+| intellectual_property | **0.516** | 0.464 | -0.449 | -0.359 | 1041 |
+| arms_control | 0.332 | **0.434** | 0.326 | 0.465 | 1118 |
+| human_rights | -0.157 | **-0.294** | -0.250 | -0.371 | 1130 |
+| investment | 0.094 | 0.025 | -0.046 | -0.044 | 1013 |
 
 ### Key Findings
 
 1. **4 of 6 domains have strong UNGA alignment** (|r| > 0.3): environment, IP, security, arms_control
-2. **human_rights has NEGATIVE correlation** (-0.157) — dim1 may capture something other than international alignment
-3. **investment has near-zero correlation** (0.094) — expected, since BIT networks follow economic logic, not geopolitical alignment
-4. **V-Dem was unavailable** (network issues) — comparison skipped
+2. **V-Dem correlates MORE than UNGA in 3/6 domains** (environment, security, arms_control) — dim1 partially captures domestic liberalism, not purely international alignment
+3. **IP is the exception**: UNGA > V-Dem (0.52 vs 0.46) — suggests IP treaties track geopolitical alignment more than domestic regime type
+4. **human_rights has NEGATIVE correlation** with both UNGA (-0.16) and V-Dem (-0.29) — dim1 is inverted or captures something orthogonal to alignment/democracy
+5. **investment has near-zero correlation** with both (0.09 / 0.02) — BIT networks follow economic logic, not geopolitical alignment
 
 ### Temporal Trends (from V7 dim1)
 
