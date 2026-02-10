@@ -1,0 +1,1 @@
+/Users/manoelgaldino/Documents/DCP/Papers/Ideal point/scripts/R/r3_select_anchor_items.R

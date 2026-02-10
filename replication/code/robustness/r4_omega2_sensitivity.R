@@ -1,0 +1,1 @@
+/Users/manoelgaldino/Documents/DCP/Papers/Ideal point/scripts/R/r4_omega2_sensitivity.R

@@ -1,0 +1,1 @@
+/Users/manoelgaldino/Documents/DCP/Papers/Ideal point/scripts/R/aggregate_tariffs_trade.R

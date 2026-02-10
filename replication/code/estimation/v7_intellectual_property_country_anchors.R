@@ -1,0 +1,1 @@
+/Users/manoelgaldino/Documents/DCP/Papers/Ideal point/scripts/R/v7_intellectual_property_country_anchors.R

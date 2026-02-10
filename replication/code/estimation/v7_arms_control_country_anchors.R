@@ -1,0 +1,1 @@
+/Users/manoelgaldino/Documents/DCP/Papers/Ideal point/scripts/R/v7_arms_control_country_anchors.R
