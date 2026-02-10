@@ -1,0 +1,6 @@
+"domain","set_name","item_id","item_name","v7_beta1","v7_beta2","expected_sign","v7_beta1_sign","v7_beta1_positive"
+"environment","A","ieadb_3071__1995-1999","Amendment To The Montreal Protocol On Substances That Deplete The Ozone Layer",0.869198683071546,0.0895199355338691,"positive","positive",TRUE
+"environment","A","ieadb_5046__2015-2018","Paris Agreement under the United Nations Framework Convention on Climate Change",0.380978020055664,0.0585443098798055,"positive","positive",TRUE
+"environment","B","ieadb_4303__2000-2004","Adjustments to Annex B of The Montreal Protocol On Substances That Deplete The Ozone Layer agreed to at the Seventh Meeting of the Parties",1.86203618926197,0.44126691693963,NA,"positive",TRUE
+"environment","B","ieadb_4007__2000-2004","Adjustment To The Montreal Protocol On Substances That Deplete The Ozone Layer",1.86193565218005,0.441245291064971,NA,"positive",TRUE
+"environment","B","ieadb_4306__2000-2004","Adjustments to Annex B of The Montreal Protocol On Substances That Deplete The Ozone Layer agreed to at the Ninth Meeting of the Parties",1.86177910854871,0.441217056241833,NA,"positive",TRUE

@@ -1,0 +1,6 @@
+"domain","set_name","item_id","item_name","v7_beta1","v7_beta2","expected_sign","v7_beta1_sign","v7_beta1_positive"
+"arms_control","A","arms_cwc__2010-2014","Convention on the Prohibition of Chemical Weapons",0.543308119016637,0.348331353796799,"positive","positive",TRUE
+"arms_control","A","arms_ctbt__2000-2004","Comprehensive Nuclear-Test-Ban Treaty",0.155796038055759,0.214370811696838,"positive","positive",TRUE
+"arms_control","B","arms_cwc__2010-2014","Convention on the Prohibition of Chemical Weapons",0.543308119016637,0.348331353796799,NA,"positive",TRUE
+"arms_control","B","arms_cwc__2015-2018","Convention on the Prohibition of Chemical Weapons",0.404836062162369,0.411913671008016,NA,"positive",TRUE
+"arms_control","B","arms_cwc__2005-2009","Convention on the Prohibition of Chemical Weapons",0.198496079658054,0.288769013039422,NA,"positive",TRUE

@@ -1,0 +1,25 @@
+"domain","set_name","item_id","item_name","v7_beta1","v7_beta2","expected_sign"
+"arms_control","A","arms_cwc__2010-2014","Convention on the Prohibition of Chemical Weapons",0.543308119016637,0.348331353796799,"positive"
+"arms_control","A","arms_ctbt__2000-2004","Comprehensive Nuclear-Test-Ban Treaty",0.155796038055759,0.214370811696838,"positive"
+"arms_control","B","arms_cwc__2010-2014","Convention on the Prohibition of Chemical Weapons",0.543308119016637,0.348331353796799,NA
+"arms_control","B","arms_cwc__2015-2018","Convention on the Prohibition of Chemical Weapons",0.404836062162369,0.411913671008016,NA
+"arms_control","B","arms_cwc__2005-2009","Convention on the Prohibition of Chemical Weapons",0.198496079658054,0.288769013039422,NA
+"environment","A","ieadb_3071__1995-1999","Amendment To The Montreal Protocol On Substances That Deplete The Ozone Layer",0.869198683071546,0.0895199355338691,"positive"
+"environment","A","ieadb_5046__2015-2018","Paris Agreement under the United Nations Framework Convention on Climate Change",0.380978020055664,0.0585443098798055,"positive"
+"environment","B","ieadb_4303__2000-2004","Adjustments to Annex B of The Montreal Protocol On Substances That Deplete The Ozone Layer agreed to at the Seventh Meeting of the Parties",1.86203618926197,0.44126691693963,NA
+"environment","B","ieadb_4007__2000-2004","Adjustment To The Montreal Protocol On Substances That Deplete The Ozone Layer",1.86193565218005,0.441245291064971,NA
+"environment","B","ieadb_4306__2000-2004","Adjustments to Annex B of The Montreal Protocol On Substances That Deplete The Ozone Layer agreed to at the Ninth Meeting of the Parties",1.86177910854871,0.441217056241833,NA
+"human_rights","A","unhr_icescr_op__2010-2014","Optional Protocol to the ICESCR",-0.279128859790812,-0.297300519333485,"positive"
+"human_rights","B","unhr_crc_op_sc__2010-2014","Optional Protocol to the CRC on sale of children",-0.532571069285027,-0.614987139699845,NA
+"human_rights","B","unhr_crc_op_ac__2010-2014","Optional Protocol to the CRC on children in armed conflict",-0.478971845952084,-0.665130228086711,NA
+"human_rights","B","unhr_crc_op_ac__2000-2004","Optional Protocol to the CRC on children in armed conflict",-0.473794229713035,-0.503479411831881,NA
+"intellectual_property","A","wipo_wct__2005-2009","WIPO Copyright Treaty",0.73532997756724,-0.647579332832182,"positive"
+"intellectual_property","B","wipo_wct__2005-2009","WIPO Copyright Treaty",0.73532997756724,-0.647579332832182,NA
+"intellectual_property","B","wipo_wppt__2005-2009","WIPO Performances and Phonograms Treaty",0.729215877328093,-0.642784337064675,NA
+"intellectual_property","B","wipo_wct__2000-2004","WIPO Copyright Treaty",0.415284422798347,-0.457487681485618,NA
+"investment","B","unctad_/international-investment-agreements/treaties/treaties-with-investment-provisions/3107/brazil---ec-cooperation-agreement-1992-__1995-1999","Framework Agreement for Cooperation between the European Economic Community and the Federative Republic of Brazil",-0.818930674669548,0.0581354401618328,NA
+"investment","B","unctad_/international-investment-agreements/treaties/treaties-with-investment-provisions/3139/ec---vietnam-cooperation-agreement-1995-__1995-1999","Cooperation Agreement between the European Community and Vietnam",-0.815819590774414,-0.0569910990340194,NA
+"investment","B","unctad_/international-investment-agreements/treaties/treaties-with-investment-provisions/3777/ec---ukraine-cooperation-agreement-1994-__1995-1999","Partnership and Cooperation Agreement between the European Communities and Their Member States and Ukraine",-0.815493877212621,0.000605012804924035,NA
+"security","B","atop_4220_consul__1990-1994","ATOP 4220 consul",-0.638804983603398,-0.21921486342412,NA
+"security","B","atop_4400_defense__1990-1994","ATOP 4400 defense",-0.638781648306056,-0.21933454526659,NA
+"security","B","atop_4400_consul__1990-1994","ATOP 4400 consul",-0.638711920410479,-0.219337839843486,NA

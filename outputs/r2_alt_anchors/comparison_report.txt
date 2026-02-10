@@ -1,0 +1,84 @@
+Domain: investment | Alt set: Alt1
+  overall_cor_dim1 = 0.9961
+  overall_cor_dim2 = 0.9687
+  min_period_cor_dim1 = 0.9919
+  mean_period_cor_dim1 = 0.9959
+  trend_cor_dim1 = 0.9995
+
+Domain: investment | Alt set: Alt2
+  overall_cor_dim1 = 0.9911
+  overall_cor_dim2 = 0.9608
+  min_period_cor_dim1 = 0.9841
+  mean_period_cor_dim1 = 0.9912
+  trend_cor_dim1 = 0.9997
+
+Domain: security | Alt set: Alt1
+  overall_cor_dim1 = 0.9882
+  overall_cor_dim2 = 0.9469
+  min_period_cor_dim1 = 0.9877
+  mean_period_cor_dim1 = 0.9888
+  trend_cor_dim1 = 0.9682
+
+Domain: security | Alt set: Alt2
+  overall_cor_dim1 = 0.9555
+  overall_cor_dim2 = 0.9259
+  min_period_cor_dim1 = 0.9524
+  mean_period_cor_dim1 = 0.9561
+  trend_cor_dim1 = 0.0539
+
+Domain: environment | Alt set: Alt1
+  overall_cor_dim1 = 0.9291
+  overall_cor_dim2 = 0.9169
+  min_period_cor_dim1 = 0.9231
+  mean_period_cor_dim1 = 0.9292
+  trend_cor_dim1 = 0.8159
+
+Domain: environment | Alt set: Alt2
+  overall_cor_dim1 = 0.9805
+  overall_cor_dim2 = 0.9771
+  min_period_cor_dim1 = 0.9679
+  mean_period_cor_dim1 = 0.9794
+  trend_cor_dim1 = 0.9926
+
+Domain: human_rights | Alt set: Alt1
+  overall_cor_dim1 = -0.8720
+  overall_cor_dim2 = 0.9247
+  min_period_cor_dim1 = -0.9528
+  mean_period_cor_dim1 = -0.8519
+  trend_cor_dim1 = -0.3337
+
+Domain: human_rights | Alt set: Alt2
+  overall_cor_dim1 = 0.9258
+  overall_cor_dim2 = 0.9462
+  min_period_cor_dim1 = 0.8763
+  mean_period_cor_dim1 = 0.9226
+  trend_cor_dim1 = 0.8745
+
+Domain: arms_control | Alt set: Alt1
+  overall_cor_dim1 = 0.7124
+  overall_cor_dim2 = 0.5580
+  min_period_cor_dim1 = 0.6861
+  mean_period_cor_dim1 = 0.7378
+  trend_cor_dim1 = 0.9355
+
+Domain: arms_control | Alt set: Alt2
+  overall_cor_dim1 = 0.5370
+  overall_cor_dim2 = -0.5868
+  min_period_cor_dim1 = -0.1471
+  mean_period_cor_dim1 = 0.1891
+  trend_cor_dim1 = 0.9850
+
+Domain: intellectual_property | Alt set: Alt1
+  overall_cor_dim1 = 0.9804
+  overall_cor_dim2 = 0.9385
+  min_period_cor_dim1 = 0.9782
+  mean_period_cor_dim1 = 0.9814
+  trend_cor_dim1 = 0.2408
+
+Domain: intellectual_property | Alt set: Alt2
+  overall_cor_dim1 = 0.9537
+  overall_cor_dim2 = 0.9590
+  min_period_cor_dim1 = 0.9414
+  mean_period_cor_dim1 = 0.9526
+  trend_cor_dim1 = 0.9351
+

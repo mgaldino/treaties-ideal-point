@@ -1086,6 +1086,27 @@ Date: 2026-02-01
 - Generated short substantive report `outputs/v6_substantive_report_short.md` and figures `outputs/fig_v6_investment_trends.png`, `outputs/fig_v6_security_trends.png` via `scripts/R/08_v6_substantive_report_short.R`.
 - Added reflections document on predictors and interpretation strategy: `docs/ilo_predictors_reflections.md` (linked in `README.md`).
 
+## 2026-02-08 V7 Block A visuals + report update
+- Created V-Dem periodized file: `data/processed/vdem_liberal_democracy_period.csv` via `scripts/R/v7_prepare_vdem_period.R` (source: `data/raw/vdem/vdem_country_year_v14.rds`).
+- Generated full visual suite for Block A in `outputs/v7_report/figs/` via `scripts/R/v7_block_a_visuals_full.R` (35 figures).
+- Updated report with numbered figures and revised discussion: `outputs/v7_report/block_a_report.md`.
+ - Added coverage note on missing UNGA/V-Dem overlap in `outputs/v7_report/block_a_report.md`.
+ - Appended rendered figure embeds (main + supplementary) to `outputs/v7_report/block_a_report.md`.
+ - Added period-wise Dim1×Dim2 scatter with labeled extremes (S25–S30) via `scripts/R/v7_block_a_visuals_full.R` and embedded them in the report.
+ - Fixed HR item discrimination plot by stripping period suffix from item labels and re-rendered `fig_hr_item_beta_year.png`.
+
+## 2026-02-08 Arms control anchors (future adjustment)
+- Documented requested arms_control anchor configuration in `docs/arms_control_anchor_overrides.md`.
+
+## 2026-02-08 Investment anchors (future adjustment)
+- Documented requested investment anchor configuration in `docs/investment_anchor_overrides.md`.
+
+## 2026-02-08 Intellectual property anchors (future adjustment)
+- Documented requested intellectual_property anchor configuration in `docs/intellectual_property_anchor_overrides.md`.
+
+## 2026-02-08 Security anchors (future adjustment)
+- Documented requested security anchor configuration in `docs/security_anchor_overrides.md`.
+
 ## 2026-02-08 V7 Block A — Complete Estimation + Validation (Completed)
 - Date: 2026-02-08
 - Status: COMPLETE
@@ -1133,12 +1154,85 @@ Date: 2026-02-01
 - IP exception: UNGA > V-Dem (0.52 vs 0.46) — geopolitical > regime type
 - Human rights: negative with both UNGA (-0.16) and V-Dem (-0.29)
 
+## R4 — omega2 Sensitivity (Completed)
+- Date: 2026-02-09
+- Status: COMPLETE (ROBUST)
+- Agent: Codex (~47K tokens)
+- Script: `scripts/R/r4_omega2_sensitivity.R`
+- omega2 grid: {0.01, 0.05, 0.1, 0.2, 0.5} × 6 domains = 30 runs, all converged
+- Self-check: omega2=0.1 reproduces V7 baseline exactly (cor=1.0)
+- Key finding: Results highly robust across 50x range of omega2
+  - 4/6 domains: cor > 0.97 even at extremes
+  - IP (0.81) and arms_control (0.89) dip only at omega2=0.5
+  - Trend directions preserved everywhere
+- Outputs: `outputs/r4_omega2_sensitivity/` (CSV, report, 30 RDS files)
+- Findings: `outputs/r4_omega2_sensitivity/R4_findings.md`
+
+## R5 — 3-Year Temporal Windows (Completed)
+- Date: 2026-02-09
+- Status: COMPLETE (MIXED)
+- Agent: Codex (~60.5K tokens)
+- Scripts: `scripts/R/r5_prepare_3year_data.R`, `scripts/R/r5_estimate_3year.R`, `scripts/R/r5_compare_with_baseline.R`
+- 3-year periods (T=10) vs baseline 5-year (T=6), all 6 domains converged
+- Key findings:
+  - Robust (dim1 trend r > 0.97): investment, security, intellectual_property
+  - Moderate (r = 0.82): environment
+  - Weak (r = 0.08): human_rights (flat signal, noise-dominated)
+  - Sensitive (r = -0.61): arms_control (reversed trends, sparse domain J=38)
+  - Dim2 flips sign for HR and IP under 3-year resolution
+  - First period (1990-92) consistently weakest across all domains
+- Outputs: `outputs/r5_3year_windows/` (CSV, report, 6 RDS files)
+- Findings: `outputs/r5_3year_windows/R5_findings.md`
+
+## R2 — Alternative Country Anchors (Completed)
+- Date: 2026-02-09
+- Status: COMPLETE (MIXED)
+- Agent: Codex (~79.9K tokens)
+- Scripts: `scripts/R/r2_select_alt_anchors.R`, `scripts/R/r2_estimate_alt_anchors.R`, `scripts/R/r2_compare_with_baseline.R`
+- Prompt: `prompts/r2_alt_anchors_codex.md`
+- 12 runs (6 domains × 2 alternative anchor sets: Alt1=PCA-driven, Alt2=theory-driven)
+- Key findings (dim1 overall correlation with V7 baseline):
+  - **ROBUST**: investment (Alt1=0.996, Alt2=0.991)
+  - **Mostly robust**: security (Alt1=0.988, Alt2=0.956 but trend r=0.054), IP (Alt1=0.980, Alt2=0.954)
+  - **Mixed**: environment (Alt1=0.929, Alt2=0.980)
+  - **SENSITIVE**: human_rights (Alt1=**-0.872** sign flip!, Alt2=0.926), arms_control (Alt1=0.712, Alt2=0.537)
+- Outputs: `outputs/r2_alt_anchors/` (comparison_table.csv, comparison_report.txt, 12 RDS files)
+- Findings: `outputs/r2_alt_anchors/R2_findings.md`
+
+## R3 — Item Anchor Sensitivity (Completed)
+- Date: 2026-02-09
+- Status: COMPLETE (MOSTLY ROBUST)
+- Agent: Codex (~131.7K tokens)
+- Scripts: `scripts/R/r3_select_anchor_items.R`, `scripts/R/r3_item_anchor_test.R`
+- Prompt: `prompts/r3_item_anchors_codex.md`
+- 18 runs (6 domains × 3 tests: A=sign check, B=constrained starts, C=swapped anchors)
+- Key findings:
+  - **Test A (theory sign check)**: environment 2/2, arms_control 2/2, IP 1/1 positive (PASS). HR 0/1 (sign mismatch). Investment/security: theory items not found in codebook (N/A)
+  - **Test B (constrained starts)**: All domains ~1.0 except security (0.789) — security dim1 weakly identified
+  - **Test C (swapped anchors)**: dim1 flips correctly (~-1.0) for all domains; beta1 flip cor > 0.98 everywhere; Set A items flip as expected
+  - Security flagged: low Test B dim1 cor (0.789) suggests dim1 sensitivity to starting values
+- Outputs: `outputs/r3_item_anchors/` (sign_check CSVs, constrained/swapped RDS, summary_table.csv)
+- Findings: `outputs/r3_item_anchors/R3_findings.md`
+
+## Robustness Summary (R1-R5 ALL COMPLETE)
+
+| Check | Status | Key Result |
+|-------|--------|------------|
+| R1 (stock coding) | DONE | 4/6 domains show reversed trends — activity bias is real |
+| R2 (alt anchors) | DONE | investment robust; HR/AC sensitive to anchor choice |
+| R3 (item anchors) | DONE | Mostly robust; security weak dim1; HR theory sign mismatch |
+| R4 (omega2) | DONE | ROBUST — cor>0.97 for 4/6 across 50x range |
+| R5 (3-year windows) | DONE | MIXED — investment/security/IP robust; HR weak; AC reversed |
+
+**Cross-cutting pattern**: investment consistently the most robust domain. human_rights consistently the most fragile. arms_control sensitive to multiple specifications. environment and IP generally robust with occasional sensitivity.
+
 ## Next Steps — Priority Order
 
-1. ~~**V-Dem validation**~~ — DONE. V-Dem > UNGA in 3/6 domains; UNGA > V-Dem for IP
-2. **R2: Alternative country anchors** — 2+ anchor pairs per domain, check stability
-3. **R4: omega2 sensitivity** — vary evolution variance parameter
-4. **R3: Item anchor sensitivity** — constrain anchor item betas
-5. **Trade continuous IRT** — continuous-response IRT on tariff data (WITS/TRAINS), data acquisition mostly done
-6. **R5: 3-year temporal windows** — MEDIUM priority
+1. ~~**V-Dem validation**~~ — DONE
+2. ~~**R2: Alternative country anchors**~~ — DONE (MIXED)
+3. ~~**R3: Item anchor sensitivity**~~ — DONE (MOSTLY ROBUST)
+4. ~~**R4: omega2 sensitivity**~~ — DONE (ROBUST)
+5. ~~**R5: 3-year temporal windows**~~ — DONE (MIXED)
+6. **Trade continuous IRT** — continuous-response IRT on tariff data (WITS/TRAINS), data acquisition mostly done
 7. **WITS Non-G20 Batch 1** — 10 countries dispatched, results pending check
+8. **Paper writing** — All robustness checks complete, ready for reporting

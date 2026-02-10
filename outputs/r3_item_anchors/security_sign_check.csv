@@ -1,0 +1,4 @@
+"domain","set_name","item_id","item_name","v7_beta1","v7_beta2","expected_sign","v7_beta1_sign","v7_beta1_positive"
+"security","B","atop_4220_consul__1990-1994","ATOP 4220 consul",-0.638804983603398,-0.21921486342412,NA,"negative",FALSE
+"security","B","atop_4400_defense__1990-1994","ATOP 4400 defense",-0.638781648306056,-0.21933454526659,NA,"negative",FALSE
+"security","B","atop_4400_consul__1990-1994","ATOP 4400 consul",-0.638711920410479,-0.219337839843486,NA,"negative",FALSE

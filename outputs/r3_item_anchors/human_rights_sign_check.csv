@@ -1,0 +1,5 @@
+"domain","set_name","item_id","item_name","v7_beta1","v7_beta2","expected_sign","v7_beta1_sign","v7_beta1_positive"
+"human_rights","A","unhr_icescr_op__2010-2014","Optional Protocol to the ICESCR",-0.279128859790812,-0.297300519333485,"positive","negative",FALSE
+"human_rights","B","unhr_crc_op_sc__2010-2014","Optional Protocol to the CRC on sale of children",-0.532571069285027,-0.614987139699845,NA,"negative",FALSE
+"human_rights","B","unhr_crc_op_ac__2010-2014","Optional Protocol to the CRC on children in armed conflict",-0.478971845952084,-0.665130228086711,NA,"negative",FALSE
+"human_rights","B","unhr_crc_op_ac__2000-2004","Optional Protocol to the CRC on children in armed conflict",-0.473794229713035,-0.503479411831881,NA,"negative",FALSE

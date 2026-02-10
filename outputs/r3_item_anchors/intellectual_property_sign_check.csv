@@ -1,0 +1,5 @@
+"domain","set_name","item_id","item_name","v7_beta1","v7_beta2","expected_sign","v7_beta1_sign","v7_beta1_positive"
+"intellectual_property","A","wipo_wct__2005-2009","WIPO Copyright Treaty",0.73532997756724,-0.647579332832182,"positive","positive",TRUE
+"intellectual_property","B","wipo_wct__2005-2009","WIPO Copyright Treaty",0.73532997756724,-0.647579332832182,NA,"positive",TRUE
+"intellectual_property","B","wipo_wppt__2005-2009","WIPO Performances and Phonograms Treaty",0.729215877328093,-0.642784337064675,NA,"positive",TRUE
+"intellectual_property","B","wipo_wct__2000-2004","WIPO Copyright Treaty",0.415284422798347,-0.457487681485618,NA,"positive",TRUE

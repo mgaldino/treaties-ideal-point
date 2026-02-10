@@ -77,6 +77,10 @@ python3 scripts/python/run_with_env.py -- python3 scripts/python/acquire_wits_ta
 - `docs/source_registry.md` — all data sources with URLs and coverage
 - `docs/data_dictionary.md` — raw and processed data schemas
 - `docs/ilo_predictors_reflections.md` — reflections on predictors, interpretation risks, and strategy for Dim1 as ILO support
+- `docs/arms_control_anchor_overrides.md` — requested future anchor configuration for arms_control
+- `docs/investment_anchor_overrides.md` — requested future anchor configuration for investment
+- `docs/intellectual_property_anchor_overrides.md` — requested future anchor configuration for intellectual_property
+- `docs/security_anchor_overrides.md` — requested future anchor configuration for security
 
 ## Repository structure (planned)
 - data/raw/            # raw downloads, snapshots

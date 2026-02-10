@@ -954,8 +954,11 @@ build_flow_matrix <- function(events, items, issue_area) {
       phantom_item_id = paste0(item_id, "__", period_label)
     )
 
+  # Treaties that opened before the study period (e.g., NPT 1968, BWC 1972)
+
+  # are treated as open from the first period
   phantom <- phantom %>%
-    dplyr::filter(!is.na(open_index)) %>%
+    dplyr::mutate(open_index = dplyr::if_else(is.na(open_index), 0L, open_index)) %>%
     dplyr::filter(period_index >= open_index)
 
   # Country-item join period
