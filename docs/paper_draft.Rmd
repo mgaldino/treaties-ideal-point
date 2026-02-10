@@ -3,7 +3,7 @@ title: "Measuring Support for the International Liberal Order: A Multidimensiona
 author: "[Author Names Redacted]"
 date: "February 2026"
 abstract: |
-  How has systemic support for the International Liberal Order (ILO) evolved since the end of the Cold War? Existing approaches rely on UN General Assembly voting or expert surveys, which capture geopolitical alignment but not the institutional commitments that constitute the order itself. We propose a direct measurement strategy that combines treaty ratification data across six domains --- investment, security, environment, human rights, arms control, and intellectual property --- with tariff data for a seventh domain, trade. The treaty data cover 206 countries from 1990 to 2018; trade data from the WITS/TRAINS database cover 108 countries from 1990 to 2022. For the six treaty domains, we estimate a two-dimensional dynamic item response theory model separately for each, recovering latent ideal points that distinguish ILO support from domain-specific confounders. For trade, we use directly observed MFN tariff rates and preferential margins to distinguish three ideal types: universally open, club-open, and closed countries. Three findings emerge. First, the investment domain shows clear deepening of ILO commitments, while security alliances drift away from the ILO pole. Second, trade tariffs fall dramatically across three decades, but preferential margins widen, indicating a shift from multilateral to club-based liberalization. Third, the standard deviation of ideal points rises across domains, suggesting that the post-Cold War order is characterized not by collapse or convergence but by growing heterogeneity in countries' institutional commitments.
+  How has systemic support for the International Liberal Order (ILO) evolved since the end of the Cold War? Existing approaches rely on UN General Assembly voting or expert surveys, which capture geopolitical alignment but not the institutional commitments that constitute the order itself. We propose a direct measurement strategy that combines treaty ratification data across six domains --- investment, security, environment, human rights, arms control, and intellectual property --- with tariff data for a seventh domain, trade. Five treaty domains extend through 2024 (seven five-year periods from 1990 to 2024); the security domain is constrained to 2018 by the coverage of the ATOP alliance dataset. Trade data from the WITS/TRAINS database cover 108 countries from 1990 to 2022. For the six treaty domains, we estimate a two-dimensional dynamic item response theory model separately for each, recovering latent ideal points that distinguish ILO support from domain-specific confounders. For trade, we use directly observed MFN tariff rates and preferential margins to distinguish three ideal types: universally open, club-open, and closed countries. Three findings emerge. First, the investment domain shows clear deepening of ILO commitments that continues into the 2020--2024 period, while security alliances drift away from the ILO pole. Second, trade tariffs fall dramatically across three decades, but preferential margins widen, indicating a shift from multilateral to club-based liberalization. Third, the standard deviation of ideal points rises across domains, suggesting that the post-Cold War order is characterized not by collapse or convergence but by growing heterogeneity in countries' institutional commitments.
 output:
   pdf_document:
     latex_engine: xelatex
@@ -34,7 +34,7 @@ Yet despite the richness of this theoretical debate, the empirical measurement o
 
 We argue that the ILO is constituted, in significant part, by the web of international treaties that countries ratify and the trade policies they adopt: bilateral investment treaties, security alliances, environmental agreements, human rights conventions, arms control accords, intellectual property instruments, and tariff regimes. Treaty ratification entails legal obligations, domestic policy adjustments, and reputational stakes. Tariff policy directly reflects a country's openness to the multilateral trading system. A country's pattern of treaty ratification and trade liberalization across these seven domains therefore provides a measure of its engagement with the institutional architecture of the liberal order. We acknowledge that ratification is an imperfect proxy for commitment: a substantial literature documents the gap between ratification and compliance (Hathaway 2002; Simmons 2009), and recent work emphasizes the role of monitoring and enforcement mechanisms in determining whether treaty commitments translate into behavioral change (Kelley and Simmons 2015). Our measure should therefore be understood as capturing formal institutional engagement --- the willingness to accept legal obligations --- rather than revealed preferences over compliance with liberal norms.
 
-This paper makes three contributions. First, we construct a comprehensive dataset of treaty ratification events across six domains for 206 countries over six five-year periods (1990--2018), complemented by tariff data for a seventh domain (trade) covering 108 countries through 2022. Second, we estimate a two-dimensional dynamic item response theory (IRT) model for each treaty domain, recovering latent ideal points that separate ILO support from domain-specific confounders. For trade, we use directly observed tariff measures --- MFN rates and preferential margins --- that distinguish universally open, club-open, and closed countries. Third, we characterize the aggregate evolution of ILO support, showing that the post-Cold War period is marked not by uniform decline but by increasing differentiation.
+This paper makes three contributions. First, we construct a comprehensive dataset of treaty ratification events across six domains for 206 countries over seven five-year periods (1990--2024) for five domains and six periods (1990--2018) for security, complemented by tariff data for a seventh domain (trade) covering 108 countries through 2022. Second, we estimate a two-dimensional dynamic item response theory (IRT) model for each treaty domain, recovering latent ideal points that separate ILO support from domain-specific confounders. For trade, we use directly observed tariff measures --- MFN rates and preferential margins --- that distinguish universally open, club-open, and closed countries. Third, we characterize the aggregate evolution of ILO support, showing that the post-Cold War period is marked not by uniform decline but by increasing differentiation.
 
 # Data
 
@@ -48,14 +48,14 @@ Table 1 lists the six treaty-based domains and their primary sources.
 
 | Domain | Source | Treaties | Coverage |
 |--------|--------|----------|----------|
-| Investment | UNCTAD IIA Navigator | 2,721 BITs | 1959--2018 |
+| Investment | UNCTAD IIA Navigator | 2,874 BITs | 1959--2024 |
 | Security | ATOP 5.1 | 874 alliances | 1815--2018 |
-| Environment | IEADB | 1,020 IEAs | 1857--2018 |
-| Human Rights | UN Treaty Collection Ch. IV | 18 conventions | 1965--2018 |
-| Arms Control | UN Treaty Collection Ch. XXVI + NPT/BWC | 11 treaties | 1968--2018 |
-| Intellectual Property | WIPO Lex | 26 treaties | 1883--2018 |
+| Environment | IEADB | 3,111 IEAs | 1857--2024 |
+| Human Rights | UN Treaty Collection Ch. IV | 18 conventions | 1965--2024 |
+| Arms Control | UN Treaty Collection Ch. XXVI + NPT/BWC | 11 treaties | 1968--2024 |
+| Intellectual Property | WIPO Lex | 26 treaties | 1883--2024 |
 
-*Notes: Treaty counts refer to unique base treaties (before period expansion). Investment treaties are predominantly bilateral investment treaties. Security alliances are from the Alliance Treaty Obligations and Provisions dataset (Leeds et al. 2002). Environmental agreements are from the International Environmental Agreements Database (Mitchell et al. 2020). Arms control includes the NPT, BWC, CWC, CTBT, Ottawa Convention, and six additional UN Chapter XXVI instruments, plus the Treaty on the Prohibition of Nuclear Weapons (TPNW). The human rights domain includes 9 core UN conventions and their optional protocols. The intellectual property domain includes 26 WIPO-administered treaties.*
+*Notes: Treaty counts refer to treaty-period items in the flow matrix (after period expansion). Investment treaties are predominantly bilateral investment treaties. Security alliances are from the Alliance Treaty Obligations and Provisions dataset (Leeds et al. 2002), which ends in 2018; the remaining five domains extend through 2024. Environmental agreements are from the International Environmental Agreements Database (Mitchell et al. 2020). Arms control includes the NPT, BWC, CWC, CTBT, Ottawa Convention, and six additional UN Chapter XXVI instruments, plus the Treaty on the Prohibition of Nuclear Weapons (TPNW). The human rights domain includes 9 core UN conventions and their optional protocols. The intellectual property domain includes 26 WIPO-administered treaties.*
 
 The six treaty domains differ markedly in their structure. Investment and security are dominated by bilateral agreements, producing thousands of treaty-period items but sparse ratification matrices (most country-treaty pairs are zeros under flow coding). Environment spans both bilateral and large multilateral agreements, yielding the richest dataset. Human rights and arms control consist entirely of large multilateral conventions with near-universal membership, providing the starkest contrasts between early adopters and holdouts.
 
@@ -74,22 +74,22 @@ These two measures capture distinct aspects of trade engagement with the ILO. Th
 
 For each domain, we construct a binary response matrix $\mathbf{Y}$ of dimension $N \times J$, where $N$ is the number of countries and $J$ is the number of treaty-period items. We employ **flow coding**: a country receives a +1 for a treaty-period item if it newly ratified that treaty during the period, and $-1$ if the treaty was available but the country did not ratify it. Missing values (treaty not yet open, or country not yet independent) are coded as 0 and excluded from the likelihood.
 
-Flow coding captures *new commitments* in each period, providing a dynamic signal of engagement. As a robustness check, we also estimate models under **stock coding**, where a country is coded +1 in all periods during which it is a party to the treaty (Section 5).
+Flow coding captures *new commitments* in each period, providing a dynamic signal of engagement. We use seven five-year periods (1990--1994 through 2020--2024) for five domains and six periods (1990--1994 through 2015--2018) for security, which is constrained by the ATOP dataset's coverage. As a robustness check, we also estimate models under **stock coding**, where a country is coded +1 in all periods during which it is a party to the treaty (Section 5).
 
 Table 2 summarizes the estimation data by domain.
 
 **Table 2. Data summary by issue domain**
 
-| Domain | N | J | Bilateral | Mini (4--10) | Medium (11--50) | Large (51+) |
-|--------|:-:|:-:|:---------:|:----------:|:-------------:|:-----------:|
-| Investment | 203 | 2,721 | 85.3% | 2.5% | 2.7% | 0.0% |
-| Security | 164 | 935 | 89.1% | 3.0% | 2.5% | 0.5% |
-| Environment | 206 | 2,857 | 6.1% | 23.8% | 24.7% | 32.9% |
-| Human Rights | 197 | 83 | 0.0% | 0.0% | 5.6% | 94.4% |
-| Arms Control | 195 | 49 | 0.0% | 0.0% | 0.0% | 100.0% |
-| Intellectual Property | 179 | 130 | 0.0% | 3.8% | 23.1% | 73.1% |
+| Domain | N | J | T | Bilateral | Mini (4--10) | Medium (11--50) | Large (51+) |
+|--------|:-:|:-:|:-:|:---------:|:----------:|:-------------:|:-----------:|
+| Investment | 204 | 2,874 | 7 | 85.3% | 2.5% | 2.7% | 0.0% |
+| Security | 164 | 935 | 6 | 89.1% | 3.0% | 2.5% | 0.5% |
+| Environment | 206 | 3,111 | 7 | 6.1% | 23.8% | 24.7% | 32.9% |
+| Human Rights | 197 | 98 | 7 | 0.0% | 0.0% | 5.6% | 94.4% |
+| Arms Control | 195 | 56 | 7 | 0.0% | 0.0% | 0.0% | 100.0% |
+| Intellectual Property | 186 | 152 | 7 | 0.0% | 3.8% | 23.1% | 73.1% |
 
-*Notes: N = number of countries; J = number of treaty-period items in the flow matrix. Size columns report the share of base treaties by all-time membership: Bilateral = 2 parties; Mini = 4--10; Medium = 11--50; Large = 51+.*
+*Notes: N = number of countries; J = number of treaty-period items in the flow matrix; T = number of five-year periods (7 for 1990--2024, 6 for security which ends in 2018). Size columns report the share of base treaties by all-time membership: Bilateral = 2 parties; Mini = 4--10; Medium = 11--50; Large = 51+.*
 
 # Model
 
@@ -130,7 +130,7 @@ Anchor countries are selected based on two criteria: (1) the first dimension sho
 
 ## Estimation
 
-The model is estimated via EM with Albert--Chib data augmentation (Albert and Chib 1993) and a Kalman filter-smoother for the dynamic ideal points. In the E-step, latent utilities $y^*_{ij}$ are drawn from truncated normals conditional on current parameter estimates, and ideal points are updated via a forward-backward Kalman pass. In the M-step, item parameters $(\alpha_j, \boldsymbol{\beta}_j)$ are updated via weighted least squares. Convergence is assessed by monitoring the log-likelihood, with a patience-based stopping rule (5 consecutive iterations with relative change below $10^{-2}$). All models converge in 16--24 iterations.
+The model is estimated via EM with Albert--Chib data augmentation (Albert and Chib 1993) and a Kalman filter-smoother for the dynamic ideal points. In the E-step, latent utilities $y^*_{ij}$ are drawn from truncated normals conditional on current parameter estimates, and ideal points are updated via a forward-backward Kalman pass. In the M-step, item parameters $(\alpha_j, \boldsymbol{\beta}_j)$ are updated via weighted least squares. Convergence is assessed by monitoring the log-likelihood, with a patience-based stopping rule (5 consecutive iterations with relative change below $10^{-2}$). All models converge in 16--24 iterations. Five domains are estimated over $T = 7$ five-year periods (1990--2024); the security domain uses $T = 6$ periods (1990--2018), constrained by the temporal coverage of the ATOP alliance dataset (Leeds et al. 2002).
 
 # Results
 
@@ -159,15 +159,15 @@ Our quantity of interest is not any individual country's trajectory but rather t
 
 ### Investment
 
-The investment domain (Figure 1) shows a steady rightward shift in the distribution of dim-1 ideal points from 1990--1994 (mean = 0.97) to 2015--2018 (mean = 1.44), reflecting the expansion of the bilateral investment treaty network. The spread also increases (sd from 1.74 to 2.06), indicating growing heterogeneity. Tax havens and offshore financial centers tend to cluster in the high-dim-1 region, consistent with their role as active BIT signatories.
+The investment domain (Figure 1) shows a steady rightward shift in the distribution of dim-1 ideal points from 1990--1994 (mean = 1.03) to 2020--2024 (mean = 1.55), reflecting the expansion of the bilateral investment treaty network. The trend continues into the most recent period, though the rate of increase slows markedly after 2005--2009 as the BIT network approaches saturation. The spread also increases (sd from 1.78 to 2.16), indicating growing heterogeneity. Tax havens and offshore financial centers tend to cluster in the high-dim-1 region, consistent with their role as active BIT signatories.
 
-```{r fig-investment, fig.cap="Investment ideal points (2D), 1990--2018. Anchors in red; tax havens in orange."}
+```{r fig-investment, fig.cap="Investment ideal points (2D), 1990--2024. Anchors in red; tax havens in orange."}
 knitr::include_graphics(here("outputs", "paper_figures", "fig_investment_2d.png"))
 ```
 
 ### Security
 
-The security domain (Figure 2) exhibits a leftward drift in dim-1 means (from $-0.78$ to $-1.10$), suggesting that the distribution of alliance commitments has shifted away from the anchor-defined ILO-support pole. Nuclear powers occupy a range of positions along both dimensions, reflecting the diversity of their alliance portfolios.
+The security domain (Figure 2), the only domain limited to six periods (1990--2018) due to the ATOP dataset's coverage, exhibits a leftward drift in dim-1 means (from $-0.78$ to $-1.10$), suggesting that the distribution of alliance commitments has shifted away from the anchor-defined ILO-support pole. Nuclear powers occupy a range of positions along both dimensions, reflecting the diversity of their alliance portfolios.
 
 ```{r fig-security, fig.cap="Security ideal points (2D), 1990--2018. Anchors in red; nuclear powers in blue."}
 knitr::include_graphics(here("outputs", "paper_figures", "fig_security_2d.png"))
@@ -175,33 +175,33 @@ knitr::include_graphics(here("outputs", "paper_figures", "fig_security_2d.png"))
 
 ### Environment
 
-The environment domain (Figure 3), with the largest item set ($J = 2{,}857$), shows relatively stable dim-1 means (ranging from $-0.70$ to $-0.58$) but a clear downward shift in dim-2 means (from $-0.44$ to $-0.81$). The increasing spread on both dimensions indicates growing polarization in environmental treaty engagement.
+The environment domain (Figure 3), with the largest item set ($J = 3{,}111$), shows relatively stable dim-1 means (ranging from $-0.66$ to $-0.61$ across all seven periods through 2020--2024) but a clear downward shift in dim-2 means (from $-0.68$ to $-1.18$). The increasing spread on both dimensions indicates growing polarization in environmental treaty engagement. The 2020--2024 period continues this pattern without notable change.
 
-```{r fig-environment, fig.cap="Environment ideal points (2D), 1990--2018. Anchors in red."}
+```{r fig-environment, fig.cap="Environment ideal points (2D), 1990--2024. Anchors in red."}
 knitr::include_graphics(here("outputs", "paper_figures", "fig_environment_2d.png"))
 ```
 
 ### Human Rights
 
-In the human rights domain (Figure 4), the distribution is approximately centered (dim-1 mean near zero across all periods), with gradually increasing dispersion (sd from 1.00 to 1.23). This pattern reflects the near-universal ratification of core human rights treaties combined with selective ratification of optional protocols and newer instruments. The USA, anchoring dim-2, is positioned distinctly from countries that have ratified the full suite.
+In the human rights domain (Figure 4), the distribution shows a slightly negative dim-1 mean (around $-0.15$ to $-0.21$ across all seven periods through 2020--2024), with gradually increasing dispersion (sd from 1.02 to 1.34). This pattern reflects the near-universal ratification of core human rights treaties combined with selective ratification of optional protocols and newer instruments. The 2020--2024 period shows no notable change from the preceding period. The USA, anchoring dim-2, is positioned distinctly from countries that have ratified the full suite.
 
-```{r fig-human-rights, fig.cap="Human Rights ideal points (2D), 1990--2018. Anchors in red."}
+```{r fig-human-rights, fig.cap="Human Rights ideal points (2D), 1990--2024. Anchors in red."}
 knitr::include_graphics(here("outputs", "paper_figures", "fig_human_rights_2d.png"))
 ```
 
 ### Arms Control
 
-The arms control domain (Figure 5) includes 11 treaties, from the NPT (191 parties) to the Treaty on the Prohibition of Nuclear Weapons (69 parties). Dim-1 means hover near zero throughout the study period, but the distribution compresses from 1990--1994 (sd = 0.82) to 1995--1999 (sd = 0.51) before slowly widening. This compression coincides with the wave of post-Cold War accessions to the CWC, CTBT, and Ottawa Convention.
+The arms control domain (Figure 5) includes 11 treaties, from the NPT (191 parties) to the Treaty on the Prohibition of Nuclear Weapons (69 parties). Dim-1 means hover near zero throughout the study period (from $+0.10$ in 1990--1994 to $-0.01$ in 2020--2024), but the distribution compresses from 1990--1994 (sd = 0.94) to 1995--1999 (sd = 0.91) before slowly widening to 1.09 by 2020--2024. The initial compression coincides with the wave of post-Cold War accessions to the CWC, CTBT, and Ottawa Convention.
 
-```{r fig-arms-control, fig.cap="Arms Control ideal points (2D), 1990--2018. Anchors in red; nuclear powers in blue."}
+```{r fig-arms-control, fig.cap="Arms Control ideal points (2D), 1990--2024. Anchors in red; nuclear powers in blue."}
 knitr::include_graphics(here("outputs", "paper_figures", "fig_arms_control_2d.png"))
 ```
 
 ### Intellectual Property
 
-The intellectual property domain (Figure 6) shows a leftward drift in dim-1 means (from $-0.08$ to $-0.31$), reflecting the rapid expansion of WIPO treaty membership after the TRIPS Agreement. The spread increases substantially (sd from 0.95 to 1.30), indicating growing differentiation as some countries adopt the full suite of WIPO-administered treaties while others remain selective.
+The intellectual property domain (Figure 6) shows a leftward drift in dim-1 means (from $-0.06$ in 1990--1994 to $-0.26$ in 2020--2024), reflecting the rapid expansion of WIPO treaty membership after the TRIPS Agreement. The drift plateaus after 2010--2014, suggesting the IP regime has reached a stable equilibrium. The spread increases substantially (sd from 0.99 to 1.34), indicating growing differentiation as some countries adopt the full suite of WIPO-administered treaties while others remain selective.
 
-```{r fig-ip, fig.cap="Intellectual Property ideal points (2D), 1990--2018. Anchors in red; tax havens in orange."}
+```{r fig-ip, fig.cap="Intellectual Property ideal points (2D), 1990--2024. Anchors in red; tax havens in orange."}
 knitr::include_graphics(here("outputs", "paper_figures", "fig_intellectual_property_2d.png"))
 ```
 
@@ -231,24 +231,24 @@ knitr::include_graphics(here("outputs", "paper_figures", "fig_trade_trajectories
 
 Table 5 summarizes the temporal evolution of dim-1 ideal points across all six domains.
 
-**Table 5. Aggregate trends in dim-1 (anchor-defined ILO-support dimension), 1990--1994 vs. 2015--2018 (treaty domains) / 2019--2022 (trade)**
+**Table 5. Aggregate trends in dim-1 (anchor-defined ILO-support dimension), 1990--1994 vs. latest period**
 
-| Domain | Mean (1990--94) | SD (1990--94) | Mean (2015--18) | SD (2015--18) | Trend |
-|--------|:-:|:-:|:-:|:-:|:---:|
-| Investment | +0.97 | 1.74 | +1.44 | 2.06 | $\nearrow$ |
-| Security | $-0.78$ | 1.68 | $-1.10$ | 1.84 | $\searrow$ |
-| Environment | $-0.70$ | 1.51 | $-0.58$ | 1.98 | $\approx$ |
-| Human Rights | $-0.01$ | 1.00 | $-0.04$ | 1.23 | $\approx$ |
-| Arms Control | +0.07 | 0.82 | +0.01 | 0.59 | $\approx$ |
-| Intellectual Property | $-0.08$ | 0.95 | $-0.31$ | 1.30 | $\searrow$ |
-| Trade (MFN tariff) | 17.8% | 18.3% | 9.5% | 5.8% | $\nearrow$ (liberalization) |
-| Trade (Pref. margin) | 9.2% | 6.8% | 12.3% | 9.2% | $\nearrow$ (more preferences) |
+| Domain | Mean (1990--94) | SD (1990--94) | Mean (latest) | SD (latest) | Latest period | Trend |
+|--------|:-:|:-:|:-:|:-:|:---:|:---:|
+| Investment | +1.03 | 1.78 | +1.55 | 2.16 | 2020--24 | $\nearrow$ |
+| Security | $-0.78$ | 1.68 | $-1.10$ | 1.84 | 2015--18 | $\searrow$ |
+| Environment | $-0.66$ | 1.43 | $-0.61$ | 2.04 | 2020--24 | $\approx$ |
+| Human Rights | $-0.15$ | 1.02 | $-0.21$ | 1.34 | 2020--24 | $\approx$ |
+| Arms Control | +0.10 | 0.94 | $-0.01$ | 1.09 | 2020--24 | $\approx$ |
+| Intellectual Property | $-0.06$ | 0.99 | $-0.26$ | 1.34 | 2020--24 | $\searrow$ |
+| Trade (MFN tariff) | 17.8% | 18.3% | 9.5% | 5.8% | 2019--22 | $\nearrow$ (liberalization) |
+| Trade (Pref. margin) | 9.2% | 6.8% | 12.3% | 9.2% | 2019--22 | $\nearrow$ (more preferences) |
 
-*Notes: Trend arrows: $\nearrow$ = increasing ILO support, $\searrow$ = decreasing, $\approx$ = approximately stable. Trade rows report raw tariff rates (not latent ideal points); the trade period comparison uses 1990--1994 vs. 2019--2022.*
+*Notes: Trend arrows: $\nearrow$ = increasing ILO support, $\searrow$ = decreasing, $\approx$ = approximately stable. Five treaty domains extend through 2020--2024; security is constrained to 2015--2018 by ATOP dataset coverage. Trade rows report raw tariff rates (not latent ideal points); the trade period comparison uses 1990--1994 vs. 2019--2022. Values for the five extended domains are from the V8 estimation (T = 7 periods).*
 
-Three broad patterns emerge. First, the investment domain shows the clearest evidence of expanding treaty engagement along the anchor-defined ILO-support dimension, driven by the proliferation of bilateral investment treaties throughout the 1990s and 2000s. Second, security shows a drift away from the pro-ratification pole, potentially reflecting the fragmentation of alliance structures after the Cold War. Third, the remaining domains show relatively stable means but increasing dispersion, suggesting that while the average level of treaty engagement has remained roughly constant, countries have become more differentiated in their commitment patterns.
+Three broad patterns emerge. First, the investment domain shows the clearest evidence of expanding treaty engagement along the anchor-defined ILO-support dimension, driven by the proliferation of bilateral investment treaties throughout the 1990s and 2000s; the extension through 2020--2024 confirms that this trend continues, though at a decelerating pace. Second, security shows a drift away from the pro-ratification pole, potentially reflecting the fragmentation of alliance structures after the Cold War (this domain cannot be assessed beyond 2018 due to data limitations). Third, the remaining domains show relatively stable means but increasing dispersion through the most recent period, suggesting that while the average level of treaty engagement has remained roughly constant, countries have become more differentiated in their commitment patterns.
 
-The most striking finding is that the standard deviation of dim-1 ideal points increases over time in five of six domains (arms control is the exception, where post-Cold War convergence dominates). This growing heterogeneity suggests that the ILO is not experiencing uniform erosion or uniform deepening, but rather increasing differentiation --- a pattern consistent with the "contested multilateralism" thesis of Börzel and Zürn (2021).
+The most striking finding is that the standard deviation of dim-1 ideal points increases over time in all six domains through the latest available period. This growing heterogeneity suggests that the ILO is not experiencing uniform erosion or uniform deepening, but rather increasing differentiation --- a pattern consistent with the "contested multilateralism" thesis of Börzel and Zürn (2021). The 2020--2024 period, which covers the COVID-19 pandemic and intensified US-China competition, does not show a dramatic break from pre-existing trends in any of the five extended domains.
 
 An important caveat is that these temporal trends are sensitive to the choice of coding scheme. Under stock coding (Section R1), where countries retain a +1 for all periods after initial ratification, temporal trends reverse in four of six domains (security, arms control, IP, and human rights). Stock coding produces a different picture because early adopters accumulate high scores over time, mechanically compressing the distribution as latecomers catch up. The growing-heterogeneity finding therefore reflects increasing differentiation in *new commitments* (flow coding) rather than in cumulative treaty portfolios (stock coding). Both perspectives are substantively meaningful, but readers should note that the headline finding is coding-dependent.
 
@@ -301,7 +301,7 @@ We re-estimate all models using 10 three-year periods (1990--1992 through 2017--
 
 Our results speak to three themes in the literature on the liberal international order.
 
-**Not simply decline, but differentiation.** The dominant narrative frames the ILO as being in decline or crisis (Maull 2018; Cooley and Nexon 2020). Our results, at least under flow coding, paint a more nuanced picture. Only the security domain shows a clear drift away from the anchor-defined ILO-support pole. Investment shows deepening. The remaining domains show stable means but increasing dispersion. This pattern is more consistent with Börzel and Zürn's (2021) framework of "contestation" --- the order is not collapsing but becoming more heterogeneous, with growing gaps between countries that embrace the full institutional architecture and those that selectively engage.
+**Not simply decline, but differentiation.** The dominant narrative frames the ILO as being in decline or crisis (Maull 2018; Cooley and Nexon 2020). Our results, at least under flow coding, paint a more nuanced picture across three and a half decades through 2024. Only the security domain shows a clear drift away from the anchor-defined ILO-support pole (though this assessment is limited to the 1990--2018 window). Investment shows deepening that continues into 2020--2024. The remaining domains show stable means but increasing dispersion. Notably, the 2020--2024 period --- marked by the COVID-19 pandemic and intensified geopolitical rivalry --- does not produce a visible break from pre-existing trends in any of the five extended domains. This pattern is more consistent with Börzel and Zürn's (2021) framework of "contestation" --- the order is not collapsing but becoming more heterogeneous, with growing gaps between countries that embrace the full institutional architecture and those that selectively engage.
 
 **Domain-specific dynamics.** The ILO is not a monolith. Investment treaty networks follow economic logic (near-zero correlation with UNGA and V-Dem), security alliances track geopolitical alignment, and environmental agreements correlate strongly with both international alignment and domestic liberalism. These domain-specific dynamics are obscured in unidimensional measures. As Farrell and Newman (2021) argue, different institutional domains of the liberal order can evolve in contradictory directions, and our domain-specific measurement strategy is designed to capture precisely this heterogeneity.
 
@@ -311,7 +311,7 @@ Our results speak to three themes in the literature on the liberal international
 
 # Conclusion
 
-We have proposed and implemented a measurement strategy for support for the International Liberal Order based on treaty ratification across six domains and tariff data for a seventh. Using a two-dimensional dynamic IRT model for the treaty domains and directly observed tariff measures for trade, we recover latent ideal points and policy indicators that capture systemic-level shifts in institutional commitment from 1990 to 2022. Our central finding --- increasing heterogeneity in new commitments across most domains under flow coding --- offers a quantitative counterpoint to both optimistic and pessimistic narratives about the order's trajectory, though this pattern is sensitive to coding choices (see Section R1). The trade domain reinforces this picture: while MFN tariffs have converged downward, preferential margins have diverged, reflecting a shift from multilateral to club-based liberalization. The evidence suggests that the ILO is not simply declining; it is differentiating, though the strength of this conclusion varies across domains and measurement choices.
+We have proposed and implemented a measurement strategy for support for the International Liberal Order based on treaty ratification across six domains and tariff data for a seventh. Using a two-dimensional dynamic IRT model for the treaty domains and directly observed tariff measures for trade, we recover latent ideal points and policy indicators that capture systemic-level shifts in institutional commitment from 1990 to 2024. Five treaty domains now extend through the 2020--2024 period, allowing us to assess whether the turbulence of the early 2020s --- the COVID-19 pandemic, intensified great-power competition, and rising economic nationalism --- produced a visible break in treaty engagement patterns. Our central finding --- increasing heterogeneity in new commitments across most domains under flow coding --- persists into the most recent period, offering a quantitative counterpoint to both optimistic and pessimistic narratives about the order's trajectory, though this pattern is sensitive to coding choices (see Section R1). The trade domain reinforces this picture: while MFN tariffs have converged downward, preferential margins have diverged, reflecting a shift from multilateral to club-based liberalization. The evidence suggests that the ILO is not simply declining; it is differentiating, though the strength of this conclusion varies across domains and measurement choices.
 
 # References
 
