@@ -180,7 +180,7 @@ for (domain in domains) {
         x.mu0 = pri_anchor$x_mu0,
         x.Sigma0 = pri_anchor$x_Sigma0,
         beta.mu = rep(0, K + 1),
-        beta.sigma = 25 * diag(K + 1),
+        beta.sigma = 25 * diag(K + 1),  # Diffuse prior on item parameters (sd=5 per element)
         omega = omega2 * diag(K)
       ),
       .control = list(

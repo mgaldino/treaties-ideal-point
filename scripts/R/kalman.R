@@ -108,7 +108,8 @@ kalman_smoother_country <- function(y_star_i, item_indices, alpha, beta,
         # Posterior: P = (P^{-1} + H'H)^{-1}, x = P (P^{-1} x + H' y)
         P_inv <- tryCatch(solve(P_hat), error = function(e) NULL)
         if (is.null(P_inv)) {
-          P_inv <- solve(P_hat)
+          # Regularize with small ridge if P_hat is singular
+          P_inv <- solve(P_hat + 1e-6 * diag(nrow(P_hat)))
         }
         A <- P_inv + crossprod(H)
         rhs <- as.numeric(P_inv %*% x_hat + crossprod(H, y_t))

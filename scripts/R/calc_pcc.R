@@ -1,5 +1,6 @@
 #!/usr/bin/env Rscript
 # Compute Percent Correctly Classified (PCC) by dimension, a la Poole & Rosenthal
+# Vectorized implementation (no nested loops)
 
 domains <- c("investment", "security", "environment", "human_rights", "arms_control", "intellectual_property")
 
@@ -18,35 +19,35 @@ for (domain in domains) {
   N <- nrow(Y)
   J <- ncol(Y)
 
-  n_correct_both <- 0L
-  n_correct_dim1 <- 0L
-  n_correct_dim2 <- 0L
-  n_total <- 0L
+  # Find all non-missing observations
+  obs <- which(Y != 0, arr.ind = TRUE)  # matrix with columns [row, col] = [i, j]
+  i_idx <- obs[, 1]
+  j_idx <- obs[, 2]
+  n_total <- nrow(obs)
 
-  for (j in 1:J) {
-    t_idx <- bill_session[j] + 1L
-    a_j <- alpha[j]
-    b_j <- beta[j, ]  # K-vector
+  # Get the period for each observation
+  t_idx <- bill_session[j_idx] + 1L
 
-    for (i in 1:N) {
-      y_obs <- Y[i, j]
-      if (y_obs == 0L) next
-
-      x_it <- x[i, , t_idx]
-
-      # Both dimensions
-      eta_both <- a_j + sum(b_j * x_it)
-      # Dim 1 only
-      eta_dim1 <- a_j + b_j[1] * x_it[1]
-      # Dim 2 only
-      eta_dim2 <- a_j + b_j[2] * x_it[2]
-
-      n_total <- n_total + 1L
-      if ((eta_both > 0) == (y_obs == 1)) n_correct_both <- n_correct_both + 1L
-      if ((eta_dim1 > 0) == (y_obs == 1)) n_correct_dim1 <- n_correct_dim1 + 1L
-      if ((eta_dim2 > 0) == (y_obs == 1)) n_correct_dim2 <- n_correct_dim2 + 1L
-    }
+  # Vectorized extraction of ideal points for each observation
+  # x[i, , t] for each (i, t) pair
+  x_obs <- matrix(NA_real_, nrow = n_total, ncol = ncol(beta))
+  for (k in seq_len(ncol(beta))) {
+    x_obs[, k] <- x[cbind(i_idx, k, t_idx)]
   }
+
+  # Vectorized computation of linear predictors
+  a_obs <- alpha[j_idx]
+  b_obs <- beta[j_idx, , drop = FALSE]
+  y_obs <- Y[obs]
+
+  eta_both <- a_obs + rowSums(b_obs * x_obs)
+  eta_dim1 <- a_obs + b_obs[, 1] * x_obs[, 1]
+  eta_dim2 <- a_obs + b_obs[, 2] * x_obs[, 2]
+
+  y_positive <- (y_obs == 1)
+  n_correct_both <- sum((eta_both > 0) == y_positive)
+  n_correct_dim1 <- sum((eta_dim1 > 0) == y_positive)
+  n_correct_dim2 <- sum((eta_dim2 > 0) == y_positive)
 
   y_nonmissing <- Y[Y != 0]
   modal_pct <- max(mean(y_nonmissing == 1), mean(y_nonmissing == -1))

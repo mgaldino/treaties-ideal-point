@@ -65,7 +65,7 @@ for (j in seq_len(J)) {
 }
 # Drop zero-variance columns before PCA
 col_var <- apply(rc_num, 2, var)
-rc_pca <- if (any(col_var == 0)) rc_num[, col_var > 0] else rc_num
+rc_pca <- if (any(col_var == 0)) rc_num[, col_var > 0, drop = FALSE] else rc_num
 pca <- prcomp(rc_pca, center = TRUE, scale. = FALSE)
 x_pca <- pca$x[, 1:K]
 for (k in 1:K) x_pca[, k] <- as.numeric(scale(x_pca[, k]))
@@ -102,8 +102,8 @@ res <- dynIRT_KD(
     x.mu0 = x_mu0,
     x.Sigma0 = x_Sigma0,
     beta.mu = rep(0, K + 1),
-    beta.sigma = 25 * diag(K + 1),
-    omega = 0.1 * diag(K)
+    beta.sigma = 25 * diag(K + 1),  # Diffuse prior on item parameters (sd=5 per element)
+    omega = 0.1 * diag(K)           # Evolution variance; see R4 sensitivity check (0.01--0.5)
   ),
   .control = list(
     verbose = TRUE,

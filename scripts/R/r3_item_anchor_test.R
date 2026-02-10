@@ -147,8 +147,8 @@ run_estimation <- function(flow, x_mu0, x_Sigma0, alpha_start, beta_start, x_sta
       x.mu0 = x_mu0,
       x.Sigma0 = x_Sigma0,
       beta.mu = rep(0, K + 1),
-      beta.sigma = 25 * diag(K + 1),
-      omega = 0.1 * diag(K)
+      beta.sigma = 25 * diag(K + 1),  # Diffuse prior on item parameters (sd=5 per element)
+      omega = 0.1 * diag(K)           # Evolution variance; see R4 sensitivity check (0.01--0.5)
     ),
     .control = ctrl,
     K = K
