@@ -3,7 +3,7 @@ title: "Measuring Support for the International Liberal Order: A Multidimensiona
 author: ""
 date: "February 2026"
 abstract: |
-  How has systemic support for the International Liberal Order (ILO) evolved since the end of the Cold War? Existing approaches rely on UN General Assembly voting or expert surveys, which capture geopolitical alignment but not the institutional commitments that constitute the order itself. We propose a direct measurement strategy based on treaty ratification across six domains --- investment, security, environment, human rights, arms control, and intellectual property --- covering 206 countries from 1990 to 2018. Using a two-dimensional dynamic item response theory model estimated separately for each domain, we recover latent ideal points that distinguish ILO support from domain-specific confounders. Three findings emerge. First, the investment domain shows clear deepening of ILO commitments, while security alliances drift away from the ILO pole. Second, the remaining domains exhibit stable means but increasing dispersion, indicating differentiation rather than uniform erosion. Third, the standard deviation of ideal points rises across all domains, suggesting that the post-Cold War order is characterized not by collapse or convergence but by growing heterogeneity in countries' institutional commitments.
+  How has systemic support for the International Liberal Order (ILO) evolved since the end of the Cold War? Existing approaches rely on UN General Assembly voting or expert surveys, which capture geopolitical alignment but not the institutional commitments that constitute the order itself. We propose a direct measurement strategy that combines treaty ratification data across six domains --- investment, security, environment, human rights, arms control, and intellectual property --- with tariff data for a seventh domain, trade. The treaty data cover 206 countries from 1990 to 2018; trade data from the WITS/TRAINS database cover 108 countries from 1990 to 2022. For the six treaty domains, we estimate a two-dimensional dynamic item response theory model separately for each, recovering latent ideal points that distinguish ILO support from domain-specific confounders. For trade, we use directly observed MFN tariff rates and preferential margins to distinguish three ideal types: universally open, club-open, and closed countries. Three findings emerge. First, the investment domain shows clear deepening of ILO commitments, while security alliances drift away from the ILO pole. Second, trade tariffs fall dramatically across three decades, but preferential margins widen, indicating a shift from multilateral to club-based liberalization. Third, the standard deviation of ideal points rises across domains, suggesting that the post-Cold War order is characterized not by collapse or convergence but by growing heterogeneity in countries' institutional commitments.
 ---
 
 # Introduction
@@ -12,17 +12,19 @@ The state of the International Liberal Order (ILO) has become one of the central
 
 Yet despite the richness of this theoretical debate, the empirical measurement of ILO support remains underdeveloped. The most common quantitative approach uses UN General Assembly voting patterns to estimate country positions on a liberal-versus-illiberal spectrum (Bailey, Strezhnev, and Voeten 2017). While informative about geopolitical alignment, UNGA votes capture cheap talk --- non-binding resolutions that impose no material costs. An alternative approach uses expert surveys such as V-Dem's liberal democracy indices, which measure domestic institutional quality rather than international commitments.
 
-We argue that the ILO is constituted, in significant part, by the web of international treaties that countries ratify: bilateral investment treaties, security alliances, environmental agreements, human rights conventions, arms control accords, and intellectual property instruments. These are costly commitments --- ratification entails legal obligations, domestic policy adjustments, and reputational stakes. A country's pattern of treaty ratification across these domains therefore provides a direct, revealed-preference measure of its engagement with the institutional architecture of the liberal order.
+We argue that the ILO is constituted, in significant part, by the web of international treaties that countries ratify and the trade policies they adopt: bilateral investment treaties, security alliances, environmental agreements, human rights conventions, arms control accords, intellectual property instruments, and tariff regimes. Treaty ratification entails legal obligations, domestic policy adjustments, and reputational stakes. Tariff policy directly reflects a country's openness to the multilateral trading system. A country's pattern of treaty ratification and trade liberalization across these seven domains therefore provides a direct, revealed-preference measure of its engagement with the institutional architecture of the liberal order.
 
 This paper makes three contributions. First, we construct a comprehensive dataset of treaty ratification events across six domains for 206 countries over six five-year periods (1990--2018), complemented by tariff data for a seventh domain (trade) covering 108 countries through 2022. Second, we estimate a two-dimensional dynamic item response theory (IRT) model for each treaty domain, recovering latent ideal points that separate ILO support from domain-specific confounders. For trade, we use directly observed tariff measures --- MFN rates and preferential margins --- that distinguish universally open, club-open, and closed countries. Third, we characterize the aggregate evolution of ILO support, showing that the post-Cold War period is marked not by uniform decline but by increasing differentiation.
 
 # Data
 
+We assemble data from seven domains of international cooperation, each representing a distinct pillar of the ILO. Six domains are measured through treaty ratification; the seventh (trade) is measured directly through tariff data.
+
 ## Treaty Sources
 
-We assemble treaty ratification data from six domains of international cooperation, each representing a distinct pillar of the ILO. Table 1 lists the domains and their primary sources.
+Table 1 lists the six treaty-based domains and their primary sources.
 
-**Table 1. Domains and data sources**
+**Table 1. Treaty domains and data sources**
 
 | Domain | Source | Treaties | Coverage |
 |--------|--------|----------|----------|
@@ -35,7 +37,18 @@ We assemble treaty ratification data from six domains of international cooperati
 
 *Notes: Treaty counts refer to unique base treaties (before period expansion). Investment treaties are predominantly bilateral investment treaties. Security alliances are from the Alliance Treaty Obligations and Provisions dataset (Leeds et al. 2002). Environmental agreements are from the International Environmental Agreements Database (Mitchell et al. 2020). Arms control includes the NPT, BWC, CWC, CTBT, Ottawa Convention, and six additional UN Chapter XXVI instruments. Human rights includes 9 core UN conventions and their optional protocols. Intellectual property includes 26 WIPO-administered treaties.*
 
-The six domains differ markedly in their treaty structure. Investment and security are dominated by bilateral agreements, producing thousands of treaty-period items but sparse ratification matrices (most country-treaty pairs are zeros under flow coding). Environment spans both bilateral and large multilateral agreements, yielding the richest dataset. Human rights and arms control consist entirely of large multilateral conventions with near-universal membership, providing the starkest contrasts between early adopters and holdouts.
+The six treaty domains differ markedly in their structure. Investment and security are dominated by bilateral agreements, producing thousands of treaty-period items but sparse ratification matrices (most country-treaty pairs are zeros under flow coding). Environment spans both bilateral and large multilateral agreements, yielding the richest dataset. Human rights and arms control consist entirely of large multilateral conventions with near-universal membership, providing the starkest contrasts between early adopters and holdouts.
+
+## Trade Data
+
+Treaty-based measurement is unavailable for trade because the key trade agreements (GATT/WTO, regional FTAs) are too few and heterogeneous to support an IRT model. Instead, we measure trade engagement directly through tariff data from the World Integrated Trade Solution (WITS) database, which draws on UNCTAD's TRAINS (Trade Analysis Information System) dataset.
+
+For each of 108 countries, we collect applied MFN (Most Favored Nation) tariff rates and bilateral preferential tariff rates at the HS 4-digit level for all available years from 1990 to 2022. We then compute two summary measures per country-year:
+
+1. **Mean MFN tariff**: the simple average across 21 HS sections (Harmonized System chapters grouped by WCO classification), giving equal weight to each section.
+2. **Mean preferential margin**: for each HS4 product, the margin is defined as the MFN tariff minus the lowest preferential tariff available to any partner; we take the maximum margin across partners for each product, then average across sections.
+
+These two measures capture distinct aspects of trade engagement with the ILO. The MFN tariff reflects a country's general openness to the multilateral trading system --- low MFN tariffs indicate broad liberalization accessible to all trading partners. The preferential margin captures the depth of preferential agreements --- a high margin indicates that the country offers substantially lower tariffs to select partners relative to the MFN baseline. Together, the two measures distinguish three ideal types: *universally open* countries (low MFN, low margin), *club-open* countries (high MFN, high margin), and *closed* countries (high MFN, low margin).
 
 ## Flow Coding
 
@@ -60,9 +73,11 @@ Table 2 summarizes the estimation data by domain.
 
 # Model
 
+For the six treaty-based domains, we estimate a two-dimensional dynamic IRT model that recovers latent ideal points from binary ratification data. The trade domain, measured through continuous tariff data, is analyzed descriptively using the MFN and preferential margin measures defined above rather than through a latent variable model. This section describes the IRT specification applied to the treaty domains.
+
 ## Two-Dimensional Dynamic IRT
 
-We estimate a two-dimensional dynamic probit IRT model separately for each domain. Let $y_{ij} \in \{+1, -1\}$ denote the observed ratification decision of country $i$ on treaty-period item $j$, and let $s(j) \in \{1, \ldots, T\}$ denote the period associated with item $j$. The observation model is:
+We estimate a two-dimensional dynamic probit IRT model separately for each treaty domain. Let $y_{ij} \in \{+1, -1\}$ denote the observed ratification decision of country $i$ on treaty-period item $j$, and let $s(j) \in \{1, \ldots, T\}$ denote the period associated with item $j$. The observation model is:
 
 $$P(y_{ij} = +1 \mid \mathbf{x}_{i,s(j)}) = \Phi(\alpha_j + \boldsymbol{\beta}_j' \mathbf{x}_{i,s(j)})$$
 
@@ -256,7 +271,7 @@ Our results speak to three themes in the literature on the liberal international
 
 # Conclusion
 
-We have proposed and implemented a measurement strategy for support for the International Liberal Order based on treaty ratification across six domains. Using a two-dimensional dynamic IRT model, we recover latent ideal points that capture systemic-level shifts in institutional commitment from 1990 to 2018. Our central finding --- increasing heterogeneity across all domains --- offers a quantitative counterpoint to both optimistic and pessimistic narratives about the order's trajectory. The ILO is not dying; it is differentiating.
+We have proposed and implemented a measurement strategy for support for the International Liberal Order based on treaty ratification across six domains and tariff data for a seventh. Using a two-dimensional dynamic IRT model for the treaty domains and directly observed tariff measures for trade, we recover latent ideal points and policy indicators that capture systemic-level shifts in institutional commitment from 1990 to 2022. Our central finding --- increasing heterogeneity across all domains --- offers a quantitative counterpoint to both optimistic and pessimistic narratives about the order's trajectory. The trade domain reinforces this picture: while MFN tariffs have converged downward, preferential margins have diverged, reflecting a shift from multilateral to club-based liberalization. The ILO is not dying; it is differentiating.
 
 # References
 
