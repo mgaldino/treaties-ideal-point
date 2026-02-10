@@ -1226,6 +1226,30 @@ Date: 2026-02-01
 
 **Cross-cutting pattern**: investment consistently the most robust domain. human_rights consistently the most fragile. arms_control sensitive to multiple specifications. environment and IP generally robust with occasional sensitivity.
 
+## V8 — Extended Estimation to 2024 (Completed)
+- Date: 2026-02-10
+- Status: COMPLETE
+- Agent: Codex
+- Scripts: `scripts/R/prepare_data_extended.R`, `scripts/R/v8_estimate_extended.R`, `scripts/R/v8_compare_trends.R`
+- Prompt: `prompts/v8_extended_estimation.md`
+- 5 domains extended to T=7 (1990-2024): investment, environment, human_rights, arms_control, IP
+- Security excluded (ATOP 5.1 ends 2018 — no newer version or alternative source available)
+- All 5 domains converged (16-21 iters, 0.7-2.5s)
+- V7↔V8 overlap correlation (periods 1-6): investment 0.997, environment 0.979, IP 0.960, arms_control 0.697, HR 0.555
+- Key finding: 2020-2024 shows no visible break from prior trends despite COVID-19 and US-China competition
+- Outputs: `outputs/v8_extended/`, `data/processed/*_flow_matrix_extended.rds`
+- Paper updated to reflect extension (commit 78eeeee)
+
+## Backlog
+
+### Security domain extension to 2024 (DEFERRED)
+- **Rationale**: ATOP 5.1 (the only comprehensive alliance dataset) ends in 2018. COW Formal Alliances ends 2012. DCAD ends 2010. No update is planned for any of these.
+- **Proposed approach**: Manual coding of alliance events 2019-2024 from Wikipedia's [List of military alliances](https://en.wikipedia.org/wiki/List_of_military_alliances) and official sources, following the ATOP codebook categories (defense, offense, neutrality, non-aggression, consultation).
+- **Known events 2019-2024**: NATO expansion (Finland 2023, Sweden 2024), AUKUS (2021), Alliance of Sahel States (2023), various bilateral defense pacts.
+- **Risk**: Undercounting — manual coding will capture salient events but miss smaller bilateral agreements that ATOP's systematic coding would find. This could bias the 2019-2024 period toward showing fewer new alliances than actually occurred.
+- **Mitigation**: Document coding decisions transparently; compare alliance counts per period with ATOP's 2010-2018 rate to calibrate expectations.
+- **Trigger**: Implement if a reviewer requests extending security to 2024.
+
 ## Next Steps — Priority Order
 
 1. ~~**V-Dem validation**~~ — DONE
@@ -1233,6 +1257,7 @@ Date: 2026-02-01
 3. ~~**R3: Item anchor sensitivity**~~ — DONE (MOSTLY ROBUST)
 4. ~~**R4: omega2 sensitivity**~~ — DONE (ROBUST)
 5. ~~**R5: 3-year temporal windows**~~ — DONE (MIXED)
-6. **Trade continuous IRT** — continuous-response IRT on tariff data (WITS/TRAINS), data acquisition mostly done
-7. **WITS Non-G20 Batch 1** — 10 countries dispatched, results pending check
-8. **Paper writing** — All robustness checks complete, ready for reporting
+6. ~~**V8: Extended estimation to 2024**~~ — DONE (5 domains, security deferred)
+7. **Trade continuous IRT** — continuous-response IRT on tariff data (WITS/TRAINS), data acquisition mostly done
+8. **WITS Non-G20 Batch 1** — 10 countries dispatched, results pending check
+9. **Paper writing** — All robustness checks complete, V8 extension done, ready for reporting
