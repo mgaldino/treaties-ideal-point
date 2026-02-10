@@ -1,0 +1,136 @@
+V8 Validation Report: UNGA + V-Dem (V8 extended domains + V7 security)
+Generated: 2026-02-10 10:04:11
+
+Domains (V8): arms_control, environment, human_rights, intellectual_property, investment
+Additional domain (V7): security
+UNGA source: data/processed/unga_ideal_points_period_v8.csv (years 1990-2024; 7 periods expected)
+V-Dem source: data/raw/vdem/vdem_country_year_v14.rds (aggregated inline to 7 periods; period 7 may be partial if V-Dem ends before 2024)
+Period mapping used for joins: 1=1990-1994, 2=1995-1999, 3=2000-2004, 4=2005-2009, 5=2010-2014, 6=2015-2019 (security label may be 2015-2018), 7=2020-2024, 0=overall
+
+V-Dem coverage by period (based on available country-years):
+# A tibble: 7 × 5
+  period n_countries year_min year_max n_years_median
+   <int>       <int>    <int>    <int>          <dbl>
+1      1         173     1990     1994              5
+2      2         174     1995     1999              5
+3      3         174     2000     2004              5
+4      4         174     2005     2009              5
+5      5         175     2010     2014              5
+6      6         175     2015     2019              5
+7      7         175     2020     2022              3
+
+Overall correlations (period=0):
+# A tibble: 6 × 4
+  domain                r_unga_dim1 r_vdem_dim1     n
+  <chr>                       <dbl>       <dbl> <int>
+1 arms_control               0.298       0.500   1308
+2 environment                0.475       0.636   1315
+3 human_rights               0.345       0.357   1322
+4 intellectual_property      0.497       0.333   1264
+5 investment                 0.0907      0.0258  1185
+6 security                   0.433       0.520    969
+
+Notes on period coverage:
+- V8 extended domains should have periods 1-7.
+- Security (V7) has periods 1-6 only; its period 6 label is '2015-2018' but maps to period ID 6 for joins.
+
+Data Issues / Diagnostics:
+- None detected at merge level (ideal points x UNGA).
+
+Full Correlation Table (domain x period):
+# A tibble: 47 × 7
+   domain           period r_unga_dim1 r_vdem_dim1 r_unga_dim2 r_vdem_dim2     n
+   <chr>             <int>       <dbl>       <dbl>       <dbl>       <dbl> <int>
+ 1 arms_control          0      0.298      0.500       0.433       0.357    1308
+ 2 arms_control          1     -0.145     -0.100       0.303       0.245     181
+ 3 arms_control          2      0.352      0.548       0.475       0.365     180
+ 4 arms_control          3      0.337      0.608       0.458       0.395     188
+ 5 arms_control          4      0.352      0.619       0.436       0.393     189
+ 6 arms_control          5      0.381      0.607       0.458       0.396     190
+ 7 arms_control          6      0.381      0.603       0.493       0.388     190
+ 8 arms_control          7      0.412      0.593       0.483       0.381     190
+ 9 environment           0      0.475      0.636       0.359       0.128    1315
+10 environment           1      0.518      0.675       0.344       0.0800    182
+11 environment           2      0.493      0.669       0.413       0.127     181
+12 environment           3      0.473      0.670       0.361       0.139     189
+13 environment           4      0.426      0.631       0.337       0.134     190
+14 environment           5      0.456      0.643       0.354       0.135     191
+15 environment           6      0.500      0.620       0.360       0.160     191
+16 environment           7      0.515      0.594       0.353       0.171     191
+17 human_rights          0      0.345      0.357      -0.0203     -0.233    1322
+18 human_rights          1      0.393      0.300      -0.0207     -0.295     183
+19 human_rights          2      0.407      0.345      -0.0306     -0.268     182
+20 human_rights          3      0.333      0.393      -0.0284     -0.255     190
+21 human_rights          4      0.319      0.378      -0.0144     -0.235     191
+22 human_rights          5      0.313      0.380       0.00336    -0.228     192
+23 human_rights          6      0.336      0.354      -0.0183     -0.208     192
+24 human_rights          7      0.348      0.355      -0.0320     -0.167     192
+25 intellectual_pr…      0      0.497      0.333      -0.240      -0.352    1264
+26 intellectual_pr…      1      0.476      0.306      -0.314      -0.423     176
+27 intellectual_pr…      2      0.487      0.311      -0.240      -0.408     174
+28 intellectual_pr…      3      0.490      0.352      -0.238      -0.357     182
+29 intellectual_pr…      4      0.511      0.367      -0.221      -0.339     183
+30 intellectual_pr…      5      0.506      0.360      -0.219      -0.326     183
+31 intellectual_pr…      6      0.525      0.332      -0.240      -0.327     183
+32 intellectual_pr…      7      0.505      0.339      -0.249      -0.307     183
+33 investment            0      0.0907     0.0258      0.0443      0.0304   1185
+34 investment            1      0.137      0.0819      0.0117      0.00899   164
+35 investment            2      0.125      0.0634      0.0119      0.0384    164
+36 investment            3      0.0998     0.00837     0.0363      0.0784    170
+37 investment            4      0.115     -0.00857     0.0484      0.0558    171
+38 investment            5      0.0867     0.00626     0.0486      0.0345    172
+39 investment            6      0.0658     0.0110      0.0489      0.0270    172
+40 investment            7      0.0534    -0.00446     0.0589      0.0352    172
+41 security              0      0.433      0.520      -0.126       0.0477    969
+42 security              1      0.378      0.470       0.0213      0.104     159
+43 security              2      0.390      0.499      -0.0994      0.0690    157
+44 security              3      0.445      0.540      -0.186       0.00968   162
+45 security              4      0.470      0.553      -0.151       0.00886   163
+46 security              5      0.459      0.547      -0.129       0.0243    164
+47 security              6      0.493      0.506      -0.155       0.0408    164
+
+Aggregate Trends (domain x period):
+# A tibble: 41 × 8
+   domain      period period_label mean_dim1 sd_dim1 skew_dim1 mean_dim2 sd_dim2
+   <chr>        <int> <chr>            <dbl>   <dbl>     <dbl>     <dbl>   <dbl>
+ 1 arms_contr…      1 1990-1994      0.103     0.945   -0.434   -0.00737   0.879
+ 2 arms_contr…      2 1995-1999      0.0392    0.906   -0.0956  -0.0267    0.653
+ 3 arms_contr…      3 2000-2004      0.00234   0.974   -0.0232  -0.0151    0.644
+ 4 arms_contr…      4 2005-2009      0.00253   1.03    -0.0425  -0.0151    0.654
+ 5 arms_contr…      5 2010-2014     -0.0146    1.07    -0.0284  -0.0220    0.660
+ 6 arms_contr…      6 2015-2019     -0.00935   1.09    -0.0704  -0.0189    0.664
+ 7 arms_contr…      7 2020-2024     -0.00942   1.09    -0.0803  -0.0189    0.669
+ 8 environment      1 1990-1994     -0.662     1.43     0.460   -0.677     1.48 
+ 9 environment      2 1995-1999     -0.683     1.53     0.260   -0.822     1.51 
+10 environment      3 2000-2004     -0.663     1.60     0.0170  -0.948     1.55 
+11 environment      4 2005-2009     -0.595     1.67    -0.124   -1.08      1.67 
+12 environment      5 2010-2014     -0.617     1.85     0.0104  -1.10      1.78 
+13 environment      6 2015-2019     -0.616     1.98     0.0722  -1.14      1.88 
+14 environment      7 2020-2024     -0.611     2.04     0.0581  -1.18      1.91 
+15 human_righ…      1 1990-1994     -0.151     1.02     0.209   -0.0915    0.980
+16 human_righ…      2 1995-1999     -0.197     1.12     0.128   -0.0760    1.06 
+17 human_righ…      3 2000-2004     -0.207     1.21     0.118   -0.0672    1.13 
+18 human_righ…      4 2005-2009     -0.211     1.28     0.141   -0.0675    1.17 
+19 human_righ…      5 2010-2014     -0.217     1.31     0.109   -0.0612    1.20 
+20 human_righ…      6 2015-2019     -0.213     1.34     0.0927  -0.0550    1.22 
+21 human_righ…      7 2020-2024     -0.214     1.34     0.0942  -0.0556    1.23 
+22 intellectu…      1 1990-1994     -0.0612    0.995    1.07    -0.0387    0.949
+23 intellectu…      2 1995-1999     -0.153     1.14     0.896   -0.111     0.977
+24 intellectu…      3 2000-2004     -0.217     1.23     0.844   -0.161     1.03 
+25 intellectu…      4 2005-2009     -0.254     1.31     0.811   -0.161     1.11 
+26 intellectu…      5 2010-2014     -0.268     1.33     0.802   -0.152     1.15 
+27 intellectu…      6 2015-2019     -0.262     1.34     0.760   -0.159     1.18 
+28 intellectu…      7 2020-2024     -0.262     1.34     0.754   -0.159     1.19 
+29 investment       1 1990-1994      1.03      1.78    -1.35    -1.61      2.05 
+30 investment       2 1995-1999      1.26      1.93    -1.56    -1.93      2.12 
+31 investment       3 2000-2004      1.50      1.99    -1.97    -2.30      2.11 
+32 investment       4 2005-2009      1.53      2.06    -1.99    -2.40      2.18 
+33 investment       5 2010-2014      1.54      2.11    -2.00    -2.46      2.22 
+34 investment       6 2015-2019      1.55      2.14    -2.02    -2.50      2.25 
+35 investment       7 2020-2024      1.55      2.16    -2.04    -2.52      2.26 
+36 security         1 1990-1994      0.710     1.61    -0.702    0.595     1.13 
+37 security         2 1995-1999      0.861     1.67    -0.887    0.799     1.27 
+38 security         3 2000-2004      0.857     1.77    -0.828    1.02      1.43 
+39 security         4 2005-2009      0.885     1.80    -0.858    1.04      1.46 
+40 security         5 2010-2014      0.890     1.82    -0.914    1.04      1.48 
+41 security         6 2015-2018      0.892     1.82    -0.961    1.04      1.48 
