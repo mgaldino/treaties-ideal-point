@@ -1,0 +1,14 @@
+=== V7 Report: USA/CUB anchors, V-Dem as predictor ===
+Date: 2026-02-10 22:15:24.370282
+Config: 1500w+2000s, 4 chains, omega_fixed=0.25, sigma_reg=1.0
+Anchors: USA(+2), CUB(-2)
+Dims: N=165, J=550, T=7, D=4, N_obs=70715
+MCMC: 1463.5s (24.4 min)
+Divergences: 0, Max Rhat: 1.0097, Pct>1.01: 0.0%
+Min ESS: 999, Median ESS: 3663
+b_v: 0.3516 (0.0531)
+sigma_d[investment]: 3.3388, delta[investment]: 1.0779
+sigma_d[human_rights]: 0.7452, delta[human_rights]: 0.0022
+sigma_d[arms_control]: 0.6033, delta[arms_control]: -1.0212
+sigma_d[intellectual_property]: 1.1450, delta[intellectual_property]: -0.0036
+CONVERGED: YES

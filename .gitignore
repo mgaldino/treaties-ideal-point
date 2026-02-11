@@ -55,6 +55,9 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+# Stan fit objects (large binary files)
+*.rds
+
 # Python
 __pycache__/
 *.pyc
